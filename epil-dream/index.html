@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Epil Dream — Студия электроэпиляции · проспект Ленина, 56Б</title>
+<meta name="description" content="Epil Dream — Студия электроэпиляции · проспект Ленина, 56Б. Рейтинг 4.9 в 2ГИС.">
+<meta name="robots" content="noindex,nofollow">
+<meta property="og:title" content="Epil Dream">
+<meta property="og:description" content="Epil Dream — Студия электроэпиляции · проспект Ленина, 56Б. Рейтинг 4.9 в 2ГИС.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23b57d68'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#fbf7f4;--surf:#ffffff;--line:#ecdfd8;--ink:#2e2320;
+  --mute:#7d6a63;--acc:#b57d68;--acc-ink:#ffffff;
+  --shadow:0 1px 2px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.07);
+  --r:14px;--wrap:1120px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:400 17px/1.6 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  -webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:'Cormorant Garamond','Inter',sans-serif;line-height:1.14;margin:0;
+  letter-spacing:-.02em}
+h1{font-size:clamp(34px,7vw,62px);}
+h2{font-size:clamp(26px,4.4vw,40px)}
+h3{font-size:19px}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);
+  font-weight:600;margin-bottom:12px}
+.lead{color:var(--mute);font-size:17px;max-width:62ch;margin-top:14px}
+
+.top{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--bg) 88%,transparent);
+  backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top__in{display:flex;align-items:center;gap:18px;height:64px}
+.brand{font-family:'Cormorant Garamond',sans-serif;font-weight:700;font-size:20px;
+  text-decoration:none;letter-spacing:.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.top nav{margin-left:auto;display:none;gap:26px}
+.top nav a{text-decoration:none;color:var(--mute);font-size:15px;transition:color .2s}
+.top nav a:hover{color:var(--ink)}
+.top .btn{margin-left:auto}
+@media(min-width:900px){.top nav{display:flex}.top .btn{margin-left:0}}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  padding:14px 24px;border-radius:999px;border:1px solid transparent;cursor:pointer;
+  font:600 15px/1 'Inter',sans-serif;text-decoration:none;transition:transform .15s,opacity .2s;
+  background:var(--acc);color:var(--acc-ink)}
+.btn:hover{transform:translateY(-1px);opacity:.92}
+.btn--ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn--sm{padding:11px 18px;font-size:14px}
+
+.hero{position:relative;min-height:min(88vh,720px);display:flex;align-items:flex-end;
+  padding:96px 0 56px;overflow:hidden;isolation:isolate}
+.hero__bg{position:absolute;inset:0;z-index:-2;object-fit:cover;width:100%;height:100%}
+.hero::after{content:'';position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(16,20,28,.52) 0%,rgba(8,9,12,.55) 45%,rgba(6,7,10,.9) 100%)}
+.hero--plain::after{background:radial-gradient(120% 90% at 15% 0%,
+  color-mix(in srgb,var(--acc) 26%,var(--bg)) 0%,var(--bg) 70%)}
+.hero__in{position:relative;color:#fff}
+.hero--plain .hero__in{color:var(--ink)}
+.hero h1{max-width:16ch}
+.hero__sub{margin-top:16px;font-size:clamp(16px,2.2vw,20px);opacity:.9;max-width:44ch}
+.hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero--plain .hero__cta .btn--ghost{border-color:var(--line)}
+.hero__cta .btn--ghost{color:#fff;border-color:rgba(255,255,255,.42)}
+
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.fact{display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:999px;
+  background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.2);
+  font-size:14px;backdrop-filter:blur(6px)}
+.hero--plain .fact{background:var(--surf);border-color:var(--line);color:var(--ink)}
+.fact b{font-weight:600}
+.star{color:#ffc247}
+
+.grid{display:grid;gap:16px}
+@media(min-width:700px){.cols-2{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.cols-3{grid-template-columns:repeat(3,1fr)}}
+
+.card{background:var(--surf);border:1px solid var(--line);border-radius:var(--r);padding:22px;
+  box-shadow:var(--shadow)}
+
+.price__group + .price__group{margin-top:34px}
+.price__cat{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);
+  margin-bottom:14px;font-weight:600}
+.price__row{display:flex;align-items:baseline;gap:14px;padding:15px 0;border-bottom:1px dashed var(--line)}
+.price__row:last-child{border-bottom:0}
+.price__name{font-weight:600}
+.price__desc{color:var(--mute);font-size:14.5px;margin-top:4px;max-width:70ch}
+.price__dots{flex:1;border-bottom:1px dotted var(--line);transform:translateY(-4px);min-width:24px}
+.price__val{white-space:nowrap;font-weight:700;color:var(--acc);font-size:18px}
+.price__note{color:var(--mute);font-size:14px;margin-top:24px}
+
+.tags{display:flex;flex-wrap:wrap;gap:9px}
+.tag{padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surf);
+  font-size:14.5px}
+
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media(min-width:760px){.gal{grid-template-columns:repeat(4,1fr)}
+  .gal a:first-child{grid-column:span 2;grid-row:span 2}}
+.gal a{display:block;border-radius:12px;overflow:hidden;background:var(--line);aspect-ratio:1/1}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gal a:hover img{transform:scale(1.05)}
+
+.rev{display:grid;gap:16px}
+@media(min-width:820px){.rev{grid-template-columns:repeat(3,1fr)}}
+.rev__stars{color:#ffc247;letter-spacing:2px;font-size:15px}
+.rev__text{margin-top:12px;font-size:15.5px;line-height:1.62}
+.rev__who{margin-top:16px;font-size:14px;color:var(--mute)}
+
+.contact{display:grid;gap:22px}
+@media(min-width:900px){.contact{grid-template-columns:1fr 1.15fr;align-items:start}}
+.dl{display:grid;gap:18px;margin:0}
+.dl dt{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.dl dd{margin:5px 0 0;font-size:17px}
+.dl a{text-decoration:none;border-bottom:1px solid var(--line)}
+.map{border:0;width:100%;height:340px;border-radius:var(--r);border:1px solid var(--line)}
+
+.form{display:grid;gap:13px}
+.form input,.form textarea{width:100%;padding:14px 16px;border-radius:11px;background:var(--bg);
+  border:1px solid var(--line);color:var(--ink);font:400 16px/1.5 'Inter',sans-serif}
+.form input:focus,.form textarea:focus{outline:2px solid var(--acc);outline-offset:1px;border-color:transparent}
+.form textarea{min-height:96px;resize:vertical}
+.form .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.form__note{font-size:13px;color:var(--mute)}
+.form__ok{display:none;padding:14px 16px;border-radius:11px;background:color-mix(in srgb,var(--acc) 14%,transparent);
+  border:1px solid var(--acc);font-size:15px}
+
+.foot{border-top:1px solid var(--line);padding:34px 0;color:var(--mute);font-size:14.5px}
+.foot__row{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;justify-content:space-between}
+
+.demo{background:var(--acc);color:var(--acc-ink);font-size:14.5px;line-height:1.55}
+.demo__in{padding:20px;display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;justify-content:space-between}
+.demo a{color:inherit;font-weight:700}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;gap:10px;padding:10px 14px;
+  background:color-mix(in srgb,var(--bg) 94%,transparent);border-top:1px solid var(--line);
+  backdrop-filter:blur(10px)}
+.bar .btn{flex:1}
+@media(min-width:900px){.bar{display:none}}
+@media(max-width:899px){body{padding-bottom:72px}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top__in">
+    <a class="brand" href="#top">Epil Dream</a>
+    <nav><a href="#ceny">Цены</a><a href="#foto">Фото</a><a href="#otzyvy">Отзывы</a><a href="#kontakty">Контакты</a></nav>
+    <a class="btn btn--sm" href="#zayavka">Записаться на консультацию</a>
+  </div>
+</header>
+
+
+<section class="hero" id="top">
+  <img class="hero__bg" src="https://i2.photo.2gis.com/photo-gallery/6f83a85f-91e3-4dfa-a049-39d351e1ccc3_1920x.jpg" alt="" fetchpriority="high" decoding="async">
+  <div class="wrap hero__in">
+    <h1>Epil Dream</h1>
+    <p class="hero__sub">Студия электроэпиляции · проспект Ленина, 56Б</p>
+    <div class="facts"><span class="fact"><span class="star">★</span> <b>4.9</b> · 33 отзывов в 2ГИС</span><span class="fact">🕒 Пн–Вс 09:00–21:00</span><span class="fact">📍 проспект Ленина, 56Б</span></div>
+    <div class="hero__cta">
+      <a class="btn" href="#zayavka">Записаться на консультацию</a>
+      <a class="btn btn--ghost" href="tel:+79094277799">Позвонить</a>
+    </div>
+  </div>
+</section>
+
+<section id="ceny">
+  <div class="wrap">
+    <div class="eyebrow">Прайс</div>
+    <h2>Услуги и цены</h2>
+    <p class="lead">Всё видно сразу, без звонка «а сколько стоит». Именно это человек ищет первым, когда выбирает между вами и соседями.</p>
+    <div style="margin-top:34px"><div class="price__group"><div class="price__cat">Эпиляция</div><div class="price__row">
+        <div><div class="price__name">Женская электроэпиляция голени</div><div class="price__desc">Устали от постоянного бритья и нежелательных волос на голенях? Женская электроэпиляция голени в салоне Epil Dream в Ростове-на-Дону — это эффективное и безопасное решение, которое </div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">900 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Женская электроэпиляция подъем ног</div><div class="price__desc">Ищете эффективный и безопасный способ удаления нежелательных волос на подъеме ног? Женская электроэпиляция подъем ног в Ростове-на-Дону – это лучший выбор для тех, кто ценит качест</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">900 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Женская электроэпиляция бедер</div><div class="price__desc">Женская электроэпиляция бедер в Ростове-на-Дону стала доступной и эффективной процедурой в центре Epil Dream. Если вы устали от постоянного бритья и надоевших раздражений, наша инн</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">1 800 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Электроэпиляция женская бедер полностью</div><div class="price__desc">Ищете эффективное и надежное решение для удаления нежелательных волос на бедрах? В центре электроэпиляции Epil Dream в Ростове-на-Дону вы можете пройти процедуру электроэпиляции бе</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">1 800 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Женская электроэпиляция коленей</div><div class="price__desc">Хотите навсегда забыть о нежелательных волосках на коленях? В центре красоты Epil Dream в Ростове-на-Дону представлена профессиональная женская электроэпиляция коленей — надежное и</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">900 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Женская электроэпиляция ног</div><div class="price__desc">Ищете лучший салон для женской электроэпиляции ног в Ростове-на-Дону? В центре города, на проспекте Ленина, 56Б, клиника Epil Dream предлагает быструю, профессиональную и безопасну</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">3 600 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Женская электроэпиляция пальцев ног</div><div class="price__desc">Ищете эффективное решение для удаления нежелательных волос на пальцах ног? Женская электроэпиляция пальцев ног — это быстрый и качественный метод, который гарантирует гладкую кожу </div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">900 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Женская электроэпиляция межъягодичной зоны</div><div class="price__desc">Женская электроэпиляция межъягодичной зоны в Ростове-на-Дону — идеальное решение для тех, кто хочет навсегда забыть о нежелательных волосках в деликатной зоне. В салоне Epil Dream </div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">1 800 ₽</span>
+      </div></div><div class="price__group"><div class="price__cat">Мужская электроэпиляция</div><div class="price__row">
+        <div><div class="price__name">Мужская электроэпиляция голеней</div><div class="price__desc">Устали от ежедневного бритья и неудобств при уходе за волосами на ногах? В салоне Epil Dream в Ростове-на-Дону на проспекте Ленина, 56Б представлены лучшие услуги мужской электроэп</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">1 200 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Мужская электроэпиляция бедер</div><div class="price__desc">Устали от надоедливых волос на бедрах и ищете эффективное решение? Мужская электроэпиляция бедер в клинике Epil Dream в Ростове-на-Дону — технология, которая навсегда избавит вас о</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">1 200 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Электроэпиляция мужская бедер полностью</div><div class="price__desc">Мужская электроэпиляция бедер — современное решение для тех, кто хочет навсегда забыть о нежелательных волосах в этой зоне. В центре Epil Dream, расположенном в Ростове-на-Дону по </div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">2 400 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Мужская электроэпиляция коленей</div><div class="price__desc">Мужская электроэпиляция коленей – идеальное решение для тех, кто хочет избавиться от нежелательных волос быстро и эффективно. В салоне Epil Dream, расположенном в Ростов-на-Дону на</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">1 200 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Мужская электроэпиляция ног полностью</div><div class="price__desc">Мужская электроэпиляция ног полностью — это эффективный способ избавиться от нежелательных волос навсегда. В Ростове-на-Дону, на проспекте Ленина, 56Б, салон Epil Dream предлагает </div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">2 400 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Мужская электроэпиляция ног</div><div class="price__desc">Ищете лучший салон для мужской электроэпиляции ног в Ростове-на-Дону? Epil Dream приглашает вас на качественную и безопасную процедуру по адресу проспект Ленина, 56Б. Быстрая элект</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">1 200 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Электроэпиляция межъягодичной зоны у мужчин</div><div class="price__desc">Ищете качественную и безопасную электроэпиляцию межъягодичной зоны у мужчин в Ростове-на-Дону? В салоне Epil Dream, расположенном на проспекте Ленина, 56Б, мы предлагаем профессион</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">7 200 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Электроэпиляция ягодиц для мужчин</div><div class="price__desc">Ищете эффективный способ избавиться от нежелательных волос на ягодицах? Электроэпиляция ягодиц для мужчин в салоне Epil Dream в Ростове-на-Дону — это надежное и проверенное решение</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">7 200 ₽</span>
+      </div></div></div>
+    <p class="price__note">Цены из вашего прайса в 2ГИС. Обновлено 20 января 2026.</p>
+  </div>
+</section>
+
+
+<section id="foto">
+  <div class="wrap">
+    <div class="eyebrow">Фотографии</div>
+    <h2>Как у нас</h2>
+    <div class="gal" style="margin-top:28px"><a href="https://i0.photo.2gis.com/photo-gallery/19c28b2a-9cc2-497d-adc6-dd565af4e49c_1920x.jpg" target="_blank" rel="noopener"><img src="https://i0.photo.2gis.com/photo-gallery/19c28b2a-9cc2-497d-adc6-dd565af4e49c_1920x.jpg" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i0.photo.2gis.com/photo-gallery/edde9873-17e7-4ae9-95ae-77993917c48b_1920x.jpg" target="_blank" rel="noopener"><img src="https://i0.photo.2gis.com/photo-gallery/edde9873-17e7-4ae9-95ae-77993917c48b_1920x.jpg" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i5.photo.2gis.com/photo-gallery/c079bcc7-ffb9-40a1-a8e2-21d17e588c58_1920x.jpg" target="_blank" rel="noopener"><img src="https://i5.photo.2gis.com/photo-gallery/c079bcc7-ffb9-40a1-a8e2-21d17e588c58_1920x.jpg" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i5.photo.2gis.com/photo-gallery/8b2ac0ba-194f-4903-8d65-764157f5d645_1920x.jpg" target="_blank" rel="noopener"><img src="https://i5.photo.2gis.com/photo-gallery/8b2ac0ba-194f-4903-8d65-764157f5d645_1920x.jpg" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i7.photo.2gis.com/photo-gallery/e2eee3c7-9b2f-42a0-9164-c1a8828ecb39_1920x.jpg" target="_blank" rel="noopener"><img src="https://i7.photo.2gis.com/photo-gallery/e2eee3c7-9b2f-42a0-9164-c1a8828ecb39_1920x.jpg" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i1.photo.2gis.com/photo-gallery/92b045d2-e691-4ffb-aad1-928e7df69660_1920x.jpg" target="_blank" rel="noopener"><img src="https://i1.photo.2gis.com/photo-gallery/92b045d2-e691-4ffb-aad1-928e7df69660_1920x.jpg" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i8.photo.2gis.com/photo-gallery/02d24628-9673-4e21-ba54-cd9c7159d4cb_1920x.jpg" target="_blank" rel="noopener"><img src="https://i8.photo.2gis.com/photo-gallery/02d24628-9673-4e21-ba54-cd9c7159d4cb_1920x.jpg" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i8.photo.2gis.com/photo-gallery/a2d77b2f-eea2-493e-820d-98aaab272ac7_1920x.jpg" target="_blank" rel="noopener"><img src="https://i8.photo.2gis.com/photo-gallery/a2d77b2f-eea2-493e-820d-98aaab272ac7_1920x.jpg" alt="Мы в работе" loading="lazy" decoding="async"></a></div>
+    <p class="price__note">Фотографии из вашей карточки 2ГИС. <a href="https://2gis.ru/rostov/firm/70000001047644228" target="_blank" rel="noopener">Открыть карточку</a></p>
+  </div>
+</section>
+
+<section id="otzyvy">
+  <div class="wrap">
+    <div class="eyebrow">Отзывы</div>
+    <h2>Что о нас пишут</h2>
+    <p class="lead">Рейтинг 4.9 в 2ГИС, 33 отзывов. На сайте они работают на вас, а не лежат в чужом приложении.</p>
+    <div class="rev" style="margin-top:28px"><article class="card">
+      <div class="rev__stars">★★★★★</div>
+      <p class="rev__text">Делала впервые электро у мастера Лины. Быстро, безболезненно, перед процедурой все объяснили. Все понравилось!</p>
+      <div class="rev__who">Анна Иванова · 17.04.2026</div>
+    </article><article class="card">
+      <div class="rev__stars">★★★★★</div>
+      <p class="rev__text">В этом салоне я проходила электроэпиляцию и осталась довольна качеством услуги. Елена, мой постоянный мастер, проявила заботу и внимательно подошла к работе. После процедуры она подробно объяснила, как правильно ухаживать за кожей. Именно из-за Елены я продолжаю обращаться именно в эту студию.</p>
+      <div class="rev__who">Милена · 03.03.2026</div>
+    </article><article class="card">
+      <div class="rev__stars">★★★★★</div>
+      <p class="rev__text">Салон чистый и уютный. Высокая квалификация, оперативность - всё было сделано очень быстро. Мастер общительный и доброжелательный. Всё понравилось, особенно электроэпиляция.</p>
+      <div class="rev__who">Инна · 02.03.2026</div>
+    </article><article class="card">
+      <div class="rev__stars">★★★★★</div>
+      <p class="rev__text">Посещаю эту студию уже очень долго, впервые пришла сюда по совету подружки. На этот раз записывалась к мастеру Елене и осталась полностью довольна результатом. Елена приятный человек и истинный профессионал своего дела, она лучший специалист по электроэпиляции из всех, с кем мне приходилось работать</p>
+      <div class="rev__who">Анастасия · 05.02.2026</div>
+    </article><article class="card">
+      <div class="rev__stars">★★★★★</div>
+      <p class="rev__text">Делала электроэпиляцию у мастера Елены Бойко, которая вела себя очень дружелюбно и вежливо. Качество услуг и профессионализм специалиста на привычно хорошем уровне, претензий не возникло.</p>
+      <div class="rev__who">Василиса · 04.02.2026</div>
+    </article><article class="card">
+      <div class="rev__stars">★★★★★</div>
+      <p class="rev__text">Я уже не первый раз посещаю студию Epil Dream и доверяю свою эпиляцию мастеру Лене Бойко. Она работает очень бережно и внимательно. Процедура всегда проходит с соблюдением всех гигиенических норм. Лена отлично объясняет, как ухаживать за кожей после сеанса, помогает подобрать подходящие средства. Я </p>
+      <div class="rev__who">Диана · 03.02.2026</div>
+    </article></div>
+    <p class="price__note">Отзывы из 2ГИС. <a href="https://2gis.ru/rostov/firm/70000001047644228" target="_blank" rel="noopener">Читать все</a></p>
+  </div>
+</section>
+
+<section id="kontakty">
+  <div class="wrap">
+    <div class="eyebrow">Контакты</div>
+    <h2>Где нас найти</h2>
+    <div class="contact" style="margin-top:28px">
+      <dl class="dl"><dt>Адрес</dt><dd>проспект Ленина, 56Б</dd><dt>Часы работы</dt><dd>Пн–Вс 09:00–21:00 · без выходных</dd><dt>Телефон</dt><dd><a href="tel:+79094277799">+7 909 427-77-99</a></dd><dt>Написать</dt><dd><a href="https://t.me/epi_dream" target="_blank" rel="noopener">Telegram</a> · <a href="https://wa.me/79094277799?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%0A%0A%D0%9F%D0%B8%D1%88%D1%83%20%D0%B8%D0%B7%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%202%D0%93%D0%98%D0%A1.%0A%0A" target="_blank" rel="noopener">WhatsApp</a></dd><dt>Почта</dt><dd><a href="mailto:rusanovavera123@gmail.com">rusanovavera123@gmail.com</a></dd></dl>
+      <iframe class="map" src="https://widgets.2gis.com/widget?type=firmsonmap&amp;options=%7B%22pos%22%3A%7B%22lat%22%3A47.250219%2C%22lon%22%3A39.718872%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22rostov%22%7D%2C%22org%22%3A%2270000001047644228%22%7D" loading="lazy" title="Карта проезда"></iframe>
+    </div>
+  </div>
+</section>
+
+<section id="zayavka">
+  <div class="wrap">
+    <div class="card" style="padding:clamp(24px,4vw,44px)">
+      <div class="eyebrow">Заявка</div>
+      <h2>Записаться на консультацию</h2>
+      <p class="lead">Оставьте номер, администратор перезвонит и подберёт время. Заявка приходит в Telegram за секунду, отвечать можно прямо оттуда.</p>
+      <form class="form" id="lead" style="margin-top:26px" novalidate>
+        <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input name="name" placeholder="Как к вам обращаться" required minlength="2" autocomplete="name">
+        <input name="contact" placeholder="Телефон или ник в Telegram" required minlength="5" autocomplete="tel">
+        <textarea name="task" placeholder="Что нужно (по желанию)"></textarea>
+        <button class="btn" type="submit">Отправить</button>
+        <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку указанных данных.</p>
+      </form>
+      <div class="form__ok" id="ok">Заявка отправлена. Спасибо, скоро свяжемся.</div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap foot__row">
+    <div>Epil Dream · проспект Ленина, 56Б</div>
+    <div><a href="tel:+79094277799" style="text-decoration:none">+7 909 427-77-99</a></div>
+  </div>
+</footer>
+
+
+<div class="demo">
+  <div class="wrap demo__in">
+    <div>
+      <b>Это демо-макет, а не ваш действующий сайт.</b> Собрал его Владимир, веб-разработчик из
+      Ростов-на-Дону, по открытым данным вашей карточки 2ГИС: фото, прайс, отзывы и часы работы — ваши.<br>Что я заметил на вашем текущем сайте: сайт из карточки 2ГИС не открывается.
+    </div>
+    <a class="btn btn--sm btn--ghost" style="border-color:currentColor;color:inherit"
+       href="https://t.me/vovuchoooo" target="_blank" rel="noopener">Написать @vovuchoooo</a>
+  </div>
+</div>
+
+<div class="bar">
+  <a class="btn" href="#zayavka">Записаться на консультацию</a>
+  <a class="btn btn--ghost" href="tel:+79094277799">Позвонить</a>
+</div>
+
+<script>
+document.getElementById('lead').addEventListener('submit', async function (ev) {
+  ev.preventDefault();
+  var f = ev.target, b = f.querySelector('button');
+  var body = {
+    company: f.company.value, name: f.name.value,
+    contact: f.contact.value, task: f.task.value
+  };
+  if (body.name.trim().length < 2 || body.contact.trim().length < 5) {
+    f.reportValidity(); return;
+  }
+  b.disabled = true; b.textContent = 'Отправляю…';
+  try {
+    var r = await fetch('https://lead-form.tripolev04.workers.dev', {
+      method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body)
+    });
+    if (!r.ok) throw 0;
+    f.style.display = 'none';
+    document.getElementById('ok').style.display = 'block';
+  } catch (err) {
+    b.disabled = false; b.textContent = 'Отправить ещё раз';
+  }
+});
+</script>
+</body>
+</html>

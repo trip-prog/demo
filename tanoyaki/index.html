@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Танояки — Служба доставки · Светлая улица, 1Б</title>
+<meta name="description" content="Танояки — Служба доставки · Светлая улица, 1Б. Рейтинг 5 в 2ГИС.">
+<meta name="robots" content="noindex,nofollow">
+<meta property="og:title" content="Танояки">
+<meta property="og:description" content="Танояки — Служба доставки · Светлая улица, 1Б. Рейтинг 5 в 2ГИС.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%234f8f3a'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#fbf9f3;--surf:#ffffff;--line:#e8e3d4;--ink:#242a1c;
+  --mute:#6e7461;--acc:#4f8f3a;--acc-ink:#ffffff;
+  --shadow:0 1px 2px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.07);
+  --r:14px;--wrap:1120px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:400 17px/1.6 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  -webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:'Manrope','Inter',sans-serif;line-height:1.14;margin:0;
+  letter-spacing:-.02em}
+h1{font-size:clamp(34px,7vw,62px);}
+h2{font-size:clamp(26px,4.4vw,40px)}
+h3{font-size:19px}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);
+  font-weight:600;margin-bottom:12px}
+.lead{color:var(--mute);font-size:17px;max-width:62ch;margin-top:14px}
+
+.top{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--bg) 88%,transparent);
+  backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top__in{display:flex;align-items:center;gap:18px;height:64px}
+.brand{font-family:'Manrope',sans-serif;font-weight:700;font-size:20px;
+  text-decoration:none;letter-spacing:.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.top nav{margin-left:auto;display:none;gap:26px}
+.top nav a{text-decoration:none;color:var(--mute);font-size:15px;transition:color .2s}
+.top nav a:hover{color:var(--ink)}
+.top .btn{margin-left:auto}
+@media(min-width:900px){.top nav{display:flex}.top .btn{margin-left:0}}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  padding:14px 24px;border-radius:999px;border:1px solid transparent;cursor:pointer;
+  font:600 15px/1 'Inter',sans-serif;text-decoration:none;transition:transform .15s,opacity .2s;
+  background:var(--acc);color:var(--acc-ink)}
+.btn:hover{transform:translateY(-1px);opacity:.92}
+.btn--ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn--sm{padding:11px 18px;font-size:14px}
+
+.hero{position:relative;min-height:min(88vh,720px);display:flex;align-items:flex-end;
+  padding:96px 0 56px;overflow:hidden;isolation:isolate}
+.hero__bg{position:absolute;inset:0;z-index:-2;object-fit:cover;width:100%;height:100%}
+.hero::after{content:'';position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(16,20,28,.52) 0%,rgba(8,9,12,.55) 45%,rgba(6,7,10,.9) 100%)}
+.hero--plain::after{background:radial-gradient(120% 90% at 15% 0%,
+  color-mix(in srgb,var(--acc) 26%,var(--bg)) 0%,var(--bg) 70%)}
+.hero__in{position:relative;color:#fff}
+.hero--plain .hero__in{color:var(--ink)}
+.hero h1{max-width:16ch}
+.hero__sub{margin-top:16px;font-size:clamp(16px,2.2vw,20px);opacity:.9;max-width:44ch}
+.hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero--plain .hero__cta .btn--ghost{border-color:var(--line)}
+.hero__cta .btn--ghost{color:#fff;border-color:rgba(255,255,255,.42)}
+
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.fact{display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:999px;
+  background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.2);
+  font-size:14px;backdrop-filter:blur(6px)}
+.hero--plain .fact{background:var(--surf);border-color:var(--line);color:var(--ink)}
+.fact b{font-weight:600}
+.star{color:#ffc247}
+
+.grid{display:grid;gap:16px}
+@media(min-width:700px){.cols-2{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.cols-3{grid-template-columns:repeat(3,1fr)}}
+
+.card{background:var(--surf);border:1px solid var(--line);border-radius:var(--r);padding:22px;
+  box-shadow:var(--shadow)}
+
+.price__group + .price__group{margin-top:34px}
+.price__cat{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);
+  margin-bottom:14px;font-weight:600}
+.price__row{display:flex;align-items:baseline;gap:14px;padding:15px 0;border-bottom:1px dashed var(--line)}
+.price__row:last-child{border-bottom:0}
+.price__name{font-weight:600}
+.price__desc{color:var(--mute);font-size:14.5px;margin-top:4px;max-width:70ch}
+.price__dots{flex:1;border-bottom:1px dotted var(--line);transform:translateY(-4px);min-width:24px}
+.price__val{white-space:nowrap;font-weight:700;color:var(--acc);font-size:18px}
+.price__note{color:var(--mute);font-size:14px;margin-top:24px}
+
+.tags{display:flex;flex-wrap:wrap;gap:9px}
+.tag{padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surf);
+  font-size:14.5px}
+
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media(min-width:760px){.gal{grid-template-columns:repeat(4,1fr)}
+  .gal a:first-child{grid-column:span 2;grid-row:span 2}}
+.gal a{display:block;border-radius:12px;overflow:hidden;background:var(--line);aspect-ratio:1/1}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gal a:hover img{transform:scale(1.05)}
+
+.rev{display:grid;gap:16px}
+@media(min-width:820px){.rev{grid-template-columns:repeat(3,1fr)}}
+.rev__stars{color:#ffc247;letter-spacing:2px;font-size:15px}
+.rev__text{margin-top:12px;font-size:15.5px;line-height:1.62}
+.rev__who{margin-top:16px;font-size:14px;color:var(--mute)}
+
+.contact{display:grid;gap:22px}
+@media(min-width:900px){.contact{grid-template-columns:1fr 1.15fr;align-items:start}}
+.dl{display:grid;gap:18px;margin:0}
+.dl dt{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.dl dd{margin:5px 0 0;font-size:17px}
+.dl a{text-decoration:none;border-bottom:1px solid var(--line)}
+.map{border:0;width:100%;height:340px;border-radius:var(--r);border:1px solid var(--line)}
+
+.form{display:grid;gap:13px}
+.form input,.form textarea{width:100%;padding:14px 16px;border-radius:11px;background:var(--bg);
+  border:1px solid var(--line);color:var(--ink);font:400 16px/1.5 'Inter',sans-serif}
+.form input:focus,.form textarea:focus{outline:2px solid var(--acc);outline-offset:1px;border-color:transparent}
+.form textarea{min-height:96px;resize:vertical}
+.form .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.form__note{font-size:13px;color:var(--mute)}
+.form__ok{display:none;padding:14px 16px;border-radius:11px;background:color-mix(in srgb,var(--acc) 14%,transparent);
+  border:1px solid var(--acc);font-size:15px}
+
+.foot{border-top:1px solid var(--line);padding:34px 0;color:var(--mute);font-size:14.5px}
+.foot__row{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;justify-content:space-between}
+
+.demo{background:var(--acc);color:var(--acc-ink);font-size:14.5px;line-height:1.55}
+.demo__in{padding:20px;display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;justify-content:space-between}
+.demo a{color:inherit;font-weight:700}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;gap:10px;padding:10px 14px;
+  background:color-mix(in srgb,var(--bg) 94%,transparent);border-top:1px solid var(--line);
+  backdrop-filter:blur(10px)}
+.bar .btn{flex:1}
+@media(min-width:900px){.bar{display:none}}
+@media(max-width:899px){body{padding-bottom:72px}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top__in">
+    <a class="brand" href="#top">Танояки</a>
+    <nav><a href="#ceny">Цены</a><a href="#foto">Фото</a><a href="#otzyvy">Отзывы</a><a href="#kontakty">Контакты</a></nav>
+    <a class="btn btn--sm" href="#zayavka">Оформить заказ</a>
+  </div>
+</header>
+
+
+<section class="hero" id="top">
+  <img class="hero__bg" src="https://i1.photo.2gis.com/photo-gallery/02b93086-e4d0-4cc4-ac9b-d6cf45828868_1920x.jpg" alt="" fetchpriority="high" decoding="async">
+  <div class="wrap hero__in">
+    <h1>Танояки</h1>
+    <p class="hero__sub">Служба доставки · Светлая улица, 1Б</p>
+    <div class="facts"><span class="fact"><span class="star">★</span> <b>5</b> · 14 отзывов в 2ГИС</span><span class="fact">🕒 Пн–Вс 10:00–22:00</span><span class="fact">📍 Светлая улица, 1Б</span></div>
+    <div class="hero__cta">
+      <a class="btn" href="#zayavka">Оформить заказ</a>
+      <a class="btn btn--ghost" href="tel:+79612977297">Позвонить</a>
+    </div>
+  </div>
+</section>
+
+<section id="ceny">
+  <div class="wrap">
+    <div class="eyebrow">Прайс</div>
+    <h2>Услуги и цены</h2>
+    <p class="lead">Всё видно сразу, без звонка «а сколько стоит». Именно это человек ищет первым, когда выбирает между вами и соседями.</p>
+    <div style="margin-top:34px"><div class="price__group"><div class="price__cat">Авторские роллы</div><div class="price__row">
+        <div><div class="price__name">Авокадо Sweet</div><div class="price__desc">Аппетитная креветка, завернутая в нежный рис, сверху покрыта нежным авокадо и сочной, ароматной клубникой! Этот ролл – настоящий шедевр в мире роллов! Закажите и насладитесь этим г</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">690 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Дракон</div><div class="price__desc">Это авторский ролл для ценителей японской кухни. В составе — рис, нори, творожный сыр, креветка, такуан, угорь. Особенности роллу добавляют кунжутный и унаги соусы, украшено нитями</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">880 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Дуэт</div><div class="price__desc">Попробуйте авторский ролл. Нежный рис и хрустящие листья нори в сочетании с творожным сыром, авокадо и огурцом. Креветка и тайское манго добавляют роллу изюминку, а соус манго-чили</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">710 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Королевский ролл</div><div class="price__desc">Ролл «Королевский» - это идеальный баланс! Хрустящий краб криспи, нежный опаленный лосось и пикантный соус создают неповторимую симфонию вкуса! Попробуйте и убедитесь сами</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">810 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Лосось Нуар</div><div class="price__desc">Роскошное сочетание копченого творожного сыра, опаленного лосося, икры палтуса и соуса терияки для настоящих гурманов. Позвольте себе насладиться этим изысканным роллом, полным бог</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">710 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Ролл ореховый</div><div class="price__desc">Рис , нори , огурец, авокадо , лосось , соус терияки , соус кунжутный , арахис .</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">750 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Ролл с томаго и креветкой</div><div class="price__desc">Рис, нори, авокадо, томаго, креветка, Тобика, соус унаги.</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">670 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Ролл Танояки</div><div class="price__desc">Рис, нори, сыр творожный, огурец , капуста пекинская, шапка ( майонез сыр творожный сливки ) осьминог, соус унаги , микро зелень .</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">790 ₽</span>
+      </div></div><div class="price__group"><div class="price__cat">Закуски</div><div class="price__row">
+        <div><div class="price__name">Сырные палочки</div><div class="price__desc">Хрустящие снаружи и тянущиеся внутри. Идеальная закуска к пиву или вину (5 шт.)</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">250 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Сырные шарики</div><div class="price__desc">Хрустящие снаружи и тягучие внутри - эти шарики понравятся любителям сыра. Золотистая корочка из панировочных сухарей скрывает нежную моцареллу. Закуска отлично сочетается с разным</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">250 ₽</span>
+      </div></div><div class="price__group"><div class="price__cat">Холодные роллы</div><div class="price__row">
+        <div><div class="price__name">Бонито</div><div class="price__desc">Бонито — это восхитительный ролл. Нежный творожный сыр, свежий огурец, филе лосося и рис, завернутые в лист нори и посыпанные стружкой тунца</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">510 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Калифорния с креветкой</div><div class="price__desc">Этот ролл — настоящий шедевр. Нежный и одновременно яркий вкус, который создаёт гармоничное сочетание креветок, авокадо и огурца. Икра Тобико образует идеальную композицию вкуса и </div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">610 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Калифорния с лососем</div><div class="price__desc">Этот ролл — настоящий шедевр. Нежный и одновременно яркий вкус, который создаёт гармоничное сочетание лосося, авокадо и огурца. Икра Тобико образует идеальную композицию вкуса и те</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">610 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Филадельфия лосось</div><div class="price__desc">Попробуйте нашу Филадельфия лосось – изысканный выбор. Нежный вкус блюда создаётся сочетанием риса, нори, сыра творожного, авокадо и филе лосося</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">640 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Филадельфия манго-лосось</div><div class="price__desc">Нежная Филадельфия, сочный лосось и сладкий манго - идеальное сочетание вкусов в этом ролле! Насладитесь тропической свежестью и кремовой текстурой в каждом кусочке.</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">710 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Филадельфия угорь</div><div class="price__desc">Этот ролл обладает гармоничным вкусом, в котором нежность сливочного сыра и риса уравновешивается ярким характером копчёного угря. Пикантные нотки маринованного такуана добавляют б</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">610 ₽</span>
+      </div></div><div class="price__group"><div class="price__cat">Суши и гунканы</div><div class="price__row">
+        <div><div class="price__name">Гункан с креветкой</div><div class="price__desc">Если вы любите морепродукты и острые блюда, то вам точно стоит попробовать этот вариант суши. В составе – рис, креветка, соус спайси, нити чили и икра Тобико. А лист нори придаёт б</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">200 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Гункан с лососем</div><div class="price__desc">Если вы любите морепродукты и острые блюда, то вам точно стоит попробовать этот вариант суши. В составе: рис, лосось, соус спайси, нити чили и икра Тобико, а лист нори придаёт блюд</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">200 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Гункан с угрем</div><div class="price__desc">Если вы любите морепродукты и острые блюда, то вам точно стоит попробовать этот вариант суши. В составе: рис, угорь, соус спайси, нити чили и икра Тобико. А лист нори придаёт блюду</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">200 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Маки креветка</div><div class="price__desc">Маки Креветка — это классическое блюдо из категории суши. В его составе: рис, нори и креветка. Попробуйте это яркое сочетание вкусов и оцените гармонию ингредиентов</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">290 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Маки лосось</div><div class="price__desc">Маки Лосось — это классическое блюдо из категории суши. В его составе: рис, нори и лосось. Попробуйте это яркое сочетание вкусов и оцените гармонию ингредиентов</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">290 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Маки огурец</div><div class="price__desc">Маки Огурец — это классическое японское блюдо из категории суши. В его составе: специально приготовленный рис, прессованные водоросли нори и свежий огурец</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">210 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Маки помидор</div><div class="price__desc">Маки Помидор — это классическое японское блюдо из категории суши. В его составе: специально приготовленный рис, прессованные водоросли нори и свежий помидор</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">210 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Маки такуан</div><div class="price__desc">Маки Помидор — это классическое японское блюдо из категории суши. В его составе: специально приготовленный рис, прессованные водоросли нори и свежий помидор</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">210 ₽</span>
+      </div></div><div class="price__group"><div class="price__cat">Сеты и комбо</div><div class="price__row">
+        <div><div class="price__name">Жареный Сет</div><div class="price__desc">Жаренный Угорь, Жаренный Лосось, Жаренная Креветка</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">1 590 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Сет Авторский</div><div class="price__desc">Филадельфия манго-лосось, Эби Gold, Королевский ролл, Дракон</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">2 990 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Сет Запеченный</div><div class="price__desc">Запеченный ролл с угрем, Запеченный ролл с креветкой, Запеченный ролл с лососем</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">1 690 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Сет Калифорнийский</div><div class="price__desc">Калифорния с лососем, Калифорния с креветкой, гункан с креветкой, гункан с лососем, гункан с угрем</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">1 740 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Сет На двоих</div><div class="price__desc">Бонито, пицца Пеперони (20х30 см), Калифорния с креветкой</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">1 630 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Сет Семейный</div><div class="price__desc">Запеченный ролл с лососем, Запеченный ролл с угрем, Пицца с курицей и грибами (20х30 см), Пицца Барбекю (20х30 см)</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">2 270 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Сет Танояки</div><div class="price__desc">Филадельфия Лосось, Бонито, Запеченный ролл с лососем, Темпура Угорь, ролл Том ям</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">2 850 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Сет Филомания</div><div class="price__desc">Филадельфия Лосось, Филадельфия Угорь, Дуэт</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">1 890 ₽</span>
+      </div></div><div class="price__group"><div class="price__cat">Жареные роллы</div><div class="price__row">
+        <div><div class="price__name">Жареная креветка</div><div class="price__desc">&quot;Жареная креветка&quot; – это кляр, креветка, авокадо, сыр, манго-чили и спайси соус в одном ролле! Попробуйте это сочное и пикантное удовольствие.</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">560 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Жаренный угорь</div><div class="price__desc">&quot;Жареный угорь&quot; – это хрустящий кляр, тающее авокадо, нежный сыр и ароматный угорь под капелькой соуса. Идеальный ролл для тех, кто ценит вкус !</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">560 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Жареный лосось</div><div class="price__desc">Насладитесь простотой и вкусом ролла &quot;Жареный лосось&quot;: сочетание классических ингредиентов, обжаренное в хрустящем кляре, приобретает особую изюминку благодаря капельке спайси соус</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">570 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Темпура креветка</div><div class="price__desc">Это блюдо представляет собой ролл, обжаренный в кляре. Он имеет нежный вкус и приятную текстуру. В составе ролла: рис, нори, креветка, авокадо и творожный сыр. Дополняет вкус соус </div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">530 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Темпура лосось</div><div class="price__desc">Это блюдо представляет собой ролл, приготовленный по технологии темпура. Он имеет нежный вкус и аппетитный вид. В составе ролла — мягкий рис, водоросли нори, кусочки нежного филе л</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">530 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Темпура угорь</div><div class="price__desc">Ищете, чем порадовать себя и удивить друзей? Горячие роллы — отличный выбор для компании гурманов. Нежный рис, водоросли нори, угорь, авокадо, творожный сыр, а особый вкус блюду пр</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">540 ₽</span>
+      </div></div></div>
+    <p class="price__note">Цены из вашего прайса в 2ГИС. Обновлено 13 марта 2026.</p>
+  </div>
+</section>
+
+
+<section id="foto">
+  <div class="wrap">
+    <div class="eyebrow">Фотографии</div>
+    <h2>Как у нас</h2>
+    <div class="gal" style="margin-top:28px"><a href="https://i9.photo.2gis.com/photo-gallery/29a06e2b-5081-471d-a2bf-9331a7c9c397_1920x.jpg" target="_blank" rel="noopener"><img src="https://i9.photo.2gis.com/photo-gallery/29a06e2b-5081-471d-a2bf-9331a7c9c397_1920x.jpg" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i9.photo.2gis.com/photo-gallery/0a63c39f-3a8b-44e5-a0cc-bb31b7db18ae_1920x.jpg" target="_blank" rel="noopener"><img src="https://i9.photo.2gis.com/photo-gallery/0a63c39f-3a8b-44e5-a0cc-bb31b7db18ae_1920x.jpg" alt="Мы в работе" loading="lazy" decoding="async"></a><a href="https://i1.photo.2gis.com/photo-gallery/0c1cb70a-b9af-45a4-b468-4736fd53f5a3_1920x.jpg" target="_blank" rel="noopener"><img src="https://i1.photo.2gis.com/photo-gallery/0c1cb70a-b9af-45a4-b468-4736fd53f5a3_1920x.jpg" alt="Мы в работе" loading="lazy" decoding="async"></a><a href="https://i5.photo.2gis.com/photo-gallery/41500295-4975-46f2-92fc-f52700736b21_1920x.jpg" target="_blank" rel="noopener"><img src="https://i5.photo.2gis.com/photo-gallery/41500295-4975-46f2-92fc-f52700736b21_1920x.jpg" alt="Мы в работе" loading="lazy" decoding="async"></a><a href="https://i7.photo.2gis.com/photo-gallery/cdb9fc78-120d-4de0-b796-76a27d2d81b6_1920x.jpg" target="_blank" rel="noopener"><img src="https://i7.photo.2gis.com/photo-gallery/cdb9fc78-120d-4de0-b796-76a27d2d81b6_1920x.jpg" alt="Мы в работе" loading="lazy" decoding="async"></a><a href="https://i4.photo.2gis.com/photo-gallery/4900740d-e426-4a0b-9422-fa3c1b9828ad_1920x.jpg" target="_blank" rel="noopener"><img src="https://i4.photo.2gis.com/photo-gallery/4900740d-e426-4a0b-9422-fa3c1b9828ad_1920x.jpg" alt="Мы в работе" loading="lazy" decoding="async"></a><a href="https://i9.photo.2gis.com/photo-gallery/eec28d8c-c9a6-4a6e-8262-b2e374278f70_1920x.jpg" target="_blank" rel="noopener"><img src="https://i9.photo.2gis.com/photo-gallery/eec28d8c-c9a6-4a6e-8262-b2e374278f70_1920x.jpg" alt="Мы в работе" loading="lazy" decoding="async"></a><a href="https://i4.photo.2gis.com/photo-gallery/b869903d-a3cf-4a99-bdc0-45ced3809d3a_1920x.jpg" target="_blank" rel="noopener"><img src="https://i4.photo.2gis.com/photo-gallery/b869903d-a3cf-4a99-bdc0-45ced3809d3a_1920x.jpg" alt="Мы в работе" loading="lazy" decoding="async"></a></div>
+    <p class="price__note">Фотографии из вашей карточки 2ГИС. <a href="https://2gis.ru/rostov/firm/70000001099015793" target="_blank" rel="noopener">Открыть карточку</a></p>
+  </div>
+</section>
+
+<section id="otzyvy">
+  <div class="wrap">
+    <div class="eyebrow">Отзывы</div>
+    <h2>Что о нас пишут</h2>
+    <p class="lead">Рейтинг 5 в 2ГИС, 14 отзывов. На сайте они работают на вас, а не лежат в чужом приложении.</p>
+    <div class="rev" style="margin-top:28px"><article class="card">
+      <div class="rev__stars">★★★★★</div>
+      <p class="rev__text">Очень вкусненько! Большие, свежие порции. Доброжелательные сотрудники. Брали как самовывозом так и доставкой. Всё на уровне! Так держать!</p>
+      <div class="rev__who">Катерина Я · 27.06.2026</div>
+    </article><article class="card">
+      <div class="rev__stars">★★★★★</div>
+      <p class="rev__text">Заказывали пиццу и роллы. Понравилось. Вкусно.</p>
+      <div class="rev__who">Галина Снежко · 04.09.2025</div>
+    </article><article class="card">
+      <div class="rev__stars">★★★★★</div>
+      <p class="rev__text">Это праздник для животика! Можно сказать, гастрономический экстаз! Эти роллы - лучшее, что пробовали. Пицца - это же мозг отключается! Попробовали новинки. БОЖЕСТВЕННО!</p>
+      <div class="rev__who">Городской житель · 14.02.2026</div>
+    </article><article class="card">
+      <div class="rev__stars">★★★★★</div>
+      <p class="rev__text">Все очень понравилось! Роллы свежие, очень вкусные. Спасибо</p>
+      <div class="rev__who">Екатерина Конькова · 02.06.2026</div>
+    </article><article class="card">
+      <div class="rev__stars">★★★★★</div>
+      <p class="rev__text">Просто супер! Постоянно тут заказываю, роллы всегда свежие, красивые, вкусные! Спасибо вам💕</p>
+      <div class="rev__who">Екатерина К. · 05.09.2025</div>
+    </article><article class="card">
+      <div class="rev__stars">★★★★★</div>
+      <p class="rev__text">Очень вкусные роллы. Нам тут такой доставки не хватало) Цена-качество ♥️</p>
+      <div class="rev__who">Инна Алтухова · 18.07.2025</div>
+    </article></div>
+    <p class="price__note">Отзывы из 2ГИС. <a href="https://2gis.ru/rostov/firm/70000001099015793" target="_blank" rel="noopener">Читать все</a></p>
+  </div>
+</section>
+
+<section id="kontakty">
+  <div class="wrap">
+    <div class="eyebrow">Контакты</div>
+    <h2>Где нас найти</h2>
+    <div class="contact" style="margin-top:28px">
+      <dl class="dl"><dt>Адрес</dt><dd>Светлая улица, 1Б</dd><dt>Часы работы</dt><dd>Пн–Вс 10:00–22:00 · без выходных</dd><dt>Телефон</dt><dd><a href="tel:+79612977297">+7 961 297-72-97</a></dd><dt>Написать</dt><dd><a href="https://t.me/+79931117888" target="_blank" rel="noopener">Telegram</a></dd><dt>Почта</dt><dd><a href="mailto:ceh9_26@mail.ru">ceh9_26@mail.ru</a></dd></dl>
+      <iframe class="map" src="https://widgets.2gis.com/widget?type=firmsonmap&amp;options=%7B%22pos%22%3A%7B%22lat%22%3A47.298456%2C%22lon%22%3A39.805469%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22rostov%22%7D%2C%22org%22%3A%2270000001099015793%22%7D" loading="lazy" title="Карта проезда"></iframe>
+    </div>
+  </div>
+</section>
+
+<section id="zayavka">
+  <div class="wrap">
+    <div class="card" style="padding:clamp(24px,4vw,44px)">
+      <div class="eyebrow">Заявка</div>
+      <h2>Оформить заказ</h2>
+      <p class="lead">Оставьте номер, перезвоним и примем заказ. Заявка приходит в Telegram за секунду, отвечать можно прямо оттуда.</p>
+      <form class="form" id="lead" style="margin-top:26px" novalidate>
+        <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input name="name" placeholder="Как к вам обращаться" required minlength="2" autocomplete="name">
+        <input name="contact" placeholder="Телефон или ник в Telegram" required minlength="5" autocomplete="tel">
+        <textarea name="task" placeholder="Что нужно (по желанию)"></textarea>
+        <button class="btn" type="submit">Отправить</button>
+        <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку указанных данных.</p>
+      </form>
+      <div class="form__ok" id="ok">Заявка отправлена. Спасибо, скоро свяжемся.</div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap foot__row">
+    <div>Танояки · Светлая улица, 1Б</div>
+    <div><a href="tel:+79612977297" style="text-decoration:none">+7 961 297-72-97</a></div>
+  </div>
+</footer>
+
+
+<div class="demo">
+  <div class="wrap demo__in">
+    <div>
+      <b>Это демо-макет, а не ваш действующий сайт.</b> Собрал его Владимир, веб-разработчик из
+      Ростов-на-Дону, по открытым данным вашей карточки 2ГИС: фото, прайс, отзывы и часы работы — ваши.<br>Что я заметил на вашем текущем сайте: нет ни формы заявки, ни кнопки в мессенджер.
+    </div>
+    <a class="btn btn--sm btn--ghost" style="border-color:currentColor;color:inherit"
+       href="https://t.me/vovuchoooo" target="_blank" rel="noopener">Написать @vovuchoooo</a>
+  </div>
+</div>
+
+<div class="bar">
+  <a class="btn" href="#zayavka">Оформить заказ</a>
+  <a class="btn btn--ghost" href="tel:+79612977297">Позвонить</a>
+</div>
+
+<script>
+document.getElementById('lead').addEventListener('submit', async function (ev) {
+  ev.preventDefault();
+  var f = ev.target, b = f.querySelector('button');
+  var body = {
+    company: f.company.value, name: f.name.value,
+    contact: f.contact.value, task: f.task.value
+  };
+  if (body.name.trim().length < 2 || body.contact.trim().length < 5) {
+    f.reportValidity(); return;
+  }
+  b.disabled = true; b.textContent = 'Отправляю…';
+  try {
+    var r = await fetch('https://lead-form.tripolev04.workers.dev', {
+      method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body)
+    });
+    if (!r.ok) throw 0;
+    f.style.display = 'none';
+    document.getElementById('ok').style.display = 'block';
+  } catch (err) {
+    b.disabled = false; b.textContent = 'Отправить ещё раз';
+  }
+});
+</script>
+</body>
+</html>

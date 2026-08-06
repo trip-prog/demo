@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Oval — Студия массажа лица · Доломановский переулок, 19</title>
+<meta name="description" content="Oval — Студия массажа лица · Доломановский переулок, 19. Рейтинг 5 в 2ГИС.">
+<meta name="robots" content="noindex,nofollow">
+<meta property="og:title" content="Oval">
+<meta property="og:description" content="Oval — Студия массажа лица · Доломановский переулок, 19. Рейтинг 5 в 2ГИС.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23b57d68'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#fbf7f4;--surf:#ffffff;--line:#ecdfd8;--ink:#2e2320;
+  --mute:#7d6a63;--acc:#b57d68;--acc-ink:#ffffff;
+  --shadow:0 1px 2px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.07);
+  --r:14px;--wrap:1120px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:400 17px/1.6 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  -webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:'Cormorant Garamond','Inter',sans-serif;line-height:1.14;margin:0;
+  letter-spacing:-.02em}
+h1{font-size:clamp(34px,7vw,62px);}
+h2{font-size:clamp(26px,4.4vw,40px)}
+h3{font-size:19px}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);
+  font-weight:600;margin-bottom:12px}
+.lead{color:var(--mute);font-size:17px;max-width:62ch;margin-top:14px}
+
+.top{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--bg) 88%,transparent);
+  backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top__in{display:flex;align-items:center;gap:18px;height:64px}
+.brand{font-family:'Cormorant Garamond',sans-serif;font-weight:700;font-size:20px;
+  text-decoration:none;letter-spacing:.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.top nav{margin-left:auto;display:none;gap:26px}
+.top nav a{text-decoration:none;color:var(--mute);font-size:15px;transition:color .2s}
+.top nav a:hover{color:var(--ink)}
+.top .btn{margin-left:auto}
+@media(min-width:900px){.top nav{display:flex}.top .btn{margin-left:0}}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  padding:14px 24px;border-radius:999px;border:1px solid transparent;cursor:pointer;
+  font:600 15px/1 'Inter',sans-serif;text-decoration:none;transition:transform .15s,opacity .2s;
+  background:var(--acc);color:var(--acc-ink)}
+.btn:hover{transform:translateY(-1px);opacity:.92}
+.btn--ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn--sm{padding:11px 18px;font-size:14px}
+
+.hero{position:relative;min-height:min(88vh,720px);display:flex;align-items:flex-end;
+  padding:96px 0 56px;overflow:hidden;isolation:isolate}
+.hero__bg{position:absolute;inset:0;z-index:-2;object-fit:cover;width:100%;height:100%}
+.hero::after{content:'';position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(16,20,28,.52) 0%,rgba(8,9,12,.55) 45%,rgba(6,7,10,.9) 100%)}
+.hero--plain::after{background:radial-gradient(120% 90% at 15% 0%,
+  color-mix(in srgb,var(--acc) 26%,var(--bg)) 0%,var(--bg) 70%)}
+.hero__in{position:relative;color:#fff}
+.hero--plain .hero__in{color:var(--ink)}
+.hero h1{max-width:16ch}
+.hero__sub{margin-top:16px;font-size:clamp(16px,2.2vw,20px);opacity:.9;max-width:44ch}
+.hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero--plain .hero__cta .btn--ghost{border-color:var(--line)}
+.hero__cta .btn--ghost{color:#fff;border-color:rgba(255,255,255,.42)}
+
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.fact{display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:999px;
+  background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.2);
+  font-size:14px;backdrop-filter:blur(6px)}
+.hero--plain .fact{background:var(--surf);border-color:var(--line);color:var(--ink)}
+.fact b{font-weight:600}
+.star{color:#ffc247}
+
+.grid{display:grid;gap:16px}
+@media(min-width:700px){.cols-2{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.cols-3{grid-template-columns:repeat(3,1fr)}}
+
+.card{background:var(--surf);border:1px solid var(--line);border-radius:var(--r);padding:22px;
+  box-shadow:var(--shadow)}
+
+.price__group + .price__group{margin-top:34px}
+.price__cat{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);
+  margin-bottom:14px;font-weight:600}
+.price__row{display:flex;align-items:baseline;gap:14px;padding:15px 0;border-bottom:1px dashed var(--line)}
+.price__row:last-child{border-bottom:0}
+.price__name{font-weight:600}
+.price__desc{color:var(--mute);font-size:14.5px;margin-top:4px;max-width:70ch}
+.price__dots{flex:1;border-bottom:1px dotted var(--line);transform:translateY(-4px);min-width:24px}
+.price__val{white-space:nowrap;font-weight:700;color:var(--acc);font-size:18px}
+.price__note{color:var(--mute);font-size:14px;margin-top:24px}
+
+.tags{display:flex;flex-wrap:wrap;gap:9px}
+.tag{padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surf);
+  font-size:14.5px}
+
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media(min-width:760px){.gal{grid-template-columns:repeat(4,1fr)}
+  .gal a:first-child{grid-column:span 2;grid-row:span 2}}
+.gal a{display:block;border-radius:12px;overflow:hidden;background:var(--line);aspect-ratio:1/1}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gal a:hover img{transform:scale(1.05)}
+
+.rev{display:grid;gap:16px}
+@media(min-width:820px){.rev{grid-template-columns:repeat(3,1fr)}}
+.rev__stars{color:#ffc247;letter-spacing:2px;font-size:15px}
+.rev__text{margin-top:12px;font-size:15.5px;line-height:1.62}
+.rev__who{margin-top:16px;font-size:14px;color:var(--mute)}
+
+.contact{display:grid;gap:22px}
+@media(min-width:900px){.contact{grid-template-columns:1fr 1.15fr;align-items:start}}
+.dl{display:grid;gap:18px;margin:0}
+.dl dt{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.dl dd{margin:5px 0 0;font-size:17px}
+.dl a{text-decoration:none;border-bottom:1px solid var(--line)}
+.map{border:0;width:100%;height:340px;border-radius:var(--r);border:1px solid var(--line)}
+
+.form{display:grid;gap:13px}
+.form input,.form textarea{width:100%;padding:14px 16px;border-radius:11px;background:var(--bg);
+  border:1px solid var(--line);color:var(--ink);font:400 16px/1.5 'Inter',sans-serif}
+.form input:focus,.form textarea:focus{outline:2px solid var(--acc);outline-offset:1px;border-color:transparent}
+.form textarea{min-height:96px;resize:vertical}
+.form .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.form__note{font-size:13px;color:var(--mute)}
+.form__ok{display:none;padding:14px 16px;border-radius:11px;background:color-mix(in srgb,var(--acc) 14%,transparent);
+  border:1px solid var(--acc);font-size:15px}
+
+.foot{border-top:1px solid var(--line);padding:34px 0;color:var(--mute);font-size:14.5px}
+.foot__row{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;justify-content:space-between}
+
+.demo{background:var(--acc);color:var(--acc-ink);font-size:14.5px;line-height:1.55}
+.demo__in{padding:20px;display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;justify-content:space-between}
+.demo a{color:inherit;font-weight:700}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;gap:10px;padding:10px 14px;
+  background:color-mix(in srgb,var(--bg) 94%,transparent);border-top:1px solid var(--line);
+  backdrop-filter:blur(10px)}
+.bar .btn{flex:1}
+@media(min-width:900px){.bar{display:none}}
+@media(max-width:899px){body{padding-bottom:72px}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top__in">
+    <a class="brand" href="#top">Oval</a>
+    <nav><a href="#ceny">Цены</a><a href="#foto">Фото</a><a href="#otzyvy">Отзывы</a><a href="#kontakty">Контакты</a></nav>
+    <a class="btn btn--sm" href="#zayavka">Записаться на консультацию</a>
+  </div>
+</header>
+
+
+<section class="hero" id="top">
+  <img class="hero__bg" src="https://i3.photo.2gis.com/photo-gallery/226c6f59-2fab-45b5-aa42-df1778581d47_1920x.jpg" alt="" fetchpriority="high" decoding="async">
+  <div class="wrap hero__in">
+    <h1>Oval</h1>
+    <p class="hero__sub">Студия массажа лица · Доломановский переулок, 19</p>
+    <div class="facts"><span class="fact"><span class="star">★</span> <b>5</b> · 13 отзывов в 2ГИС</span><span class="fact">🕒 Пн–Вс 09:00–22:00</span><span class="fact">📍 Доломановский переулок, 19</span></div>
+    <div class="hero__cta">
+      <a class="btn" href="#zayavka">Записаться на консультацию</a>
+      <a class="btn btn--ghost" href="tel:+79910848991">Позвонить</a>
+    </div>
+  </div>
+</section>
+
+<section id="ceny">
+  <div class="wrap">
+    <div class="eyebrow">Прайс</div>
+    <h2>Услуги и цены</h2>
+    <p class="lead">Всё видно сразу, без звонка «а сколько стоит». Именно это человек ищет первым, когда выбирает между вами и соседями.</p>
+    <div style="margin-top:34px"><div class="price__group"><div class="price__cat">Акции</div><div class="price__row">
+        <div><div class="price__name">Уход месяца Balance (60 мин.) 2900 р. вместо 3900 р.</div><div class="price__desc">Уходовая программа Balance – настоящая перезагрузка для вашей кожи: глубоко питает и увлажняет, минимизирует пигментацию, дарит ровный тон и оказывает лифтинг эффект и уменьшает мо</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">2 900 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Знакомство с Oval за 1900р. (45 мин.)</div><div class="price__desc">Процедура «знакомство с Oval» – это расширенная консультация и комплекс процедур, которые подарят коже молодость и здоровье. Действует только для новых клиентов. Длительность 45 ми</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">1 900 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Массаж лица Oval + расслабляющий массаж тела (90 мин.)</div><div class="price__desc">Восхитительное комбо: массаж лица улучшит цвет лица и создаст эффект лифтинга. Массаж тела зарядит энергией и тонусом для новых свершений.</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">3 600 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Массаж лица Oval + расслабляющий массаж тела для мужчин (90 мин.)</div><div class="price__desc">Восхитительное комбо: массаж лица улучшит цвет лица и создаст эффект лифтинга. Массаж тела зарядит энергией и тонусом для новых свершений.</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">3 800 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Массаж тела Antistress (60 мин.)</div><div class="price__desc">Массаж тела с аромамаслом</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">3 000 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Уход Beauty lunch (60 мин.)</div><div class="price__desc">Массаж лица Oval + альгинатная маска.
+Действует впн будням с 13:00 до 15:00.</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">2 200 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Уход для мужчин Relax (60 минут)</div><div class="price__desc">Программа для глубокого очищения кожи и полной релаксации.</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">2 200 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Уход месяца Frozen 2500 р. вместо 3500 р. (60 мин.)</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">2 500 ₽</span>
+      </div></div><div class="price__group"><div class="price__cat">Массаж лица</div><div class="price__row">
+        <div><div class="price__name">Массаж лица Oval / лимфодренажный (30 мин)</div><div class="price__desc">Улучшает тонус кожи, снимает напряжение и расслабляет.</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">2 000 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Массаж лица Oval / лимфодренажный / хиро (60 мин)</div><div class="price__desc">Улучшает тонус кожи, снимает напряжение и расслабляет.</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">2 700 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Массаж лица буккальный, гуаша, Миофасциальный (45 мин)</div><div class="price__desc">Массаж лица камнями Гуаша: насыщает кожу кислородом, избавляет от отёков и стимулирует регенерацию клеток кожи лица.</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">2 700 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Моделирующий массаж лица (60 мин)</div><div class="price__desc">Глубокая проработка всех мышц лица, шеи и декольте. Процедура корректирует контур лица, возвращает открытый взгляд, гладкий лоб, свежесть и упругость коже.</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">2 900 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Моделирующий массаж лица (75 мин)</div><div class="price__desc">Глубокая проработка всех мышц лица, шеи и декольте. Процедура корректирует контур лица, возвращает открытый взгляд, гладкий лоб, свежесть и упругость коже.</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">3 200 ₽</span>
+      </div></div><div class="price__group"><div class="price__cat">Уход за телом</div><div class="price__row">
+        <div><div class="price__name">Уход за телом Perfect body (120 мин.)</div><div class="price__desc">Обладает мощным антицеллюлитным и липолитический эффектом. Минус несколько сантиметров всего за одну процедуру! Этапы: скраб + обёртывание + массаж всего тела.</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">3 500 ₽</span>
+      </div></div><div class="price__group"><div class="price__cat">Аппаратные процедуры</div><div class="price__row">
+        <div><div class="price__name">Прессотерапия (30 мин.)</div><div class="price__desc">Прессотерапия – аппаратный массаж, при котором применяется сжатый воздух. Помогает уменьшить отечность, тонизирует кожу и снимает скованность в нижних конечностях.</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">1 500 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Микротоки (20 мин.)</div><div class="price__desc">Настоящая находка для тех, кому нужен мгновенный лифтинг-эффект. Микротоки способны подтянуть не только кожу, но и мышцы лица, убрать отечность и «открыть глаза».</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">1 200 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Микротоки (45мин.)</div><div class="price__desc">Настоящая находка для тех, кому нужен мгновенный лифтинг-эффект. Микротоки способны подтянуть не только кожу, но и мышцы лица, убрать отечность и «открыть глаза».</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">1 900 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Dermapen лицо (30 мин.)</div><div class="price__desc">DERMAPEN – это аппаратная косметологическая процедура, также известная, как микроигольчатая терапия или фракционная мезотерапия, которая используется для улучшения текстуры кожи, у</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">3 000 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Dermapen лицо+шея (30 мин.)</div><div class="price__desc">DERMAPEN – это аппаратная косметологическая процедура, также известная, как микроигольчатая терапия или фракционная мезотерапия, которая используется для улучшения текстуры кожи, у</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">3 500 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Dermapen лицо+шея+декольте (45 мин.)</div><div class="price__desc">DERMAPEN – это аппаратная косметологическая процедура, также известная, как микроигольчатая терапия или фракционная мезотерапия, которая используется для улучшения текстуры кожи, у</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">4 000 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Dermapen лицо+шея+декольте+спина (60 мин.)</div><div class="price__desc">DERMAPEN – это аппаратная косметологическая процедура, также известная, как микроигольчатая терапия или фракционная мезотерапия, которая используется для улучшения текстуры кожи, у</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">4 500 ₽</span>
+      </div></div><div class="price__group"><div class="price__cat">Массаж тела</div><div class="price__row">
+        <div><div class="price__name">Шейно-воротниковая зона / спина/ живот/ ноги (30 мин.)</div><div class="price__desc">Улучшает кровоток, расслабляет мышцы, снимает напряжение и восстанавливает силы после тяжелого дня.</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">2 000 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Антицеллюлитный / лимфодренажный / здоровая спина / спортивный массаж тела (60 мин.)</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">3 300 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Полный расслабляющий массаж тела (60 мин.)</div><div class="price__desc">Помогает снять стресс и напряжение, улучшая кровообращение и восстанавливая гармонию в теле. Мягкие движения расслабляют мышцы, снимают усталость и восстанавливают энергию, даря ощ</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">2 900 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Полный расслабляющий массаж тела (90 мин.)</div><div class="price__desc">Помогает снять стресс и напряжение, улучшая кровообращение и восстанавливая гармонию в теле. Мягкие движения расслабляют мышцы, снимают усталость и восстанавливают энергию, даря ощ</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">3 600 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Антицеллюлитный / лимфодренажный / здоровая спина / спортивный массаж тела (90 мин.)</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">3 900 ₽</span>
+      </div></div><div class="price__group"><div class="price__cat">Чистка лица и пилинги</div><div class="price__row">
+        <div><div class="price__name">Пилинг BioRePeel лицо (30 мин.)</div><div class="price__desc">Пилинг BioRePeelCI3 совмещает в себе эффект пилинга и биоревитализации. 14 ингредиентов в составе позволяют не только удалить омертвевшие клетки кожи, но и и существенно улучшить т</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">3 500 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Пилинг BioRePeel лицо+шея (40 мин.)</div><div class="price__desc">Пилинг BioRePeelCI3 совмещает в себе эффект пилинга и биоревитализации.14 ингредиентов в составе позволяют не только удалить омертвевшие клетки кожи, но и и существенно улучшить то</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">4 500 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Пилинг BioRePeel лицо+шея+декольте (50 мин.)</div><div class="price__desc">Пилинг BioRePeelCI3 совмещает в себе эффект пилинга и биоревитализации.14 ингредиентов в составе позволяют не только удалить омертвевшие клетки кожи, но и и существенно улучшить то</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">5 500 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Пилинг Demax лицо (30 мин.)</div><div class="price__desc">Пилинг Джесснера от Demax корректирует акне, постакне, борется с пигментацией и выравнивает тон кожи. Поворачивает время вспять — дарит видимый лифтинг эффект, омоложение кожи, мин</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">2 500 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Пилинг Demax лицо+шея (40 мин.)</div><div class="price__desc">Пилинг Джесснера от Demax корректирует акне, постакне, борется с пигментацией и выравнивает тон кожи. Поворачивает время вспять — дарит видимый лифтинг эффект, омоложение кожи, мин</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">3 000 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Пилинг Demax лицо+шея+декольте (50 мин.)</div><div class="price__desc">Пилинг Джесснера от Demax корректирует акне, постакне, борется с пигментацией и выравнивает тон кожи. Поворачивает время вспять — дарит видимый лифтинг эффект, омоложение кожи, мин</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">3 500 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Жёлтый пилинг (30 мин.)</div><div class="price__desc">Быстро и безболезненно обновляет кожу, уменьшает пигментацию, устраняет акне и постакне, разглаживает мимические морщины.</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">5 000 ₽</span>
+      </div><div class="price__row">
+        <div><div class="price__name">Ультразвуковая чистка лица (60 мин.)</div><div class="price__desc">Бережно очистит поры и кожный покров от загрязнений, в результате чего кожа начинает дышать. Настоящий must-have против тусклого цвета лица. Эффект заметен сразу: кожа свежая, глад</div></div>
+        <span class="price__dots"></span>
+        <span class="price__val">2 500 ₽</span>
+      </div></div></div>
+    <p class="price__note">Цены из вашего прайса в 2ГИС. Обновлено 21 февраля 2026.</p>
+  </div>
+</section>
+
+
+<section id="foto">
+  <div class="wrap">
+    <div class="eyebrow">Фотографии</div>
+    <h2>Как у нас</h2>
+    <div class="gal" style="margin-top:28px"><a href="https://i8.photo.2gis.com/photo-gallery/fadd9aa2-3567-4204-a7f4-2611a28b421d_1920x.jpg" target="_blank" rel="noopener"><img src="https://i8.photo.2gis.com/photo-gallery/fadd9aa2-3567-4204-a7f4-2611a28b421d_1920x.jpg" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i6.photo.2gis.com/photo-gallery/2645b137-572a-490c-9c3a-29009ea824e3_1920x.jpg" target="_blank" rel="noopener"><img src="https://i6.photo.2gis.com/photo-gallery/2645b137-572a-490c-9c3a-29009ea824e3_1920x.jpg" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i4.photo.2gis.com/photo-gallery/15326e8d-524e-428c-bd01-8775d17f5f34_1920x.jpg" target="_blank" rel="noopener"><img src="https://i4.photo.2gis.com/photo-gallery/15326e8d-524e-428c-bd01-8775d17f5f34_1920x.jpg" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i9.photo.2gis.com/photo-gallery/84df6620-4ea9-4b76-95c9-6a3c89cb35b3_1920x.jpg" target="_blank" rel="noopener"><img src="https://i9.photo.2gis.com/photo-gallery/84df6620-4ea9-4b76-95c9-6a3c89cb35b3_1920x.jpg" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i5.photo.2gis.com/photo-gallery/458f6055-5c39-4561-a6cd-f4e5f003eb4a_1920x.jpg" target="_blank" rel="noopener"><img src="https://i5.photo.2gis.com/photo-gallery/458f6055-5c39-4561-a6cd-f4e5f003eb4a_1920x.jpg" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i0.photo.2gis.com/photo-gallery/161a192b-5ee0-4a8c-81ae-03ced598ccef_1920x.jpg" target="_blank" rel="noopener"><img src="https://i0.photo.2gis.com/photo-gallery/161a192b-5ee0-4a8c-81ae-03ced598ccef_1920x.jpg" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i1.photo.2gis.com/photo-gallery/6e1d358d-f1b9-4b33-87f1-108ea1953ec9_1920x.jpg" target="_blank" rel="noopener"><img src="https://i1.photo.2gis.com/photo-gallery/6e1d358d-f1b9-4b33-87f1-108ea1953ec9_1920x.jpg" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i0.photo.2gis.com/photo-gallery/333b9915-7424-46ff-9a6b-862b380a03bd_1920x.jpg" target="_blank" rel="noopener"><img src="https://i0.photo.2gis.com/photo-gallery/333b9915-7424-46ff-9a6b-862b380a03bd_1920x.jpg" alt="Мы в работе" loading="lazy" decoding="async"></a></div>
+    <p class="price__note">Фотографии из вашей карточки 2ГИС. <a href="https://2gis.ru/rostov/firm/70000001102664165" target="_blank" rel="noopener">Открыть карточку</a></p>
+  </div>
+</section>
+
+<section id="otzyvy">
+  <div class="wrap">
+    <div class="eyebrow">Отзывы</div>
+    <h2>Что о нас пишут</h2>
+    <p class="lead">Рейтинг 5 в 2ГИС, 13 отзывов. На сайте они работают на вас, а не лежат в чужом приложении.</p>
+    <div class="rev" style="margin-top:28px"><article class="card">
+      <div class="rev__stars">★★★★★</div>
+      <p class="rev__text">Хорошая студия массажа, чистая и красивая. Была у мастера Карины, очень приятная девушка, прекрасно знает свое дело. Еще и подсказала, что могу самостоятельно делать в своей ситуации, чтобы стало легче</p>
+      <div class="rev__who">Маргарита Г · 13.06.2026</div>
+    </article><article class="card">
+      <div class="rev__stars">★★★★★</div>
+      <p class="rev__text">Был на массаже у мастера Юлии — остался очень доволен. Отличная атмосфера, внимательный подход и действительно профессиональная работа. После сеанса ушло напряжение в спине и шее, почувствовал лёгкость и расслабление. Юлия всё делает аккуратно и с пониманием того, где именно есть зажимы и проблемы. </p>
+      <div class="rev__who">Городской житель · 15.05.2026</div>
+    </article><article class="card">
+      <div class="rev__stars">★★★★★</div>
+      <p class="rev__text">Очень приятная атмосфера, вежливый тактичный персонал . Массажист Виктория учла все мои пожелания , массаж выполнила профессионально!! Я насладилась сполна 💛 Приятные бонусы и скидки мне подарили ) благодарю вас, продолжайте ☺️</p>
+      <div class="rev__who">Юлия Кот · 30.07.2026</div>
+    </article><article class="card">
+      <div class="rev__stars">★★★★★</div>
+      <p class="rev__text">На процедуре расслабляющего массажа получила огромное удовольствие, массажист Ольга очень аккуратно, обволакивающее прошлась по всем болевым точкам. Расслабление точно случилось! Спасибо!</p>
+      <div class="rev__who">Настасья В · 05.07.2026</div>
+    </article><article class="card">
+      <div class="rev__stars">★★★★★</div>
+      <p class="rev__text">Посетила студию массажа и косметологии по рекомендации — и осталась в полном восторге! Очень уютная атмосфера, чисто, спокойно, с приятной музыкой и ароматами. Персонал вежливый и внимательный, сразу чувствуется профессионализм. Проходила курс массажа (классический + антицеллюлитный) — эффект замете</p>
+      <div class="rev__who">Оксана Немудрякина · 11.09.2025</div>
+    </article><article class="card">
+      <div class="rev__stars">★★★★★</div>
+      <p class="rev__text">Прекрасная студия, все очень красиво и стильно оформлено. Персонал дружелюбный. Была на массаже тела - полное расслабление гарантировано, рекомендую ❤️</p>
+      <div class="rev__who">Александра Тимофеева · 20.08.2025</div>
+    </article></div>
+    <p class="price__note">Отзывы из 2ГИС. <a href="https://2gis.ru/rostov/firm/70000001102664165" target="_blank" rel="noopener">Читать все</a></p>
+  </div>
+</section>
+
+<section id="kontakty">
+  <div class="wrap">
+    <div class="eyebrow">Контакты</div>
+    <h2>Где нас найти</h2>
+    <div class="contact" style="margin-top:28px">
+      <dl class="dl"><dt>Адрес</dt><dd>Доломановский переулок, 19</dd><dt>Часы работы</dt><dd>Пн–Вс 09:00–22:00 · без выходных</dd><dt>Телефон</dt><dd><a href="tel:+79910848991">+7 991 084-89-91</a></dd><dt>Написать</dt><dd><a href="https://t.me/oval_face_rostov" target="_blank" rel="noopener">Telegram</a> · <a href="https://wa.me/79910848991?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%0A%0A%D0%9F%D0%B8%D1%88%D1%83%20%D0%B8%D0%B7%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%202%D0%93%D0%98%D0%A1.%0A%0A" target="_blank" rel="noopener">WhatsApp</a></dd><dt>Почта</dt><dd><a href="mailto:dolomanovsky_rnd@ovalface.ru">dolomanovsky_rnd@ovalface.ru</a></dd></dl>
+      <iframe class="map" src="https://widgets.2gis.com/widget?type=firmsonmap&amp;options=%7B%22pos%22%3A%7B%22lat%22%3A47.221279%2C%22lon%22%3A39.697593%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22rostov%22%7D%2C%22org%22%3A%2270000001102664165%22%7D" loading="lazy" title="Карта проезда"></iframe>
+    </div>
+  </div>
+</section>
+
+<section id="zayavka">
+  <div class="wrap">
+    <div class="card" style="padding:clamp(24px,4vw,44px)">
+      <div class="eyebrow">Заявка</div>
+      <h2>Записаться на консультацию</h2>
+      <p class="lead">Оставьте номер, администратор перезвонит и подберёт время. Заявка приходит в Telegram за секунду, отвечать можно прямо оттуда.</p>
+      <form class="form" id="lead" style="margin-top:26px" novalidate>
+        <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input name="name" placeholder="Как к вам обращаться" required minlength="2" autocomplete="name">
+        <input name="contact" placeholder="Телефон или ник в Telegram" required minlength="5" autocomplete="tel">
+        <textarea name="task" placeholder="Что нужно (по желанию)"></textarea>
+        <button class="btn" type="submit">Отправить</button>
+        <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку указанных данных.</p>
+      </form>
+      <div class="form__ok" id="ok">Заявка отправлена. Спасибо, скоро свяжемся.</div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap foot__row">
+    <div>Oval · Доломановский переулок, 19</div>
+    <div><a href="tel:+79910848991" style="text-decoration:none">+7 991 084-89-91</a></div>
+  </div>
+</footer>
+
+
+<div class="demo">
+  <div class="wrap demo__in">
+    <div>
+      <b>Это демо-макет, а не ваш действующий сайт.</b> Собрал его Владимир, веб-разработчик из
+      Ростов-на-Дону, по открытым данным вашей карточки 2ГИС: фото, прайс, отзывы и часы работы — ваши.<br>Что я заметил на вашем текущем сайте: сайт открывается без https, браузер показывает «не защищено».
+    </div>
+    <a class="btn btn--sm btn--ghost" style="border-color:currentColor;color:inherit"
+       href="https://t.me/vovuchoooo" target="_blank" rel="noopener">Написать @vovuchoooo</a>
+  </div>
+</div>
+
+<div class="bar">
+  <a class="btn" href="#zayavka">Записаться на консультацию</a>
+  <a class="btn btn--ghost" href="tel:+79910848991">Позвонить</a>
+</div>
+
+<script>
+document.getElementById('lead').addEventListener('submit', async function (ev) {
+  ev.preventDefault();
+  var f = ev.target, b = f.querySelector('button');
+  var body = {
+    company: f.company.value, name: f.name.value,
+    contact: f.contact.value, task: f.task.value
+  };
+  if (body.name.trim().length < 2 || body.contact.trim().length < 5) {
+    f.reportValidity(); return;
+  }
+  b.disabled = true; b.textContent = 'Отправляю…';
+  try {
+    var r = await fetch('https://lead-form.tripolev04.workers.dev', {
+      method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body)
+    });
+    if (!r.ok) throw 0;
+    f.style.display = 'none';
+    document.getElementById('ok').style.display = 'block';
+  } catch (err) {
+    b.disabled = false; b.textContent = 'Отправить ещё раз';
+  }
+});
+</script>
+</body>
+</html>
