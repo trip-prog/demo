@@ -1,448 +1,273 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+<script>document.documentElement.className+=" js";setTimeout(function(){document.querySelectorAll(".reveal:not(.is-in)").forEach(function(n){n.classList.add("is-in")})},2500)</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>BNM AutoDetailing — Автомойки · улица Ченцова, 12/42</title>
-<meta name="description" content="BNM AutoDetailing — Автомойки · улица Ченцова, 12/42. Рейтинг 4.8 в 2ГИС.">
+<title>BNM AutoDetailing — Автомойки, Ростов-на-Дону</title>
+<meta name="description" content="Химчистка салона, полировка, защитные покрытия и мойка — 43 позиции в прайсе. Открыто 24 часа, есть зал ожидания, кофе и Wi-Fi.">
 <meta name="robots" content="noindex,nofollow">
-<meta property="og:title" content="BNM AutoDetailing">
-<meta property="og:description" content="BNM AutoDetailing — Автомойки · улица Ченцова, 12/42. Рейтинг 4.8 в 2ГИС.">
+<meta name="theme-color" content="#0a0d12">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BNM AutoDetailing — Автомойки, Ростов-на-Дону">
+<meta property="og:description" content="Химчистка салона, полировка, защитные покрытия и мойка — 43 позиции в прайсе. Открыто 24 часа, есть зал ожидания, кофе и Wi-Fi.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%233ba7ff'/%3E%3C/svg%3E">
-<style>
-:root{
-  --bg:#0c0f13;--surf:#151a21;--line:#242c36;--ink:#eef2f7;
-  --mute:#8e9aa8;--acc:#3ba7ff;--acc-ink:#08131d;
-  --shadow:0 1px 2px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.35);
-  --r:14px;--wrap:1120px;
-}
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);
-  font:400 17px/1.6 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  -webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
-a{color:inherit}
-h1,h2,h3{font-family:'Oswald','Inter',sans-serif;line-height:1.14;margin:0;
-  letter-spacing:.01em}
-h1{font-size:clamp(34px,7vw,62px);text-transform:uppercase;}
-h2{font-size:clamp(26px,4.4vw,40px)}
-h3{font-size:19px}
-p{margin:0}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
-section{padding:72px 0}
-.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);
-  font-weight:600;margin-bottom:12px}
-.lead{color:var(--mute);font-size:17px;max-width:62ch;margin-top:14px}
-
-.top{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--bg) 88%,transparent);
-  backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.top__in{display:flex;align-items:center;gap:18px;height:64px}
-.brand{font-family:'Oswald',sans-serif;font-weight:700;font-size:20px;
-  text-decoration:none;letter-spacing:.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.top nav{margin-left:auto;display:none;gap:26px}
-.top nav a{text-decoration:none;color:var(--mute);font-size:15px;transition:color .2s}
-.top nav a:hover{color:var(--ink)}
-.top .btn{margin-left:auto}
-@media(min-width:900px){.top nav{display:flex}.top .btn{margin-left:0}}
-
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
-  padding:14px 24px;border-radius:999px;border:1px solid transparent;cursor:pointer;
-  font:600 15px/1 'Inter',sans-serif;text-decoration:none;transition:transform .15s,opacity .2s;
-  background:var(--acc);color:var(--acc-ink)}
-.btn:hover{transform:translateY(-1px);opacity:.92}
-.btn--ghost{background:transparent;color:var(--ink);border-color:var(--line)}
-.btn--sm{padding:11px 18px;font-size:14px}
-
-.hero{position:relative;min-height:min(88vh,720px);display:flex;align-items:flex-end;
-  padding:96px 0 56px;overflow:hidden;isolation:isolate}
-.hero__bg{position:absolute;inset:0;z-index:-2;object-fit:cover;width:100%;height:100%}
-.hero::after{content:'';position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(180deg,rgba(10,10,12,.62) 0%,rgba(8,9,12,.55) 45%,rgba(6,7,10,.9) 100%)}
-.hero--plain::after{background:radial-gradient(120% 90% at 15% 0%,
-  color-mix(in srgb,var(--acc) 26%,var(--bg)) 0%,var(--bg) 70%)}
-.hero__in{position:relative;color:#fff}
-.hero--plain .hero__in{color:var(--ink)}
-.hero h1{max-width:16ch}
-.hero__sub{margin-top:16px;font-size:clamp(16px,2.2vw,20px);opacity:.9;max-width:44ch}
-.hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-.hero--plain .hero__cta .btn--ghost{border-color:var(--line)}
-.hero__cta .btn--ghost{color:#fff;border-color:rgba(255,255,255,.42)}
-
-.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
-.fact{display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:999px;
-  background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.2);
-  font-size:14px;backdrop-filter:blur(6px)}
-.hero--plain .fact{background:var(--surf);border-color:var(--line);color:var(--ink)}
-.fact b{font-weight:600}
-.star{color:#ffc247}
-
-.grid{display:grid;gap:16px}
-@media(min-width:700px){.cols-2{grid-template-columns:1fr 1fr}}
-@media(min-width:900px){.cols-3{grid-template-columns:repeat(3,1fr)}}
-
-.card{background:var(--surf);border:1px solid var(--line);border-radius:var(--r);padding:22px;
-  box-shadow:var(--shadow)}
-
-.price__group + .price__group{margin-top:34px}
-.price__cat{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);
-  margin-bottom:14px;font-weight:600}
-.price__row{display:flex;align-items:baseline;gap:14px;padding:15px 0;border-bottom:1px dashed var(--line)}
-.price__row:last-child{border-bottom:0}
-.price__name{font-weight:600}
-.price__desc{color:var(--mute);font-size:14.5px;margin-top:4px;max-width:70ch}
-.price__dots{flex:1;border-bottom:1px dotted var(--line);transform:translateY(-4px);min-width:24px}
-.price__val{white-space:nowrap;font-weight:700;color:var(--acc);font-size:18px}
-.price__note{color:var(--mute);font-size:14px;margin-top:24px}
-
-.tags{display:flex;flex-wrap:wrap;gap:9px}
-.tag{padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surf);
-  font-size:14.5px}
-
-.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-@media(min-width:760px){.gal{grid-template-columns:repeat(4,1fr)}
-  .gal a:first-child{grid-column:span 2;grid-row:span 2}}
-.gal a{display:block;border-radius:12px;overflow:hidden;background:var(--line);aspect-ratio:1/1}
-.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
-.gal a:hover img{transform:scale(1.05)}
-
-.rev{display:grid;gap:16px}
-@media(min-width:820px){.rev{grid-template-columns:repeat(3,1fr)}}
-.rev__stars{color:#ffc247;letter-spacing:2px;font-size:15px}
-.rev__text{margin-top:12px;font-size:15.5px;line-height:1.62}
-.rev__who{margin-top:16px;font-size:14px;color:var(--mute)}
-
-.contact{display:grid;gap:22px}
-@media(min-width:900px){.contact{grid-template-columns:1fr 1.15fr;align-items:start}}
-.dl{display:grid;gap:18px;margin:0}
-.dl dt{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
-.dl dd{margin:5px 0 0;font-size:17px}
-.dl a{text-decoration:none;border-bottom:1px solid var(--line)}
-.map{border:0;width:100%;height:340px;border-radius:var(--r);border:1px solid var(--line)}
-
-.form{display:grid;gap:13px}
-.form input,.form textarea{width:100%;padding:14px 16px;border-radius:11px;background:var(--bg);
-  border:1px solid var(--line);color:var(--ink);font:400 16px/1.5 'Inter',sans-serif}
-.form input:focus,.form textarea:focus{outline:2px solid var(--acc);outline-offset:1px;border-color:transparent}
-.form textarea{min-height:96px;resize:vertical}
-.form .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
-.form__note{font-size:13px;color:var(--mute)}
-.form__ok{display:none;padding:14px 16px;border-radius:11px;background:color-mix(in srgb,var(--acc) 14%,transparent);
-  border:1px solid var(--acc);font-size:15px}
-
-.foot{border-top:1px solid var(--line);padding:34px 0;color:var(--mute);font-size:14.5px}
-.foot__row{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;justify-content:space-between}
-
-.demo{background:var(--acc);color:var(--acc-ink);font-size:14.5px;line-height:1.55}
-.demo__in{padding:20px;display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;justify-content:space-between}
-.demo a{color:inherit;font-weight:700}
-.bar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;gap:10px;padding:10px 14px;
-  background:color-mix(in srgb,var(--bg) 94%,transparent);border-top:1px solid var(--line);
-  backdrop-filter:blur(10px)}
-.bar .btn{flex:1}
-@media(min-width:900px){.bar{display:none}}
-@media(max-width:899px){body{padding-bottom:72px}}
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2343c3ff'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='16' font-weight='700' text-anchor='middle' fill='%23fff'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-<header class="top">
+<body data-page="index.html">
+<header class="top" id="top">
   <div class="wrap top__in">
-    <a class="brand" href="#top">BNM AutoDetailing</a>
-    <nav><a href="#ceny">Цены</a><a href="#foto">Фото</a><a href="#otzyvy">Отзывы</a><a href="#kontakty">Контакты</a></nav>
-    <a class="btn btn--sm" href="#zayavka">Записаться</a>
+    <a class="brand" href="index.html">
+      <span class="brand__mark">B</span>
+      <span class="brand__t">
+        <span class="brand__n">BNM AutoDetailing</span>
+        <span class="brand__s">Автомойки</span>
+      </span>
+    </a>
+    <nav class="nav"><a href="uslugi.html">Услуги</a><a href="ceny.html">Цены</a><a href="galereya.html">Галерея</a><a href="otzyvy.html">Отзывы</a><a href="o-nas.html">О нас</a><a href="kontakty.html">Контакты</a></nav>
+    <div class="top__act">
+      <a class="top__tel" href="tel:+79281152212">+7 928 115-22-12</a>
+      <a class="btn btn--sm" href="kontakty.html#zayavka">Записаться</a>
+      <button class="burger" type="button" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
+<div class="drawer" id="drawer">
+  <div class="wrap">
+    <a href="index.html">Главная</a><a href="uslugi.html">Услуги</a><a href="ceny.html">Цены</a><a href="galereya.html">Галерея</a><a href="otzyvy.html">Отзывы</a><a href="o-nas.html">О нас</a><a href="kontakty.html">Контакты</a>
+    <a class="btn btn--wide" href="kontakty.html#zayavka">Записаться</a>
+  </div>
+</div>
+<section class="hero">
+  <div class="wrap">
+    <div class="hero__in">
+      <div>
+        <div class="eyebrow reveal">Детейлинг и автомойка · улица Ченцова, 12/42</div>
+        <h1 class="reveal">Детейлинг<br><em>круглосуточно</em></h1>
+        <p class="hero__lead reveal">Химчистка салона, полировка, защитные покрытия и мойка — 43 позиции в прайсе. Открыто 24 часа, есть зал ожидания, кофе и Wi-Fi.</p>
+        <div class="hero__act reveal"><a class="btn btn--lg" href="kontakty.html#zayavka">Записаться</a><a class="btn btn--ghost btn--lg" href="uslugi.html">Услуги и цены</a></div>
+        <div class="hero__facts reveal"><div><div class="fact__v">4,8</div><div class="fact__l">рейтинг в 2ГИС по 23 отзывам</div></div><div><div class="fact__v">43</div><div class="fact__l">позиции в прайсе с ценой</div></div><div><div class="fact__v">9</div><div class="fact__l">направлений работы</div></div></div>
+      </div>
+      <div class="hero__media reveal" style="--i:1">
+          <img src="https://i1.photo.2gis.com/photo-gallery/eedebb7d-f66a-4983-85ae-718b8433001c_960x.jpg" alt="BNM AutoDetailing" fetchpriority="high" decoding="async">
+          <div class="hero__badge hero__badge--bl">
+              <b>4,8</b>
+              <span><span class="stars">★★★★★</span><br>23 отзывов в 2ГИС</span>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="hero__strip"><div><b>Адрес</b>улица Ченцова, 12/42</div><div><b>Часы работы</b>Круглосуточно</div><div><b>Телефон</b>+7 928 115-22-12</div><div><b>Оплата</b>картой, Наличный расчёт, через банк</div></div>
+</section>
 
-
-<section class="hero" id="top">
-  <img class="hero__bg" src="https://i2.photo.2gis.com/photo-gallery/c3df0356-f292-4647-9e3c-545e2db4d99d_640x.jpg" alt="" fetchpriority="high" decoding="async" srcset="https://i2.photo.2gis.com/photo-gallery/c3df0356-f292-4647-9e3c-545e2db4d99d_640x.jpg 640w, https://i2.photo.2gis.com/photo-gallery/c3df0356-f292-4647-9e3c-545e2db4d99d_960x.jpg 960w, https://i2.photo.2gis.com/photo-gallery/c3df0356-f292-4647-9e3c-545e2db4d99d_1920x.jpg 1920w" sizes="100vw">
-  <div class="wrap hero__in">
-    <h1>BNM AutoDetailing</h1>
-    <p class="hero__sub">Автомойки · улица Ченцова, 12/42</p>
-    <div class="facts"><span class="fact"><span class="star">★</span> <b>4.8</b> · 23 отзывов в 2ГИС</span><span class="fact">🕒 Круглосуточно</span><span class="fact">📍 улица Ченцова, 12/42</span></div>
-    <div class="hero__cta">
-      <a class="btn" href="#zayavka">Записаться</a>
-      <a class="btn btn--ghost" href="tel:+79281152212">Позвонить</a>
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Направления</div><h2>Что делаем с машиной</h2><p class="lead">Девять разделов прайса: от трёхфазной мойки до керамики.</p></div><a class="btn btn--ghost btn--sm" href="uslugi.html">Все услуги</a></div>
+    <div class="grid g3"><a class="tile reveal" style="--i:0" href="uslugi.html#moi-ka-avtomobilya">
+              <div class="tile__b">
+                <div class="tile__cat">3 услуги</div>
+                <h3 class="tile__n">Мойка автомобиля</h3>
+                <div class="tile__d">3-х фазная мойка, 2-х фазная мойка, 1-фазная мойка…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">960 ₽</span></div>
+              </div></a><a class="tile reveal" style="--i:1" href="uslugi.html#detei-ling">
+              <div class="tile__b">
+                <div class="tile__cat">5 услуг</div>
+                <h3 class="tile__n">Детейлинг</h3>
+                <div class="tile__d">Полировка+керамика, Полировка кузова, Полировка кузова(предпродажная)…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">2 000 ₽</span></div>
+              </div></a><a class="tile reveal" style="--i:2" href="uslugi.html#moi-ka-dvigatelya">
+              <div class="tile__b">
+                <div class="tile__cat">2 услуги</div>
+                <h3 class="tile__n">Мойка двигателя</h3>
+                <div class="tile__d">Мойка двигателя(детейлинг), Мойка двигателя…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">1 500 ₽</span></div>
+              </div></a><a class="tile reveal" style="--i:0" href="uslugi.html#zaschitnye-pokrytiya">
+              <div class="tile__b">
+                <div class="tile__cat">10 услуг</div>
+                <h3 class="tile__n">Защитные покрытия</h3>
+                <div class="tile__d">Дополнительная обработка воском, Кварцевое покрытие, Твердый воск…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">500 ₽</span></div>
+              </div></a><a class="tile reveal" style="--i:1" href="uslugi.html#chistka-salona">
+              <div class="tile__b">
+                <div class="tile__cat">6 услуг</div>
+                <h3 class="tile__n">Чистка салона</h3>
+                <div class="tile__d">Чистка пластика, Чистка кожи, Обработка кожи…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">500 ₽</span></div>
+              </div></a><a class="tile reveal" style="--i:2" href="uslugi.html#himchistka">
+              <div class="tile__b">
+                <div class="tile__cat">11 услуг</div>
+                <h3 class="tile__n">Химчистка</h3>
+                <div class="tile__d">Химчистка салона, Химчистка ковриков, Химчистка потолка…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">800 ₽</span></div>
+              </div></a></div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Прайс</div><h2>Работы из прайса</h2><p class="lead">Фотографии и цены взяты из карточки 2ГИС.</p></div><a class="btn btn--ghost btn--sm" href="ceny.html">Весь прайс</a></div>
+    <div class="grid g3"><article class="tile reveal" style="--i:0"><div class="tile__img"><img src="https://cachizer1.2gis.com/market/2a924b7a-c129-4a83-95ff-b15f0846eaa6.jpg?h=600&amp;w=800" alt="3-х фазная мойка" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Мойка автомобиля</div><h3 class="tile__n">3-х фазная мойка</h3><div class="tile__d">🚘 Трёхфазная мойка BNM AutoDetailing — максимальная чистота и уход. Три этапа: бесконтактная, ручная и финишная обработка защитным составом. Глубокий блеск, защита и профессиональный…</div><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">1 400 ₽</span></div></div>
+</article><article class="tile reveal" style="--i:1"><div class="tile__img"><img src="https://cachizer3.2gis.com/market/6d40bfb7-0c86-4544-a3f7-83c3f6887106.jpg?h=600&amp;w=800" alt="Полировка кузова" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Детейлинг</div><h3 class="tile__n">Полировка кузова</h3><div class="tile__d">✨ Полировка кузова — вернём блеск и глубину цвета вашему автомобилю. Удаляем мелкие царапины, следы от мойки и потускнение лака. Премиум-уход от BNM AutoDetailing, Ростов-на-Дону. 🚘</div><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">9 000 ₽</span></div></div>
+</article><article class="tile reveal" style="--i:2"><div class="tile__img"><img src="https://cachizer1.2gis.com/market/be276d91-aa72-4110-911c-e62bbf0de58d.jpg?h=600&amp;w=800" alt="Мойка двигателя" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Мойка двигателя</div><h3 class="tile__n">Мойка двигателя</h3><div class="tile__d">⚙️ Мойка двигателя BNM AutoDetailing — бережная очистка подкапотного пространства с использованием безопасной автохимии и парогенератора. Удаляем пыль, масло и грязь без риска повреждения…</div><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">1 500 ₽</span></div></div>
+</article><article class="tile reveal" style="--i:3"><div class="tile__img"><img src="https://cachizer2.2gis.com/market/cc8aa68c-0be7-40c0-967b-b4ef406d5f1d.jpg?h=600&amp;w=800" alt="Дополнительная обработка воском" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Защитные покрытия</div><h3 class="tile__n">Дополнительная обработка воском</h3><div class="tile__d">✨ Обработка воском BNM AutoDetailing — финальный этап защиты кузова. Придаёт зеркальный блеск, отталкивает воду и грязь, облегчает последующие мойки. Защита до 4 недель.</div><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">500 ₽</span></div></div>
+</article><article class="tile reveal" style="--i:0"><div class="tile__img"><img src="https://cachizer2.2gis.com/market/64ddba8a-6e20-4a0b-ae71-42fb79a1b640.jpg?h=600&amp;w=800" alt="Обработка кожи" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Чистка салона</div><h3 class="tile__n">Обработка кожи</h3><div class="tile__d">🪶 Обработка кожи BNM AutoDetailing — профессиональный уход, продлевающий жизнь кожаных поверхностей салона. Используем кондиционеры и защитные пропитки, которые питают, смягчают и создают…</div><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">800 ₽</span></div></div>
+</article><article class="tile reveal" style="--i:1"><div class="tile__img"><img src="https://cachizer1.2gis.com/market/77b47d23-d098-4562-ac74-27f4f5c416f8.jpg?h=600&amp;w=800" alt="Химчистка салона" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Химчистка</div><h3 class="tile__n">Химчистка салона</h3><div class="tile__d">Цена договорн🧽 Полная химчистка салона BNM AutoDetailing — профессиональная глубокая очистка всех поверхностей автомобиля: сидений, потолка, пола, дверных карт, багажного отделения…</div><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">9 000 ₽</span></div></div>
+</article></div>
+  </div>
+</section>
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Цены</div><h2>Прайс</h2><p class="lead">Первые десять позиций. Весь прайс — на отдельной странице, с поиском.</p></div><a class="btn btn--ghost btn--sm" href="ceny.html">Все 43 позиций</a></div>
+    <div class="reveal"><div class="prow" data-s="3-х фазная мойка мойка автомобиля">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">3-х фазная мойка</div><div class="prow__d">🚘 Трёхфазная мойка BNM AutoDetailing — максимальная чистота и уход. Три этапа: бесконтактная, ручная и финишная обработка защитным составом. Глубокий блеск, защита и профессиональный результат.</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 1 400 ₽</div>
+</div><div class="prow" data-s="2-х фазная мойка мойка автомобиля">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">2-х фазная мойка</div><div class="prow__d">🚘 Двухфазная мойка BNM AutoDetailing — глубокая очистка кузова в два этапа: бесконтактная и ручная. Удаляем стойкие загрязнения без вреда лаку. Идеальный блеск и защита поверхности.</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 1 440 ₽</div>
+</div><div class="prow" data-s="1-фазная мойка мойка автомобиля">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">1-фазная мойка</div><div class="prow__d">🚘 Однофазная мойка BNM AutoDetailing — бережная ручная мойка кузова и дисков с профессиональной автохимией. Без разводов и царапин, блеск за 25 минут.</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 960 ₽</div>
+</div><div class="prow" data-s="полировка+керамика детейлинг">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Полировка+керамика</div><div class="prow__d">✨ Полировка + керамика — профессиональная защита и зеркальный блеск кузова. Удаляем мелкие царапины, восстанавливаем глубину цвета, наносим стойкое керамическое покрытие (до 12 мес). 📍 BNM AutoDetailing, Ростов-на-Дону — премиум-уход для…</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 33 000 ₽</div>
+</div><div class="prow" data-s="полировка кузова детейлинг">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Полировка кузова</div><div class="prow__d">✨ Полировка кузова — вернём блеск и глубину цвета вашему автомобилю. Удаляем мелкие царапины, следы от мойки и потускнение лака. Премиум-уход от BNM AutoDetailing, Ростов-на-Дону. 🚘</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 9 000 ₽</div>
+</div><div class="prow" data-s="полировка кузова(предпродажная) детейлинг">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Полировка кузова(предпродажная)</div><div class="prow__d">🚗 Предпродажная полировка кузова — быстрый способ повысить стоимость и привлекательность автомобиля перед продажей. Мастера BNM AutoDetailing в Ростове-на-Дону устраняют тусклость, царапины и следы эксплуатации, придавая кузову зеркальный…</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 7 000 ₽</div>
+</div><div class="prow" data-s="удаление вмятин детейлинг">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Удаление вмятин</div><div class="prow__d">✨ Полировка кузова — вернём блеск и глубину цвета вашему автомобилю. Удаляем мелкие царапины, следы от мойки и потускнение лака. Премиум-уход от BNM AutoDetailing, Ростов-на-Дону. 🚘</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 2 000 ₽</div>
+</div><div class="prow" data-s="полировка фар детейлинг">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Полировка фар</div><div class="prow__d">💡 Полировка фар — верни прозрачность и яркость освещению своего автомобиля! В BNM AutoDetailing (Ростов-на-Дону) мы удаляем помутнение, царапины и желтизну с поверхности фар, восстанавливая их заводской блеск и светопропускание. После…</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 2 000 ₽</div>
+</div><div class="prow" data-s="мойка двигателя(детейлинг) мойка двигателя">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Мойка двигателя(детейлинг)</div><div class="prow__d">🔧 Мойка двигателя (детейлинг) BNM AutoDetailing — деликатная ручная очистка подкапотного пространства с полной безопасностью для электроники. Используем профессиональные составы и пар, восстанавливаем чистоту и блеск деталей. Завершаем…</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 4 000 ₽</div>
+</div><div class="prow" data-s="мойка двигателя мойка двигателя">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Мойка двигателя</div><div class="prow__d">⚙️ Мойка двигателя BNM AutoDetailing — бережная очистка подкапотного пространства с использованием безопасной автохимии и парогенератора. Удаляем пыль, масло и грязь без риска повреждения электрики.</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 1 500 ₽</div>
+</div></div>
+    <div style="margin-top:30px"><a class="btn" href="ceny.html">Открыть полный прайс</a></div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Фотографии</div><h2>Как это выглядит</h2><p class="lead">Бокс, оборудование и результаты работ — фотографии из карточки.</p></div><a class="btn btn--ghost btn--sm" href="galereya.html">Вся галерея</a></div>
+    <div class="gal"><figure data-full="https://i1.photo.2gis.com/photo-gallery/eedebb7d-f66a-4983-85ae-718b8433001c_1920x.jpg"><img src="https://i1.photo.2gis.com/photo-gallery/eedebb7d-f66a-4983-85ae-718b8433001c_640x.jpg" alt="Наши работы" loading="lazy" decoding="async"><figcaption>Наши работы</figcaption></figure><figure data-full="https://i2.photo.2gis.com/photo-gallery/271c5c4a-8235-4a1f-afdc-7a5f6ce9e729_1920x.jpg"><img src="https://i2.photo.2gis.com/photo-gallery/271c5c4a-8235-4a1f-afdc-7a5f6ce9e729_640x.jpg" alt="Наши работы" loading="lazy" decoding="async"><figcaption>Наши работы</figcaption></figure><figure data-full="https://i5.photo.2gis.com/photo-gallery/bcea27a9-41f3-4f58-a0ac-d10d0c790723_1920x.jpg"><img src="https://i5.photo.2gis.com/photo-gallery/bcea27a9-41f3-4f58-a0ac-d10d0c790723_640x.jpg" alt="Наши работы" loading="lazy" decoding="async"><figcaption>Наши работы</figcaption></figure><figure data-full="https://i5.photo.2gis.com/photo-gallery/3a094eea-54a1-4811-846a-b48e66c40642_1920x.jpg"><img src="https://i5.photo.2gis.com/photo-gallery/3a094eea-54a1-4811-846a-b48e66c40642_640x.jpg" alt="Наши работы" loading="lazy" decoding="async"><figcaption>Наши работы</figcaption></figure><figure data-full="https://i3.photo.2gis.com/images/branch/0/30258560111712473_3db8_1920x.jpg"><img src="https://i3.photo.2gis.com/images/branch/0/30258560111712473_3db8_640x.jpg" alt="Наши работы" loading="lazy" decoding="async"><figcaption>Наши работы</figcaption></figure><figure data-full="https://i9.photo.2gis.com/photo-gallery/584e3f39-1568-49dd-b43a-dfb84b67d937_1920x.jpg"><img src="https://i9.photo.2gis.com/photo-gallery/584e3f39-1568-49dd-b43a-dfb84b67d937_640x.jpg" alt="Наши работы" loading="lazy" decoding="async"><figcaption>Наши работы</figcaption></figure></div>
+  </div>
+</section>
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Отзывы</div><h2>Отзывы владельцев</h2><p class="lead">Оценка 4,8 в 2ГИС по 23 отзывам. Здесь показаны те, что видны в карточке.</p></div><a class="btn btn--ghost btn--sm" href="otzyvy.html">Все 8 отзывов</a></div>
+    <div class="grid g3"><article class="card card--hover rev reveal" style="--i:0">
+  <div class="rev__top">
+    <div class="rev__av">ДТ</div>
+    <div><div class="rev__n">Денис Тепляков</div>
+      <div class="rev__d">31 октября 2025</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t is-clamp">Отличная мойка, с прекрасным сервисом и кофе в подарок. Удивило отношение персонала, который встречает дружелюбно и с заботой, отдельно отмечу, что мастера самостоятельно заводят машину в бокс и ставит после на парковку после мойки, интересуются деталями и дают рекомендации по уходу и эксплуатации. Рекомендую всем, кто хочет делать качественную и профессиональную мойку своего авто, но сервис тоже</div><button class="rev__more" type="button">Читать целиком</button>
+</article><article class="card card--hover rev reveal" style="--i:1">
+  <div class="rev__top">
+    <div class="rev__av">UF</div>
+    <div><div class="rev__n">Uncle Flexxxx</div>
+      <div class="rev__d">30 октября 2023</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t is-clamp">Работа в команде ,грамотная консультация ,вежливость и оперативность - это про этих ребят Отличное место для мойки автомобиля ,приятное и чистое рабочее место «чем похвастаться может не каждый» Опрятный вид операторов и грамотно поставленная речь не может не радовать Множество предлагаемых услуг от простейшей мойки кузова до полировки и химчистки Бережное отношение к автомобилю ,работают в перчатк</div><button class="rev__more" type="button">Читать целиком</button>
+</article><article class="card card--hover rev reveal" style="--i:2">
+  <div class="rev__top">
+    <div class="rev__av">АЕ</div>
+    <div><div class="rev__n">Алена Егорова</div>
+      <div class="rev__d">15 июля 2023</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t">Детейлинг находится на территории отеля Benamar. Машину полностью помыли, в том числе двигатель, диски, салон, багажник. В общем, всё-всё-всё. Почистили всё качественно. Особенно удобно, что можно отдать машину на время нахождения в отеле, а затем получить обратно уже чистенькую!) Спасибо сотрудникам детейлинга и отеля за столь удобный сервис!)</div>
+</article></div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="grid g2" style="--gap:clamp(30px,4vw,64px);align-items:center">
+      <div class="reveal">
+        <div class="eyebrow">О центре</div>
+        <h2>Работаем 24 часа</h2>
+        <p class="lead" style="margin-top:20px">Комплексная и бесконтактная мойка, химчистка салона, мойка двигателя и днища, полировка кузова и защитные покрытия. Есть запись, зал ожидания и кафе.</p>
+        <ul class="list" style="margin-top:28px"><li>Оценка 4,8 из 5 в 2ГИС по 23 отзывам</li><li>Часы работы: Круглосуточно, ежедневно</li><li>Адрес: улица Ченцова, 12/42</li><li>43 позиции прайса с ценами, от 100 ₽</li><li>Автомойка: комплексная мойка от 1200 ₽, бесконтактная мойка, химчистка салона, мойка двигателя, мойка днища</li><li>Способы оплаты: Оплата картой, Наличный расчёт, Оплата через банк, Оплата эл.кошельком, Перевод с карты, Оплата по QR-коду</li></ul>
+        <div style="margin-top:30px"><a class="btn btn--ghost" href="o-nas.html">Подробнее о нас</a></div>
+      </div>
+      <div class="reveal" style="--i:1"><img src="https://i2.photo.2gis.com/photo-gallery/271c5c4a-8235-4a1f-afdc-7a5f6ce9e729_960x.jpg" alt="BNM AutoDetailing" loading="lazy" style="border-radius:var(--r-lg);aspect-ratio:1/1;object-fit:cover;width:100%"></div>
     </div>
   </div>
 </section>
 
-<section id="ceny">
+<section class="sec" id="zayavka">
   <div class="wrap">
-    <div class="eyebrow">Прайс</div>
-    <h2>Услуги и цены</h2>
-    <p class="lead">Всё видно сразу, без звонка «а сколько стоит». Именно это человек ищет первым, когда выбирает между вами и соседями.</p>
-    <div style="margin-top:34px"><div class="price__group"><div class="price__cat">Мойка автомобиля</div><div class="price__row">
-        <div><div class="price__name">3-х фазная мойка</div><div class="price__desc">🚘 Трёхфазная мойка BNM AutoDetailing — максимальная чистота и уход. Три этапа: бесконтактная, ручная и финишная обработка защитным составом. Глубокий блеск, защита и профессиональн</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">1 400 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">2-х фазная мойка</div><div class="price__desc">🚘 Двухфазная мойка BNM AutoDetailing — глубокая очистка кузова в два этапа: бесконтактная и ручная. Удаляем стойкие загрязнения без вреда лаку. Идеальный блеск и защита поверхности</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">1 440 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">1-фазная мойка</div><div class="price__desc">🚘 Однофазная мойка BNM AutoDetailing — бережная ручная мойка кузова и дисков с профессиональной автохимией. Без разводов и царапин, блеск за 25 минут.</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">960 ₽</span>
-      </div></div><div class="price__group"><div class="price__cat">Детейлинг</div><div class="price__row">
-        <div><div class="price__name">Полировка+керамика</div><div class="price__desc">✨ Полировка + керамика — профессиональная защита и зеркальный блеск кузова.
-Удаляем мелкие царапины, восстанавливаем глубину цвета, наносим стойкое керамическое покрытие (до 12 мес</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">33 000 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Полировка кузова</div><div class="price__desc">✨ Полировка кузова — вернём блеск и глубину цвета вашему автомобилю.
-Удаляем мелкие царапины, следы от мойки и потускнение лака.
-Премиум-уход от BNM AutoDetailing, Ростов-на-Дону. </div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">9 000 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Полировка кузова(предпродажная)</div><div class="price__desc">🚗 Предпродажная полировка кузова — быстрый способ повысить стоимость и привлекательность автомобиля перед продажей.
-Мастера BNM AutoDetailing в Ростове-на-Дону устраняют тусклость,</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">7 000 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Удаление вмятин</div><div class="price__desc">✨ Полировка кузова — вернём блеск и глубину цвета вашему автомобилю.
-Удаляем мелкие царапины, следы от мойки и потускнение лака.
-Премиум-уход от BNM AutoDetailing, Ростов-на-Дону. </div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">2 000 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Полировка фар</div><div class="price__desc">💡 Полировка фар — верни прозрачность и яркость освещению своего автомобиля!
-В BNM AutoDetailing (Ростов-на-Дону) мы удаляем помутнение, царапины и желтизну с поверхности фар, восст</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">2 000 ₽</span>
-      </div></div><div class="price__group"><div class="price__cat">Мойка двигателя</div><div class="price__row">
-        <div><div class="price__name">Мойка двигателя(детейлинг)</div><div class="price__desc">🔧 Мойка двигателя (детейлинг) BNM AutoDetailing — деликатная ручная очистка подкапотного пространства с полной безопасностью для электроники. Используем профессиональные составы и </div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">4 000 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Мойка двигателя</div><div class="price__desc">⚙️ Мойка двигателя BNM AutoDetailing — бережная очистка подкапотного пространства с использованием безопасной автохимии и парогенератора. Удаляем пыль, масло и грязь без риска повр</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">1 500 ₽</span>
-      </div></div><div class="price__group"><div class="price__cat">Защитные покрытия</div><div class="price__row">
-        <div><div class="price__name">Дополнительная обработка воском</div><div class="price__desc">✨ Обработка воском BNM AutoDetailing — финальный этап защиты кузова. Придаёт зеркальный блеск, отталкивает воду и грязь, облегчает последующие мойки. Защита до 4 недель.</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">500 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Кварцевое покрытие</div><div class="price__desc">💎 Кварцевое покрытие BNM AutoDetailing — долговременная защита кузова от царапин, реагентов и выгорания. Придаёт глубокий блеск, усиливает цвет и сохраняет чистоту до 12 месяцев.</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">2 000 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Твердый воск</div><div class="price__desc">🛡️ Твёрдый воск BNM AutoDetailing — защита и глубокий блеск кузова в премиум-формате. Образует прочную водоотталкивающую плёнку, защищает от реагентов и придаёт зеркальный блеск до</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">4 500 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Антидождь</div><div class="price__desc">💧 Антидождь BNM AutoDetailing — профессиональная гидрофобная обработка стёкол. Вода и грязь скатываются, обзор остаётся чистым даже в сильный дождь. Повышает безопасность и комфорт</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">3 000 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Керамика</div><div class="price__desc">💎 Профессиональное нанесение керамического покрытия кузова в BNM AutoDetailing (Ростов-на-Дону). Защита от грязи, солнца и реагентов, глубокий блеск и эффект «антидождь» до 12 меся</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">24 000 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Жидкое стекло</div><div class="price__desc">💎 Покрытие жидким стеклом в BNM AutoDetailing (Ростов-на-Дону) — защита кузова от грязи, реагентов и царапин, глубокий блеск и эффект самоочистки на месяцы вперед.</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">9 000 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Керамика салона</div><div class="price__desc">💎 Керамическая защита салона в BNM AutoDetailing (Ростов-на-Дону) — долговременная защита кожи, пластика и ткани от загрязнений, воды и выгорания. Безупречный вид и легкий уход до </div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">9 000 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Керамика дисков</div><div class="price__desc">💎 Керамическое покрытие дисков в BNM AutoDetailing (Ростов-на-Дону) — защита от грязи, реагентов и пыли от тормозов, блеск и лёгкий уход до 12 месяцев.</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">7 000 ₽</span>
-      </div></div><div class="price__group"><div class="price__cat">Чистка салона</div><div class="price__row">
-        <div><div class="price__name">Чистка пластика</div><div class="price__desc">🧼 Чистка пластика BNM AutoDetailing — глубокое очищение пластиковых элементов салона от пыли, жира и следов эксплуатации. Восстанавливает матовый оттенок и защищает от выгорания. И</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">800 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Чистка кожи</div><div class="price__desc">🧴 Чистка кожи BNM AutoDetailing — бережное очищение кожаных поверхностей салона от загрязнений, блеска и следов эксплуатации. Используем специализированные составы и мягкие щётки. </div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">800 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Обработка кожи</div><div class="price__desc">🪶 Обработка кожи BNM AutoDetailing — профессиональный уход, продлевающий жизнь кожаных поверхностей салона. Используем кондиционеры и защитные пропитки, которые питают, смягчают и </div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">800 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Обработка пластика</div><div class="price__desc">✨ Обработка пластика BNM AutoDetailing — восстановление внешнего вида пластиковых элементов салона. Наносим защитный состав, который придаёт матовый или лёгкий сатиновый блеск, пре</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">800 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Уборка багажника</div><div class="price__desc">🧽 Уборка багажника BNM AutoDetailing — тщательная чистка багажного отделения с удалением пыли, песка и пятен. Используем профессиональные пылесосы и безопасную автохимию. При необх</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">500 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Озонация автомобиля</div><div class="price__desc">🌿 Озонация автомобиля BNM AutoDetailing — эффективная обработка салона озоном для устранения неприятных запахов, бактерий, вирусов и плесени. Процедура проводится с использованием </div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">1 000 ₽</span>
-      </div></div><div class="price__group"><div class="price__cat">Химчистка</div><div class="price__row">
-        <div><div class="price__name">Химчистка салона</div><div class="price__desc">Цена договорн🧽 Полная химчистка салона BNM AutoDetailing — профессиональная глубокая очистка всех поверхностей автомобиля: сидений, потолка, пола, дверных карт, багажного отделения</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">9 000 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Химчистка ковриков</div><div class="price__desc">🧼 Химчистка ковриков BNM AutoDetailing — глубокая очистка ковриков с использованием профессиональной автохимии и экстракторного оборудования. Удаляем въевшуюся грязь, пятна, следы </div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">800 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Химчистка потолка</div><div class="price__desc">🧼 Химчистка потолка автомобиля BNM AutoDetailing — деликатная очистка потолочного покрытия от загрязнений, пятен, следов дыма и запахов без повреждения ткани и клеевого слоя.
-Испол</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">3 000 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Химчистка ковролина</div><div class="price__desc">🧽 Химчистка ковролина автомобиля BNM AutoDetailing — глубокая очистка напольного покрытия от грязи, пятен, влаги и запахов.
-Применяем профессиональные моющие составы и экстракторно</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">3 000 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Химчистка сидений</div><div class="price__desc">🪶 Химчистка сидений автомобиля BNM AutoDetailing — профессиональное восстановление чистоты и свежести салона.
-Используем безопасные, эффективные составы и экстракторное оборудовани</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">2 500 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Химчистка багажник</div><div class="price__desc">🧽 Химчистка багажника BNM AutoDetailing — тщательная профессиональная очистка всех поверхностей багажного отделения.
-Удаляем пыль, пятна, следы жидкостей, запахи и загрязнения с ко</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">2 000 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Химчистка дисков</div><div class="price__desc">🛞 Химчистка дисков BNM AutoDetailing — профессиональная очистка колесных дисков от стойких загрязнений: тормозной пыли, битума, реагентов и налета.
-Используем специализированные бе</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">1 500 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Снятие битума</div><div class="price__desc">🧴 Снятие битума BNM AutoDetailing — бережная очистка кузова от битумных пятен, дорожных реагентов и масляных загрязнений.
-Используем профессиональные составы, безопасные для лакокр</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">1 500 ₽</span>
-      </div></div></div>
-    <p class="price__note">Цены из вашего прайса в 2ГИС. Обновлено 5 декабря 2025.</p>
-  </div>
-</section>
-
-
-<section id="foto">
-  <div class="wrap">
-    <div class="eyebrow">Фотографии</div>
-    <h2>Как у нас</h2>
-    <div class="gal" style="margin-top:28px"><a href="https://i4.photo.2gis.com/photo-gallery/cf6792c0-493a-4f13-b153-18383b6645dc_1920x.jpg" target="_blank" rel="noopener"><img src="https://i4.photo.2gis.com/photo-gallery/cf6792c0-493a-4f13-b153-18383b6645dc_232x232.jpg" srcset="https://i4.photo.2gis.com/photo-gallery/cf6792c0-493a-4f13-b153-18383b6645dc_232x232.jpg 232w, https://i4.photo.2gis.com/photo-gallery/cf6792c0-493a-4f13-b153-18383b6645dc_464x464.jpg 464w, https://i4.photo.2gis.com/photo-gallery/cf6792c0-493a-4f13-b153-18383b6645dc_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i1.photo.2gis.com/photo-gallery/5ba030aa-fe93-44c7-9cb2-33b436bb3d79_1920x.jpg" target="_blank" rel="noopener"><img src="https://i1.photo.2gis.com/photo-gallery/5ba030aa-fe93-44c7-9cb2-33b436bb3d79_232x232.jpg" srcset="https://i1.photo.2gis.com/photo-gallery/5ba030aa-fe93-44c7-9cb2-33b436bb3d79_232x232.jpg 232w, https://i1.photo.2gis.com/photo-gallery/5ba030aa-fe93-44c7-9cb2-33b436bb3d79_464x464.jpg 464w, https://i1.photo.2gis.com/photo-gallery/5ba030aa-fe93-44c7-9cb2-33b436bb3d79_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i7.photo.2gis.com/photo-gallery/29a3d9a5-bf84-4652-a61a-e1072391d1f7_1920x.jpg" target="_blank" rel="noopener"><img src="https://i7.photo.2gis.com/photo-gallery/29a3d9a5-bf84-4652-a61a-e1072391d1f7_232x232.jpg" srcset="https://i7.photo.2gis.com/photo-gallery/29a3d9a5-bf84-4652-a61a-e1072391d1f7_232x232.jpg 232w, https://i7.photo.2gis.com/photo-gallery/29a3d9a5-bf84-4652-a61a-e1072391d1f7_464x464.jpg 464w, https://i7.photo.2gis.com/photo-gallery/29a3d9a5-bf84-4652-a61a-e1072391d1f7_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i2.photo.2gis.com/photo-gallery/20cc56ab-a579-4f87-9e60-83f868ff32d2_1920x.jpg" target="_blank" rel="noopener"><img src="https://i2.photo.2gis.com/photo-gallery/20cc56ab-a579-4f87-9e60-83f868ff32d2_232x232.jpg" srcset="https://i2.photo.2gis.com/photo-gallery/20cc56ab-a579-4f87-9e60-83f868ff32d2_232x232.jpg 232w, https://i2.photo.2gis.com/photo-gallery/20cc56ab-a579-4f87-9e60-83f868ff32d2_464x464.jpg 464w, https://i2.photo.2gis.com/photo-gallery/20cc56ab-a579-4f87-9e60-83f868ff32d2_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i9.photo.2gis.com/photo-gallery/ce994ead-3e65-43b7-8411-54339e7b7783_1920x.jpg" target="_blank" rel="noopener"><img src="https://i9.photo.2gis.com/photo-gallery/ce994ead-3e65-43b7-8411-54339e7b7783_232x232.jpg" srcset="https://i9.photo.2gis.com/photo-gallery/ce994ead-3e65-43b7-8411-54339e7b7783_232x232.jpg 232w, https://i9.photo.2gis.com/photo-gallery/ce994ead-3e65-43b7-8411-54339e7b7783_464x464.jpg 464w, https://i9.photo.2gis.com/photo-gallery/ce994ead-3e65-43b7-8411-54339e7b7783_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i1.photo.2gis.com/photo-gallery/eedebb7d-f66a-4983-85ae-718b8433001c_1920x.jpg" target="_blank" rel="noopener"><img src="https://i1.photo.2gis.com/photo-gallery/eedebb7d-f66a-4983-85ae-718b8433001c_232x232.jpg" srcset="https://i1.photo.2gis.com/photo-gallery/eedebb7d-f66a-4983-85ae-718b8433001c_232x232.jpg 232w, https://i1.photo.2gis.com/photo-gallery/eedebb7d-f66a-4983-85ae-718b8433001c_464x464.jpg 464w, https://i1.photo.2gis.com/photo-gallery/eedebb7d-f66a-4983-85ae-718b8433001c_640x.jpg 640w" sizes="50vw" alt="Мы в работе" loading="lazy" decoding="async"></a><a href="https://i2.photo.2gis.com/photo-gallery/271c5c4a-8235-4a1f-afdc-7a5f6ce9e729_1920x.jpg" target="_blank" rel="noopener"><img src="https://i2.photo.2gis.com/photo-gallery/271c5c4a-8235-4a1f-afdc-7a5f6ce9e729_232x232.jpg" srcset="https://i2.photo.2gis.com/photo-gallery/271c5c4a-8235-4a1f-afdc-7a5f6ce9e729_232x232.jpg 232w, https://i2.photo.2gis.com/photo-gallery/271c5c4a-8235-4a1f-afdc-7a5f6ce9e729_464x464.jpg 464w, https://i2.photo.2gis.com/photo-gallery/271c5c4a-8235-4a1f-afdc-7a5f6ce9e729_640x.jpg 640w" sizes="50vw" alt="Мы в работе" loading="lazy" decoding="async"></a><a href="https://i5.photo.2gis.com/photo-gallery/bcea27a9-41f3-4f58-a0ac-d10d0c790723_1920x.jpg" target="_blank" rel="noopener"><img src="https://i5.photo.2gis.com/photo-gallery/bcea27a9-41f3-4f58-a0ac-d10d0c790723_232x232.jpg" srcset="https://i5.photo.2gis.com/photo-gallery/bcea27a9-41f3-4f58-a0ac-d10d0c790723_232x232.jpg 232w, https://i5.photo.2gis.com/photo-gallery/bcea27a9-41f3-4f58-a0ac-d10d0c790723_464x464.jpg 464w, https://i5.photo.2gis.com/photo-gallery/bcea27a9-41f3-4f58-a0ac-d10d0c790723_640x.jpg 640w" sizes="50vw" alt="Мы в работе" loading="lazy" decoding="async"></a></div>
-    <p class="price__note">Фотографии из вашей карточки 2ГИС. <a href="https://2gis.ru/rostov/firm/70000001062508525" target="_blank" rel="noopener">Открыть карточку</a></p>
-  </div>
-</section>
-
-<section id="otzyvy">
-  <div class="wrap">
-    <div class="eyebrow">Отзывы</div>
-    <h2>Что о нас пишут</h2>
-    <p class="lead">Рейтинг 4.8 в 2ГИС, 23 отзывов. На сайте они работают на вас, а не лежат в чужом приложении.</p>
-    <div class="rev" style="margin-top:28px"><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Отличная мойка, с прекрасным сервисом и кофе в подарок. Удивило отношение персонала, который встречает дружелюбно и с заботой, отдельно отмечу, что мастера самостоятельно заводят машину в бокс и ставит после на парковку после мойки, интересуются деталями и дают рекомендации по уходу и эксплуатации. </p>
-      <div class="rev__who">Денис Тепляков · 31.10.2025</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Идеально отмыли очень сильные загрязнения с первого раза, приезжали и второй, уже вообще как новая машина стала. Спасибо</p>
-      <div class="rev__who">Наталья Бессонова · 19.05.2025</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Детейлинг находится на территории отеля Benamar. Машину полностью помыли, в том числе двигатель, диски, салон, багажник. В общем, всё-всё-всё. Почистили всё качественно. Особенно удобно, что можно отдать машину на время нахождения в отеле, а затем получить обратно уже чистенькую!) Спасибо сотрудника</p>
-      <div class="rev__who">Алена Егорова · 15.07.2023</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Обслуживаю автомобиль только в &quot;Венамар&quot;. Мойка идеальная. После керамики машина приобрела особенный блеск. На территории находится отель можно выпить кофе и отдохнуть . Всем рекомендую!</p>
-      <div class="rev__who">Анжелика Кичиян · 24.08.2022</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Отличная мойка ,цена-качество 🔥Помыли двигатель и салон 👍</p>
-      <div class="rev__who">Кирилл Болдырев · 09.09.2024</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Отличная автомойка! Работают круглосуточно! Время ожидания прекрасно скрасило кофе из лобби.</p>
-      <div class="rev__who">Дарья Колова · 01.08.2024</div>
-    </article></div>
-    <p class="price__note">Отзывы из 2ГИС. <a href="https://2gis.ru/rostov/firm/70000001062508525" target="_blank" rel="noopener">Читать все</a></p>
-  </div>
-</section>
-
-<section id="kontakty">
-  <div class="wrap">
-    <div class="eyebrow">Контакты</div>
-    <h2>Где нас найти</h2>
-    <div class="contact" style="margin-top:28px">
-      <dl class="dl"><dt>Адрес</dt><dd>улица Ченцова, 12/42</dd><dt>Часы работы</dt><dd>Круглосуточно · ежедневно</dd><dt>Телефон</dt><dd><a href="tel:+79281152212">+7 928 115-22-12</a></dd><dt>Написать</dt><dd><a href="https://t.me/+79281152212" target="_blank" rel="noopener">Telegram</a> · <a href="https://wa.me/79281152212?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%0A%0A%D0%9F%D0%B8%D1%88%D1%83%20%D0%B8%D0%B7%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%202%D0%93%D0%98%D0%A1.%0A%0A" target="_blank" rel="noopener">WhatsApp</a></dd></dl>
-      <iframe class="map" src="https://widgets.2gis.com/widget?type=firmsonmap&amp;options=%7B%22pos%22%3A%7B%22lat%22%3A47.236961%2C%22lon%22%3A39.76002%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22rostov%22%7D%2C%22org%22%3A%2270000001062508525%22%7D" loading="lazy" title="Карта проезда"></iframe>
+    <div class="cta reveal">
+      <div class="cta__in">
+        <div>
+          <div class="eyebrow" style="color:inherit;opacity:.7">Заявка</div>
+          <h2>Записаться</h2>
+          <p class="lead">Оставьте номер, подберём время и обсудим работы.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:26px"><a class="btn btn--ghost" href="tel:+79281152212" style="border-color:currentColor;color:inherit">+7 928 115-22-12</a><a class="btn btn--ghost" href="https://t.me/+79281152212" target="_blank" rel="noopener" style="border-color:currentColor;color:inherit">Telegram</a><a class="btn btn--ghost" href="https://wa.me/79281152212?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%0A%0A%D0%9F%D0%B8%D1%88%D1%83%20%D0%B8%D0%B7%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%202%D0%93%D0%98%D0%A1.%0A%0A" target="_blank" rel="noopener" style="border-color:currentColor;color:inherit">WhatsApp</a></div>
+        </div>
+        <div>
+          <form class="form" id="lead" novalidate>
+            <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <input name="name" placeholder="Как к вам обращаться" required minlength="2" autocomplete="name">
+            <input name="contact" placeholder="Телефон или ник в Telegram" required minlength="5" autocomplete="tel">
+            <textarea name="task" placeholder="Что вас интересует (по желанию)"></textarea>
+            <button class="btn btn--dark btn--wide" type="submit">Отправить</button>
+            <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку указанных данных.</p>
+          </form>
+          <div class="form__ok" id="ok">Заявка отправлена. Спасибо, скоро свяжемся.</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-
-<section id="zayavka">
-  <div class="wrap">
-    <div class="card" style="padding:clamp(24px,4vw,44px)">
-      <div class="eyebrow">Заявка</div>
-      <h2>Записаться</h2>
-      <p class="lead">Оставьте номер, подберём время и обсудим работы. Заявка приходит в Telegram за секунду, отвечать можно прямо оттуда.</p>
-      <form class="form" id="lead" style="margin-top:26px" novalidate>
-        <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <input name="name" placeholder="Как к вам обращаться" required minlength="2" autocomplete="name">
-        <input name="contact" placeholder="Телефон или ник в Telegram" required minlength="5" autocomplete="tel">
-        <textarea name="task" placeholder="Что нужно (по желанию)"></textarea>
-        <button class="btn" type="submit">Отправить</button>
-        <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку указанных данных.</p>
-      </form>
-      <div class="form__ok" id="ok">Заявка отправлена. Спасибо, скоро свяжемся.</div>
-    </div>
-  </div>
-</section>
-
 <footer class="foot">
-  <div class="wrap foot__row">
-    <div>BNM AutoDetailing · улица Ченцова, 12/42</div>
-    <div><a href="tel:+79281152212" style="text-decoration:none">+7 928 115-22-12</a></div>
+  <div class="wrap">
+    <div class="foot__grid"><div>
+      <a class="brand" href="index.html" style="margin-bottom:16px">
+        <span class="brand__mark">B</span>
+        <span class="brand__t"><span class="brand__n">BNM AutoDetailing</span>
+        <span class="brand__s">Автомойки</span></span></a>
+      <a class="foot__tel" href="tel:+79281152212">+7 928 115-22-12</a>
+      <div style="opacity:.6;font-size:14.5px;max-width:34ch">Рейтинг 4,8 в 2ГИС. ежедневно</div>
+    </div><div><h4>Разделы</h4><ul><li><a href="index.html">Главная</a></li><li><a href="uslugi.html">Услуги</a></li><li><a href="ceny.html">Цены</a></li><li><a href="galereya.html">Галерея</a></li></ul></div><div><h4>&nbsp;</h4><ul><li><a href="otzyvy.html">Отзывы</a></li><li><a href="o-nas.html">О нас</a></li><li><a href="kontakty.html">Контакты</a></li></ul></div><div><h4>Контакты</h4><ul><li><a href="tel:+79281152212">+7 928 115-22-12</a></li><li><a href="https://t.me/+79281152212" target="_blank" rel="noopener">Telegram</a></li><li><a href="https://wa.me/79281152212?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%0A%0A%D0%9F%D0%B8%D1%88%D1%83%20%D0%B8%D0%B7%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%202%D0%93%D0%98%D0%A1.%0A%0A" target="_blank" rel="noopener">WhatsApp</a></li></ul><h4 style="margin-top:26px">Адрес</h4><ul><li>улица Ченцова, 12/42</li><li>Круглосуточно</li><li>Ежедневно</li><li><a href="https://2gis.ru/rostov/firm/70000001062508525" target="_blank" rel="noopener">Карточка в 2ГИС</a></li></ul></div></div>
+    <div class="foot__bot">
+      <div>BNM AutoDetailing</div>
+      <div>Данные и фотографии — из карточки 2ГИС</div>
+    </div>
   </div>
 </footer>
-
-
 <div class="demo">
   <div class="wrap demo__in">
     <div>
       <b>Это демо-макет, а не ваш действующий сайт.</b> Собрал его Владимир, веб-разработчик из
-      Ростов-на-Дону, по открытым данным вашей карточки 2ГИС: фото, прайс, отзывы и часы работы — ваши.<br>Что я заметил на вашем текущем сайте: сайт из карточки 2ГИС HTTP 404.
+      Ростов-на-Дону, по открытым данным вашей карточки 2ГИС: название, фотографии, прайс, отзывы
+      и часы работы — ваши. Что я заметил на вашем текущем сайте: сайт из карточки 2ГИС HTTP 404.
     </div>
-    <a class="btn btn--sm btn--ghost" style="border-color:currentColor;color:inherit"
-       href="https://t.me/vovuchoooo" target="_blank" rel="noopener">Написать @vovuchoooo</a>
+    <a class="btn btn--sm" href="https://t.me/vovuchoooo" target="_blank" rel="noopener">Написать @vovuchoooo</a>
   </div>
 </div>
-
 <div class="bar">
-  <a class="btn" href="#zayavka">Записаться</a>
+  <a class="btn" href="kontakty.html#zayavka">Записаться</a>
   <a class="btn btn--ghost" href="tel:+79281152212">Позвонить</a>
 </div>
-
-<script>
-document.getElementById('lead').addEventListener('submit', async function (ev) {
-  ev.preventDefault();
-  var f = ev.target, b = f.querySelector('button');
-  var body = {
-    company: f.company.value, name: f.name.value,
-    contact: f.contact.value, task: f.task.value
-  };
-  if (body.name.trim().length < 2 || body.contact.trim().length < 5) {
-    f.reportValidity(); return;
-  }
-  b.disabled = true; b.textContent = 'Отправляю…';
-  try {
-    var r = await fetch('https://lead-form.tripolev04.workers.dev', {
-      method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body)
-    });
-    if (!r.ok) throw 0;
-    f.style.display = 'none';
-    document.getElementById('ok').style.display = 'block';
-  } catch (err) {
-    b.disabled = false; b.textContent = 'Отправить ещё раз';
-  }
-});
-</script>
+<script src="script.js" defer></script>
 </body>
 </html>
