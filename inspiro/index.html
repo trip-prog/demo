@@ -1,339 +1,225 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+<script>document.documentElement.className+=" js";setTimeout(function(){document.querySelectorAll(".reveal:not(.is-in)").forEach(function(n){n.classList.add("is-in")})},2500)</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Inspiro — Стоматологический центр · улица Максима Горького, 220а</title>
-<meta name="description" content="Inspiro — Стоматологический центр · улица Максима Горького, 220а. Рейтинг 4.9 в 2ГИС.">
+<title>Inspiro — стоматологический центр, Ростов-на-Дону</title>
+<meta name="description" content="Взрослая и детская стоматология, ортопедия, имплантация и лечение под микроскопом. Приём семь дней в неделю.">
 <meta name="robots" content="noindex,nofollow">
-<meta property="og:title" content="Inspiro">
-<meta property="og:description" content="Inspiro — Стоматологический центр · улица Максима Горького, 220а. Рейтинг 4.9 в 2ГИС.">
+<meta name="theme-color" content="#f5f3ed">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Inspiro — стоматологический центр, Ростов-на-Дону">
+<meta property="og:description" content="Взрослая и детская стоматология, ортопедия, имплантация и лечение под микроскопом. Приём семь дней в неделю.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f7ac0'/%3E%3C/svg%3E">
-<style>
-:root{
-  --bg:#f4f8fb;--surf:#ffffff;--line:#dbe7f0;--ink:#12283a;
-  --mute:#5d7688;--acc:#1f7ac0;--acc-ink:#ffffff;
-  --shadow:0 1px 2px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.07);
-  --r:14px;--wrap:1120px;
-}
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);
-  font:400 17px/1.6 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  -webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
-a{color:inherit}
-h1,h2,h3{font-family:'Manrope','Inter',sans-serif;line-height:1.14;margin:0;
-  letter-spacing:-.02em}
-h1{font-size:clamp(34px,7vw,62px);}
-h2{font-size:clamp(26px,4.4vw,40px)}
-h3{font-size:19px}
-p{margin:0}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
-section{padding:72px 0}
-.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);
-  font-weight:600;margin-bottom:12px}
-.lead{color:var(--mute);font-size:17px;max-width:62ch;margin-top:14px}
-
-.top{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--bg) 88%,transparent);
-  backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.top__in{display:flex;align-items:center;gap:18px;height:64px}
-.brand{font-family:'Manrope',sans-serif;font-weight:700;font-size:20px;
-  text-decoration:none;letter-spacing:.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.top nav{margin-left:auto;display:none;gap:26px}
-.top nav a{text-decoration:none;color:var(--mute);font-size:15px;transition:color .2s}
-.top nav a:hover{color:var(--ink)}
-.top .btn{margin-left:auto}
-@media(min-width:900px){.top nav{display:flex}.top .btn{margin-left:0}}
-
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
-  padding:14px 24px;border-radius:999px;border:1px solid transparent;cursor:pointer;
-  font:600 15px/1 'Inter',sans-serif;text-decoration:none;transition:transform .15s,opacity .2s;
-  background:var(--acc);color:var(--acc-ink)}
-.btn:hover{transform:translateY(-1px);opacity:.92}
-.btn--ghost{background:transparent;color:var(--ink);border-color:var(--line)}
-.btn--sm{padding:11px 18px;font-size:14px}
-
-.hero{position:relative;min-height:min(88vh,720px);display:flex;align-items:flex-end;
-  padding:96px 0 56px;overflow:hidden;isolation:isolate}
-.hero__bg{position:absolute;inset:0;z-index:-2;object-fit:cover;width:100%;height:100%}
-.hero::after{content:'';position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(180deg,rgba(16,20,28,.52) 0%,rgba(8,9,12,.55) 45%,rgba(6,7,10,.9) 100%)}
-.hero--plain::after{background:radial-gradient(120% 90% at 15% 0%,
-  color-mix(in srgb,var(--acc) 26%,var(--bg)) 0%,var(--bg) 70%)}
-.hero__in{position:relative;color:#fff}
-.hero--plain .hero__in{color:var(--ink)}
-.hero h1{max-width:16ch}
-.hero__sub{margin-top:16px;font-size:clamp(16px,2.2vw,20px);opacity:.9;max-width:44ch}
-.hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-.hero--plain .hero__cta .btn--ghost{border-color:var(--line)}
-.hero__cta .btn--ghost{color:#fff;border-color:rgba(255,255,255,.42)}
-
-.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
-.fact{display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:999px;
-  background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.2);
-  font-size:14px;backdrop-filter:blur(6px)}
-.hero--plain .fact{background:var(--surf);border-color:var(--line);color:var(--ink)}
-.fact b{font-weight:600}
-.star{color:#ffc247}
-
-.grid{display:grid;gap:16px}
-@media(min-width:700px){.cols-2{grid-template-columns:1fr 1fr}}
-@media(min-width:900px){.cols-3{grid-template-columns:repeat(3,1fr)}}
-
-.card{background:var(--surf);border:1px solid var(--line);border-radius:var(--r);padding:22px;
-  box-shadow:var(--shadow)}
-
-.price__group + .price__group{margin-top:34px}
-.price__cat{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);
-  margin-bottom:14px;font-weight:600}
-.price__row{display:flex;align-items:baseline;gap:14px;padding:15px 0;border-bottom:1px dashed var(--line)}
-.price__row:last-child{border-bottom:0}
-.price__name{font-weight:600}
-.price__desc{color:var(--mute);font-size:14.5px;margin-top:4px;max-width:70ch}
-.price__dots{flex:1;border-bottom:1px dotted var(--line);transform:translateY(-4px);min-width:24px}
-.price__val{white-space:nowrap;font-weight:700;color:var(--acc);font-size:18px}
-.price__note{color:var(--mute);font-size:14px;margin-top:24px}
-
-.tags{display:flex;flex-wrap:wrap;gap:9px}
-.tag{padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surf);
-  font-size:14.5px}
-
-.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-@media(min-width:760px){.gal{grid-template-columns:repeat(4,1fr)}
-  .gal a:first-child{grid-column:span 2;grid-row:span 2}}
-.gal a{display:block;border-radius:12px;overflow:hidden;background:var(--line);aspect-ratio:1/1}
-.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
-.gal a:hover img{transform:scale(1.05)}
-
-.rev{display:grid;gap:16px}
-@media(min-width:820px){.rev{grid-template-columns:repeat(3,1fr)}}
-.rev__stars{color:#ffc247;letter-spacing:2px;font-size:15px}
-.rev__text{margin-top:12px;font-size:15.5px;line-height:1.62}
-.rev__who{margin-top:16px;font-size:14px;color:var(--mute)}
-
-.contact{display:grid;gap:22px}
-@media(min-width:900px){.contact{grid-template-columns:1fr 1.15fr;align-items:start}}
-.dl{display:grid;gap:18px;margin:0}
-.dl dt{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
-.dl dd{margin:5px 0 0;font-size:17px}
-.dl a{text-decoration:none;border-bottom:1px solid var(--line)}
-.map{border:0;width:100%;height:340px;border-radius:var(--r);border:1px solid var(--line)}
-
-.form{display:grid;gap:13px}
-.form input,.form textarea{width:100%;padding:14px 16px;border-radius:11px;background:var(--bg);
-  border:1px solid var(--line);color:var(--ink);font:400 16px/1.5 'Inter',sans-serif}
-.form input:focus,.form textarea:focus{outline:2px solid var(--acc);outline-offset:1px;border-color:transparent}
-.form textarea{min-height:96px;resize:vertical}
-.form .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
-.form__note{font-size:13px;color:var(--mute)}
-.form__ok{display:none;padding:14px 16px;border-radius:11px;background:color-mix(in srgb,var(--acc) 14%,transparent);
-  border:1px solid var(--acc);font-size:15px}
-
-.foot{border-top:1px solid var(--line);padding:34px 0;color:var(--mute);font-size:14.5px}
-.foot__row{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;justify-content:space-between}
-
-.demo{background:var(--acc);color:var(--acc-ink);font-size:14.5px;line-height:1.55}
-.demo__in{padding:20px;display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;justify-content:space-between}
-.demo a{color:inherit;font-weight:700}
-.bar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;gap:10px;padding:10px 14px;
-  background:color-mix(in srgb,var(--bg) 94%,transparent);border-top:1px solid var(--line);
-  backdrop-filter:blur(10px)}
-.bar .btn{flex:1}
-@media(min-width:900px){.bar{display:none}}
-@media(max-width:899px){body{padding-bottom:72px}}
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%233e715f'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='16' font-weight='700' text-anchor='middle' fill='%23fff'%3EI%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-<header class="top">
+<body data-page="index.html">
+<header class="top" id="top">
   <div class="wrap top__in">
-    <a class="brand" href="#top">Inspiro</a>
-    <nav><a href="#ceny">Цены</a><a href="#foto">Фото</a><a href="#otzyvy">Отзывы</a><a href="#kontakty">Контакты</a></nav>
-    <a class="btn btn--sm" href="#zayavka">Записаться на приём</a>
+    <a class="brand" href="index.html">
+      <span class="brand__mark">I</span>
+      <span class="brand__t">
+        <span class="brand__n">Inspiro</span>
+        <span class="brand__s">стоматологический центр</span>
+      </span>
+    </a>
+    <nav class="nav"><a href="uslugi.html">Услуги</a><a href="ceny.html">Цены</a><a href="galereya.html">Галерея</a><a href="otzyvy.html">Отзывы</a><a href="o-nas.html">О нас</a><a href="kontakty.html">Контакты</a></nav>
+    <div class="top__act">
+      <a class="top__tel" href="tel:+78007078307">+7 800 707-83-07</a>
+      <a class="btn btn--sm" href="kontakty.html#zayavka">Записаться на консультацию</a>
+      <button class="burger" type="button" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
+<div class="drawer" id="drawer">
+  <div class="wrap">
+    <a href="index.html">Главная</a><a href="uslugi.html">Услуги</a><a href="ceny.html">Цены</a><a href="galereya.html">Галерея</a><a href="otzyvy.html">Отзывы</a><a href="o-nas.html">О нас</a><a href="kontakty.html">Контакты</a>
+    <a class="btn btn--wide" href="kontakty.html#zayavka">Записаться на консультацию</a>
+  </div>
+</div>
+<section class="hero">
+  <div class="wrap">
+    <div class="hero__in">
+      <div>
+        <div class="eyebrow reveal">Стоматологический центр · Максима Горького, 220а</div>
+        <h1 class="reveal">Восстановить.<br><em>Сохранить. Улыбаться.</em></h1>
+        <p class="hero__lead reveal">Взрослая и детская стоматология, ортопедия, имплантация и лечение под микроскопом. Приём семь дней в неделю.</p>
+        <div class="hero__act reveal"><a class="btn btn--lg" href="kontakty.html#zayavka">Записаться на консультацию</a><a class="btn btn--ghost btn--lg" href="uslugi.html">Услуги центра</a></div>
+        <div class="hero__facts reveal"><div><div class="fact__v">4,9</div><div class="fact__l">рейтинг в 2ГИС по 58 отзывам</div></div><div><div class="fact__v">50</div><div class="fact__l">позиций в прайсе с ценой</div></div><div><div class="fact__v">28</div><div class="fact__l">фотографий в галерее</div></div></div>
+      </div>
+      <div class="hero__media reveal" style="--i:1">
+          <img src="https://i7.photo.2gis.com/photo-gallery/d22d0cb5-dd5b-4a28-beab-1d2e3c0d0c6e_960x.jpg" alt="Inspiro" fetchpriority="high" decoding="async">
+          <div class="hero__badge hero__badge--bl">
+              <b>4,9</b>
+              <span><span class="stars">★★★★★</span><br>58 отзывов в 2ГИС</span>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="hero__strip"><div><b>Адрес</b>улица Максима Горького, 220а</div><div><b>Часы работы</b>Пн–Пт 08:00–20:00, Сб–Вс 09:00–20:00</div><div><b>Телефон</b>+7 800 707-83-07</div><div><b>Оплата</b>картой, наличный расчёт, через банк</div></div>
+</section>
 
-
-<section class="hero" id="top">
-  <img class="hero__bg" src="https://i7.photo.2gis.com/photo-gallery/d22d0cb5-dd5b-4a28-beab-1d2e3c0d0c6e_640x.jpg" alt="" fetchpriority="high" decoding="async" srcset="https://i7.photo.2gis.com/photo-gallery/d22d0cb5-dd5b-4a28-beab-1d2e3c0d0c6e_640x.jpg 640w, https://i7.photo.2gis.com/photo-gallery/d22d0cb5-dd5b-4a28-beab-1d2e3c0d0c6e_960x.jpg 960w, https://i7.photo.2gis.com/photo-gallery/d22d0cb5-dd5b-4a28-beab-1d2e3c0d0c6e_1920x.jpg 1920w" sizes="100vw">
-  <div class="wrap hero__in">
-    <h1>Inspiro</h1>
-    <p class="hero__sub">Стоматологический центр · улица Максима Горького, 220а</p>
-    <div class="facts"><span class="fact"><span class="star">★</span> <b>4.9</b> · 58 отзывов в 2ГИС</span><span class="fact">🕒 Пн–Пт 08:00–20:00, Сб–Вс 09:00–20:00</span><span class="fact">📍 улица Максима Горького, 220а</span></div>
-    <div class="hero__cta">
-      <a class="btn" href="#zayavka">Записаться на приём</a>
-      <a class="btn btn--ghost" href="tel:88007078307">Позвонить</a>
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Направления</div><h2>Ортопедические решения</h2><p class="lead">Пятьдесят позиций из опубликованного прайса центра.</p></div><a class="btn btn--ghost btn--sm" href="uslugi.html">Все лечение</a></div>
+    <div class="grid g3"><a class="tile reveal" style="--i:0" href="uslugi.html#ortopedicheskie-uslugi">
+              <div class="tile__b">
+                <div class="tile__cat">50 услуг</div>
+                <h3 class="tile__n">Ортопедические услуги</h3>
+                <div class="tile__d">Mok Up (Винир или накладка), Замена акриловой облицовки на балочной конструкции, Восстановление зубов штифтовыми зубами …</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">750 ₽</span></div>
+              </div></a></div>
+  </div>
+</section>
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Цены</div><h2>Стоимость восстановления</h2><p class="lead">Ключевые позиции на главной и полный список с поиском.</p></div><a class="btn btn--ghost btn--sm" href="ceny.html">Все 50 позиций</a></div>
+    <div class="reveal"><div class="prow" data-s="mok up (винир или накладка) ортопедические услуги">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Mok Up (Винир или накладка)</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 2 000 ₽</div>
+</div><div class="prow" data-s="замена акриловой облицовки на балочной конструкции ортопедические услуги">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Замена акриловой облицовки на балочной конструкции</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 30 000 ₽</div>
+</div><div class="prow" data-s="восстановление зубов штифтовыми зубами временное (1 единица) ортопедические услуги">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Восстановление зубов штифтовыми зубами временное (1 единица)</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 7 500 ₽</div>
+</div><div class="prow" data-s="телескопическая пара для бюгельного протеза гальвано техника ортопедические услуги">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Телескопическая пара для бюгельного протеза гальвано техника</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 46 000 ₽</div>
+</div><div class="prow" data-s="индивидуализированный не сьемный протез на 4 имплантатах 6- 8-10 единиц армированный акрил ортопедические услуги">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Индивидуализированный не сьемный протез на 4 имплантатах 6- 8-10 единиц армированный акрил</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 110 000 ₽</div>
+</div><div class="prow" data-s="снятие несъемной ортопедической конструкции постоянной (1 единица) ортопедические услуги">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Снятие несъемной ортопедической конструкции постоянной (1 единица)</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 2 000 ₽</div>
+</div><div class="prow" data-s="восстановление зуба : временная пластмассовая коронка изготовленная прямым методом (срок службы 2 недели) ортопедические услуги">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Восстановление зуба : Временная пластмассовая коронка изготовленная прямым методом (срок службы 2 недели)</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 2 000 ₽</div>
+</div><div class="prow" data-s="перебазировка съемного протеза (клиническая) ортопедические услуги">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Перебазировка съемного протеза (клиническая)</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 6 500 ₽</div>
+</div><div class="prow" data-s="бюгельный съёмный протез с кламмерной фиксацией ортопедические услуги">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Бюгельный съёмный протез с кламмерной фиксацией</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 52 000 ₽</div>
+</div><div class="prow" data-s="телескопическая пара для бюгельного протеза кхс ортопедические услуги">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Телескопическая пара для бюгельного протеза КХС</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 46 000 ₽</div>
+</div></div>
+    <div style="margin-top:30px"><a class="btn" href="ceny.html">Открыть полный прайс</a></div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Фотографии</div><h2>Пространство Inspiro</h2><p class="lead">Клиника, кабинеты и специалисты на реальных фотографиях.</p></div><a class="btn btn--ghost btn--sm" href="galereya.html">Вся галерея</a></div>
+    <div class="gal"><figure data-full="https://i7.photo.2gis.com/photo-gallery/d22d0cb5-dd5b-4a28-beab-1d2e3c0d0c6e_1920x.jpg"><img src="https://i7.photo.2gis.com/photo-gallery/d22d0cb5-dd5b-4a28-beab-1d2e3c0d0c6e_640x.jpg" alt="Интерьер" loading="lazy" decoding="async"><figcaption>Интерьер</figcaption></figure><figure data-full="https://i9.photo.2gis.com/photo-gallery/304793f1-6ede-4198-b49a-a407746f8acf_1920x.jpg"><img src="https://i9.photo.2gis.com/photo-gallery/304793f1-6ede-4198-b49a-a407746f8acf_640x.jpg" alt="Интерьер" loading="lazy" decoding="async"><figcaption>Интерьер</figcaption></figure><figure data-full="https://i9.photo.2gis.com/photo-gallery/1c441228-73e2-4f33-9fb7-9de5bddf98e7_1920x.jpg"><img src="https://i9.photo.2gis.com/photo-gallery/1c441228-73e2-4f33-9fb7-9de5bddf98e7_640x.jpg" alt="Интерьер" loading="lazy" decoding="async"><figcaption>Интерьер</figcaption></figure><figure data-full="https://i1.photo.2gis.com/photo-gallery/75e94f0f-f82d-4105-9f3e-37804b391e54_1920x.jpg"><img src="https://i1.photo.2gis.com/photo-gallery/75e94f0f-f82d-4105-9f3e-37804b391e54_640x.jpg" alt="Интерьер" loading="lazy" decoding="async"><figcaption>Интерьер</figcaption></figure><figure data-full="https://i2.photo.2gis.com/photo-gallery/5b476c5d-96ef-47b1-ab44-0a4737aa8716_1920x.jpg"><img src="https://i2.photo.2gis.com/photo-gallery/5b476c5d-96ef-47b1-ab44-0a4737aa8716_640x.jpg" alt="Интерьер" loading="lazy" decoding="async"><figcaption>Интерьер</figcaption></figure><figure data-full="https://i8.photo.2gis.com/photo-gallery/66f67f5e-7405-4620-99f3-0ce27bdd3a46_1920x.jpg"><img src="https://i8.photo.2gis.com/photo-gallery/66f67f5e-7405-4620-99f3-0ce27bdd3a46_640x.jpg" alt="Интерьер" loading="lazy" decoding="async"><figcaption>Интерьер</figcaption></figure></div>
+  </div>
+</section>
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Отзывы</div><h2>Рейтинг 4,9 в 2ГИС</h2><p class="lead">Оценка 4,9 в 2ГИС по 58 отзывам. Здесь показаны те, что видны в карточке.</p></div><a class="btn btn--ghost btn--sm" href="otzyvy.html">Все 12 отзывов</a></div>
+    <div class="grid g3"><article class="card card--hover rev reveal" style="--i:0">
+  <div class="rev__top">
+    <div class="rev__av">ВМ</div>
+    <div><div class="rev__n">Вера Морозова</div>
+      <div class="rev__d">1 февраля 2026</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t is-clamp">Хочу поделиться впечатлениями о посещении стоматологической клиники Инспиро. Обратились с дочкой подростком для исправления прикуса. получили консультацию. Нас записали и приняли практически сразу после звонка, не пришлось ждать несколько дней до свободного окна. Ортодонт Штанке Н.В. подробно объяснила причину проблемы, сделала снимки, предложила несколько вариантов решения. Кабинеты выглядят совр</div><button class="rev__more" type="button">Читать целиком</button>
+</article><article class="card card--hover rev reveal" style="--i:1">
+  <div class="rev__top">
+    <div class="rev__av">ЮП</div>
+    <div><div class="rev__n">Юлия Павлова</div>
+      <div class="rev__d">7 мая 2026</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t">Спокойная,душевная обстановка,в клинике не страшно) не воняет &quot;стоматологией&quot;,как часто бывает в других. Врачи тактичные,добрые по отношению к пациенту. Я приводила детей на гигиену и на лечение. Ничего не навязывали лишнего. Я всем рекомендую данную клинику. Рада,что нашла её недалеко от дома и мои ожидания оправдались. Есть семейные скидки.</div>
+</article><article class="card card--hover rev reveal" style="--i:2">
+  <div class="rev__top">
+    <div class="rev__av">ЯВ</div>
+    <div><div class="rev__n">Яна В</div>
+      <div class="rev__d">19 мая 2026</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t">Была здесь впервые и скажу точно, что рекомендую клинику❤️ Чисто, опрятно, приятно находиться! Отличный врач Шарухия Тамара Сергеевна. Индивидуальный подход, я моментально ей доверилась. От стоматолога я чувствовала спокойствие, уверенность. Профи своего дела и слышит своего пациента! Спасибо за помощь</div>
+</article></div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="grid g2" style="--gap:clamp(30px,4vw,64px);align-items:center">
+      <div class="reveal">
+        <div class="eyebrow">Inspiro</div>
+        <h2>Комплексная стоматология для взрослых и детей</h2>
+        <p class="lead" style="margin-top:20px">Ортодонт, хирург, пародонтолог, гнатолог, имплантация, цифровая стоматология и лечение под микроскопом — по карточке центра.</p>
+        <ul class="list" style="margin-top:28px"><li>Оценка 4,9 из 5 в 2ГИС по 58 отзывам</li><li>Часы работы: Пн–Пт 08:00–20:00, Сб–Вс 09:00–20:00, без выходных</li><li>Адрес: улица Максима Горького, 220а</li><li>50 позиций прайса с ценами, от 750 ₽</li><li>Стоматологические услуги: взрослый ортодонт, взрослый стоматолог-ортопед, взрослый стоматолог-хирург, имплантация, взрослый пародонтолог</li><li>Услуги: онлайн-услуги</li></ul>
+        <div style="margin-top:30px"><a class="btn btn--ghost" href="o-nas.html">Подробнее о нас</a></div>
+      </div>
+      <div class="reveal" style="--i:1"><img src="https://i9.photo.2gis.com/photo-gallery/304793f1-6ede-4198-b49a-a407746f8acf_960x.jpg" alt="Inspiro" loading="lazy" style="border-radius:var(--r-lg);aspect-ratio:1/1;object-fit:cover;width:100%"></div>
     </div>
   </div>
 </section>
 
-<section id="ceny">
+<section class="sec" id="zayavka">
   <div class="wrap">
-    <div class="eyebrow">Прайс</div>
-    <h2>Услуги и цены</h2>
-    <p class="lead">Всё видно сразу, без звонка «а сколько стоит». Именно это человек ищет первым, когда выбирает между вами и соседями.</p>
-    <div style="margin-top:34px"><div class="price__group"><div class="price__cat">Ортопедические услуги</div><div class="price__row">
-        <div><div class="price__name">Mok Up (Винир или накладка)</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">2 000 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Замена акриловой облицовки на балочной конструкции</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">30 000 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Восстановление зубов штифтовыми зубами временное (1 единица)</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">7 500 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Телескопическая пара для бюгельного протеза гальвано техника</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">46 000 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Индивидуализированный не сьемный протез на 4 имплантатах 6- 8-10 единиц армированный акрил</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">110 000 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Снятие несъемной ортопедической конструкции постоянной (1 единица)</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">2 000 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Восстановление зуба : Временная пластмассовая коронка изготовленная прямым методом (срок службы 2 недели)</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">2 000 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Перебазировка съемного протеза (клиническая)</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">6 500 ₽</span>
-      </div></div></div>
-    <p class="price__note">Цены из вашего прайса в 2ГИС. Обновлено 6 августа 2026.</p>
-  </div>
-</section>
-
-
-<section id="foto">
-  <div class="wrap">
-    <div class="eyebrow">Фотографии</div>
-    <h2>Как у нас</h2>
-    <div class="gal" style="margin-top:28px"><a href="https://i9.photo.2gis.com/photo-gallery/304793f1-6ede-4198-b49a-a407746f8acf_1920x.jpg" target="_blank" rel="noopener"><img src="https://i9.photo.2gis.com/photo-gallery/304793f1-6ede-4198-b49a-a407746f8acf_232x232.jpg" srcset="https://i9.photo.2gis.com/photo-gallery/304793f1-6ede-4198-b49a-a407746f8acf_232x232.jpg 232w, https://i9.photo.2gis.com/photo-gallery/304793f1-6ede-4198-b49a-a407746f8acf_464x464.jpg 464w, https://i9.photo.2gis.com/photo-gallery/304793f1-6ede-4198-b49a-a407746f8acf_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i9.photo.2gis.com/photo-gallery/1c441228-73e2-4f33-9fb7-9de5bddf98e7_1920x.jpg" target="_blank" rel="noopener"><img src="https://i9.photo.2gis.com/photo-gallery/1c441228-73e2-4f33-9fb7-9de5bddf98e7_232x232.jpg" srcset="https://i9.photo.2gis.com/photo-gallery/1c441228-73e2-4f33-9fb7-9de5bddf98e7_232x232.jpg 232w, https://i9.photo.2gis.com/photo-gallery/1c441228-73e2-4f33-9fb7-9de5bddf98e7_464x464.jpg 464w, https://i9.photo.2gis.com/photo-gallery/1c441228-73e2-4f33-9fb7-9de5bddf98e7_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i1.photo.2gis.com/photo-gallery/75e94f0f-f82d-4105-9f3e-37804b391e54_1920x.jpg" target="_blank" rel="noopener"><img src="https://i1.photo.2gis.com/photo-gallery/75e94f0f-f82d-4105-9f3e-37804b391e54_232x232.jpg" srcset="https://i1.photo.2gis.com/photo-gallery/75e94f0f-f82d-4105-9f3e-37804b391e54_232x232.jpg 232w, https://i1.photo.2gis.com/photo-gallery/75e94f0f-f82d-4105-9f3e-37804b391e54_464x464.jpg 464w, https://i1.photo.2gis.com/photo-gallery/75e94f0f-f82d-4105-9f3e-37804b391e54_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i2.photo.2gis.com/photo-gallery/5b476c5d-96ef-47b1-ab44-0a4737aa8716_1920x.jpg" target="_blank" rel="noopener"><img src="https://i2.photo.2gis.com/photo-gallery/5b476c5d-96ef-47b1-ab44-0a4737aa8716_232x232.jpg" srcset="https://i2.photo.2gis.com/photo-gallery/5b476c5d-96ef-47b1-ab44-0a4737aa8716_232x232.jpg 232w, https://i2.photo.2gis.com/photo-gallery/5b476c5d-96ef-47b1-ab44-0a4737aa8716_464x464.jpg 464w, https://i2.photo.2gis.com/photo-gallery/5b476c5d-96ef-47b1-ab44-0a4737aa8716_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i8.photo.2gis.com/photo-gallery/66f67f5e-7405-4620-99f3-0ce27bdd3a46_1920x.jpg" target="_blank" rel="noopener"><img src="https://i8.photo.2gis.com/photo-gallery/66f67f5e-7405-4620-99f3-0ce27bdd3a46_232x232.jpg" srcset="https://i8.photo.2gis.com/photo-gallery/66f67f5e-7405-4620-99f3-0ce27bdd3a46_232x232.jpg 232w, https://i8.photo.2gis.com/photo-gallery/66f67f5e-7405-4620-99f3-0ce27bdd3a46_464x464.jpg 464w, https://i8.photo.2gis.com/photo-gallery/66f67f5e-7405-4620-99f3-0ce27bdd3a46_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i0.photo.2gis.com/photo-gallery/f48e5ff5-e0d3-4b3a-9271-6c197333e762_1920x.jpg" target="_blank" rel="noopener"><img src="https://i0.photo.2gis.com/photo-gallery/f48e5ff5-e0d3-4b3a-9271-6c197333e762_232x232.jpg" srcset="https://i0.photo.2gis.com/photo-gallery/f48e5ff5-e0d3-4b3a-9271-6c197333e762_232x232.jpg 232w, https://i0.photo.2gis.com/photo-gallery/f48e5ff5-e0d3-4b3a-9271-6c197333e762_464x464.jpg 464w, https://i0.photo.2gis.com/photo-gallery/f48e5ff5-e0d3-4b3a-9271-6c197333e762_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i8.photo.2gis.com/photo-gallery/48c1becd-12b4-4ce0-857e-4b437fac2571_1920x.jpg" target="_blank" rel="noopener"><img src="https://i8.photo.2gis.com/photo-gallery/48c1becd-12b4-4ce0-857e-4b437fac2571_232x232.jpg" srcset="https://i8.photo.2gis.com/photo-gallery/48c1becd-12b4-4ce0-857e-4b437fac2571_232x232.jpg 232w, https://i8.photo.2gis.com/photo-gallery/48c1becd-12b4-4ce0-857e-4b437fac2571_464x464.jpg 464w, https://i8.photo.2gis.com/photo-gallery/48c1becd-12b4-4ce0-857e-4b437fac2571_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i2.photo.2gis.com/photo-gallery/df650101-0f22-491c-944c-6ae3e4f30022_1920x.jpg" target="_blank" rel="noopener"><img src="https://i2.photo.2gis.com/photo-gallery/df650101-0f22-491c-944c-6ae3e4f30022_232x232.jpg" srcset="https://i2.photo.2gis.com/photo-gallery/df650101-0f22-491c-944c-6ae3e4f30022_232x232.jpg 232w, https://i2.photo.2gis.com/photo-gallery/df650101-0f22-491c-944c-6ae3e4f30022_464x464.jpg 464w, https://i2.photo.2gis.com/photo-gallery/df650101-0f22-491c-944c-6ae3e4f30022_640x.jpg 640w" sizes="50vw" alt="Мы в работе" loading="lazy" decoding="async"></a></div>
-    <p class="price__note">Фотографии из вашей карточки 2ГИС. <a href="https://2gis.ru/rostov/firm/70000001033817013" target="_blank" rel="noopener">Открыть карточку</a></p>
-  </div>
-</section>
-
-<section id="otzyvy">
-  <div class="wrap">
-    <div class="eyebrow">Отзывы</div>
-    <h2>Что о нас пишут</h2>
-    <p class="lead">Рейтинг 4.9 в 2ГИС, 58 отзывов. На сайте они работают на вас, а не лежат в чужом приложении.</p>
-    <div class="rev" style="margin-top:28px"><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Очень понравилось отношение, медицинское обслуживание на высшем уровне! Врачи все грамотные и квалифицированные!</p>
-      <div class="rev__who">Карина Тимиргериева · 04.04.2026</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Первый раз были на приеме план лечения составили на все вопросы ответили Планирую продолжать здесь лечение вместе с семьей Спасибо Наталье Сергеевне Пономарь очень хороший специалист</p>
-      <div class="rev__who">Роин Хведелидзе · 06.07.2026</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Уровень консультации - высокий Качество обслуживания просто супер,все на высшем уровне. Система лечения и профилактики высокая.</p>
-      <div class="rev__who">Елизавета Рыбалкина · 30.05.2026</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Была здесь впервые и скажу точно, что рекомендую клинику❤️ Чисто, опрятно, приятно находиться! Отличный врач Шарухия Тамара Сергеевна. Индивидуальный подход, я моментально ей доверилась. От стоматолога я чувствовала спокойствие, уверенность. Профи своего дела и слышит своего пациента! Спасибо за пом</p>
-      <div class="rev__who">Яна В · 19.05.2026</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Спокойная,душевная обстановка,в клинике не страшно) не воняет &quot;стоматологией&quot;,как часто бывает в других. Врачи тактичные,добрые по отношению к пациенту. Я приводила детей на гигиену и на лечение. Ничего не навязывали лишнего. Я всем рекомендую данную клинику. Рада,что нашла её недалеко от дома и мои</p>
-      <div class="rev__who">Юлия Павлова · 07.05.2026</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Стоматология очень понравилась! Персонал приветливый, врачи — профессионалы! Все устраивает!</p>
-      <div class="rev__who">Максим Муравский · 05.05.2026</div>
-    </article></div>
-    <p class="price__note">Отзывы из 2ГИС. <a href="https://2gis.ru/rostov/firm/70000001033817013" target="_blank" rel="noopener">Читать все</a></p>
-  </div>
-</section>
-
-<section id="kontakty">
-  <div class="wrap">
-    <div class="eyebrow">Контакты</div>
-    <h2>Где нас найти</h2>
-    <div class="contact" style="margin-top:28px">
-      <dl class="dl"><dt>Адрес</dt><dd>улица Максима Горького, 220а</dd><dt>Часы работы</dt><dd>Пн–Пт 08:00–20:00, Сб–Вс 09:00–20:00 · без выходных</dd><dt>Телефон</dt><dd><a href="tel:88007078307">+7 800 707-83-07</a></dd><dt>Телефон</dt><dd><a href="tel:+78633109807">+7 863 310-98-07</a></dd><dt>Написать</dt><dd><a href="https://t.me/inspiro_stom" target="_blank" rel="noopener">Telegram</a> · <a href="https://wa.me/79882587667?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%0A%0A%D0%9F%D0%B8%D1%88%D1%83%20%D0%B8%D0%B7%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%202%D0%93%D0%98%D0%A1.%0A%0A" target="_blank" rel="noopener">WhatsApp</a></dd><dt>Почта</dt><dd><a href="mailto:admin@inspiro24.ru">admin@inspiro24.ru</a></dd></dl>
-      <iframe class="map" src="https://widgets.2gis.com/widget?type=firmsonmap&amp;options=%7B%22pos%22%3A%7B%22lat%22%3A47.231022%2C%22lon%22%3A39.735652%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22rostov%22%7D%2C%22org%22%3A%2270000001033817013%22%7D" loading="lazy" title="Карта проезда"></iframe>
+    <div class="cta reveal">
+      <div class="cta__in">
+        <div>
+          <div class="eyebrow" style="color:inherit;opacity:.7">Заявка</div>
+          <h2>Записаться на консультацию</h2>
+          <p class="lead">Оставьте номер — администратор уточнит задачу и подберёт специалиста.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:26px"><a class="btn btn--ghost" href="tel:+78007078307" style="border-color:currentColor;color:inherit">+7 800 707-83-07</a><a class="btn btn--ghost" href="https://t.me/inspiro_stom" target="_blank" rel="noopener" style="border-color:currentColor;color:inherit">Telegram</a><a class="btn btn--ghost" href="https://wa.me/79882587667?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%0A%0A%D0%9F%D0%B8%D1%88%D1%83%20%D0%B8%D0%B7%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%202%D0%93%D0%98%D0%A1.%0A%0A" target="_blank" rel="noopener" style="border-color:currentColor;color:inherit">WhatsApp</a></div>
+        </div>
+        <div>
+          <form class="form" id="lead" novalidate>
+            <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <input name="name" placeholder="Как к вам обращаться" required minlength="2" autocomplete="name">
+            <input name="contact" placeholder="Телефон или ник в Telegram" required minlength="5" autocomplete="tel">
+            <textarea name="task" placeholder="Что вас интересует (по желанию)"></textarea>
+            <button class="btn btn--dark btn--wide" type="submit">Отправить</button>
+            <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку указанных данных.</p>
+          </form>
+          <div class="form__ok" id="ok">Заявка отправлена. Спасибо, скоро свяжемся.</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-
-<section id="zayavka">
-  <div class="wrap">
-    <div class="card" style="padding:clamp(24px,4vw,44px)">
-      <div class="eyebrow">Заявка</div>
-      <h2>Записаться на приём</h2>
-      <p class="lead">Оставьте номер, администратор перезвонит и подберёт время. Заявка приходит в Telegram за секунду, отвечать можно прямо оттуда.</p>
-      <form class="form" id="lead" style="margin-top:26px" novalidate>
-        <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <input name="name" placeholder="Как к вам обращаться" required minlength="2" autocomplete="name">
-        <input name="contact" placeholder="Телефон или ник в Telegram" required minlength="5" autocomplete="tel">
-        <textarea name="task" placeholder="Что нужно (по желанию)"></textarea>
-        <button class="btn" type="submit">Отправить</button>
-        <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку указанных данных.</p>
-      </form>
-      <div class="form__ok" id="ok">Заявка отправлена. Спасибо, скоро свяжемся.</div>
-    </div>
-  </div>
-</section>
-
 <footer class="foot">
-  <div class="wrap foot__row">
-    <div>Inspiro · улица Максима Горького, 220а</div>
-    <div><a href="tel:88007078307" style="text-decoration:none">+7 800 707-83-07</a></div>
+  <div class="wrap">
+    <div class="foot__grid"><div>
+      <a class="brand" href="index.html" style="margin-bottom:16px">
+        <span class="brand__mark">I</span>
+        <span class="brand__t"><span class="brand__n">Inspiro</span>
+        <span class="brand__s">стоматологический центр</span></span></a>
+      <a class="foot__tel" href="tel:+78007078307">+7 800 707-83-07</a>
+      <div style="opacity:.6;font-size:14.5px;max-width:34ch">Рейтинг 4,9 в 2ГИС. без выходных</div>
+    </div><div><h4>Разделы</h4><ul><li><a href="index.html">Главная</a></li><li><a href="uslugi.html">Услуги</a></li><li><a href="ceny.html">Цены</a></li><li><a href="galereya.html">Галерея</a></li></ul></div><div><h4>&nbsp;</h4><ul><li><a href="otzyvy.html">Отзывы</a></li><li><a href="o-nas.html">О нас</a></li><li><a href="kontakty.html">Контакты</a></li></ul></div><div><h4>Контакты</h4><ul><li><a href="tel:+78007078307">+7 800 707-83-07</a></li><li><a href="tel:+78633109807">+7 863 310-98-07</a></li><li><a href="mailto:admin@inspiro24.ru">admin@inspiro24.ru</a></li><li><a href="https://t.me/inspiro_stom" target="_blank" rel="noopener">Telegram</a></li><li><a href="https://wa.me/79882587667?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%0A%0A%D0%9F%D0%B8%D1%88%D1%83%20%D0%B8%D0%B7%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%202%D0%93%D0%98%D0%A1.%0A%0A" target="_blank" rel="noopener">WhatsApp</a></li></ul><h4 style="margin-top:26px">Адрес</h4><ul><li>улица Максима Горького, 220а</li><li>Пн–Пт 08:00–20:00, Сб–Вс 09:00–20:00</li><li>Без выходных</li><li><a href="https://2gis.ru/rostov/firm/70000001033817013" target="_blank" rel="noopener">Карточка в 2ГИС</a></li></ul></div></div>
+    <div class="foot__bot">
+      <div>Inspiro, стоматологический центр</div>
+      <div>Данные и фотографии — из карточки 2ГИС</div>
+    </div>
   </div>
 </footer>
-
-
-<div class="demo">
+<div class="demo demo--premium">
   <div class="wrap demo__in">
     <div>
-      <b>Это демо-макет, а не ваш действующий сайт.</b> Собрал его Владимир, веб-разработчик из
-      Ростов-на-Дону, по открытым данным вашей карточки 2ГИС: фото, прайс, отзывы и часы работы — ваши.<br>Что я заметил на вашем текущем сайте: нет ни формы заявки, ни кнопки в мессенджер.
+      <b>Персональный многостраничный демо-сайт для Inspiro.</b>
+      Семь адаптивных страниц: главная, услуги, цены, галерея, отзывы, о компании и контакты.
+      Содержание собрано по открытым данным карточки 2ГИС; перед запуском всё согласовывается с владельцем. Что я заметил на вашем текущем сайте: нет ни формы заявки, ни кнопки в мессенджер.
     </div>
-    <a class="btn btn--sm btn--ghost" style="border-color:currentColor;color:inherit"
-       href="https://t.me/vovuchoooo" target="_blank" rel="noopener">Написать @vovuchoooo</a>
+    <a class="btn btn--sm" href="https://t.me/vovuchoooo" target="_blank" rel="noopener">Обсудить этот сайт</a>
   </div>
 </div>
-
 <div class="bar">
-  <a class="btn" href="#zayavka">Записаться на приём</a>
-  <a class="btn btn--ghost" href="tel:88007078307">Позвонить</a>
+  <a class="btn" href="kontakty.html#zayavka">Записаться на консультацию</a>
+  <a class="btn btn--ghost" href="tel:+78007078307">Позвонить</a>
 </div>
-
-<script>
-document.getElementById('lead').addEventListener('submit', async function (ev) {
-  ev.preventDefault();
-  var f = ev.target, b = f.querySelector('button');
-  var body = {
-    company: f.company.value, name: f.name.value,
-    contact: f.contact.value, task: f.task.value
-  };
-  if (body.name.trim().length < 2 || body.contact.trim().length < 5) {
-    f.reportValidity(); return;
-  }
-  b.disabled = true; b.textContent = 'Отправляю…';
-  try {
-    var r = await fetch('https://lead-form.tripolev04.workers.dev', {
-      method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body)
-    });
-    if (!r.ok) throw 0;
-    f.style.display = 'none';
-    document.getElementById('ok').style.display = 'block';
-  } catch (err) {
-    b.disabled = false; b.textContent = 'Отправить ещё раз';
-  }
-});
-</script>
+<script src="script.js" defer></script>
 </body>
 </html>
