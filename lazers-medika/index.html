@@ -1,371 +1,249 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+<script>document.documentElement.className+=" js";setTimeout(function(){document.querySelectorAll(".reveal:not(.is-in)").forEach(function(n){n.classList.add("is-in")})},2500)</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Лазерс Медика — Студия косметологии · Университетский переулок, 54</title>
-<meta name="description" content="Лазерс Медика — Студия косметологии · Университетский переулок, 54. Рейтинг 5 в 2ГИС.">
+<title>Лазерс Медика — студия косметологии, Ростов-на-Дону</title>
+<meta name="description" content="Оценка 5,0 в 2ГИС по 156 отзывам. Пятьдесят позиций прайса для женщин и мужчин, от 300 ₽. Дерматокосметолог, инъекционные и аппаратные процедуры, массаж. Ежедневно с 10:00 до 20:00">
 <meta name="robots" content="noindex,nofollow">
-<meta property="og:title" content="Лазерс Медика">
-<meta property="og:description" content="Лазерс Медика — Студия косметологии · Университетский переулок, 54. Рейтинг 5 в 2ГИС.">
+<meta name="theme-color" content="#faf8f9">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Лазерс Медика — студия косметологии, Ростов-на-Дону">
+<meta property="og:description" content="Оценка 5,0 в 2ГИС по 156 отзывам. Пятьдесят позиций прайса для женщин и мужчин, от 300 ₽. Дерматокосметолог, инъекционные и аппаратные процедуры, массаж. Ежедневно с 10:00 до 20:00">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23b57d68'/%3E%3C/svg%3E">
-<style>
-:root{
-  --bg:#fbf7f4;--surf:#ffffff;--line:#ecdfd8;--ink:#2e2320;
-  --mute:#7d6a63;--acc:#b57d68;--acc-ink:#ffffff;
-  --shadow:0 1px 2px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.07);
-  --r:14px;--wrap:1120px;
-}
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);
-  font:400 17px/1.6 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  -webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
-a{color:inherit}
-h1,h2,h3{font-family:'Cormorant Garamond','Inter',sans-serif;line-height:1.14;margin:0;
-  letter-spacing:-.02em}
-h1{font-size:clamp(34px,7vw,62px);}
-h2{font-size:clamp(26px,4.4vw,40px)}
-h3{font-size:19px}
-p{margin:0}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
-section{padding:72px 0}
-.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);
-  font-weight:600;margin-bottom:12px}
-.lead{color:var(--mute);font-size:17px;max-width:62ch;margin-top:14px}
-
-.top{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--bg) 88%,transparent);
-  backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.top__in{display:flex;align-items:center;gap:18px;height:64px}
-.brand{font-family:'Cormorant Garamond',sans-serif;font-weight:700;font-size:20px;
-  text-decoration:none;letter-spacing:.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.top nav{margin-left:auto;display:none;gap:26px}
-.top nav a{text-decoration:none;color:var(--mute);font-size:15px;transition:color .2s}
-.top nav a:hover{color:var(--ink)}
-.top .btn{margin-left:auto}
-@media(min-width:900px){.top nav{display:flex}.top .btn{margin-left:0}}
-
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
-  padding:14px 24px;border-radius:999px;border:1px solid transparent;cursor:pointer;
-  font:600 15px/1 'Inter',sans-serif;text-decoration:none;transition:transform .15s,opacity .2s;
-  background:var(--acc);color:var(--acc-ink)}
-.btn:hover{transform:translateY(-1px);opacity:.92}
-.btn--ghost{background:transparent;color:var(--ink);border-color:var(--line)}
-.btn--sm{padding:11px 18px;font-size:14px}
-
-.hero{position:relative;min-height:min(88vh,720px);display:flex;align-items:flex-end;
-  padding:96px 0 56px;overflow:hidden;isolation:isolate}
-.hero__bg{position:absolute;inset:0;z-index:-2;object-fit:cover;width:100%;height:100%}
-.hero::after{content:'';position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(180deg,rgba(16,20,28,.52) 0%,rgba(8,9,12,.55) 45%,rgba(6,7,10,.9) 100%)}
-.hero--plain::after{background:radial-gradient(120% 90% at 15% 0%,
-  color-mix(in srgb,var(--acc) 26%,var(--bg)) 0%,var(--bg) 70%)}
-.hero__in{position:relative;color:#fff}
-.hero--plain .hero__in{color:var(--ink)}
-.hero h1{max-width:16ch}
-.hero__sub{margin-top:16px;font-size:clamp(16px,2.2vw,20px);opacity:.9;max-width:44ch}
-.hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-.hero--plain .hero__cta .btn--ghost{border-color:var(--line)}
-.hero__cta .btn--ghost{color:#fff;border-color:rgba(255,255,255,.42)}
-
-.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
-.fact{display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:999px;
-  background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.2);
-  font-size:14px;backdrop-filter:blur(6px)}
-.hero--plain .fact{background:var(--surf);border-color:var(--line);color:var(--ink)}
-.fact b{font-weight:600}
-.star{color:#ffc247}
-
-.grid{display:grid;gap:16px}
-@media(min-width:700px){.cols-2{grid-template-columns:1fr 1fr}}
-@media(min-width:900px){.cols-3{grid-template-columns:repeat(3,1fr)}}
-
-.card{background:var(--surf);border:1px solid var(--line);border-radius:var(--r);padding:22px;
-  box-shadow:var(--shadow)}
-
-.price__group + .price__group{margin-top:34px}
-.price__cat{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);
-  margin-bottom:14px;font-weight:600}
-.price__row{display:flex;align-items:baseline;gap:14px;padding:15px 0;border-bottom:1px dashed var(--line)}
-.price__row:last-child{border-bottom:0}
-.price__name{font-weight:600}
-.price__desc{color:var(--mute);font-size:14.5px;margin-top:4px;max-width:70ch}
-.price__dots{flex:1;border-bottom:1px dotted var(--line);transform:translateY(-4px);min-width:24px}
-.price__val{white-space:nowrap;font-weight:700;color:var(--acc);font-size:18px}
-.price__note{color:var(--mute);font-size:14px;margin-top:24px}
-
-.tags{display:flex;flex-wrap:wrap;gap:9px}
-.tag{padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surf);
-  font-size:14.5px}
-
-.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-@media(min-width:760px){.gal{grid-template-columns:repeat(4,1fr)}
-  .gal a:first-child{grid-column:span 2;grid-row:span 2}}
-.gal a{display:block;border-radius:12px;overflow:hidden;background:var(--line);aspect-ratio:1/1}
-.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
-.gal a:hover img{transform:scale(1.05)}
-
-.rev{display:grid;gap:16px}
-@media(min-width:820px){.rev{grid-template-columns:repeat(3,1fr)}}
-.rev__stars{color:#ffc247;letter-spacing:2px;font-size:15px}
-.rev__text{margin-top:12px;font-size:15.5px;line-height:1.62}
-.rev__who{margin-top:16px;font-size:14px;color:var(--mute)}
-
-.contact{display:grid;gap:22px}
-@media(min-width:900px){.contact{grid-template-columns:1fr 1.15fr;align-items:start}}
-.dl{display:grid;gap:18px;margin:0}
-.dl dt{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
-.dl dd{margin:5px 0 0;font-size:17px}
-.dl a{text-decoration:none;border-bottom:1px solid var(--line)}
-.map{border:0;width:100%;height:340px;border-radius:var(--r);border:1px solid var(--line)}
-
-.form{display:grid;gap:13px}
-.form input,.form textarea{width:100%;padding:14px 16px;border-radius:11px;background:var(--bg);
-  border:1px solid var(--line);color:var(--ink);font:400 16px/1.5 'Inter',sans-serif}
-.form input:focus,.form textarea:focus{outline:2px solid var(--acc);outline-offset:1px;border-color:transparent}
-.form textarea{min-height:96px;resize:vertical}
-.form .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
-.form__note{font-size:13px;color:var(--mute)}
-.form__ok{display:none;padding:14px 16px;border-radius:11px;background:color-mix(in srgb,var(--acc) 14%,transparent);
-  border:1px solid var(--acc);font-size:15px}
-
-.foot{border-top:1px solid var(--line);padding:34px 0;color:var(--mute);font-size:14.5px}
-.foot__row{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;justify-content:space-between}
-
-.demo{background:var(--acc);color:var(--acc-ink);font-size:14.5px;line-height:1.55}
-.demo__in{padding:20px;display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;justify-content:space-between}
-.demo a{color:inherit;font-weight:700}
-.bar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;gap:10px;padding:10px 14px;
-  background:color-mix(in srgb,var(--bg) 94%,transparent);border-top:1px solid var(--line);
-  backdrop-filter:blur(10px)}
-.bar .btn{flex:1}
-@media(min-width:900px){.bar{display:none}}
-@media(max-width:899px){body{padding-bottom:72px}}
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%238d7f96'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='16' font-weight='700' text-anchor='middle' fill='%23fff'%3EЛ%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-<header class="top">
+<body data-page="index.html">
+<header class="top" id="top">
   <div class="wrap top__in">
-    <a class="brand" href="#top">Лазерс Медика</a>
-    <nav><a href="#ceny">Цены</a><a href="#foto">Фото</a><a href="#otzyvy">Отзывы</a><a href="#kontakty">Контакты</a></nav>
-    <a class="btn btn--sm" href="#zayavka">Записаться на консультацию</a>
+    <a class="brand" href="index.html">
+      <span class="brand__mark">Л</span>
+      <span class="brand__t">
+        <span class="brand__n">Лазерс Медика</span>
+        <span class="brand__s">студия косметологии</span>
+      </span>
+    </a>
+    <nav class="nav"><a href="uslugi.html">Услуги</a><a href="ceny.html">Цены</a><a href="galereya.html">Галерея</a><a href="otzyvy.html">Отзывы</a><a href="o-nas.html">О нас</a><a href="kontakty.html">Контакты</a></nav>
+    <div class="top__act">
+      <a class="top__tel" href="tel:+79185551818">+7 918 555-18-18</a>
+      <a class="btn btn--sm" href="kontakty.html#zayavka">Записаться</a>
+      <button class="burger" type="button" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
+<div class="drawer" id="drawer">
+  <div class="wrap">
+    <a href="index.html">Главная</a><a href="uslugi.html">Услуги</a><a href="ceny.html">Цены</a><a href="galereya.html">Галерея</a><a href="otzyvy.html">Отзывы</a><a href="o-nas.html">О нас</a><a href="kontakty.html">Контакты</a>
+    <a class="btn btn--wide" href="kontakty.html#zayavka">Записаться</a>
+  </div>
+</div>
+<section class="hero">
+  <div class="wrap">
+    <div class="hero__in">
+      <div>
+        <div class="eyebrow reveal">Студия косметологии · Университетский переулок, 54</div>
+        <h1 class="reveal">Лазерная<br><em>эпиляция</em></h1>
+        <p class="hero__lead reveal">Оценка 5,0 в 2ГИС по 156 отзывам. Пятьдесят позиций прайса для женщин и мужчин, от 300 ₽. Дерматокосметолог, инъекционные и аппаратные процедуры, массаж. Ежедневно с 10:00 до 20:00.</p>
+        <div class="hero__act reveal"><a class="btn btn--lg" href="kontakty.html#zayavka">Записаться</a><a class="btn btn--ghost btn--lg" href="uslugi.html">Все услуги</a></div>
+        <div class="hero__facts reveal"><div><div class="fact__v">5</div><div class="fact__l">рейтинг в 2ГИС по 156 отзывам</div></div><div><div class="fact__v">50</div><div class="fact__l">позиций в прайсе с ценой</div></div><div><div class="fact__v">2</div><div class="fact__l">направления работы</div></div></div>
+      </div>
+      <div class="hero__media reveal" style="--i:1">
+          <img src="https://i8.photo.2gis.com/images/branch/0/30258560075792828_2ddc_960x.jpg" alt="Лазерс Медика" fetchpriority="high" decoding="async">
+          <div class="hero__badge hero__badge--bl">
+              <b>5</b>
+              <span><span class="stars">★★★★★</span><br>156 отзывов в 2ГИС</span>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="hero__strip"><div><b>Адрес</b>Университетский переулок, 54</div><div><b>Часы работы</b>Пн–Вс 10:00–20:00</div><div><b>Телефон</b>+7 918 555-18-18</div><div><b>Оплата</b>картой, наличный расчёт, через банк</div></div>
+</section>
 
-
-<section class="hero" id="top">
-  <img class="hero__bg" src="https://i1.photo.2gis.com/images/branch/0/30258560107163246_e160_640x.jpg" alt="" fetchpriority="high" decoding="async" srcset="https://i1.photo.2gis.com/images/branch/0/30258560107163246_e160_640x.jpg 640w, https://i1.photo.2gis.com/images/branch/0/30258560107163246_e160_960x.jpg 960w, https://i1.photo.2gis.com/images/branch/0/30258560107163246_e160_1920x.jpg 1920w" sizes="100vw">
-  <div class="wrap hero__in">
-    <h1>Лазерс Медика</h1>
-    <p class="hero__sub">Студия косметологии · Университетский переулок, 54</p>
-    <div class="facts"><span class="fact"><span class="star">★</span> <b>5</b> · 156 отзывов в 2ГИС</span><span class="fact">🕒 Пн–Вс 10:00–20:00</span><span class="fact">📍 Университетский переулок, 54</span></div>
-    <div class="hero__cta">
-      <a class="btn" href="#zayavka">Записаться на консультацию</a>
-      <a class="btn btn--ghost" href="tel:+79185551818">Позвонить</a>
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Направления</div><h2>Направления студии</h2><p class="lead">Разделы прайса из карточки 2ГИС: женская и мужская эпиляция.</p></div><a class="btn btn--ghost btn--sm" href="uslugi.html">Все услуги</a></div>
+    <div class="grid g3"><a class="tile reveal" style="--i:0" href="uslugi.html#lazernaya-epilyaciya-zhenskaya">
+              <div class="tile__b">
+                <div class="tile__cat">35 услуг</div>
+                <h3 class="tile__n">Лазерная эпиляция, женская</h3>
+                <div class="tile__d">PREMIUM комплекс &quot;Всех важных зон&quot; (ноги и руки полностью+глубокое бикини+подмышки+верхняя губа), PRESTIGE комплекс (без…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">300 ₽</span></div>
+              </div></a><a class="tile reveal" style="--i:1" href="uslugi.html#lazernaya-epilyaciya-muzhskaya">
+              <div class="tile__b">
+                <div class="tile__cat">15 услуг</div>
+                <h3 class="tile__n">Лазерная эпиляция, мужская</h3>
+                <div class="tile__d">Спина(до уровня поясницы) МУЖ., Бикини классика/МУЖ., Ноги полностью/МУЖ.…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">800 ₽</span></div>
+              </div></a></div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Прайс</div><h2>Из прайса студии</h2></div><a class="btn btn--ghost btn--sm" href="ceny.html">Весь прайс</a></div>
+    <div class="grid g3"><article class="tile reveal" style="--i:0"><div class="tile__img"><img src="https://cachizer1.2gis.com/market/b0544718-4cdc-4e91-818d-527f767cb770.png?h=600&amp;w=800" alt="PREMIUM комплекс &quot;Всех важных зон&quot; (ноги и руки полностью+глубокое бикини+подмышки+верхняя губа)" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Лазерная эпиляция, женская</div><h3 class="tile__n">PREMIUM комплекс &quot;Всех важных зон&quot; (ноги и руки полностью+глубокое бикини+подмышки+верхняя губа)</h3><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">7 700 ₽</span></div></div>
+</article><article class="tile reveal" style="--i:1"><div class="tile__img"><img src="https://cachizer2.2gis.com/market/65f32686-8a80-4a57-9e49-91d02bd09908.png?h=600&amp;w=800" alt="PRESTIGE комплекс (без рук) ноги полностью, бикини глубокое, подмышки, любая малая зона" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Лазерная эпиляция, женская</div><h3 class="tile__n">PRESTIGE комплекс (без рук) ноги полностью, бикини глубокое, подмышки, любая малая зона</h3><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">6 600 ₽</span></div></div>
+</article><article class="tile reveal" style="--i:2"><div class="tile__img"><img src="https://cachizer2.2gis.com/market/045bf942-7113-4381-a5f1-1402c5bf083c.png?h=600&amp;w=800" alt="CLASSIC комбо (голени+глубокое бикини+подмышки)" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Лазерная эпиляция, женская</div><h3 class="tile__n">CLASSIC комбо (голени+глубокое бикини+подмышки)</h3><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">4 499 ₽</span></div></div>
+</article><article class="tile reveal" style="--i:3"><div class="tile__img"><img src="https://cachizer3.2gis.com/market/00f278ec-b210-4a26-b951-d7005c0a217b.png?h=600&amp;w=800" alt="Подмышечные зоны" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Лазерная эпиляция, женская</div><h3 class="tile__n">Подмышечные зоны</h3><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">1 100 ₽</span></div></div>
+</article><article class="tile reveal" style="--i:0"><div class="tile__img"><img src="https://cachizer3.2gis.com/market/43b2ccf9-8ea1-47fb-a8f7-ac7e772401f1.png?h=600&amp;w=800" alt="Глубокое бикини (вкл. межъягодичную область)" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Лазерная эпиляция, женская</div><h3 class="tile__n">Глубокое бикини (вкл. межъягодичную область)</h3><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">2 500 ₽</span></div></div>
+</article><article class="tile reveal" style="--i:1"><div class="tile__img"><img src="https://cachizer1.2gis.com/market/14f47cd1-8c7e-4297-a17b-c96db5fec3c1.png?h=600&amp;w=800" alt="Голени" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Лазерная эпиляция, женская</div><h3 class="tile__n">Голени</h3><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">2 150 ₽</span></div></div>
+</article></div>
+  </div>
+</section>
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Цены</div><h2>Цены</h2><p class="lead">Первые десять позиций. Полный прайс — на отдельной странице, с поиском.</p></div><a class="btn btn--ghost btn--sm" href="ceny.html">Все 50 позиций</a></div>
+    <div class="reveal"><div class="prow" data-s="premium комплекс &quot;всех важных зон&quot; (ноги и руки полностью+глубокое бикини+подмышки+верхняя губа) лазерная эпиляция, женская">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">PREMIUM комплекс &quot;Всех важных зон&quot; (ноги и руки полностью+глубокое бикини+подмышки+верхняя губа)</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 7 700 ₽</div>
+</div><div class="prow" data-s="prestige комплекс (без рук) ноги полностью, бикини глубокое, подмышки, любая малая зона лазерная эпиляция, женская">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">PRESTIGE комплекс (без рук) ноги полностью, бикини глубокое, подмышки, любая малая зона</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 6 600 ₽</div>
+</div><div class="prow" data-s="classic комбо (голени+глубокое бикини+подмышки) лазерная эпиляция, женская">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">CLASSIC комбо (голени+глубокое бикини+подмышки)</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 4 499 ₽</div>
+</div><div class="prow" data-s="лицо (верхняя губа,подбородок,щеки,лоб) лазерная эпиляция, женская">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Лицо (верхняя губа,подбородок,щеки,лоб)</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 2 100 ₽</div>
+</div><div class="prow" data-s="подмышечные зоны лазерная эпиляция, женская">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Подмышечные зоны</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 1 100 ₽</div>
+</div><div class="prow" data-s="глубокое бикини (вкл. межъягодичную область) лазерная эпиляция, женская">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Глубокое бикини (вкл. межъягодичную область)</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 2 500 ₽</div>
+</div><div class="prow" data-s="классическое бикини (по линии белья+лобок) лазерная эпиляция, женская">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Классическое бикини (по линии белья+лобок)</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 2 200 ₽</div>
+</div><div class="prow" data-s="бикини по линии белья( без межъягодичной области) лазерная эпиляция, женская">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Бикини по линии белья( без межъягодичной области)</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 1 800 ₽</div>
+</div><div class="prow" data-s="голени лазерная эпиляция, женская">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Голени</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 2 150 ₽</div>
+</div><div class="prow" data-s="бёдра лазерная эпиляция, женская">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Бёдра</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 2 150 ₽</div>
+</div></div>
+    <div style="margin-top:30px"><a class="btn" href="ceny.html">Открыть полный прайс</a></div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Фотографии</div><h2>Студия и процедуры</h2><p class="lead">Кабинеты, аппараты и команда — фотографии из карточки.</p></div><a class="btn btn--ghost btn--sm" href="galereya.html">Вся галерея</a></div>
+    <div class="gal"><figure data-full="https://i8.photo.2gis.com/images/branch/0/30258560075792828_2ddc_1920x.jpg"><img src="https://i8.photo.2gis.com/images/branch/0/30258560075792828_2ddc_640x.jpg" alt="Наши работы" loading="lazy" decoding="async"><figcaption>Наши работы</figcaption></figure><figure data-full="https://i1.photo.2gis.com/images/branch/0/30258560107163368_2b3b_1920x.jpg"><img src="https://i1.photo.2gis.com/images/branch/0/30258560107163368_2b3b_640x.jpg" alt="Наши работы" loading="lazy" decoding="async"><figcaption>Наши работы</figcaption></figure><figure data-full="https://i3.photo.2gis.com/photo-gallery/6e876664-896b-47a1-9206-4b032b1458f2_1920x.jpg"><img src="https://i3.photo.2gis.com/photo-gallery/6e876664-896b-47a1-9206-4b032b1458f2_640x.jpg" alt="Наши работы" loading="lazy" decoding="async"><figcaption>Наши работы</figcaption></figure><figure data-full="https://i4.photo.2gis.com/images/branch/0/30258560057517423_235c_1920x.jpg"><img src="https://i4.photo.2gis.com/images/branch/0/30258560057517423_235c_640x.jpg" alt="Наши работы" loading="lazy" decoding="async"><figcaption>Наши работы</figcaption></figure><figure data-full="https://i2.photo.2gis.com/images/branch/0/30258560060540874_0041_1920x.jpg"><img src="https://i2.photo.2gis.com/images/branch/0/30258560060540874_0041_640x.jpg" alt="Наши работы" loading="lazy" decoding="async"><figcaption>Наши работы</figcaption></figure><figure data-full="https://i7.photo.2gis.com/photo-gallery/63d0fdbd-fcce-4cc2-9046-5e592687d253_1920x.jpg"><img src="https://i7.photo.2gis.com/photo-gallery/63d0fdbd-fcce-4cc2-9046-5e592687d253_640x.jpg" alt="Наши работы" loading="lazy" decoding="async"><figcaption>Наши работы</figcaption></figure></div>
+  </div>
+</section>
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Отзывы</div><h2>5,0 из 5 по 156 отзывам</h2><p class="lead">Оценка 5 в 2ГИС по 156 отзывам. Здесь показаны те, что видны в карточке.</p></div><a class="btn btn--ghost btn--sm" href="otzyvy.html">Все 12 отзывов</a></div>
+    <div class="grid g3"><article class="card card--hover rev reveal" style="--i:0">
+  <div class="rev__top">
+    <div class="rev__av">АК</div>
+    <div><div class="rev__n">Алексей Калистратов</div>
+      <div class="rev__d">3 марта 2025</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t is-clamp">На днях прошел процедуру лазерной эпиляции, и остался очень доволен результатом! Был у мастера Екатерины Голубевой. Процесс оказал на меня меньшее физическое влияние, чем я ожидал — практически безболезненно и быстро. Персонал был приветливым и профессиональным, что создало комфортную атмосферу. Теперь чувствую себя увереннее и более ухоженно. Определенно рекомендую эту процедуру тем, кто хочет из</div><button class="rev__more" type="button">Читать целиком</button>
+</article><article class="card card--hover rev reveal" style="--i:1">
+  <div class="rev__top">
+    <div class="rev__av">𝓔𝓥</div>
+    <div><div class="rev__n">𝓔𝓵𝓮𝓷𝓪 𝓥𝓵𝓪𝓭𝓲𝓶𝓲𝓻𝓸𝓿𝓷𝓪</div>
+      <div class="rev__d">19 июня 2025</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t">Недавно посетила эту прекрасную клинику воспользовалась процедурой лазерной чисткой лица и осталась просто в восторге, Насколько кожа стала нежная, появилось ощущение свежести лица, комфорта, кожа дышит. Все обсалютно безболезненно , не травматично. Персонал клиники камуникабельны, вежливы, общительны🫶🏻 Обязательно вернусь ещё🌺</div>
+</article><article class="card card--hover rev reveal" style="--i:2">
+  <div class="rev__top">
+    <div class="rev__av">ПХ</div>
+    <div><div class="rev__n">Павел Хан</div>
+      <div class="rev__d">26 апреля 2025</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t">Сегодня был в студии Лазерс медика, у массажиста Марии. Это просто космос ребята, спасибо Вам большое!! Заходил в середине дня, записывался на процедуру массаж лица, такой грамотный и внимательный специалист, я даже успел поспать)) и зарядился такой энергией, ну а результат меня очень порадовал при чем с первого раза!!</div>
+</article></div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="grid g2" style="--gap:clamp(30px,4vw,64px);align-items:center">
+      <div class="reveal">
+        <div class="eyebrow">О студии</div>
+        <h2>156 отзывов и ни одного ниже пяти</h2>
+        <p class="lead" style="margin-top:20px">Лазерная и восковая эпиляция, дерматокосметолог, инъекционные и аппаратные процедуры, тайский массаж и массаж лица.</p>
+        <ul class="list" style="margin-top:28px"><li>Оценка 5 из 5 в 2ГИС по 156 отзывам</li><li>Часы работы: Пн–Вс 10:00–20:00, без выходных</li><li>Адрес: Университетский переулок, 54</li><li>50 позиций прайса с ценами, от 300 ₽</li><li>Услуги: дерматокосметолог</li><li>Виды эпиляции: лазерная эпиляция, восковая эпиляция</li></ul>
+        <div style="margin-top:30px"><a class="btn btn--ghost" href="o-nas.html">Подробнее о нас</a></div>
+      </div>
+      <div class="reveal" style="--i:1"><img src="https://i1.photo.2gis.com/images/branch/0/30258560107163368_2b3b_960x.jpg" alt="Лазерс Медика" loading="lazy" style="border-radius:var(--r-lg);aspect-ratio:1/1;object-fit:cover;width:100%"></div>
     </div>
   </div>
 </section>
 
-<section id="ceny">
+<section class="sec" id="zayavka">
   <div class="wrap">
-    <div class="eyebrow">Прайс</div>
-    <h2>Услуги и цены</h2>
-    <p class="lead">Всё видно сразу, без звонка «а сколько стоит». Именно это человек ищет первым, когда выбирает между вами и соседями.</p>
-    <div style="margin-top:34px"><div class="price__group"><div class="price__cat">ЛАЗЕРНАЯ ЭПИЛЯЦИЯ/ Жен</div><div class="price__row">
-        <div><div class="price__name">PREMIUM комплекс &quot;Всех важных зон&quot; (ноги и руки полностью+глубокое бикини+подмышки+верхняя губа)</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">7 700 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">PRESTIGE комплекс (без рук) ноги полностью, бикини глубокое, подмышки, любая малая зона</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">6 600 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">CLASSIC комбо (голени+глубокое бикини+подмышки)</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">4 499 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Лицо (верхняя губа,подбородок,щеки,лоб)</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">2 100 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Подмышечные зоны</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">1 100 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Глубокое бикини (вкл. межъягодичную область)</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">2 500 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Классическое бикини (по линии белья+лобок)</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">2 200 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Бикини по линии белья( без межъягодичной области)</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">1 800 ₽</span>
-      </div></div><div class="price__group"><div class="price__cat">ЛАЗЕРНАЯ ЭПИЛЯЦИЯ / Муж</div><div class="price__row">
-        <div><div class="price__name">Спина(до уровня поясницы) МУЖ.</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">3 300 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Бикини классика/МУЖ.</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">2 400 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Ноги полностью/МУЖ.</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">4 500 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Подмышечные зоны/МУЖ.</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">1 320 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Бакенбарды/МУЖ.</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">1 100 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Шея/МУЖ.</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">1 750 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Межбровье/МУЖ.</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">800 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Верхняя губа/МУЖ.</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">800 ₽</span>
-      </div></div></div>
-    <p class="price__note">Цены из вашего прайса в 2ГИС. Обновлено 6 августа 2026.</p>
-  </div>
-</section>
-
-
-<section id="foto">
-  <div class="wrap">
-    <div class="eyebrow">Фотографии</div>
-    <h2>Как у нас</h2>
-    <div class="gal" style="margin-top:28px"><a href="https://i7.photo.2gis.com/photo-gallery/67195133-c25d-4a13-a40e-a0c79d2132f0_1920x.jpg" target="_blank" rel="noopener"><img src="https://i7.photo.2gis.com/photo-gallery/67195133-c25d-4a13-a40e-a0c79d2132f0_232x232.jpg" srcset="https://i7.photo.2gis.com/photo-gallery/67195133-c25d-4a13-a40e-a0c79d2132f0_232x232.jpg 232w, https://i7.photo.2gis.com/photo-gallery/67195133-c25d-4a13-a40e-a0c79d2132f0_464x464.jpg 464w, https://i7.photo.2gis.com/photo-gallery/67195133-c25d-4a13-a40e-a0c79d2132f0_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i4.photo.2gis.com/photo-gallery/32642c74-3f85-402a-9043-52159f9073b0_1920x.jpg" target="_blank" rel="noopener"><img src="https://i4.photo.2gis.com/photo-gallery/32642c74-3f85-402a-9043-52159f9073b0_232x232.jpg" srcset="https://i4.photo.2gis.com/photo-gallery/32642c74-3f85-402a-9043-52159f9073b0_232x232.jpg 232w, https://i4.photo.2gis.com/photo-gallery/32642c74-3f85-402a-9043-52159f9073b0_464x464.jpg 464w, https://i4.photo.2gis.com/photo-gallery/32642c74-3f85-402a-9043-52159f9073b0_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i3.photo.2gis.com/images/branch/24/3377699767210239_f6d4_1920x.jpg" target="_blank" rel="noopener"><img src="https://i3.photo.2gis.com/images/branch/24/3377699767210239_f6d4_232x232.jpg" srcset="https://i3.photo.2gis.com/images/branch/24/3377699767210239_f6d4_232x232.jpg 232w, https://i3.photo.2gis.com/images/branch/24/3377699767210239_f6d4_464x464.jpg 464w, https://i3.photo.2gis.com/images/branch/24/3377699767210239_f6d4_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i8.photo.2gis.com/images/branch/0/30258560107161128_87d5_1920x.jpg" target="_blank" rel="noopener"><img src="https://i8.photo.2gis.com/images/branch/0/30258560107161128_87d5_232x232.jpg" srcset="https://i8.photo.2gis.com/images/branch/0/30258560107161128_87d5_232x232.jpg 232w, https://i8.photo.2gis.com/images/branch/0/30258560107161128_87d5_464x464.jpg 464w, https://i8.photo.2gis.com/images/branch/0/30258560107161128_87d5_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i6.photo.2gis.com/photo-gallery/7d5936ca-454b-4b4a-8ced-43d4ab59e09e_1920x.jpg" target="_blank" rel="noopener"><img src="https://i6.photo.2gis.com/photo-gallery/7d5936ca-454b-4b4a-8ced-43d4ab59e09e_232x232.jpg" srcset="https://i6.photo.2gis.com/photo-gallery/7d5936ca-454b-4b4a-8ced-43d4ab59e09e_232x232.jpg 232w, https://i6.photo.2gis.com/photo-gallery/7d5936ca-454b-4b4a-8ced-43d4ab59e09e_464x464.jpg 464w, https://i6.photo.2gis.com/photo-gallery/7d5936ca-454b-4b4a-8ced-43d4ab59e09e_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i1.photo.2gis.com/images/branch/0/30258560082157572_b52b_1920x.jpg" target="_blank" rel="noopener"><img src="https://i1.photo.2gis.com/images/branch/0/30258560082157572_b52b_232x232.jpg" srcset="https://i1.photo.2gis.com/images/branch/0/30258560082157572_b52b_232x232.jpg 232w, https://i1.photo.2gis.com/images/branch/0/30258560082157572_b52b_464x464.jpg 464w, https://i1.photo.2gis.com/images/branch/0/30258560082157572_b52b_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i6.photo.2gis.com/images/branch/0/30258560107160837_615d_1920x.jpg" target="_blank" rel="noopener"><img src="https://i6.photo.2gis.com/images/branch/0/30258560107160837_615d_232x232.jpg" srcset="https://i6.photo.2gis.com/images/branch/0/30258560107160837_615d_232x232.jpg 232w, https://i6.photo.2gis.com/images/branch/0/30258560107160837_615d_464x464.jpg 464w, https://i6.photo.2gis.com/images/branch/0/30258560107160837_615d_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i3.photo.2gis.com/photo-gallery/6c857b9c-b290-4a57-8e0d-1da978b0fb59_1920x.jpg" target="_blank" rel="noopener"><img src="https://i3.photo.2gis.com/photo-gallery/6c857b9c-b290-4a57-8e0d-1da978b0fb59_232x232.jpg" srcset="https://i3.photo.2gis.com/photo-gallery/6c857b9c-b290-4a57-8e0d-1da978b0fb59_232x232.jpg 232w, https://i3.photo.2gis.com/photo-gallery/6c857b9c-b290-4a57-8e0d-1da978b0fb59_464x464.jpg 464w, https://i3.photo.2gis.com/photo-gallery/6c857b9c-b290-4a57-8e0d-1da978b0fb59_640x.jpg 640w" sizes="50vw" alt="Мы в работе" loading="lazy" decoding="async"></a></div>
-    <p class="price__note">Фотографии из вашей карточки 2ГИС. <a href="https://2gis.ru/rostov/firm/70000001036759565" target="_blank" rel="noopener">Открыть карточку</a></p>
-  </div>
-</section>
-
-<section id="otzyvy">
-  <div class="wrap">
-    <div class="eyebrow">Отзывы</div>
-    <h2>Что о нас пишут</h2>
-    <p class="lead">Рейтинг 5 в 2ГИС, 156 отзывов. На сайте они работают на вас, а не лежат в чужом приложении.</p>
-    <div class="rev" style="margin-top:28px"><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Ручной массаж лица у Марии! Необычно, начинается с массажа шейно-воротниковой зоны, потом грудной отдел, а потом уже лицо! Без крема, по точкам, необычно. Ощутимо, но небольно!</p>
-      <div class="rev__who">Светлана Хан · 28.10.2024</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Самое лучшее место!Пришла сюда на день открытых дверей,теперь хочу ходить на постоянной основе🥰Рекомендую!</p>
-      <div class="rev__who">Елизавета Головина · 06.12.2025</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Удобное расположение в самом центре города, приятный и отзывчивый персонал, большой ассортимент товаров и услуг, рекомендую</p>
-      <div class="rev__who">Городской житель · 06.12.2025</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Была на массаже, мне очень понравилось , очень красивое и стильное пространство , прекрасный персонал, я довольна😌🥰🤍</p>
-      <div class="rev__who">Дэниза Гурцкая · 24.08.2025</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Понравился салон, уютный и комфортный, просторный, с Отличным ремонтом и мебелью😍 приятный и улыбчивый коллектив 🍒 делала процедуру LPG у двух мастеров и очень довольна, опытные девушки 👍❤️🍎🍒 есть с чем сравнить 🥰 советую👍👍👍</p>
-      <div class="rev__who">Татьяна Лозовая · 14.08.2025</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Потрясающий салон. Хожу на Лазерную эпиляцию. Все специалисты профи ♥️ за несколько процедур хороший результат. До этого была в другой клинике и результата почти не было. Поэтому теперь только сюда. Сервис тоже на высшем уровне и сам салон красивый, приятно здесь быть. Пока я на процедуре дочка сиди</p>
-      <div class="rev__who">Алина Подгорная · 21.11.2021</div>
-    </article></div>
-    <p class="price__note">Отзывы из 2ГИС. <a href="https://2gis.ru/rostov/firm/70000001036759565" target="_blank" rel="noopener">Читать все</a></p>
-  </div>
-</section>
-
-<section id="kontakty">
-  <div class="wrap">
-    <div class="eyebrow">Контакты</div>
-    <h2>Где нас найти</h2>
-    <div class="contact" style="margin-top:28px">
-      <dl class="dl"><dt>Адрес</dt><dd>Университетский переулок, 54</dd><dt>Часы работы</dt><dd>Пн–Вс 10:00–20:00 · без выходных</dd><dt>Телефон</dt><dd><a href="tel:+79185551818">+7 918 555-18-18</a></dd><dt>Написать</dt><dd><a href="https://t.me/lasersmedica" target="_blank" rel="noopener">Telegram</a> · <a href="https://wa.me/79185551818?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%0A%0A%D0%9F%D0%B8%D1%88%D1%83%20%D0%B8%D0%B7%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%202%D0%93%D0%98%D0%A1.%0A%0A" target="_blank" rel="noopener">WhatsApp</a></dd><dt>Почта</dt><dd><a href="mailto:lasersmedica.rnd@gmail.com">lasersmedica.rnd@gmail.com</a></dd></dl>
-      <iframe class="map" src="https://widgets.2gis.com/widget?type=firmsonmap&amp;options=%7B%22pos%22%3A%7B%22lat%22%3A47.227038%2C%22lon%22%3A39.727294%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22rostov%22%7D%2C%22org%22%3A%2270000001036759565%22%7D" loading="lazy" title="Карта проезда"></iframe>
+    <div class="cta reveal">
+      <div class="cta__in">
+        <div>
+          <div class="eyebrow" style="color:inherit;opacity:.7">Заявка</div>
+          <h2>Записаться</h2>
+          <p class="lead">Оставьте номер, администратор перезвонит и подберёт время.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:26px"><a class="btn btn--ghost" href="tel:+79185551818" style="border-color:currentColor;color:inherit">+7 918 555-18-18</a><a class="btn btn--ghost" href="https://t.me/lasersmedica" target="_blank" rel="noopener" style="border-color:currentColor;color:inherit">Telegram</a><a class="btn btn--ghost" href="https://wa.me/79185551818?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%0A%0A%D0%9F%D0%B8%D1%88%D1%83%20%D0%B8%D0%B7%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%202%D0%93%D0%98%D0%A1.%0A%0A" target="_blank" rel="noopener" style="border-color:currentColor;color:inherit">WhatsApp</a></div>
+        </div>
+        <div>
+          <form class="form" id="lead" novalidate>
+            <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <input name="name" placeholder="Как к вам обращаться" required minlength="2" autocomplete="name">
+            <input name="contact" placeholder="Телефон или ник в Telegram" required minlength="5" autocomplete="tel">
+            <textarea name="task" placeholder="Что вас интересует (по желанию)"></textarea>
+            <button class="btn btn--dark btn--wide" type="submit">Отправить</button>
+            <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку указанных данных.</p>
+          </form>
+          <div class="form__ok" id="ok">Заявка отправлена. Спасибо, скоро свяжемся.</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-
-<section id="zayavka">
-  <div class="wrap">
-    <div class="card" style="padding:clamp(24px,4vw,44px)">
-      <div class="eyebrow">Заявка</div>
-      <h2>Записаться на консультацию</h2>
-      <p class="lead">Оставьте номер, администратор перезвонит и подберёт время. Заявка приходит в Telegram за секунду, отвечать можно прямо оттуда.</p>
-      <form class="form" id="lead" style="margin-top:26px" novalidate>
-        <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <input name="name" placeholder="Как к вам обращаться" required minlength="2" autocomplete="name">
-        <input name="contact" placeholder="Телефон или ник в Telegram" required minlength="5" autocomplete="tel">
-        <textarea name="task" placeholder="Что нужно (по желанию)"></textarea>
-        <button class="btn" type="submit">Отправить</button>
-        <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку указанных данных.</p>
-      </form>
-      <div class="form__ok" id="ok">Заявка отправлена. Спасибо, скоро свяжемся.</div>
-    </div>
-  </div>
-</section>
-
 <footer class="foot">
-  <div class="wrap foot__row">
-    <div>Лазерс Медика · Университетский переулок, 54</div>
-    <div><a href="tel:+79185551818" style="text-decoration:none">+7 918 555-18-18</a></div>
+  <div class="wrap">
+    <div class="foot__grid"><div>
+      <a class="brand" href="index.html" style="margin-bottom:16px">
+        <span class="brand__mark">Л</span>
+        <span class="brand__t"><span class="brand__n">Лазерс Медика</span>
+        <span class="brand__s">студия косметологии</span></span></a>
+      <a class="foot__tel" href="tel:+79185551818">+7 918 555-18-18</a>
+      <div style="opacity:.6;font-size:14.5px;max-width:34ch">Рейтинг 5 в 2ГИС. без выходных</div>
+    </div><div><h4>Разделы</h4><ul><li><a href="index.html">Главная</a></li><li><a href="uslugi.html">Услуги</a></li><li><a href="ceny.html">Цены</a></li><li><a href="galereya.html">Галерея</a></li></ul></div><div><h4>&nbsp;</h4><ul><li><a href="otzyvy.html">Отзывы</a></li><li><a href="o-nas.html">О нас</a></li><li><a href="kontakty.html">Контакты</a></li></ul></div><div><h4>Контакты</h4><ul><li><a href="tel:+79185551818">+7 918 555-18-18</a></li><li><a href="mailto:lasersmedica.rnd@gmail.com">lasersmedica.rnd@gmail.com</a></li><li><a href="https://t.me/lasersmedica" target="_blank" rel="noopener">Telegram</a></li><li><a href="https://wa.me/79185551818?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%0A%0A%D0%9F%D0%B8%D1%88%D1%83%20%D0%B8%D0%B7%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%202%D0%93%D0%98%D0%A1.%0A%0A" target="_blank" rel="noopener">WhatsApp</a></li></ul><h4 style="margin-top:26px">Адрес</h4><ul><li>Университетский переулок, 54</li><li>Пн–Вс 10:00–20:00</li><li>Без выходных</li><li><a href="https://2gis.ru/rostov/firm/70000001036759565" target="_blank" rel="noopener">Карточка в 2ГИС</a></li></ul></div></div>
+    <div class="foot__bot">
+      <div>Лазерс Медика, студия косметологии</div>
+      <div>Данные и фотографии — из карточки 2ГИС</div>
+    </div>
   </div>
 </footer>
-
-
 <div class="demo">
   <div class="wrap demo__in">
     <div>
       <b>Это демо-макет, а не ваш действующий сайт.</b> Собрал его Владимир, веб-разработчик из
-      Ростов-на-Дону, по открытым данным вашей карточки 2ГИС: фото, прайс, отзывы и часы работы — ваши.<br>Что я заметил на вашем текущем сайте: сайт открывается без https, браузер показывает «не защищено».
+      Ростов-на-Дону, по открытым данным вашей карточки 2ГИС: название, фотографии, прайс, отзывы
+      и часы работы — ваши. Что я заметил на вашем текущем сайте: сайт открывается без https, браузер показывает «не защищено»; вес одной только разметки 1953 КБ.
     </div>
-    <a class="btn btn--sm btn--ghost" style="border-color:currentColor;color:inherit"
-       href="https://t.me/vovuchoooo" target="_blank" rel="noopener">Написать @vovuchoooo</a>
+    <a class="btn btn--sm" href="https://t.me/vovuchoooo" target="_blank" rel="noopener">Написать @vovuchoooo</a>
   </div>
 </div>
-
 <div class="bar">
-  <a class="btn" href="#zayavka">Записаться на консультацию</a>
+  <a class="btn" href="kontakty.html#zayavka">Записаться</a>
   <a class="btn btn--ghost" href="tel:+79185551818">Позвонить</a>
 </div>
-
-<script>
-document.getElementById('lead').addEventListener('submit', async function (ev) {
-  ev.preventDefault();
-  var f = ev.target, b = f.querySelector('button');
-  var body = {
-    company: f.company.value, name: f.name.value,
-    contact: f.contact.value, task: f.task.value
-  };
-  if (body.name.trim().length < 2 || body.contact.trim().length < 5) {
-    f.reportValidity(); return;
-  }
-  b.disabled = true; b.textContent = 'Отправляю…';
-  try {
-    var r = await fetch('https://lead-form.tripolev04.workers.dev', {
-      method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body)
-    });
-    if (!r.ok) throw 0;
-    f.style.display = 'none';
-    document.getElementById('ok').style.display = 'block';
-  } catch (err) {
-    b.disabled = false; b.textContent = 'Отправить ещё раз';
-  }
-});
-</script>
+<script src="script.js" defer></script>
 </body>
 </html>

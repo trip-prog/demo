@@ -1,367 +1,231 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+<script>document.documentElement.className+=" js";setTimeout(function(){document.querySelectorAll(".reveal:not(.is-in)").forEach(function(n){n.classList.add("is-in")})},2500)</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Вектор — Медицинский центр стоматологии и косметологии · Пушкинская улица, 80</title>
-<meta name="description" content="Вектор — Медицинский центр стоматологии и косметологии · Пушкинская улица, 80. Рейтинг 4.9 в 2ГИС.">
+<title>Вектор — медицинский центр стоматологии и косметологии, Ростов-на-Дону</title>
+<meta name="description" content="Медицинский центр на Пушкинской: лечение зубов, ортодонтия, протезирование, лазерная и аппаратная косметология, инъекционные процедуры. Оценка 4,9 в 2ГИС по 72 отзывам. С понедельн">
 <meta name="robots" content="noindex,nofollow">
-<meta property="og:title" content="Вектор">
-<meta property="og:description" content="Вектор — Медицинский центр стоматологии и косметологии · Пушкинская улица, 80. Рейтинг 4.9 в 2ГИС.">
+<meta name="theme-color" content="#f6f8f7">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Вектор — медицинский центр стоматологии и косметологии, Ростов-на-Дону">
+<meta property="og:description" content="Медицинский центр на Пушкинской: лечение зубов, ортодонтия, протезирование, лазерная и аппаратная косметология, инъекционные процедуры. Оценка 4,9 в 2ГИС по 72 отзывам. С понедельн">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23b57d68'/%3E%3C/svg%3E">
-<style>
-:root{
-  --bg:#fbf7f4;--surf:#ffffff;--line:#ecdfd8;--ink:#2e2320;
-  --mute:#7d6a63;--acc:#b57d68;--acc-ink:#ffffff;
-  --shadow:0 1px 2px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.07);
-  --r:14px;--wrap:1120px;
-}
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);
-  font:400 17px/1.6 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  -webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
-a{color:inherit}
-h1,h2,h3{font-family:'Cormorant Garamond','Inter',sans-serif;line-height:1.14;margin:0;
-  letter-spacing:-.02em}
-h1{font-size:clamp(34px,7vw,62px);}
-h2{font-size:clamp(26px,4.4vw,40px)}
-h3{font-size:19px}
-p{margin:0}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
-section{padding:72px 0}
-.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);
-  font-weight:600;margin-bottom:12px}
-.lead{color:var(--mute);font-size:17px;max-width:62ch;margin-top:14px}
-
-.top{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--bg) 88%,transparent);
-  backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.top__in{display:flex;align-items:center;gap:18px;height:64px}
-.brand{font-family:'Cormorant Garamond',sans-serif;font-weight:700;font-size:20px;
-  text-decoration:none;letter-spacing:.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.top nav{margin-left:auto;display:none;gap:26px}
-.top nav a{text-decoration:none;color:var(--mute);font-size:15px;transition:color .2s}
-.top nav a:hover{color:var(--ink)}
-.top .btn{margin-left:auto}
-@media(min-width:900px){.top nav{display:flex}.top .btn{margin-left:0}}
-
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
-  padding:14px 24px;border-radius:999px;border:1px solid transparent;cursor:pointer;
-  font:600 15px/1 'Inter',sans-serif;text-decoration:none;transition:transform .15s,opacity .2s;
-  background:var(--acc);color:var(--acc-ink)}
-.btn:hover{transform:translateY(-1px);opacity:.92}
-.btn--ghost{background:transparent;color:var(--ink);border-color:var(--line)}
-.btn--sm{padding:11px 18px;font-size:14px}
-
-.hero{position:relative;min-height:min(88vh,720px);display:flex;align-items:flex-end;
-  padding:96px 0 56px;overflow:hidden;isolation:isolate}
-.hero__bg{position:absolute;inset:0;z-index:-2;object-fit:cover;width:100%;height:100%}
-.hero::after{content:'';position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(180deg,rgba(16,20,28,.52) 0%,rgba(8,9,12,.55) 45%,rgba(6,7,10,.9) 100%)}
-.hero--plain::after{background:radial-gradient(120% 90% at 15% 0%,
-  color-mix(in srgb,var(--acc) 26%,var(--bg)) 0%,var(--bg) 70%)}
-.hero__in{position:relative;color:#fff}
-.hero--plain .hero__in{color:var(--ink)}
-.hero h1{max-width:16ch}
-.hero__sub{margin-top:16px;font-size:clamp(16px,2.2vw,20px);opacity:.9;max-width:44ch}
-.hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-.hero--plain .hero__cta .btn--ghost{border-color:var(--line)}
-.hero__cta .btn--ghost{color:#fff;border-color:rgba(255,255,255,.42)}
-
-.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
-.fact{display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:999px;
-  background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.2);
-  font-size:14px;backdrop-filter:blur(6px)}
-.hero--plain .fact{background:var(--surf);border-color:var(--line);color:var(--ink)}
-.fact b{font-weight:600}
-.star{color:#ffc247}
-
-.grid{display:grid;gap:16px}
-@media(min-width:700px){.cols-2{grid-template-columns:1fr 1fr}}
-@media(min-width:900px){.cols-3{grid-template-columns:repeat(3,1fr)}}
-
-.card{background:var(--surf);border:1px solid var(--line);border-radius:var(--r);padding:22px;
-  box-shadow:var(--shadow)}
-
-.price__group + .price__group{margin-top:34px}
-.price__cat{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);
-  margin-bottom:14px;font-weight:600}
-.price__row{display:flex;align-items:baseline;gap:14px;padding:15px 0;border-bottom:1px dashed var(--line)}
-.price__row:last-child{border-bottom:0}
-.price__name{font-weight:600}
-.price__desc{color:var(--mute);font-size:14.5px;margin-top:4px;max-width:70ch}
-.price__dots{flex:1;border-bottom:1px dotted var(--line);transform:translateY(-4px);min-width:24px}
-.price__val{white-space:nowrap;font-weight:700;color:var(--acc);font-size:18px}
-.price__note{color:var(--mute);font-size:14px;margin-top:24px}
-
-.tags{display:flex;flex-wrap:wrap;gap:9px}
-.tag{padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surf);
-  font-size:14.5px}
-
-.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-@media(min-width:760px){.gal{grid-template-columns:repeat(4,1fr)}
-  .gal a:first-child{grid-column:span 2;grid-row:span 2}}
-.gal a{display:block;border-radius:12px;overflow:hidden;background:var(--line);aspect-ratio:1/1}
-.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
-.gal a:hover img{transform:scale(1.05)}
-
-.rev{display:grid;gap:16px}
-@media(min-width:820px){.rev{grid-template-columns:repeat(3,1fr)}}
-.rev__stars{color:#ffc247;letter-spacing:2px;font-size:15px}
-.rev__text{margin-top:12px;font-size:15.5px;line-height:1.62}
-.rev__who{margin-top:16px;font-size:14px;color:var(--mute)}
-
-.contact{display:grid;gap:22px}
-@media(min-width:900px){.contact{grid-template-columns:1fr 1.15fr;align-items:start}}
-.dl{display:grid;gap:18px;margin:0}
-.dl dt{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
-.dl dd{margin:5px 0 0;font-size:17px}
-.dl a{text-decoration:none;border-bottom:1px solid var(--line)}
-.map{border:0;width:100%;height:340px;border-radius:var(--r);border:1px solid var(--line)}
-
-.form{display:grid;gap:13px}
-.form input,.form textarea{width:100%;padding:14px 16px;border-radius:11px;background:var(--bg);
-  border:1px solid var(--line);color:var(--ink);font:400 16px/1.5 'Inter',sans-serif}
-.form input:focus,.form textarea:focus{outline:2px solid var(--acc);outline-offset:1px;border-color:transparent}
-.form textarea{min-height:96px;resize:vertical}
-.form .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
-.form__note{font-size:13px;color:var(--mute)}
-.form__ok{display:none;padding:14px 16px;border-radius:11px;background:color-mix(in srgb,var(--acc) 14%,transparent);
-  border:1px solid var(--acc);font-size:15px}
-
-.foot{border-top:1px solid var(--line);padding:34px 0;color:var(--mute);font-size:14.5px}
-.foot__row{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;justify-content:space-between}
-
-.demo{background:var(--acc);color:var(--acc-ink);font-size:14.5px;line-height:1.55}
-.demo__in{padding:20px;display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;justify-content:space-between}
-.demo a{color:inherit;font-weight:700}
-.bar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;gap:10px;padding:10px 14px;
-  background:color-mix(in srgb,var(--bg) 94%,transparent);border-top:1px solid var(--line);
-  backdrop-filter:blur(10px)}
-.bar .btn{flex:1}
-@media(min-width:900px){.bar{display:none}}
-@media(max-width:899px){body{padding-bottom:72px}}
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23217a6b'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='16' font-weight='700' text-anchor='middle' fill='%23fff'%3EВ%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-<header class="top">
+<body data-page="index.html">
+<header class="top" id="top">
   <div class="wrap top__in">
-    <a class="brand" href="#top">Вектор</a>
-    <nav><a href="#ceny">Цены</a><a href="#foto">Фото</a><a href="#otzyvy">Отзывы</a><a href="#kontakty">Контакты</a></nav>
-    <a class="btn btn--sm" href="#zayavka">Записаться на консультацию</a>
+    <a class="brand" href="index.html">
+      <span class="brand__mark">В</span>
+      <span class="brand__t">
+        <span class="brand__n">Вектор</span>
+        <span class="brand__s">медицинский центр стоматологии и косметологии</span>
+      </span>
+    </a>
+    <nav class="nav"><a href="uslugi.html">Услуги</a><a href="ceny.html">Цены</a><a href="galereya.html">Галерея</a><a href="otzyvy.html">Отзывы</a><a href="o-nas.html">О нас</a><a href="kontakty.html">Контакты</a></nav>
+    <div class="top__act">
+      <a class="top__tel" href="tel:+78632698411">+7 863 269-84-11</a>
+      <a class="btn btn--sm" href="kontakty.html#zayavka">Записаться на приём</a>
+      <button class="burger" type="button" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
+<div class="drawer" id="drawer">
+  <div class="wrap">
+    <a href="index.html">Главная</a><a href="uslugi.html">Услуги</a><a href="ceny.html">Цены</a><a href="galereya.html">Галерея</a><a href="otzyvy.html">Отзывы</a><a href="o-nas.html">О нас</a><a href="kontakty.html">Контакты</a>
+    <a class="btn btn--wide" href="kontakty.html#zayavka">Записаться на приём</a>
+  </div>
+</div>
+<section class="hero">
+  <div class="wrap">
+    <div class="hero__in">
+      <div>
+        <div class="eyebrow reveal">Стоматология и косметология · Пушкинская улица, 80</div>
+        <h1 class="reveal">Стоматология<br>и <em>косметология</em></h1>
+        <p class="hero__lead reveal">Медицинский центр на Пушкинской: лечение зубов, ортодонтия, протезирование, лазерная и аппаратная косметология, инъекционные процедуры. Оценка 4,9 в 2ГИС по 72 отзывам. С понедельника по субботу с 9:00 до 19:00.</p>
+        <div class="hero__act reveal"><a class="btn btn--lg" href="kontakty.html#zayavka">Записаться на приём</a><a class="btn btn--ghost btn--lg" href="uslugi.html">Услуги и цены</a></div>
+        <div class="hero__facts reveal"><div><div class="fact__v">4,9</div><div class="fact__l">рейтинг в 2ГИС по 72 отзывам</div></div><div><div class="fact__v">50</div><div class="fact__l">позиций в прайсе с ценой</div></div><div><div class="fact__v">2</div><div class="fact__l">направления работы</div></div></div>
+      </div>
+      <div class="hero__media reveal" style="--i:1">
+          <img src="https://i3.photo.2gis.com/photo-gallery/9e2f4c02-79f1-4ab1-a49e-606b616af29d_960x.jpg" alt="Вектор" fetchpriority="high" decoding="async">
+          <div class="hero__badge hero__badge--bl">
+              <b>4,9</b>
+              <span><span class="stars">★★★★★</span><br>72 отзывов в 2ГИС</span>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="hero__strip"><div><b>Адрес</b>Пушкинская улица, 80</div><div><b>Часы работы</b>Пн–Сб 09:00–19:00</div><div><b>Телефон</b>+7 863 269-84-11</div><div><b>Оплата</b>картой, наличный расчёт</div></div>
+</section>
 
-
-<section class="hero" id="top">
-  <img class="hero__bg" src="https://i3.photo.2gis.com/photo-gallery/9e2f4c02-79f1-4ab1-a49e-606b616af29d_640x.jpg" alt="" fetchpriority="high" decoding="async" srcset="https://i3.photo.2gis.com/photo-gallery/9e2f4c02-79f1-4ab1-a49e-606b616af29d_640x.jpg 640w, https://i3.photo.2gis.com/photo-gallery/9e2f4c02-79f1-4ab1-a49e-606b616af29d_960x.jpg 960w, https://i3.photo.2gis.com/photo-gallery/9e2f4c02-79f1-4ab1-a49e-606b616af29d_1920x.jpg 1920w" sizes="100vw">
-  <div class="wrap hero__in">
-    <h1>Вектор</h1>
-    <p class="hero__sub">Медицинский центр стоматологии и косметологии · Пушкинская улица, 80</p>
-    <div class="facts"><span class="fact"><span class="star">★</span> <b>4.9</b> · 72 отзывов в 2ГИС</span><span class="fact">🕒 Пн–Сб 09:00–19:00</span><span class="fact">📍 Пушкинская улица, 80</span></div>
-    <div class="hero__cta">
-      <a class="btn" href="#zayavka">Записаться на консультацию</a>
-      <a class="btn btn--ghost" href="tel:+78632698411">Позвонить</a>
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Направления</div><h2>Направления центра</h2><p class="lead">Разделы прайса из карточки 2ГИС, 50 позиций с ценами.</p></div><a class="btn btn--ghost btn--sm" href="uslugi.html">Все услуги</a></div>
+    <div class="grid g3"><a class="tile reveal" style="--i:0" href="uslugi.html#terapiya">
+              <div class="tile__b">
+                <div class="tile__cat">43 услуги</div>
+                <h3 class="tile__n">Терапия</h3>
+                <div class="tile__d">Восстановление зуба под коронку, Использования материала &quot;Pro Root MTA&quot;, Удаление инородного тела из корневого канала (ш…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">300 ₽</span></div>
+              </div></a><a class="tile reveal" style="--i:1" href="uslugi.html#obschie-procedury">
+              <div class="tile__b">
+                <div class="tile__cat">7 услуг</div>
+                <h3 class="tile__n">Общие процедуры</h3>
+                <div class="tile__d">Компьютерная томограмма (сегмент), Комьютерная томограмма, Ортопантомограмма…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">300 ₽</span></div>
+              </div></a></div>
+  </div>
+</section>
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Цены</div><h2>Цены</h2><p class="lead">Первые десять позиций. Полный прайс — на отдельной странице, с поиском.</p></div><a class="btn btn--ghost btn--sm" href="ceny.html">Все 50 позиций</a></div>
+    <div class="reveal"><div class="prow" data-s="компьютерная томограмма (сегмент) общие процедуры">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Компьютерная томограмма (сегмент)</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 900 ₽</div>
+</div><div class="prow" data-s="комьютерная томограмма общие процедуры">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Комьютерная томограмма</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 2 200 ₽</div>
+</div><div class="prow" data-s="ортопантомограмма общие процедуры">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Ортопантомограмма</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 1 600 ₽</div>
+</div><div class="prow" data-s="компьютерная диагностика общие процедуры">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Компьютерная диагностика</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 2 200 ₽</div>
+</div><div class="prow" data-s="использование optragate общие процедуры">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Использование OptraGate</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 300 ₽</div>
+</div><div class="prow" data-s="установка формирователя десны paltop общие процедуры">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Установка формирователя десны Paltop</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 7 000 ₽</div>
+</div><div class="prow" data-s="дополнительная анестезия общие процедуры">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Дополнительная анестезия</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 700 ₽</div>
+</div><div class="prow" data-s="восстановление зуба под коронку терапия">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Восстановление зуба под коронку</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 6 000 ₽</div>
+</div><div class="prow" data-s="использования материала &quot;pro root mta&quot; терапия">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Использования материала &quot;Pro Root MTA&quot;</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 600 ₽</div>
+</div><div class="prow" data-s="удаление инородного тела из корневого канала (штифт, фрагмент инструмента) терапия">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Удаление инородного тела из корневого канала (штифт, фрагмент инструмента)</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 3 000 ₽</div>
+</div></div>
+    <div style="margin-top:30px"><a class="btn" href="ceny.html">Открыть полный прайс</a></div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Фотографии</div><h2>Центр и оборудование</h2><p class="lead">Кабинеты, техника и приём — фотографии из карточки 2ГИС.</p></div><a class="btn btn--ghost btn--sm" href="galereya.html">Вся галерея</a></div>
+    <div class="gal"><figure data-full="https://i3.photo.2gis.com/photo-gallery/9e2f4c02-79f1-4ab1-a49e-606b616af29d_1920x.jpg"><img src="https://i3.photo.2gis.com/photo-gallery/9e2f4c02-79f1-4ab1-a49e-606b616af29d_640x.jpg" alt="Интерьер" loading="lazy" decoding="async"><figcaption>Интерьер</figcaption></figure><figure data-full="https://i6.photo.2gis.com/photo-gallery/901583e0-7b68-4838-ab33-d71b6d875d8c_1920x.jpg"><img src="https://i6.photo.2gis.com/photo-gallery/901583e0-7b68-4838-ab33-d71b6d875d8c_640x.jpg" alt="Интерьер" loading="lazy" decoding="async"><figcaption>Интерьер</figcaption></figure><figure data-full="https://i0.photo.2gis.com/photo-gallery/c273be3f-935f-4b4e-9aa4-4def48ca7e71_1920x.jpg"><img src="https://i0.photo.2gis.com/photo-gallery/c273be3f-935f-4b4e-9aa4-4def48ca7e71_640x.jpg" alt="Интерьер" loading="lazy" decoding="async"><figcaption>Интерьер</figcaption></figure><figure data-full="https://i4.photo.2gis.com/photo-gallery/2377f63b-b8eb-4ef4-abec-47aab661943b_1920x.jpg"><img src="https://i4.photo.2gis.com/photo-gallery/2377f63b-b8eb-4ef4-abec-47aab661943b_640x.jpg" alt="Интерьер" loading="lazy" decoding="async"><figcaption>Интерьер</figcaption></figure><figure data-full="https://i9.photo.2gis.com/photo-gallery/48057eb1-632a-42a5-a225-686d239dd84f_1920x.jpg"><img src="https://i9.photo.2gis.com/photo-gallery/48057eb1-632a-42a5-a225-686d239dd84f_640x.jpg" alt="Интерьер" loading="lazy" decoding="async"><figcaption>Интерьер</figcaption></figure><figure data-full="https://i8.photo.2gis.com/photo-gallery/46f8edc1-32ff-4f49-9ca9-442771e4d8b8_1920x.jpg"><img src="https://i8.photo.2gis.com/photo-gallery/46f8edc1-32ff-4f49-9ca9-442771e4d8b8_640x.jpg" alt="Интерьер" loading="lazy" decoding="async"><figcaption>Интерьер</figcaption></figure></div>
+  </div>
+</section>
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Отзывы</div><h2>4,9 из 5 по 72 отзывам</h2><p class="lead">Оценка 4,9 в 2ГИС по 72 отзывам. Здесь показаны те, что видны в карточке.</p></div><a class="btn btn--ghost btn--sm" href="otzyvy.html">Все 12 отзывов</a></div>
+    <div class="grid g3"><article class="card card--hover rev reveal" style="--i:0">
+  <div class="rev__top">
+    <div class="rev__av">С</div>
+    <div><div class="rev__n">Сергей</div>
+      <div class="rev__d">17 декабря 2025</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t is-clamp">Почти вся моя семья ходит в эту стоматологию. Мы сравнивали качество работы, в частности срок службы пломб, и оценивали его годами. Я лично был около 10-15 раз: ставил пломбы, делал чистку и даже установил свою первую и последнюю коронку. Качество коронки меня устраивает, с ней всё хорошо, ничего не мешает. Врачи здесь проявляют высокий профессионализм и пунктуальность, когда я прихожу вовремя, ме</div><button class="rev__more" type="button">Читать целиком</button>
+</article><article class="card card--hover rev reveal" style="--i:1">
+  <div class="rev__top">
+    <div class="rev__av">ВТ</div>
+    <div><div class="rev__n">Валерий Т.</div>
+      <div class="rev__d">16 декабря 2025</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t is-clamp">На приеме я рассказал о своей проблеме, и сотрудники предложили подходящий вариант решения. Мне подробно рассказали об особенностях ортодонтического лечения. Врач отнесся ко мне с вниманием и профессионализмом, что создало комфортную атмосферу. Я только начал сотрудничать с клиникой, прошел первичную консультацию и сделал 3D-сканирование. Весь процесс обслуживания прошел на должном уровне.</div><button class="rev__more" type="button">Читать целиком</button>
+</article><article class="card card--hover rev reveal" style="--i:2">
+  <div class="rev__top">
+    <div class="rev__av">З</div>
+    <div><div class="rev__n">Зоя</div>
+      <div class="rev__d">4 апреля 2026</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t is-clamp">Больше всего меня впечатлил профессионализм, который проявился в донесении до меня полной информации о состоянии моего ребенка. Мне дали четкое понимание всей картины, объяснили, как необходимо провести лечение периодонтита и реставрацию зуба. Также пояснили как курировать процесс медицинского обслуживания в дальнейшем. После проведенного лечения мой ребенок чувствует себя прекрасно.</div><button class="rev__more" type="button">Читать целиком</button>
+</article></div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="grid g2" style="--gap:clamp(30px,4vw,64px);align-items:center">
+      <div class="reveal">
+        <div class="eyebrow">О центре</div>
+        <h2>Стоматология и косметология под одной крышей</h2>
+        <p class="lead" style="margin-top:20px">Свои ортодонт, ортопед и хирург, лазерная и аппаратная косметология, инъекционные процедуры. Есть подъёмник и вызов персонала.</p>
+        <ul class="list" style="margin-top:28px"><li>Оценка 4,9 из 5 в 2ГИС по 72 отзывам</li><li>Часы работы: Пн–Сб 09:00–19:00, выходной Вс</li><li>Адрес: Пушкинская улица, 80</li><li>50 позиций прайса с ценами, от 300 ₽</li><li>Стоматологические услуги: взрослый ортодонт, взрослый стоматолог-ортопед, взрослый стоматолог-хирург, имплантация, взрослый пародонтолог</li><li>Услуги: лазерная косметология, инъекционные процедуры, аппаратная косметология, удаление новообразований, чистка лица</li></ul>
+        <div style="margin-top:30px"><a class="btn btn--ghost" href="o-nas.html">Подробнее о нас</a></div>
+      </div>
+      <div class="reveal" style="--i:1"><img src="https://i6.photo.2gis.com/photo-gallery/901583e0-7b68-4838-ab33-d71b6d875d8c_960x.jpg" alt="Вектор" loading="lazy" style="border-radius:var(--r-lg);aspect-ratio:1/1;object-fit:cover;width:100%"></div>
     </div>
   </div>
 </section>
 
-<section id="ceny">
+<section class="sec" id="zayavka">
   <div class="wrap">
-    <div class="eyebrow">Прайс</div>
-    <h2>Услуги и цены</h2>
-    <p class="lead">Всё видно сразу, без звонка «а сколько стоит». Именно это человек ищет первым, когда выбирает между вами и соседями.</p>
-    <div style="margin-top:34px"><div class="price__group"><div class="price__cat">Общие</div><div class="price__row">
-        <div><div class="price__name">Компьютерная томограмма (сегмент)</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">900 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Комьютерная томограмма</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">2 200 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Ортопантомограмма</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">1 600 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Компьютерная диагностика</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">2 200 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Использование OptraGate</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">300 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Установка формирователя десны Paltop</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">7 000 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Дополнительная анестезия</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">700 ₽</span>
-      </div></div><div class="price__group"><div class="price__cat">Терапия</div><div class="price__row">
-        <div><div class="price__name">Восстановление зуба под коронку</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">6 000 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Использования материала &quot;Pro Root MTA&quot;</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">600 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Удаление инородного тела из корневого канала (штифт, фрагмент инструмента)</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">3 000 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">консультация терапевта</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">600 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Реставрация (восстановление) режущего края фронтального зуба в пределах эмали</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">5 000 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Реставрация (восстановление) режущего края фронтального зуба и жевательной поверхности боковых зубов в пределах дентина</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">7 000 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Лечение вторичного кариеса депульпированого зуба</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">8 000 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Временная пломба</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">1 000 ₽</span>
-      </div></div></div>
-    <p class="price__note">Цены из вашего прайса в 2ГИС. Обновлено 27 марта 2026.</p>
-  </div>
-</section>
-
-
-<section id="foto">
-  <div class="wrap">
-    <div class="eyebrow">Фотографии</div>
-    <h2>Как у нас</h2>
-    <div class="gal" style="margin-top:28px"><a href="https://i6.photo.2gis.com/photo-gallery/901583e0-7b68-4838-ab33-d71b6d875d8c_1920x.jpg" target="_blank" rel="noopener"><img src="https://i6.photo.2gis.com/photo-gallery/901583e0-7b68-4838-ab33-d71b6d875d8c_232x232.jpg" srcset="https://i6.photo.2gis.com/photo-gallery/901583e0-7b68-4838-ab33-d71b6d875d8c_232x232.jpg 232w, https://i6.photo.2gis.com/photo-gallery/901583e0-7b68-4838-ab33-d71b6d875d8c_464x464.jpg 464w, https://i6.photo.2gis.com/photo-gallery/901583e0-7b68-4838-ab33-d71b6d875d8c_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i0.photo.2gis.com/photo-gallery/c273be3f-935f-4b4e-9aa4-4def48ca7e71_1920x.jpg" target="_blank" rel="noopener"><img src="https://i0.photo.2gis.com/photo-gallery/c273be3f-935f-4b4e-9aa4-4def48ca7e71_232x232.jpg" srcset="https://i0.photo.2gis.com/photo-gallery/c273be3f-935f-4b4e-9aa4-4def48ca7e71_232x232.jpg 232w, https://i0.photo.2gis.com/photo-gallery/c273be3f-935f-4b4e-9aa4-4def48ca7e71_464x464.jpg 464w, https://i0.photo.2gis.com/photo-gallery/c273be3f-935f-4b4e-9aa4-4def48ca7e71_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i4.photo.2gis.com/photo-gallery/2377f63b-b8eb-4ef4-abec-47aab661943b_1920x.jpg" target="_blank" rel="noopener"><img src="https://i4.photo.2gis.com/photo-gallery/2377f63b-b8eb-4ef4-abec-47aab661943b_232x232.jpg" srcset="https://i4.photo.2gis.com/photo-gallery/2377f63b-b8eb-4ef4-abec-47aab661943b_232x232.jpg 232w, https://i4.photo.2gis.com/photo-gallery/2377f63b-b8eb-4ef4-abec-47aab661943b_464x464.jpg 464w, https://i4.photo.2gis.com/photo-gallery/2377f63b-b8eb-4ef4-abec-47aab661943b_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i9.photo.2gis.com/photo-gallery/48057eb1-632a-42a5-a225-686d239dd84f_1920x.jpg" target="_blank" rel="noopener"><img src="https://i9.photo.2gis.com/photo-gallery/48057eb1-632a-42a5-a225-686d239dd84f_232x232.jpg" srcset="https://i9.photo.2gis.com/photo-gallery/48057eb1-632a-42a5-a225-686d239dd84f_232x232.jpg 232w, https://i9.photo.2gis.com/photo-gallery/48057eb1-632a-42a5-a225-686d239dd84f_464x464.jpg 464w, https://i9.photo.2gis.com/photo-gallery/48057eb1-632a-42a5-a225-686d239dd84f_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i8.photo.2gis.com/photo-gallery/46f8edc1-32ff-4f49-9ca9-442771e4d8b8_1920x.jpg" target="_blank" rel="noopener"><img src="https://i8.photo.2gis.com/photo-gallery/46f8edc1-32ff-4f49-9ca9-442771e4d8b8_232x232.jpg" srcset="https://i8.photo.2gis.com/photo-gallery/46f8edc1-32ff-4f49-9ca9-442771e4d8b8_232x232.jpg 232w, https://i8.photo.2gis.com/photo-gallery/46f8edc1-32ff-4f49-9ca9-442771e4d8b8_464x464.jpg 464w, https://i8.photo.2gis.com/photo-gallery/46f8edc1-32ff-4f49-9ca9-442771e4d8b8_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i9.photo.2gis.com/photo-gallery/e541dbfc-9592-4d56-903c-d860c0618a53_1920x.jpg" target="_blank" rel="noopener"><img src="https://i9.photo.2gis.com/photo-gallery/e541dbfc-9592-4d56-903c-d860c0618a53_232x232.jpg" srcset="https://i9.photo.2gis.com/photo-gallery/e541dbfc-9592-4d56-903c-d860c0618a53_232x232.jpg 232w, https://i9.photo.2gis.com/photo-gallery/e541dbfc-9592-4d56-903c-d860c0618a53_464x464.jpg 464w, https://i9.photo.2gis.com/photo-gallery/e541dbfc-9592-4d56-903c-d860c0618a53_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i6.photo.2gis.com/photo-gallery/8eb47f79-39a9-4b15-a4a4-aa02affa154c_1920x.jpg" target="_blank" rel="noopener"><img src="https://i6.photo.2gis.com/photo-gallery/8eb47f79-39a9-4b15-a4a4-aa02affa154c_232x232.jpg" srcset="https://i6.photo.2gis.com/photo-gallery/8eb47f79-39a9-4b15-a4a4-aa02affa154c_232x232.jpg 232w, https://i6.photo.2gis.com/photo-gallery/8eb47f79-39a9-4b15-a4a4-aa02affa154c_464x464.jpg 464w, https://i6.photo.2gis.com/photo-gallery/8eb47f79-39a9-4b15-a4a4-aa02affa154c_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i0.photo.2gis.com/photo-gallery/574386fb-7422-4245-b3a8-80447d58df04_1920x.jpg" target="_blank" rel="noopener"><img src="https://i0.photo.2gis.com/photo-gallery/574386fb-7422-4245-b3a8-80447d58df04_232x232.jpg" srcset="https://i0.photo.2gis.com/photo-gallery/574386fb-7422-4245-b3a8-80447d58df04_232x232.jpg 232w, https://i0.photo.2gis.com/photo-gallery/574386fb-7422-4245-b3a8-80447d58df04_464x464.jpg 464w, https://i0.photo.2gis.com/photo-gallery/574386fb-7422-4245-b3a8-80447d58df04_640x.jpg 640w" sizes="50vw" alt="Мы в работе" loading="lazy" decoding="async"></a></div>
-    <p class="price__note">Фотографии из вашей карточки 2ГИС. <a href="https://2gis.ru/rostov/firm/3378228001517074" target="_blank" rel="noopener">Открыть карточку</a></p>
-  </div>
-</section>
-
-<section id="otzyvy">
-  <div class="wrap">
-    <div class="eyebrow">Отзывы</div>
-    <h2>Что о нас пишут</h2>
-    <p class="lead">Рейтинг 4.9 в 2ГИС, 72 отзывов. На сайте они работают на вас, а не лежат в чужом приложении.</p>
-    <div class="rev" style="margin-top:28px"><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Были сегодня в этой клинике первый раз. Врач Болдырева Елена Анатольевна сделала все отлично, назначила план лечения сыну. Атмосфера в клинике отличная, персонал приветливый, дружелюбный. Все отлично. Спасибо❤️</p>
-      <div class="rev__who">Татьяна Капралова · 27.06.2026</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Я была на консультации у ортопеда, отношение было хорошее, вежливое общение. Мне всё понятно объяснили и показали, рассказали план лечения и предполагаемые затраты. Доктор был компетентен, по лечению дал конкретные рекомендации, в том числе хирургические. Раньше я уже обращалась в эту клинику к орто</p>
-      <div class="rev__who">Марина · 05.04.2026</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Больше всего меня впечатлил профессионализм, который проявился в донесении до меня полной информации о состоянии моего ребенка. Мне дали четкое понимание всей картины, объяснили, как необходимо провести лечение периодонтита и реставрацию зуба. Также пояснили как курировать процесс медицинского обслу</p>
-      <div class="rev__who">Зоя · 04.04.2026</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Терапевт-ортопед Андрей Сергеевич внимательно осмотрел меня, сделал снимки челюстей и подробно объяснил результаты обследования. После этого мы вместе обсудили, какой будет следующий этап лечения. Врач объяснял все понятно и доступно, что помогло мне лучше понять ситуацию и план действий.</p>
-      <div class="rev__who">Борис · 03.04.2026</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Центр находится в удобном месте и работает по удобному графику, приёмы начинаются точно по расписанию. Врачи уделяют много внимания, подробно рассказывают обо всех этапах лечения. Я ходила к ортопеду Андрею Сергеевичу Максютенко и осталась очень довольна приёмом. Кроме того, лечила зуб, делала снимо</p>
-      <div class="rev__who">Марина · 02.04.2026</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Всё сделали быстро и грамотно, внимательно проконсультировали. Доктор Алина Багдасаровна рекомендовала прийти в течение 2 месяцев для удаления кариеса. Это и не срочно, но не стоит ждать ухудшения состояния зубов. Я обязательно приду снова и уже советую эту клинику всем друзьям.</p>
-      <div class="rev__who">Жанна · 01.04.2026</div>
-    </article></div>
-    <p class="price__note">Отзывы из 2ГИС. <a href="https://2gis.ru/rostov/firm/3378228001517074" target="_blank" rel="noopener">Читать все</a></p>
-  </div>
-</section>
-
-<section id="kontakty">
-  <div class="wrap">
-    <div class="eyebrow">Контакты</div>
-    <h2>Где нас найти</h2>
-    <div class="contact" style="margin-top:28px">
-      <dl class="dl"><dt>Адрес</dt><dd>Пушкинская улица, 80</dd><dt>Часы работы</dt><dd>Пн–Сб 09:00–19:00 · выходной Вс</dd><dt>Телефон</dt><dd><a href="tel:+78632698411">+7 863 269-84-11</a></dd><dt>Написать</dt><dd><a href="https://wa.me/79885772491?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%0A%0A%D0%9F%D0%B8%D1%88%D1%83%20%D0%B8%D0%B7%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%202%D0%93%D0%98%D0%A1.%0A%0A" target="_blank" rel="noopener">WhatsApp</a></dd><dt>Почта</dt><dd><a href="mailto:stom-80@mail.ru">stom-80@mail.ru</a></dd></dl>
-      <iframe class="map" src="https://widgets.2gis.com/widget?type=firmsonmap&amp;options=%7B%22pos%22%3A%7B%22lat%22%3A47.225029%2C%22lon%22%3A39.715706%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22rostov%22%7D%2C%22org%22%3A%223378228001517074%22%7D" loading="lazy" title="Карта проезда"></iframe>
+    <div class="cta reveal">
+      <div class="cta__in">
+        <div>
+          <div class="eyebrow" style="color:inherit;opacity:.7">Заявка</div>
+          <h2>Записаться на приём</h2>
+          <p class="lead">Оставьте номер, администратор перезвонит и подберёт время.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:26px"><a class="btn btn--ghost" href="tel:+78632698411" style="border-color:currentColor;color:inherit">+7 863 269-84-11</a><a class="btn btn--ghost" href="https://wa.me/79885772491?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%0A%0A%D0%9F%D0%B8%D1%88%D1%83%20%D0%B8%D0%B7%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%202%D0%93%D0%98%D0%A1.%0A%0A" target="_blank" rel="noopener" style="border-color:currentColor;color:inherit">WhatsApp</a></div>
+        </div>
+        <div>
+          <form class="form" id="lead" novalidate>
+            <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <input name="name" placeholder="Как к вам обращаться" required minlength="2" autocomplete="name">
+            <input name="contact" placeholder="Телефон или ник в Telegram" required minlength="5" autocomplete="tel">
+            <textarea name="task" placeholder="Что вас интересует (по желанию)"></textarea>
+            <button class="btn btn--dark btn--wide" type="submit">Отправить</button>
+            <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку указанных данных.</p>
+          </form>
+          <div class="form__ok" id="ok">Заявка отправлена. Спасибо, скоро свяжемся.</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-
-<section id="zayavka">
-  <div class="wrap">
-    <div class="card" style="padding:clamp(24px,4vw,44px)">
-      <div class="eyebrow">Заявка</div>
-      <h2>Записаться на консультацию</h2>
-      <p class="lead">Оставьте номер, администратор перезвонит и подберёт время. Заявка приходит в Telegram за секунду, отвечать можно прямо оттуда.</p>
-      <form class="form" id="lead" style="margin-top:26px" novalidate>
-        <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <input name="name" placeholder="Как к вам обращаться" required minlength="2" autocomplete="name">
-        <input name="contact" placeholder="Телефон или ник в Telegram" required minlength="5" autocomplete="tel">
-        <textarea name="task" placeholder="Что нужно (по желанию)"></textarea>
-        <button class="btn" type="submit">Отправить</button>
-        <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку указанных данных.</p>
-      </form>
-      <div class="form__ok" id="ok">Заявка отправлена. Спасибо, скоро свяжемся.</div>
-    </div>
-  </div>
-</section>
-
 <footer class="foot">
-  <div class="wrap foot__row">
-    <div>Вектор · Пушкинская улица, 80</div>
-    <div><a href="tel:+78632698411" style="text-decoration:none">+7 863 269-84-11</a></div>
+  <div class="wrap">
+    <div class="foot__grid"><div>
+      <a class="brand" href="index.html" style="margin-bottom:16px">
+        <span class="brand__mark">В</span>
+        <span class="brand__t"><span class="brand__n">Вектор</span>
+        <span class="brand__s">медицинский центр стоматологии и косметологии</span></span></a>
+      <a class="foot__tel" href="tel:+78632698411">+7 863 269-84-11</a>
+      <div style="opacity:.6;font-size:14.5px;max-width:34ch">Рейтинг 4,9 в 2ГИС. выходной Вс</div>
+    </div><div><h4>Разделы</h4><ul><li><a href="index.html">Главная</a></li><li><a href="uslugi.html">Услуги</a></li><li><a href="ceny.html">Цены</a></li><li><a href="galereya.html">Галерея</a></li></ul></div><div><h4>&nbsp;</h4><ul><li><a href="otzyvy.html">Отзывы</a></li><li><a href="o-nas.html">О нас</a></li><li><a href="kontakty.html">Контакты</a></li></ul></div><div><h4>Контакты</h4><ul><li><a href="tel:+78632698411">+7 863 269-84-11</a></li><li><a href="mailto:stom-80@mail.ru">stom-80@mail.ru</a></li><li><a href="https://wa.me/79885772491?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%0A%0A%D0%9F%D0%B8%D1%88%D1%83%20%D0%B8%D0%B7%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%202%D0%93%D0%98%D0%A1.%0A%0A" target="_blank" rel="noopener">WhatsApp</a></li></ul><h4 style="margin-top:26px">Адрес</h4><ul><li>Пушкинская улица, 80</li><li>Пн–Сб 09:00–19:00</li><li>Выходной вс</li><li><a href="https://2gis.ru/rostov/firm/3378228001517074" target="_blank" rel="noopener">Карточка в 2ГИС</a></li></ul></div></div>
+    <div class="foot__bot">
+      <div>Вектор, медицинский центр стоматологии и косметологии</div>
+      <div>Данные и фотографии — из карточки 2ГИС</div>
+    </div>
   </div>
 </footer>
-
-
 <div class="demo">
   <div class="wrap demo__in">
     <div>
       <b>Это демо-макет, а не ваш действующий сайт.</b> Собрал его Владимир, веб-разработчик из
-      Ростов-на-Дону, по открытым данным вашей карточки 2ГИС: фото, прайс, отзывы и часы работы — ваши.<br>Что я заметил на вашем текущем сайте: сайт из карточки 2ГИС не открывается.
+      Ростов-на-Дону, по открытым данным вашей карточки 2ГИС: название, фотографии, прайс, отзывы
+      и часы работы — ваши. Что я заметил на вашем текущем сайте: сайт из карточки 2ГИС не открывается.
     </div>
-    <a class="btn btn--sm btn--ghost" style="border-color:currentColor;color:inherit"
-       href="https://t.me/vovuchoooo" target="_blank" rel="noopener">Написать @vovuchoooo</a>
+    <a class="btn btn--sm" href="https://t.me/vovuchoooo" target="_blank" rel="noopener">Написать @vovuchoooo</a>
   </div>
 </div>
-
 <div class="bar">
-  <a class="btn" href="#zayavka">Записаться на консультацию</a>
+  <a class="btn" href="kontakty.html#zayavka">Записаться на приём</a>
   <a class="btn btn--ghost" href="tel:+78632698411">Позвонить</a>
 </div>
-
-<script>
-document.getElementById('lead').addEventListener('submit', async function (ev) {
-  ev.preventDefault();
-  var f = ev.target, b = f.querySelector('button');
-  var body = {
-    company: f.company.value, name: f.name.value,
-    contact: f.contact.value, task: f.task.value
-  };
-  if (body.name.trim().length < 2 || body.contact.trim().length < 5) {
-    f.reportValidity(); return;
-  }
-  b.disabled = true; b.textContent = 'Отправляю…';
-  try {
-    var r = await fetch('https://lead-form.tripolev04.workers.dev', {
-      method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body)
-    });
-    if (!r.ok) throw 0;
-    f.style.display = 'none';
-    document.getElementById('ok').style.display = 'block';
-  } catch (err) {
-    b.disabled = false; b.textContent = 'Отправить ещё раз';
-  }
-});
-</script>
+<script src="script.js" defer></script>
 </body>
 </html>
