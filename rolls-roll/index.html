@@ -1,464 +1,273 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+<script>document.documentElement.className+=" js";setTimeout(function(){document.querySelectorAll(".reveal:not(.is-in)").forEach(function(n){n.classList.add("is-in")})},2500)</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Роллс Ролл — Служба доставки готовых блюд · Магнитогорская улица, 2Б</title>
-<meta name="description" content="Роллс Ролл — Служба доставки готовых блюд · Магнитогорская улица, 2Б. Рейтинг 3.6 в 2ГИС.">
+<title>Роллс Ролл — служба доставки готовых блюд, Ростов-на-Дону</title>
+<meta name="description" content="Восемь разделов меню и 48 позиций — все с фотографиями и ценами. Холодные, запечённые и жареные роллы, пицца 40 см, горячее и десерты. Ежедневно с 10:30 до 22:00.">
 <meta name="robots" content="noindex,nofollow">
-<meta property="og:title" content="Роллс Ролл">
-<meta property="og:description" content="Роллс Ролл — Служба доставки готовых блюд · Магнитогорская улица, 2Б. Рейтинг 3.6 в 2ГИС.">
+<meta name="theme-color" content="#f6f7fb">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Роллс Ролл — служба доставки готовых блюд, Ростов-на-Дону">
+<meta property="og:description" content="Восемь разделов меню и 48 позиций — все с фотографиями и ценами. Холодные, запечённые и жареные роллы, пицца 40 см, горячее и десерты. Ежедневно с 10:30 до 22:00.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%234f8f3a'/%3E%3C/svg%3E">
-<style>
-:root{
-  --bg:#fbf9f3;--surf:#ffffff;--line:#e8e3d4;--ink:#242a1c;
-  --mute:#6e7461;--acc:#4f8f3a;--acc-ink:#ffffff;
-  --shadow:0 1px 2px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.07);
-  --r:14px;--wrap:1120px;
-}
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);
-  font:400 17px/1.6 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  -webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
-a{color:inherit}
-h1,h2,h3{font-family:'Manrope','Inter',sans-serif;line-height:1.14;margin:0;
-  letter-spacing:-.02em}
-h1{font-size:clamp(34px,7vw,62px);}
-h2{font-size:clamp(26px,4.4vw,40px)}
-h3{font-size:19px}
-p{margin:0}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
-section{padding:72px 0}
-.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);
-  font-weight:600;margin-bottom:12px}
-.lead{color:var(--mute);font-size:17px;max-width:62ch;margin-top:14px}
-
-.top{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--bg) 88%,transparent);
-  backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.top__in{display:flex;align-items:center;gap:18px;height:64px}
-.brand{font-family:'Manrope',sans-serif;font-weight:700;font-size:20px;
-  text-decoration:none;letter-spacing:.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.top nav{margin-left:auto;display:none;gap:26px}
-.top nav a{text-decoration:none;color:var(--mute);font-size:15px;transition:color .2s}
-.top nav a:hover{color:var(--ink)}
-.top .btn{margin-left:auto}
-@media(min-width:900px){.top nav{display:flex}.top .btn{margin-left:0}}
-
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
-  padding:14px 24px;border-radius:999px;border:1px solid transparent;cursor:pointer;
-  font:600 15px/1 'Inter',sans-serif;text-decoration:none;transition:transform .15s,opacity .2s;
-  background:var(--acc);color:var(--acc-ink)}
-.btn:hover{transform:translateY(-1px);opacity:.92}
-.btn--ghost{background:transparent;color:var(--ink);border-color:var(--line)}
-.btn--sm{padding:11px 18px;font-size:14px}
-
-.hero{position:relative;min-height:min(88vh,720px);display:flex;align-items:flex-end;
-  padding:96px 0 56px;overflow:hidden;isolation:isolate}
-.hero__bg{position:absolute;inset:0;z-index:-2;object-fit:cover;width:100%;height:100%}
-.hero::after{content:'';position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(180deg,rgba(16,20,28,.52) 0%,rgba(8,9,12,.55) 45%,rgba(6,7,10,.9) 100%)}
-.hero--plain::after{background:radial-gradient(120% 90% at 15% 0%,
-  color-mix(in srgb,var(--acc) 26%,var(--bg)) 0%,var(--bg) 70%)}
-.hero__in{position:relative;color:#fff}
-.hero--plain .hero__in{color:var(--ink)}
-.hero h1{max-width:16ch}
-.hero__sub{margin-top:16px;font-size:clamp(16px,2.2vw,20px);opacity:.9;max-width:44ch}
-.hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-.hero--plain .hero__cta .btn--ghost{border-color:var(--line)}
-.hero__cta .btn--ghost{color:#fff;border-color:rgba(255,255,255,.42)}
-
-.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
-.fact{display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:999px;
-  background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.2);
-  font-size:14px;backdrop-filter:blur(6px)}
-.hero--plain .fact{background:var(--surf);border-color:var(--line);color:var(--ink)}
-.fact b{font-weight:600}
-.star{color:#ffc247}
-
-.grid{display:grid;gap:16px}
-@media(min-width:700px){.cols-2{grid-template-columns:1fr 1fr}}
-@media(min-width:900px){.cols-3{grid-template-columns:repeat(3,1fr)}}
-
-.card{background:var(--surf);border:1px solid var(--line);border-radius:var(--r);padding:22px;
-  box-shadow:var(--shadow)}
-
-.price__group + .price__group{margin-top:34px}
-.price__cat{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);
-  margin-bottom:14px;font-weight:600}
-.price__row{display:flex;align-items:baseline;gap:14px;padding:15px 0;border-bottom:1px dashed var(--line)}
-.price__row:last-child{border-bottom:0}
-.price__name{font-weight:600}
-.price__desc{color:var(--mute);font-size:14.5px;margin-top:4px;max-width:70ch}
-.price__dots{flex:1;border-bottom:1px dotted var(--line);transform:translateY(-4px);min-width:24px}
-.price__val{white-space:nowrap;font-weight:700;color:var(--acc);font-size:18px}
-.price__note{color:var(--mute);font-size:14px;margin-top:24px}
-
-.tags{display:flex;flex-wrap:wrap;gap:9px}
-.tag{padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surf);
-  font-size:14.5px}
-
-.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-@media(min-width:760px){.gal{grid-template-columns:repeat(4,1fr)}
-  .gal a:first-child{grid-column:span 2;grid-row:span 2}}
-.gal a{display:block;border-radius:12px;overflow:hidden;background:var(--line);aspect-ratio:1/1}
-.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
-.gal a:hover img{transform:scale(1.05)}
-
-.rev{display:grid;gap:16px}
-@media(min-width:820px){.rev{grid-template-columns:repeat(3,1fr)}}
-.rev__stars{color:#ffc247;letter-spacing:2px;font-size:15px}
-.rev__text{margin-top:12px;font-size:15.5px;line-height:1.62}
-.rev__who{margin-top:16px;font-size:14px;color:var(--mute)}
-
-.contact{display:grid;gap:22px}
-@media(min-width:900px){.contact{grid-template-columns:1fr 1.15fr;align-items:start}}
-.dl{display:grid;gap:18px;margin:0}
-.dl dt{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
-.dl dd{margin:5px 0 0;font-size:17px}
-.dl a{text-decoration:none;border-bottom:1px solid var(--line)}
-.map{border:0;width:100%;height:340px;border-radius:var(--r);border:1px solid var(--line)}
-
-.form{display:grid;gap:13px}
-.form input,.form textarea{width:100%;padding:14px 16px;border-radius:11px;background:var(--bg);
-  border:1px solid var(--line);color:var(--ink);font:400 16px/1.5 'Inter',sans-serif}
-.form input:focus,.form textarea:focus{outline:2px solid var(--acc);outline-offset:1px;border-color:transparent}
-.form textarea{min-height:96px;resize:vertical}
-.form .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
-.form__note{font-size:13px;color:var(--mute)}
-.form__ok{display:none;padding:14px 16px;border-radius:11px;background:color-mix(in srgb,var(--acc) 14%,transparent);
-  border:1px solid var(--acc);font-size:15px}
-
-.foot{border-top:1px solid var(--line);padding:34px 0;color:var(--mute);font-size:14.5px}
-.foot__row{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;justify-content:space-between}
-
-.demo{background:var(--acc);color:var(--acc-ink);font-size:14.5px;line-height:1.55}
-.demo__in{padding:20px;display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;justify-content:space-between}
-.demo a{color:inherit;font-weight:700}
-.bar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;gap:10px;padding:10px 14px;
-  background:color-mix(in srgb,var(--bg) 94%,transparent);border-top:1px solid var(--line);
-  backdrop-filter:blur(10px)}
-.bar .btn{flex:1}
-@media(min-width:900px){.bar{display:none}}
-@media(max-width:899px){body{padding-bottom:72px}}
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marmelad&family=Inter:wght@400;500;600&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%233d4fd6'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='16' font-weight='700' text-anchor='middle' fill='%23fff'%3EР%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-<header class="top">
+<body data-page="index.html">
+<header class="top" id="top">
   <div class="wrap top__in">
-    <a class="brand" href="#top">Роллс Ролл</a>
-    <nav><a href="#ceny">Цены</a><a href="#foto">Фото</a><a href="#otzyvy">Отзывы</a><a href="#kontakty">Контакты</a></nav>
-    <a class="btn btn--sm" href="#zayavka">Оформить заказ</a>
+    <a class="brand" href="index.html">
+      <span class="brand__mark">Р</span>
+      <span class="brand__t">
+        <span class="brand__n">Роллс Ролл</span>
+        <span class="brand__s">служба доставки готовых блюд</span>
+      </span>
+    </a>
+    <nav class="nav"><a href="uslugi.html">Меню</a><a href="ceny.html">Все позиции</a><a href="galereya.html">Галерея</a><a href="otzyvy.html">Отзывы</a><a href="o-nas.html">О нас</a><a href="kontakty.html">Контакты</a></nav>
+    <div class="top__act">
+      <a class="top__tel" href="tel:+79281911100">+7 928 191-11-00</a>
+      <a class="btn btn--sm" href="kontakty.html#zayavka">Заказать доставку</a>
+      <button class="burger" type="button" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
+<div class="drawer" id="drawer">
+  <div class="wrap">
+    <a href="index.html">Главная</a><a href="uslugi.html">Меню</a><a href="ceny.html">Все позиции</a><a href="galereya.html">Галерея</a><a href="otzyvy.html">Отзывы</a><a href="o-nas.html">О нас</a><a href="kontakty.html">Контакты</a>
+    <a class="btn btn--wide" href="kontakty.html#zayavka">Заказать доставку</a>
+  </div>
+</div>
+<section class="hero">
+  <div class="wrap">
+    <div class="hero__in">
+      <div>
+        <div class="eyebrow reveal">Доставка роллов и пиццы · Магнитогорская улица, 2Б</div>
+        <h1 class="reveal">Роллы, пицца<br>и <em>наборы</em></h1>
+        <p class="hero__lead reveal">Восемь разделов меню и 48 позиций — все с фотографиями и ценами. Холодные, запечённые и жареные роллы, пицца 40 см, горячее и десерты. Ежедневно с 10:30 до 22:00.</p>
+        <div class="hero__act reveal"><a class="btn btn--lg" href="kontakty.html#zayavka">Заказать доставку</a><a class="btn btn--ghost btn--lg" href="uslugi.html">Открыть меню</a></div>
+        <div class="hero__facts reveal"><div><div class="fact__v">261</div><div class="fact__l">отзыв в 2ГИС</div></div><div><div class="fact__v">48</div><div class="fact__l">позиций в меню с ценой</div></div><div><div class="fact__v">8</div><div class="fact__l">разделов в меню</div></div></div>
+      </div>
+      <div class="hero__media reveal" style="--i:1">
+          <img src="https://cachizer1.2gis.com/market/31a9052e-2ace-49fd-9c47-74f163b9c094.jpg?h=600&amp;w=800" alt="Роллс Ролл" fetchpriority="high" decoding="async">
+          <div class="hero__badge hero__badge--bl">
+              <b>261</b>
+              <span>отзыв<br>в 2ГИС</span>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="hero__strip"><div><b>Адрес</b>Магнитогорская улица, 2Б</div><div><b>Часы работы</b>Пн–Вс 10:30–22:00</div><div><b>Телефон</b>+7 928 191-11-00</div><div><b>Оплата</b>картой, наличный расчёт, перевод с карты</div></div>
+</section>
 
-
-<section class="hero" id="top">
-  <img class="hero__bg" src="https://i0.photo.2gis.com/photo-gallery/180e39ab-525c-4f03-b26a-985fc771c7f9_640x.jpg" alt="" fetchpriority="high" decoding="async" srcset="https://i0.photo.2gis.com/photo-gallery/180e39ab-525c-4f03-b26a-985fc771c7f9_640x.jpg 640w, https://i0.photo.2gis.com/photo-gallery/180e39ab-525c-4f03-b26a-985fc771c7f9_960x.jpg 960w, https://i0.photo.2gis.com/photo-gallery/180e39ab-525c-4f03-b26a-985fc771c7f9_1920x.jpg 1920w" sizes="100vw">
-  <div class="wrap hero__in">
-    <h1>Роллс Ролл</h1>
-    <p class="hero__sub">Служба доставки готовых блюд · Магнитогорская улица, 2Б</p>
-    <div class="facts"><span class="fact"><span class="star">★</span> <b>3.6</b> · 261 отзывов в 2ГИС</span><span class="fact">🕒 Пн–Вс 10:30–22:00</span><span class="fact">📍 Магнитогорская улица, 2Б</span></div>
-    <div class="hero__cta">
-      <a class="btn" href="#zayavka">Оформить заказ</a>
-      <a class="btn btn--ghost" href="tel:+79281911100">Позвонить</a>
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Меню</div><h2>Разделы меню</h2><p class="lead">Восемь разделов и 48 позиций с ценами из карточки 2ГИС.</p></div><a class="btn btn--ghost btn--sm" href="uslugi.html">Все меню</a></div>
+    <div class="grid g3"><a class="tile reveal" style="--i:0" href="uslugi.html#vygodnye-nabory">
+              <div class="tile__b">
+                <div class="tile__cat">8 услуг</div>
+                <h3 class="tile__n">Выгодные наборы</h3>
+                <div class="tile__d">Большой папа, Мега Хит, Вечеринка…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">1 190 ₽</span></div>
+              </div></a><a class="tile reveal" style="--i:1" href="uslugi.html#holodnye-rolly">
+              <div class="tile__b">
+                <div class="tile__cat">12 услуг</div>
+                <h3 class="tile__n">Холодные роллы</h3>
+                <div class="tile__d">Филадельфия, Филадельфия с угрём, Филадельфия с креветкой…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">360 ₽</span></div>
+              </div></a><a class="tile reveal" style="--i:2" href="uslugi.html#zapechennye-rolly">
+              <div class="tile__b">
+                <div class="tile__cat">7 услуг</div>
+                <h3 class="tile__n">Запеченные роллы</h3>
+                <div class="tile__d">Креветка Спайси, Запеченная фила с лососем, Запеченная Креветка…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">380 ₽</span></div>
+              </div></a><a class="tile reveal" style="--i:0" href="uslugi.html#zharenye-rolly">
+              <div class="tile__b">
+                <div class="tile__cat">4 услуги</div>
+                <h3 class="tile__n">Жареные роллы</h3>
+                <div class="tile__d">Темпура Лосось, Темпура Унаги, Темпура Креветка…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">380 ₽</span></div>
+              </div></a><a class="tile reveal" style="--i:1" href="uslugi.html#picca-40sm">
+              <div class="tile__b">
+                <div class="tile__cat">6 услуг</div>
+                <h3 class="tile__n">Пицца 40см</h3>
+                <div class="tile__d">Пепперони, Маргарита, Мясная…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">580 ₽</span></div>
+              </div></a><a class="tile reveal" style="--i:2" href="uslugi.html#goryachee">
+              <div class="tile__b">
+                <div class="tile__cat">6 услуг</div>
+                <h3 class="tile__n">Горячее</h3>
+                <div class="tile__d">Том-ям, Суп Грибной, Удон с курицей…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">320 ₽</span></div>
+              </div></a></div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Кухня</div><h2>Из меню</h2><p class="lead">Фотографии и цены — из карточки, состав не додумывался.</p></div><a class="btn btn--ghost btn--sm" href="ceny.html">Весь прайс</a></div>
+    <div class="grid g3"><article class="tile reveal" style="--i:0"><div class="tile__img"><img src="https://cachizer2.2gis.com/market/c3a76559-4859-43ca-840c-5e5b3f532c40.jpg?h=600&amp;w=800" alt="Большой папа" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Выгодные наборы</div><h3 class="tile__n">Большой папа</h3><div class="tile__d">Ронин, Блэк стар, Банзай, Цыпочка, Тортилья темпура с курицей, Темпура Краб, Рио, Осака, Тори Кунсей, Филадельфия, Самурай, Нагано (96 шт)</div><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">4 690 ₽</span></div></div>
+</article><article class="tile reveal" style="--i:1"><div class="tile__img"><img src="https://cachizer1.2gis.com/market/31a9052e-2ace-49fd-9c47-74f163b9c094.jpg?h=600&amp;w=800" alt="Филадельфия" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Холодные роллы</div><h3 class="tile__n">Филадельфия</h3><div class="tile__d">Нежный сыр, хрустящий огурчик, вкуснейший кусочек лосося</div><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">420 ₽</span></div></div>
+</article><article class="tile reveal" style="--i:2"><div class="tile__img"><img src="https://cachizer3.2gis.com/market/934351b4-2c72-41ac-90e5-7e1c534946d4.jpg?h=600&amp;w=800" alt="Креветка Спайси" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Запеченные роллы</div><h3 class="tile__n">Креветка Спайси</h3><div class="tile__d">Внутри тигровая креветка, хрустящий огурчик, нежный творожный сыр, рис, нори, сверху икра масаго, кунжут и сырный спайси соус</div><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">420 ₽</span></div></div>
+</article><article class="tile reveal" style="--i:3"><div class="tile__img"><img src="https://cachizer2.2gis.com/market/1d6b4ad6-67be-43d0-9389-9455500ef70f.jpg?h=600&amp;w=800" alt="Темпура Лосось" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Жареные роллы</div><h3 class="tile__n">Темпура Лосось</h3><div class="tile__d">Внутри нежный творожный сыр, лосось, икра масаго, хрустящий огурчик, рис, нори, сверху воздушный кляр</div><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">420 ₽</span></div></div>
+</article><article class="tile reveal" style="--i:0"><div class="tile__img"><img src="https://cachizer2.2gis.com/market/ad446ba0-74db-4496-8650-b0f1a18fc369.jpg?h=600&amp;w=800" alt="Пепперони" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Пицца 40см</div><h3 class="tile__n">Пепперони</h3><div class="tile__d">Моцарелла, колбаса пепперони, томатный соус</div><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">690 ₽</span></div></div>
+</article><article class="tile reveal" style="--i:1"><div class="tile__img"><img src="https://cachizer1.2gis.com/market/596970b4-bf8c-491c-a364-0ec350b3c5ea.jpg?h=600&amp;w=800" alt="Том-ям" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Горячее</div><h3 class="tile__n">Том-ям</h3><div class="tile__d">Куриный бульон, кокосовое молоко, рыбный соус, острый соус, паста том-ям, тигровые креветки, кальмар, нежная курочка, шампиньоны, чери. Подается с порцией риса, кунжутом, лимоном, острым…</div><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">480 ₽</span></div></div>
+</article></div>
+  </div>
+</section>
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Цены</div><h2>Цены</h2><p class="lead">Первые десять позиций. Всё меню — на отдельной странице, с поиском.</p></div><a class="btn btn--ghost btn--sm" href="ceny.html">Все 48 позиций</a></div>
+    <div class="reveal"><div class="prow" data-s="филадельфия холодные роллы">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Филадельфия</div><div class="prow__d">Нежный сыр, хрустящий огурчик, вкуснейший кусочек лосося</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 420 ₽</div>
+</div><div class="prow" data-s="филадельфия с угрём холодные роллы">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Филадельфия с угрём</div><div class="prow__d">Внутри нежный творожный сыр, хрустящий огурчик, рис, нори, сверху угорь, унаги соус, кунжут</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 420 ₽</div>
+</div><div class="prow" data-s="филадельфия с креветкой холодные роллы">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Филадельфия с креветкой</div><div class="prow__d">Внутри нежный творожный сыр, хрустящий огурчик, икра масаго, рис, нори, сверху тигровая креветка</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 420 ₽</div>
+</div><div class="prow" data-s="калифорния холодные роллы">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Калифорния</div><div class="prow__d">Внутри снежный краб, майонез, хрустящий огурчик,авокадо, рис, нори, сверху икра масаго</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 360 ₽</div>
+</div><div class="prow" data-s="калифорния с креветкой холодные роллы">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Калифорния с креветкой</div><div class="prow__d">Внутри тигровая креветка, хрустящий огурчик, авокадо, майонез, рис, нори, сверху икра масаго</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 400 ₽</div>
+</div><div class="prow" data-s="сливочный с лососем холодные роллы">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Сливочный с лососем</div><div class="prow__d">Внутри нежный творожный сыр, хрустящий огурчик , лосось, рис, нори, сверху икра масаго</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 400 ₽</div>
+</div><div class="prow" data-s="сливочный с тунцом холодные роллы">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Сливочный с тунцом</div><div class="prow__d">Внутри нежный творожный сыр, хрустящий огурчик , тунец, рис, нори, сверху икра масаго</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 400 ₽</div>
+</div><div class="prow" data-s="роллс ролл холодные роллы">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Роллс Ролл</div><div class="prow__d">Внутри снежный краб, хрустящий огурчик, рис, нори, сверху творожный сыр, икра масаго, тигровая темпура креветка, соус манго-чили</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 460 ₽</div>
+</div><div class="prow" data-s="креветка васаби холодные роллы">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Креветка Васаби</div><div class="prow__d">Внутри нежный творожный сыр, снежный краб, японский омлет, хрустящий огурчик, помидор, рис, нори, сверху тигровая креветка, соус на основе васаби, тесто катаифи, масаго</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 460 ₽</div>
+</div><div class="prow" data-s="филадельфия в масаго холодные роллы">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Филадельфия в масаго</div><div class="prow__d">Внутри нежный творожный сыр, лосось, хрустящий огурчик, рис, нори, сверху икра масаго</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 400 ₽</div>
+</div></div>
+    <div style="margin-top:30px"><a class="btn" href="ceny.html">Открыть полный прайс</a></div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Фотографии</div><h2>Блюда и кухня</h2><p class="lead">Как выглядят роллы, пицца и наборы.</p></div><a class="btn btn--ghost btn--sm" href="galereya.html">Вся галерея</a></div>
+    <div class="gal"><figure data-full="https://cachizer1.2gis.com/market/31a9052e-2ace-49fd-9c47-74f163b9c094.jpg?h=1200&amp;w=1600"><img src="https://cachizer1.2gis.com/market/31a9052e-2ace-49fd-9c47-74f163b9c094.jpg?h=600&amp;w=800" alt="Филадельфия" loading="lazy" decoding="async"><figcaption>Филадельфия</figcaption></figure><figure data-full="https://cachizer1.2gis.com/market/1d52c003-e805-4e96-a88f-74e0a8eb3d7d.jpg?h=1200&amp;w=1600"><img src="https://cachizer1.2gis.com/market/1d52c003-e805-4e96-a88f-74e0a8eb3d7d.jpg?h=600&amp;w=800" alt="Филадельфия с угрём" loading="lazy" decoding="async"><figcaption>Филадельфия с угрём</figcaption></figure><figure data-full="https://cachizer2.2gis.com/market/6437cfae-47a6-4d6f-a058-8d4141ce83af.jpg?h=1200&amp;w=1600"><img src="https://cachizer2.2gis.com/market/6437cfae-47a6-4d6f-a058-8d4141ce83af.jpg?h=600&amp;w=800" alt="Филадельфия с креветкой" loading="lazy" decoding="async"><figcaption>Филадельфия с креветкой</figcaption></figure><figure data-full="https://cachizer1.2gis.com/market/fae297f0-523a-400e-a806-fac618f2b93a.jpg?h=1200&amp;w=1600"><img src="https://cachizer1.2gis.com/market/fae297f0-523a-400e-a806-fac618f2b93a.jpg?h=600&amp;w=800" alt="Калифорния" loading="lazy" decoding="async"><figcaption>Калифорния</figcaption></figure><figure data-full="https://cachizer2.2gis.com/market/211f5e1a-53de-4099-801c-85fc287236a0.jpg?h=1200&amp;w=1600"><img src="https://cachizer2.2gis.com/market/211f5e1a-53de-4099-801c-85fc287236a0.jpg?h=600&amp;w=800" alt="Калифорния с креветкой" loading="lazy" decoding="async"><figcaption>Калифорния с креветкой</figcaption></figure><figure data-full="https://cachizer3.2gis.com/market/006e6528-9768-4ef8-b6ae-14a366926242.jpg?h=1200&amp;w=1600"><img src="https://cachizer3.2gis.com/market/006e6528-9768-4ef8-b6ae-14a366926242.jpg?h=600&amp;w=800" alt="Сливочный с лососем" loading="lazy" decoding="async"><figcaption>Сливочный с лососем</figcaption></figure></div>
+  </div>
+</section>
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Отзывы</div><h2>Что пишут в 2ГИС</h2><p class="lead">261 отзыв в 2ГИС. Здесь показаны те, что видны в карточке.</p></div><a class="btn btn--ghost btn--sm" href="otzyvy.html">Все 11 отзывов</a></div>
+    <div class="grid g3"><article class="card card--hover rev reveal" style="--i:0">
+  <div class="rev__top">
+    <div class="rev__av">ИВ</div>
+    <div><div class="rev__n">Иван Владимирович</div>
+      <div class="rev__d">3 марта 2026</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t">В очередной раз заказывали роллы в &quot;Роллс Ролл&quot;, и снова всё на высоте. Филадельфия просто тает во рту, а начинки в сетах очень щедрые, никакой экономии. Привезли заказ очень быстро, роллы аккуратные, не разваливаются и, главное, свежие. Идеальное решение для вкусного ужина дома, когда нет времени готовить.</div>
+</article><article class="card card--hover rev reveal" style="--i:1">
+  <div class="rev__top">
+    <div class="rev__av">АК</div>
+    <div><div class="rev__n">Андрей Константинович</div>
+      <div class="rev__d">25 февраля 2026</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t">Заказал тут роллы с другом после работы, проголодались знатно. Думал, доставка будет час минимум, как везде. Привезли за 25 минут, еще горячее все. Филадельфия прям тает во рту, порции нормальные, не хотелось потом еще бутерброды лепить. Цены приятно удивили, буду еще заказывать</div>
+</article><article class="card card--hover rev reveal" style="--i:2">
+  <div class="rev__top">
+    <div class="rev__av">АА</div>
+    <div><div class="rev__n">Александр Александрович</div>
+      <div class="rev__d">2 марта 2026</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t">Заказывали здесь сет на всю компанию, порции реально огромные, рыбы на роллах не жалеют. Филадельфия просто тает во рту, всё свежайшее и рис не разваливается. Курьер приехал даже раньше обещанного времени, всё было аккуратно упаковано и горячее — горячим.</div>
+</article></div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="grid g2" style="--gap:clamp(30px,4vw,64px);align-items:center">
+      <div class="reveal">
+        <div class="eyebrow">О доставке</div>
+        <h2>Роллы, пицца и wok на вынос</h2>
+        <p class="lead" style="margin-top:20px">Доставка суши, пиццы и wok. Оплата картой, наличными и переводом, работаем без выходных.</p>
+        <ul class="list" style="margin-top:28px"><li>261 отзыв в 2ГИС</li><li>Часы работы: Пн–Вс 10:30–22:00, без выходных</li><li>Адрес: Магнитогорская улица, 2Б</li><li>48 позиций прайса с ценами, от 150 ₽</li><li>Способы оплаты: Оплата картой, Наличный расчёт, Перевод с карты</li><li>Обновлено 14 августа 2024 — прайс в карточке 2ГИС</li></ul>
+        <div style="margin-top:30px"><a class="btn btn--ghost" href="o-nas.html">Подробнее о нас</a></div>
+      </div>
+      <div class="reveal" style="--i:1"><img src="https://cachizer1.2gis.com/market/1d52c003-e805-4e96-a88f-74e0a8eb3d7d.jpg?h=600&amp;w=800" alt="Роллс Ролл" loading="lazy" style="border-radius:var(--r-lg);aspect-ratio:1/1;object-fit:cover;width:100%"></div>
     </div>
   </div>
 </section>
 
-<section id="ceny">
+<section class="sec" id="zayavka">
   <div class="wrap">
-    <div class="eyebrow">Прайс</div>
-    <h2>Услуги и цены</h2>
-    <p class="lead">Всё видно сразу, без звонка «а сколько стоит». Именно это человек ищет первым, когда выбирает между вами и соседями.</p>
-    <div style="margin-top:34px"><div class="price__group"><div class="price__cat">Холодные роллы</div><div class="price__row">
-        <div><div class="price__name">Филадельфия</div><div class="price__desc">Нежный сыр, хрустящий огурчик, вкуснейший кусочек лосося</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">420 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Филадельфия с угрём</div><div class="price__desc">Внутри нежный творожный сыр, хрустящий огурчик, рис, нори, сверху угорь, унаги соус, кунжут</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">420 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Филадельфия с креветкой</div><div class="price__desc">Внутри нежный творожный сыр, хрустящий огурчик, икра масаго, рис, нори, сверху тигровая креветка</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">420 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Калифорния</div><div class="price__desc">Внутри снежный краб, майонез, хрустящий огурчик,авокадо, рис, нори, сверху икра масаго</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">360 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Калифорния с креветкой</div><div class="price__desc">Внутри тигровая креветка, хрустящий огурчик, авокадо, майонез, рис, нори, сверху икра масаго</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">400 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Сливочный с лососем</div><div class="price__desc">Внутри нежный творожный сыр, хрустящий огурчик , лосось, рис, нори, сверху икра масаго</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">400 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Сливочный с тунцом</div><div class="price__desc">Внутри нежный творожный сыр, хрустящий огурчик , тунец, рис, нори, сверху икра масаго</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">400 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Роллс Ролл</div><div class="price__desc">Внутри снежный краб, хрустящий огурчик, рис, нори, сверху творожный сыр, икра масаго, тигровая темпура креветка, соус манго-чили</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">460 ₽</span>
-      </div></div><div class="price__group"><div class="price__cat">Запеченные роллы</div><div class="price__row">
-        <div><div class="price__name">Креветка Спайси</div><div class="price__desc">Внутри тигровая креветка, хрустящий огурчик, нежный творожный сыр, рис, нори, сверху икра масаго, кунжут и сырный спайси соус</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">420 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Запеченная фила с лососем</div><div class="price__desc">Внутри нежный творожный сыр, хрустящий огурчик, рис, сверху нори, яки соус с лососем, соус манго-чили</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">400 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Запеченная Креветка</div><div class="price__desc">Внутри тигровая креветка, хрустящий огурчик, нежный творожный сыр, рис, сверху нори, яки соус</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">380 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Запеченная Калифорния</div><div class="price__desc">Внутри нежный творожный сыр, хрустящий огурчик, рис, нори, сверху икра масаго, сырный соус и снежный краб</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">380 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Запечённая Калифорния с креветкой</div><div class="price__desc">Внутри нежный творожный сыр, хрустящий огурчик, тигровая креветка, рис, нори, сверху икра масаго, сырный соус, унаги соус</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">400 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Фудзи</div><div class="price__desc">Внутри японский омлет, нежный творожный сыр, хрустящий огурчик, рис, сверху нори, спайси соус с угрём, соус унаги, кунжут</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">420 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Цыпочка</div><div class="price__desc">Внутри копчёная курочка, нежный творожный сыр, хрустящий огурчик, помидор, рис, нори, сверху кунжут, сырный соус, соус терияки</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">380 ₽</span>
-      </div></div><div class="price__group"><div class="price__cat">Жареные роллы</div><div class="price__row">
-        <div><div class="price__name">Темпура Лосось</div><div class="price__desc">Внутри нежный творожный сыр, лосось, икра масаго, хрустящий огурчик, рис, нори, сверху воздушный кляр</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">420 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Темпура Унаги</div><div class="price__desc">Внутри нежный творожный сыр, угорь, икра масаго, хрустящий огурчик, рис, сверху нори, воздушный кляр, соус унаги и кунжут</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">420 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Темпура Креветка</div><div class="price__desc">Внутри яки соус, тигровая креветка, икра масаго, имбирь, хрустящий огурчик, рис, сверху нори, воздушный кляр</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">400 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Темпура Краб</div><div class="price__desc">Внутри яки соус, снежный краб, хрустящий огурчик, икра масаго, рис, нори, сверху нежный творожный сыр, зелёный лучок и воздушный кляр</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">380 ₽</span>
-      </div></div><div class="price__group"><div class="price__cat">Выгодные наборы</div><div class="price__row">
-        <div><div class="price__name">Большой папа</div><div class="price__desc">Ронин, Блэк стар, Банзай, Цыпочка, Тортилья темпура с курицей, Темпура Краб, Рио, Осака, Тори Кунсей, Филадельфия, Самурай, Нагано (96 шт)</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">4 690 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Мега Хит</div><div class="price__desc">Филадельфия, Филадельфия с угрём, Калифорния с креветкой, Краб Темпура, Цезарь, Фудзи, Гриль Тунец, Дакота (64 шт)</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">2 960 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Вечеринка</div><div class="price__desc">Филадельфия, Филадельфия с креветкой, Темпура Краб, Темпура Лосось, Запечённая Калифорния, Фудзи(48 шт)</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">2 190 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Филадельфия Микс</div><div class="price__desc">Филадельфия, Филадельфия в масаго, Запечённая фила с лососем, Запечённая фила с крабом, Запечённая фила с угрём, Запеченная фила с мидиями(48шт)</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">2 090 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Уютный вечер</div><div class="price__desc">Цунами, Темпура лосось, Темпура Тунец, Запечённая Фила с угрём, Запечённая Калифорния (40 шт)</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">1 790 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">По карману</div><div class="price__desc">Малибу (лосось), Далас (снежный краб), Угорь Хот, Мидии Хот, Сакура (снежный краб) (28 шт)</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">1 190 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Квартет</div><div class="price__desc">Филадельфия, Филадельфия с креветкой, Сливочный с лососем, Эби Лайт(32 шт)</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">1 490 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Жара</div><div class="price__desc">Креветка Спайси, Фудзи, Краб Спайси, Сяке Хот (32 шт)</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">1 490 ₽</span>
-      </div></div><div class="price__group"><div class="price__cat">Пицца 40см</div><div class="price__row">
-        <div><div class="price__name">Пепперони</div><div class="price__desc">Моцарелла, колбаса пепперони, томатный соус</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">690 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Маргарита</div><div class="price__desc">Моцарелла, помидоры, томатный соус</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">580 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Мясная</div><div class="price__desc">Моцарелла, колбаса пепперони, бекон, ветчина, колбаски охотничьи, курочка копченая, томатный соус</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">690 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">4 сезона</div><div class="price__desc">Моцарелла, курочка копченая, вешанки, помидор, огурец маринованный, ветчина, шампиньоны, томатный соус</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">690 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">4 сыра</div><div class="price__desc">Моцарелла, гауда, блю чиз, пармезан, томатный соус</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">790 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Цезарь</div><div class="price__desc">Моцарелла, курочка копченая, яйцо, помидор, пармезан, айсберг, соус кебаби, соус цезарь</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">690 ₽</span>
-      </div></div><div class="price__group"><div class="price__cat">Горячее</div><div class="price__row">
-        <div><div class="price__name">Том-ям</div><div class="price__desc">Куриный бульон, кокосовое молоко, рыбный соус, острый соус, паста том-ям, тигровые креветки, кальмар, нежная курочка, шампиньоны, чери.
-Подается с порцией риса, кунжутом, лимоном, </div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">480 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Суп Грибной</div><div class="price__desc">Грибной бульон, вешанки, шампиньоны, картофель, лук репчатый, чеснок, сливки. Подается с чипсами начос</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">320 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Удон с курицей</div><div class="price__desc">Пшеничная лапша, обжаренная сочная курочка, овощи средней прожарки (морковь, кабачок, перец, шампиньоны, лук, фасоль, чеснок), соус терияки, кунжут и зелёный лук</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">360 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Соба с курицей</div><div class="price__desc">Гречневая лапша, обжаренная сочная курочка, овощи средней прожарки (морковь, кабачок, перец, шампиньоны, лук, фасоль, чеснок), соус терияки, кунжут и зелёный лук</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">360 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Удон с морепродуктами</div><div class="price__desc">Пшеничная лапша, тигровая креветка, кальмар, мидии, овощи средней прожарки (морковь, кабачок, перец, шампиньоны, лук, фасоль, чеснок), соус хойсин и зелёный лук</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">420 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Соба с морепродуктами</div><div class="price__desc">Гречневая лапша, тигровая креветка, кальмар, мидии, овощи средней прожарки (морковь, кабачок, перец, шампиньоны, лук, фасоль, чеснок), соус хойсин и зелёный лук</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">420 ₽</span>
-      </div></div></div>
-    <p class="price__note">Цены из вашего прайса в 2ГИС. Обновлено 14 августа 2024.</p>
-  </div>
-</section>
-
-
-<section id="foto">
-  <div class="wrap">
-    <div class="eyebrow">Фотографии</div>
-    <h2>Как у нас</h2>
-    <div class="gal" style="margin-top:28px"><a href="https://i6.photo.2gis.com/photo-gallery/0bc27dc2-a51b-4ab7-b699-4a014ca53418_1920x.jpg" target="_blank" rel="noopener"><img src="https://i6.photo.2gis.com/photo-gallery/0bc27dc2-a51b-4ab7-b699-4a014ca53418_232x232.jpg" srcset="https://i6.photo.2gis.com/photo-gallery/0bc27dc2-a51b-4ab7-b699-4a014ca53418_232x232.jpg 232w, https://i6.photo.2gis.com/photo-gallery/0bc27dc2-a51b-4ab7-b699-4a014ca53418_464x464.jpg 464w, https://i6.photo.2gis.com/photo-gallery/0bc27dc2-a51b-4ab7-b699-4a014ca53418_640x.jpg 640w" sizes="50vw" alt="Мы в работе" loading="lazy" decoding="async"></a><a href="https://i5.photo.2gis.com/photo-gallery/3d1122c5-0e94-4bc8-b70b-7d8cf06c9249_1920x.jpg" target="_blank" rel="noopener"><img src="https://i5.photo.2gis.com/photo-gallery/3d1122c5-0e94-4bc8-b70b-7d8cf06c9249_232x232.jpg" srcset="https://i5.photo.2gis.com/photo-gallery/3d1122c5-0e94-4bc8-b70b-7d8cf06c9249_232x232.jpg 232w, https://i5.photo.2gis.com/photo-gallery/3d1122c5-0e94-4bc8-b70b-7d8cf06c9249_464x464.jpg 464w, https://i5.photo.2gis.com/photo-gallery/3d1122c5-0e94-4bc8-b70b-7d8cf06c9249_640x.jpg 640w" sizes="50vw" alt="Мы в работе" loading="lazy" decoding="async"></a><a href="https://i3.photo.2gis.com/photo-gallery/6548ba8d-b3c9-4059-9a5c-408150fa6495_1920x.jpg" target="_blank" rel="noopener"><img src="https://i3.photo.2gis.com/photo-gallery/6548ba8d-b3c9-4059-9a5c-408150fa6495_232x232.jpg" srcset="https://i3.photo.2gis.com/photo-gallery/6548ba8d-b3c9-4059-9a5c-408150fa6495_232x232.jpg 232w, https://i3.photo.2gis.com/photo-gallery/6548ba8d-b3c9-4059-9a5c-408150fa6495_464x464.jpg 464w, https://i3.photo.2gis.com/photo-gallery/6548ba8d-b3c9-4059-9a5c-408150fa6495_640x.jpg 640w" sizes="50vw" alt="Мы в работе" loading="lazy" decoding="async"></a><a href="https://i8.photo.2gis.com/photo-gallery/24394dd9-b83e-4441-a2f3-2e139ea69cb1_1920x.jpg" target="_blank" rel="noopener"><img src="https://i8.photo.2gis.com/photo-gallery/24394dd9-b83e-4441-a2f3-2e139ea69cb1_232x232.jpg" srcset="https://i8.photo.2gis.com/photo-gallery/24394dd9-b83e-4441-a2f3-2e139ea69cb1_232x232.jpg 232w, https://i8.photo.2gis.com/photo-gallery/24394dd9-b83e-4441-a2f3-2e139ea69cb1_464x464.jpg 464w, https://i8.photo.2gis.com/photo-gallery/24394dd9-b83e-4441-a2f3-2e139ea69cb1_640x.jpg 640w" sizes="50vw" alt="Мы в работе" loading="lazy" decoding="async"></a><a href="https://i8.photo.2gis.com/photo-gallery/674b8900-744b-4134-bf83-59eaa9701b70_1920x.jpg" target="_blank" rel="noopener"><img src="https://i8.photo.2gis.com/photo-gallery/674b8900-744b-4134-bf83-59eaa9701b70_232x232.jpg" srcset="https://i8.photo.2gis.com/photo-gallery/674b8900-744b-4134-bf83-59eaa9701b70_232x232.jpg 232w, https://i8.photo.2gis.com/photo-gallery/674b8900-744b-4134-bf83-59eaa9701b70_464x464.jpg 464w, https://i8.photo.2gis.com/photo-gallery/674b8900-744b-4134-bf83-59eaa9701b70_640x.jpg 640w" sizes="50vw" alt="Мы в работе" loading="lazy" decoding="async"></a><a href="https://i7.photo.2gis.com/photo-gallery/f1e8e061-7605-4c81-b892-d7b6da5850fe_1920x.jpg" target="_blank" rel="noopener"><img src="https://i7.photo.2gis.com/photo-gallery/f1e8e061-7605-4c81-b892-d7b6da5850fe_232x232.jpg" srcset="https://i7.photo.2gis.com/photo-gallery/f1e8e061-7605-4c81-b892-d7b6da5850fe_232x232.jpg 232w, https://i7.photo.2gis.com/photo-gallery/f1e8e061-7605-4c81-b892-d7b6da5850fe_464x464.jpg 464w, https://i7.photo.2gis.com/photo-gallery/f1e8e061-7605-4c81-b892-d7b6da5850fe_640x.jpg 640w" sizes="50vw" alt="Мы в работе" loading="lazy" decoding="async"></a><a href="https://i6.photo.2gis.com/photo-gallery/a81969f6-31b9-4385-a4e6-bb7eda68f5d8_1920x.jpg" target="_blank" rel="noopener"><img src="https://i6.photo.2gis.com/photo-gallery/a81969f6-31b9-4385-a4e6-bb7eda68f5d8_232x232.jpg" srcset="https://i6.photo.2gis.com/photo-gallery/a81969f6-31b9-4385-a4e6-bb7eda68f5d8_232x232.jpg 232w, https://i6.photo.2gis.com/photo-gallery/a81969f6-31b9-4385-a4e6-bb7eda68f5d8_464x464.jpg 464w, https://i6.photo.2gis.com/photo-gallery/a81969f6-31b9-4385-a4e6-bb7eda68f5d8_640x.jpg 640w" sizes="50vw" alt="Мы в работе" loading="lazy" decoding="async"></a><a href="https://i1.photo.2gis.com/images/branch/0/30258560148402405_dd88_1920x.jpg" target="_blank" rel="noopener"><img src="https://i1.photo.2gis.com/images/branch/0/30258560148402405_dd88_232x232.jpg" srcset="https://i1.photo.2gis.com/images/branch/0/30258560148402405_dd88_232x232.jpg 232w, https://i1.photo.2gis.com/images/branch/0/30258560148402405_dd88_464x464.jpg 464w, https://i1.photo.2gis.com/images/branch/0/30258560148402405_dd88_640x.jpg 640w" sizes="50vw" alt="Как нас найти" loading="lazy" decoding="async"></a></div>
-    <p class="price__note">Фотографии из вашей карточки 2ГИС. <a href="https://2gis.ru/rostov/firm/70000001080840918" target="_blank" rel="noopener">Открыть карточку</a></p>
-  </div>
-</section>
-
-<section id="otzyvy">
-  <div class="wrap">
-    <div class="eyebrow">Отзывы</div>
-    <h2>Что о нас пишут</h2>
-    <p class="lead">Рейтинг 3.6 в 2ГИС, 261 отзывов. На сайте они работают на вас, а не лежат в чужом приложении.</p>
-    <div class="rev" style="margin-top:28px"><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Очень вкусные. Непонятно только, почему район вертолетного поля не доставляют 😄</p>
-      <div class="rev__who">Apple User · 01.04.2025</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Очень доволен службой доставки &quot;Роллс Ролл&quot;. Заказывал сет на компанию, все привезли быстро, горячее было горячим, а холодное — холодным. Роллы свежие, вкусные, порции достойные. Будем заказывать еще!</p>
-      <div class="rev__who">Олег Анатольевич · 05.03.2026</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Блин буду доставка огонь, очень вкусные роллы, суши и пиццы, постоянно заказываю наборы на компанию, зачастую приходят друзья отдохнуть и поболтать, спасибо за приятную компанию🫂</p>
-      <div class="rev__who">Кирилл Федоров · 04.03.2026</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">В очередной раз заказывали роллы в &quot;Роллс Ролл&quot;, и снова всё на высоте. Филадельфия просто тает во рту, а начинки в сетах очень щедрые, никакой экономии. Привезли заказ очень быстро, роллы аккуратные, не разваливаются и, главное, свежие. Идеальное решение для вкусного ужина дома, когда нет времени г</p>
-      <div class="rev__who">Иван Владимирович · 03.03.2026</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Заказывали здесь сет на всю компанию, порции реально огромные, рыбы на роллах не жалеют. Филадельфия просто тает во рту, всё свежайшее и рис не разваливается. Курьер приехал даже раньше обещанного времени, всё было аккуратно упаковано и горячее — горячим.</p>
-      <div class="rev__who">Александр Александрович · 02.03.2026</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Норм доставка, пользуюсь периодически. Роллы всегда свежие, начинки много, соусы вкусные. Привозят быстро, упаковка хорошая, ничего не разваливается по дороге. Брал сеты в офис на пару человек, всем зашло. Цены приемлемые, буду заказывать ещё</p>
-      <div class="rev__who">Иван Лысенко · 27.02.2026</div>
-    </article></div>
-    <p class="price__note">Отзывы из 2ГИС. <a href="https://2gis.ru/rostov/firm/70000001080840918" target="_blank" rel="noopener">Читать все</a></p>
-  </div>
-</section>
-
-<section id="kontakty">
-  <div class="wrap">
-    <div class="eyebrow">Контакты</div>
-    <h2>Где нас найти</h2>
-    <div class="contact" style="margin-top:28px">
-      <dl class="dl"><dt>Адрес</dt><dd>Магнитогорская улица, 2Б</dd><dt>Часы работы</dt><dd>Пн–Вс 10:30–22:00 · без выходных</dd><dt>Телефон</dt><dd><a href="tel:+79281911100">+7 928 191-11-00</a></dd><dt>Написать</dt><dd><a href="https://wa.me/79281911100?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%0A%0A%D0%9F%D0%B8%D1%88%D1%83%20%D0%B8%D0%B7%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%202%D0%93%D0%98%D0%A1.%0A%0A" target="_blank" rel="noopener">WhatsApp</a></dd></dl>
-      <iframe class="map" src="https://widgets.2gis.com/widget?type=firmsonmap&amp;options=%7B%22pos%22%3A%7B%22lat%22%3A47.194386%2C%22lon%22%3A39.621859%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22rostov%22%7D%2C%22org%22%3A%2270000001080840918%22%7D" loading="lazy" title="Карта проезда"></iframe>
+    <div class="cta reveal">
+      <div class="cta__in">
+        <div>
+          <div class="eyebrow" style="color:inherit;opacity:.7">Заявка</div>
+          <h2>Заказать доставку</h2>
+          <p class="lead">Оставьте номер, перезвоним и примем заказ.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:26px"><a class="btn btn--ghost" href="tel:+79281911100" style="border-color:currentColor;color:inherit">+7 928 191-11-00</a><a class="btn btn--ghost" href="https://wa.me/79281911100?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%0A%0A%D0%9F%D0%B8%D1%88%D1%83%20%D0%B8%D0%B7%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%202%D0%93%D0%98%D0%A1.%0A%0A" target="_blank" rel="noopener" style="border-color:currentColor;color:inherit">WhatsApp</a></div>
+        </div>
+        <div>
+          <form class="form" id="lead" novalidate>
+            <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <input name="name" placeholder="Как к вам обращаться" required minlength="2" autocomplete="name">
+            <input name="contact" placeholder="Телефон или ник в Telegram" required minlength="5" autocomplete="tel">
+            <textarea name="task" placeholder="Что вас интересует (по желанию)"></textarea>
+            <button class="btn btn--dark btn--wide" type="submit">Отправить</button>
+            <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку указанных данных.</p>
+          </form>
+          <div class="form__ok" id="ok">Заявка отправлена. Спасибо, скоро свяжемся.</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-
-<section id="zayavka">
-  <div class="wrap">
-    <div class="card" style="padding:clamp(24px,4vw,44px)">
-      <div class="eyebrow">Заявка</div>
-      <h2>Оформить заказ</h2>
-      <p class="lead">Оставьте номер, перезвоним и примем заказ. Заявка приходит в Telegram за секунду, отвечать можно прямо оттуда.</p>
-      <form class="form" id="lead" style="margin-top:26px" novalidate>
-        <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <input name="name" placeholder="Как к вам обращаться" required minlength="2" autocomplete="name">
-        <input name="contact" placeholder="Телефон или ник в Telegram" required minlength="5" autocomplete="tel">
-        <textarea name="task" placeholder="Что нужно (по желанию)"></textarea>
-        <button class="btn" type="submit">Отправить</button>
-        <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку указанных данных.</p>
-      </form>
-      <div class="form__ok" id="ok">Заявка отправлена. Спасибо, скоро свяжемся.</div>
-    </div>
-  </div>
-</section>
-
 <footer class="foot">
-  <div class="wrap foot__row">
-    <div>Роллс Ролл · Магнитогорская улица, 2Б</div>
-    <div><a href="tel:+79281911100" style="text-decoration:none">+7 928 191-11-00</a></div>
+  <div class="wrap">
+    <div class="foot__grid"><div>
+      <a class="brand" href="index.html" style="margin-bottom:16px">
+        <span class="brand__mark">Р</span>
+        <span class="brand__t"><span class="brand__n">Роллс Ролл</span>
+        <span class="brand__s">служба доставки готовых блюд</span></span></a>
+      <a class="foot__tel" href="tel:+79281911100">+7 928 191-11-00</a>
+      <div style="opacity:.6;font-size:14.5px;max-width:34ch">без выходных</div>
+    </div><div><h4>Разделы</h4><ul><li><a href="index.html">Главная</a></li><li><a href="uslugi.html">Меню</a></li><li><a href="ceny.html">Все позиции</a></li><li><a href="galereya.html">Галерея</a></li></ul></div><div><h4>&nbsp;</h4><ul><li><a href="otzyvy.html">Отзывы</a></li><li><a href="o-nas.html">О нас</a></li><li><a href="kontakty.html">Контакты</a></li></ul></div><div><h4>Контакты</h4><ul><li><a href="tel:+79281911100">+7 928 191-11-00</a></li><li><a href="https://wa.me/79281911100?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%0A%0A%D0%9F%D0%B8%D1%88%D1%83%20%D0%B8%D0%B7%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%202%D0%93%D0%98%D0%A1.%0A%0A" target="_blank" rel="noopener">WhatsApp</a></li></ul><h4 style="margin-top:26px">Адрес</h4><ul><li>Магнитогорская улица, 2Б</li><li>Пн–Вс 10:30–22:00</li><li>Без выходных</li><li><a href="https://2gis.ru/rostov/firm/70000001080840918" target="_blank" rel="noopener">Карточка в 2ГИС</a></li></ul></div></div>
+    <div class="foot__bot">
+      <div>Роллс Ролл, служба доставки готовых блюд</div>
+      <div>Данные и фотографии — из карточки 2ГИС</div>
+    </div>
   </div>
 </footer>
-
-
 <div class="demo">
   <div class="wrap demo__in">
     <div>
       <b>Это демо-макет, а не ваш действующий сайт.</b> Собрал его Владимир, веб-разработчик из
-      Ростов-на-Дону, по открытым данным вашей карточки 2ГИС: фото, прайс, отзывы и часы работы — ваши.<br>Что я заметил на вашем текущем сайте: нет ни формы заявки, ни кнопки в мессенджер.
+      Ростов-на-Дону, по открытым данным вашей карточки 2ГИС: название, фотографии, прайс, отзывы
+      и часы работы — ваши. Что я заметил на вашем текущем сайте: нет ни формы заявки, ни кнопки в мессенджер.
     </div>
-    <a class="btn btn--sm btn--ghost" style="border-color:currentColor;color:inherit"
-       href="https://t.me/vovuchoooo" target="_blank" rel="noopener">Написать @vovuchoooo</a>
+    <a class="btn btn--sm" href="https://t.me/vovuchoooo" target="_blank" rel="noopener">Написать @vovuchoooo</a>
   </div>
 </div>
-
 <div class="bar">
-  <a class="btn" href="#zayavka">Оформить заказ</a>
+  <a class="btn" href="kontakty.html#zayavka">Заказать доставку</a>
   <a class="btn btn--ghost" href="tel:+79281911100">Позвонить</a>
 </div>
-
-<script>
-document.getElementById('lead').addEventListener('submit', async function (ev) {
-  ev.preventDefault();
-  var f = ev.target, b = f.querySelector('button');
-  var body = {
-    company: f.company.value, name: f.name.value,
-    contact: f.contact.value, task: f.task.value
-  };
-  if (body.name.trim().length < 2 || body.contact.trim().length < 5) {
-    f.reportValidity(); return;
-  }
-  b.disabled = true; b.textContent = 'Отправляю…';
-  try {
-    var r = await fetch('https://lead-form.tripolev04.workers.dev', {
-      method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body)
-    });
-    if (!r.ok) throw 0;
-    f.style.display = 'none';
-    document.getElementById('ok').style.display = 'block';
-  } catch (err) {
-    b.disabled = false; b.textContent = 'Отправить ещё раз';
-  }
-});
-</script>
+<script src="script.js" defer></script>
 </body>
 </html>
