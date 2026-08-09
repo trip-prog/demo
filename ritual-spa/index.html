@@ -1,487 +1,273 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+<script>document.documentElement.className+=" js";setTimeout(function(){document.querySelectorAll(".reveal:not(.is-in)").forEach(function(n){n.classList.add("is-in")})},2500)</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ritual Spa — SPA-салон · Пушкинская улица, 25</title>
-<meta name="description" content="Ritual Spa — SPA-салон · Пушкинская улица, 25. Рейтинг 5 в 2ГИС.">
+<title>Ritual Spa — SPA-салон, Ростов-на-Дону</title>
+<meta name="description" content="Оценка 5,0 в 2ГИС. Тридцать восемь программ с фотографиями и ценами: ритуалы и массажи, обёртывания, стоунтерапия, кедровая бочка. Ежедневно с 11:00 до 22:00.">
 <meta name="robots" content="noindex,nofollow">
-<meta property="og:title" content="Ritual Spa">
-<meta property="og:description" content="Ritual Spa — SPA-салон · Пушкинская улица, 25. Рейтинг 5 в 2ГИС.">
+<meta name="theme-color" content="#141110">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ritual Spa — SPA-салон, Ростов-на-Дону">
+<meta property="og:description" content="Оценка 5,0 в 2ГИС. Тридцать восемь программ с фотографиями и ценами: ритуалы и массажи, обёртывания, стоунтерапия, кедровая бочка. Ежедневно с 11:00 до 22:00.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%235f8264'/%3E%3C/svg%3E">
-<style>
-:root{
-  --bg:#f6f8f4;--surf:#ffffff;--line:#dee7d9;--ink:#25302a;
-  --mute:#69786e;--acc:#5f8264;--acc-ink:#ffffff;
-  --shadow:0 1px 2px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.07);
-  --r:14px;--wrap:1120px;
-}
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);
-  font:400 17px/1.6 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  -webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
-a{color:inherit}
-h1,h2,h3{font-family:'Cormorant Garamond','Inter',sans-serif;line-height:1.14;margin:0;
-  letter-spacing:-.02em}
-h1{font-size:clamp(34px,7vw,62px);}
-h2{font-size:clamp(26px,4.4vw,40px)}
-h3{font-size:19px}
-p{margin:0}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
-section{padding:72px 0}
-.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);
-  font-weight:600;margin-bottom:12px}
-.lead{color:var(--mute);font-size:17px;max-width:62ch;margin-top:14px}
-
-.top{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--bg) 88%,transparent);
-  backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.top__in{display:flex;align-items:center;gap:18px;height:64px}
-.brand{font-family:'Cormorant Garamond',sans-serif;font-weight:700;font-size:20px;
-  text-decoration:none;letter-spacing:.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.top nav{margin-left:auto;display:none;gap:26px}
-.top nav a{text-decoration:none;color:var(--mute);font-size:15px;transition:color .2s}
-.top nav a:hover{color:var(--ink)}
-.top .btn{margin-left:auto}
-@media(min-width:900px){.top nav{display:flex}.top .btn{margin-left:0}}
-
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
-  padding:14px 24px;border-radius:999px;border:1px solid transparent;cursor:pointer;
-  font:600 15px/1 'Inter',sans-serif;text-decoration:none;transition:transform .15s,opacity .2s;
-  background:var(--acc);color:var(--acc-ink)}
-.btn:hover{transform:translateY(-1px);opacity:.92}
-.btn--ghost{background:transparent;color:var(--ink);border-color:var(--line)}
-.btn--sm{padding:11px 18px;font-size:14px}
-
-.hero{position:relative;min-height:min(88vh,720px);display:flex;align-items:flex-end;
-  padding:96px 0 56px;overflow:hidden;isolation:isolate}
-.hero__bg{position:absolute;inset:0;z-index:-2;object-fit:cover;width:100%;height:100%}
-.hero::after{content:'';position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(180deg,rgba(16,20,28,.52) 0%,rgba(8,9,12,.55) 45%,rgba(6,7,10,.9) 100%)}
-.hero--plain::after{background:radial-gradient(120% 90% at 15% 0%,
-  color-mix(in srgb,var(--acc) 26%,var(--bg)) 0%,var(--bg) 70%)}
-.hero__in{position:relative;color:#fff}
-.hero--plain .hero__in{color:var(--ink)}
-.hero h1{max-width:16ch}
-.hero__sub{margin-top:16px;font-size:clamp(16px,2.2vw,20px);opacity:.9;max-width:44ch}
-.hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-.hero--plain .hero__cta .btn--ghost{border-color:var(--line)}
-.hero__cta .btn--ghost{color:#fff;border-color:rgba(255,255,255,.42)}
-
-.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
-.fact{display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:999px;
-  background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.2);
-  font-size:14px;backdrop-filter:blur(6px)}
-.hero--plain .fact{background:var(--surf);border-color:var(--line);color:var(--ink)}
-.fact b{font-weight:600}
-.star{color:#ffc247}
-
-.grid{display:grid;gap:16px}
-@media(min-width:700px){.cols-2{grid-template-columns:1fr 1fr}}
-@media(min-width:900px){.cols-3{grid-template-columns:repeat(3,1fr)}}
-
-.card{background:var(--surf);border:1px solid var(--line);border-radius:var(--r);padding:22px;
-  box-shadow:var(--shadow)}
-
-.price__group + .price__group{margin-top:34px}
-.price__cat{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);
-  margin-bottom:14px;font-weight:600}
-.price__row{display:flex;align-items:baseline;gap:14px;padding:15px 0;border-bottom:1px dashed var(--line)}
-.price__row:last-child{border-bottom:0}
-.price__name{font-weight:600}
-.price__desc{color:var(--mute);font-size:14.5px;margin-top:4px;max-width:70ch}
-.price__dots{flex:1;border-bottom:1px dotted var(--line);transform:translateY(-4px);min-width:24px}
-.price__val{white-space:nowrap;font-weight:700;color:var(--acc);font-size:18px}
-.price__note{color:var(--mute);font-size:14px;margin-top:24px}
-
-.tags{display:flex;flex-wrap:wrap;gap:9px}
-.tag{padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surf);
-  font-size:14.5px}
-
-.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-@media(min-width:760px){.gal{grid-template-columns:repeat(4,1fr)}
-  .gal a:first-child{grid-column:span 2;grid-row:span 2}}
-.gal a{display:block;border-radius:12px;overflow:hidden;background:var(--line);aspect-ratio:1/1}
-.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
-.gal a:hover img{transform:scale(1.05)}
-
-.rev{display:grid;gap:16px}
-@media(min-width:820px){.rev{grid-template-columns:repeat(3,1fr)}}
-.rev__stars{color:#ffc247;letter-spacing:2px;font-size:15px}
-.rev__text{margin-top:12px;font-size:15.5px;line-height:1.62}
-.rev__who{margin-top:16px;font-size:14px;color:var(--mute)}
-
-.contact{display:grid;gap:22px}
-@media(min-width:900px){.contact{grid-template-columns:1fr 1.15fr;align-items:start}}
-.dl{display:grid;gap:18px;margin:0}
-.dl dt{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
-.dl dd{margin:5px 0 0;font-size:17px}
-.dl a{text-decoration:none;border-bottom:1px solid var(--line)}
-.map{border:0;width:100%;height:340px;border-radius:var(--r);border:1px solid var(--line)}
-
-.form{display:grid;gap:13px}
-.form input,.form textarea{width:100%;padding:14px 16px;border-radius:11px;background:var(--bg);
-  border:1px solid var(--line);color:var(--ink);font:400 16px/1.5 'Inter',sans-serif}
-.form input:focus,.form textarea:focus{outline:2px solid var(--acc);outline-offset:1px;border-color:transparent}
-.form textarea{min-height:96px;resize:vertical}
-.form .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
-.form__note{font-size:13px;color:var(--mute)}
-.form__ok{display:none;padding:14px 16px;border-radius:11px;background:color-mix(in srgb,var(--acc) 14%,transparent);
-  border:1px solid var(--acc);font-size:15px}
-
-.foot{border-top:1px solid var(--line);padding:34px 0;color:var(--mute);font-size:14.5px}
-.foot__row{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;justify-content:space-between}
-
-.demo{background:var(--acc);color:var(--acc-ink);font-size:14.5px;line-height:1.55}
-.demo__in{padding:20px;display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;justify-content:space-between}
-.demo a{color:inherit;font-weight:700}
-.bar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;gap:10px;padding:10px 14px;
-  background:color-mix(in srgb,var(--bg) 94%,transparent);border-top:1px solid var(--line);
-  backdrop-filter:blur(10px)}
-.bar .btn{flex:1}
-@media(min-width:900px){.bar{display:none}}
-@media(max-width:899px){body{padding-bottom:72px}}
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Inter:wght@400;500;600&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23c07a4d'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='16' font-weight='700' text-anchor='middle' fill='%23fff'%3ER%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-<header class="top">
+<body data-page="index.html">
+<header class="top" id="top">
   <div class="wrap top__in">
-    <a class="brand" href="#top">Ritual Spa</a>
-    <nav><a href="#ceny">Цены</a><a href="#foto">Фото</a><a href="#otzyvy">Отзывы</a><a href="#kontakty">Контакты</a></nav>
-    <a class="btn btn--sm" href="#zayavka">Записаться на сеанс</a>
+    <a class="brand" href="index.html">
+      <span class="brand__mark">R</span>
+      <span class="brand__t">
+        <span class="brand__n">Ritual Spa</span>
+        <span class="brand__s">SPA-салон</span>
+      </span>
+    </a>
+    <nav class="nav"><a href="uslugi.html">Программы</a><a href="ceny.html">Цены</a><a href="galereya.html">Галерея</a><a href="otzyvy.html">Отзывы</a><a href="o-nas.html">О нас</a><a href="kontakty.html">Контакты</a></nav>
+    <div class="top__act">
+      <a class="top__tel" href="tel:+79889963888">+7 988 996-38-88</a>
+      <a class="btn btn--sm" href="kontakty.html#zayavka">Записаться</a>
+      <button class="burger" type="button" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
-
-
-<section class="hero" id="top">
-  <img class="hero__bg" src="https://i4.photo.2gis.com/photo-gallery/a58f68d9-98ec-4fe3-b7e4-955a05a54d71_640x.jpg" alt="" fetchpriority="high" decoding="async" srcset="https://i4.photo.2gis.com/photo-gallery/a58f68d9-98ec-4fe3-b7e4-955a05a54d71_640x.jpg 640w, https://i4.photo.2gis.com/photo-gallery/a58f68d9-98ec-4fe3-b7e4-955a05a54d71_960x.jpg 960w, https://i4.photo.2gis.com/photo-gallery/a58f68d9-98ec-4fe3-b7e4-955a05a54d71_1920x.jpg 1920w" sizes="100vw">
-  <div class="wrap hero__in">
-    <h1>Ritual Spa</h1>
-    <p class="hero__sub">SPA-салон · Пушкинская улица, 25</p>
-    <div class="facts"><span class="fact"><span class="star">★</span> <b>5</b> · 34 отзывов в 2ГИС</span><span class="fact">🕒 Пн–Вс 11:00–22:00</span><span class="fact">📍 Пушкинская улица, 25</span></div>
-    <div class="hero__cta">
-      <a class="btn" href="#zayavka">Записаться на сеанс</a>
-      <a class="btn btn--ghost" href="tel:+79889963888">Позвонить</a>
+<div class="drawer" id="drawer">
+  <div class="wrap">
+    <a href="index.html">Главная</a><a href="uslugi.html">Программы</a><a href="ceny.html">Цены</a><a href="galereya.html">Галерея</a><a href="otzyvy.html">Отзывы</a><a href="o-nas.html">О нас</a><a href="kontakty.html">Контакты</a>
+    <a class="btn btn--wide" href="kontakty.html#zayavka">Записаться</a>
+  </div>
+</div>
+<section class="hero">
+  <div class="wrap">
+    <div class="hero__in">
+      <div>
+        <div class="eyebrow reveal">SPA-салон · Пушкинская улица, 25</div>
+        <h1 class="reveal">Спа-ритуалы<br>для <em>двоих и одного</em></h1>
+        <p class="hero__lead reveal">Оценка 5,0 в 2ГИС. Тридцать восемь программ с фотографиями и ценами: ритуалы и массажи, обёртывания, стоунтерапия, кедровая бочка. Ежедневно с 11:00 до 22:00.</p>
+        <div class="hero__act reveal"><a class="btn btn--lg" href="kontakty.html#zayavka">Записаться</a><a class="btn btn--ghost btn--lg" href="uslugi.html">Все программы</a></div>
+        <div class="hero__facts reveal"><div><div class="fact__v">5</div><div class="fact__l">рейтинг в 2ГИС по 34 отзывам</div></div><div><div class="fact__v">38</div><div class="fact__l">позиций в прайсе с ценой</div></div><div><div class="fact__v">6</div><div class="fact__l">направлений работы</div></div></div>
+      </div>
+      <div class="hero__media reveal" style="--i:1">
+          <img src="https://cachizer3.2gis.com/market/ab72350d-e904-4499-ace1-b73ccf00d153.jpg?h=600&amp;w=800" alt="Ritual Spa" fetchpriority="high" decoding="async">
+          <div class="hero__badge hero__badge--bl">
+              <b>5</b>
+              <span><span class="stars">★★★★★</span><br>34 отзывов в 2ГИС</span>
+            </div>
+        </div>
     </div>
   </div>
+  <div class="hero__strip"><div><b>Адрес</b>Пушкинская улица, 25</div><div><b>Часы работы</b>Пн–Вс 11:00–22:00</div><div><b>Телефон</b>+7 988 996-38-88</div><div><b>Оплата</b>картой, наличный расчёт, перевод с карты</div></div>
 </section>
 
-<section id="ceny">
+<section class="sec sec--alt">
   <div class="wrap">
-    <div class="eyebrow">Прайс</div>
-    <h2>Услуги и цены</h2>
-    <p class="lead">Всё видно сразу, без звонка «а сколько стоит». Именно это человек ищет первым, когда выбирает между вами и соседями.</p>
-    <div style="margin-top:34px"><div class="price__group"><div class="price__cat">SPA-Программы для двоих</div><div class="price__row">
-        <div><div class="price__name">3D SPA для двоих | 150 минут</div><div class="price__desc">Трёхмерное восстановление.
-
-Бывает, что нужен отпуск — но некуда ехать. А усталость уже не в теле, она в голове, в этом постоянном фоновом шуме, который не выключается даже ночью.
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Программы</div><h2>Направления салона</h2><p class="lead">Шесть разделов прайса, 38 программ с ценами из карточки 2ГИС.</p></div><a class="btn btn--ghost btn--sm" href="uslugi.html">Все программы</a></div>
+    <div class="grid g3"><a class="tile reveal" style="--i:0" href="uslugi.html#ritualy-i-massazhi">
+              <div class="tile__b">
+                <div class="tile__cat">4 услуги</div>
+                <h3 class="tile__n">Ритуалы и массажи</h3>
+                <div class="tile__d">2 Master Tantra | Ритуал массажа в 4 руки | 60 минут, Slim | Антицеллюлитный 90 минут, Slim | Антицеллюлитный 60 минут…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">4 400 ₽</span></div>
+              </div></a><a class="tile reveal" style="--i:1" href="uslugi.html#spa-programmy-dlya-dvoih">
+              <div class="tile__b">
+                <div class="tile__cat">5 услуг</div>
+                <h3 class="tile__n">SPA-Программы для двоих</h3>
+                <div class="tile__d">3D SPA для двоих | 150 минут, Ritual Day | SPA для двоих 240 минут, Duo Moment | Момент для двоих 90 минут…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">11 000 ₽</span></div>
+              </div></a><a class="tile reveal" style="--i:2" href="uslugi.html#spa-programmy-dlya-odnogo">
+              <div class="tile__b">
+                <div class="tile__cat">4 услуги</div>
+                <h3 class="tile__n">СПА-программы для одного</h3>
+                <div class="tile__d">Ritual Day для одного | 210 минут, Head SPA для одного, 3D SPA для одного…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">6 900 ₽</span></div>
+              </div></a><a class="tile reveal" style="--i:0" href="uslugi.html#dlya-nee">
+              <div class="tile__b">
+                <div class="tile__cat">11 услуг</div>
+                <h3 class="tile__n">Для нее</h3>
+                <div class="tile__d">Face System для неё — Массаж лица 60 мин, Face System для неё — Массаж лица 45 мин, Sport Core — спортивный массаж для в…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">2 900 ₽</span></div>
+              </div></a><a class="tile reveal" style="--i:1" href="uslugi.html#dlya-nego">
+              <div class="tile__b">
+                <div class="tile__cat">7 услуг</div>
+                <h3 class="tile__n">Для него</h3>
+                <div class="tile__d">Stress Offline для него — мужской антистресс‑массаж 90 минут, Stress Offline для него — мужской антистресс‑массаж 60 мин…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">3 200 ₽</span></div>
+              </div></a><a class="tile reveal" style="--i:2" href="uslugi.html#dopolnitelnye-uslugi-dlya-usileniya-effe">
+              <div class="tile__b">
+                <div class="tile__cat">7 услуг</div>
+                <h3 class="tile__n">Дополнительные услуги (для усиления эффекта)</h3>
+                <div class="tile__d">Лицо 30 мин, Стопы, Голова…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">1 000 ₽</span></div>
+              </div></a></div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Программы</div><h2>Программы с фотографиями</h2><p class="lead">Фотографии и цены — из карточки салона.</p></div><a class="btn btn--ghost btn--sm" href="ceny.html">Весь прайс</a></div>
+    <div class="grid g3"><article class="tile reveal" style="--i:0"><div class="tile__img"><img src="https://cachizer2.2gis.com/market/b0954f95-eab0-4b21-ab1d-bf258ed222d4.jpg?h=600&amp;w=800" alt="2 Master Tantra | Ритуал массажа в 4 руки | 60 минут" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Ритуалы и массажи</div><h3 class="tile__n">2 Master Tantra | Ритуал массажа в 4 руки | 60 минут</h3><div class="tile__d">Массаж в 4 руки — 2Master Tantra Два мастера. Один ритм. Ваше тело перестаёт отслеживать прикосновения, отпускает контроль, ум перестает думать и переходит в режим тишины. Сеанс начинается…</div><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">7 800 ₽</span></div></div>
+</article><article class="tile reveal" style="--i:1"><div class="tile__img"><img src="https://cachizer3.2gis.com/market/ab72350d-e904-4499-ace1-b73ccf00d153.jpg?h=600&amp;w=800" alt="3D SPA для двоих | 150 минут" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">SPA-Программы для двоих</div><h3 class="tile__n">3D SPA для двоих | 150 минут</h3><div class="tile__d">Трёхмерное восстановление. Бывает, что нужен отпуск — но некуда ехать. А усталость уже не в теле, она в голове, в этом постоянном фоновом шуме, который не выключается даже ночью. 3D SPA —…</div><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">24 900 ₽</span></div></div>
+</article><article class="tile reveal" style="--i:2"><div class="tile__img"><img src="https://cachizer3.2gis.com/market/823acd6b-6971-4839-af42-798bde495675.jpg?h=600&amp;w=800" alt="Ritual Day для одного | 210 минут" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">СПА-программы для одного</div><h3 class="tile__n">Ritual Day для одного | 210 минут</h3><div class="tile__d">Есть дни, которые просто проживаешь. А есть — которые остаются. Ritual Day — это полноценный день только для вас. Отдельный кабинет, личный мастер, никого лишнего. Телефон убран. Город…</div><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">14 900 ₽</span></div></div>
+</article><article class="tile reveal" style="--i:3"><div class="tile__img"><img src="https://cachizer1.2gis.com/market/9f38a6c5-bab8-4c50-b2e1-461e959af0eb.jpg?h=600&amp;w=800" alt="Face System для неё — Массаж лица 60 мин" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Для нее</div><h3 class="tile__n">Face System для неё — Массаж лица 60 мин</h3><div class="tile__d">Массаж лица для неё с расширенной зоной. Лицо, шея, декольте и кожа головы работают как одна система, а результат складывается из того, как держатся шея, воротниковая зона и скальп…</div><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">5 000 ₽</span></div></div>
+</article><article class="tile reveal" style="--i:0"><div class="tile__img"><img src="https://cachizer2.2gis.com/market/74d25252-26d8-48e7-85d7-4756662a3df4.jpg?h=600&amp;w=800" alt="Stress Offline для него — мужской антистресс‑массаж 90 минут" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Для него</div><h3 class="tile__n">Stress Offline для него — мужской антистресс‑массаж 90 минут</h3><div class="tile__d">Для мужчин, перегруженных делами и стрессом. Stress Offline — флагманский ритуал Ritual Spa, разработанный специально для него. Это мужской антистресс‑массаж для тех, кто всегда держит себя…</div><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">5 200 ₽</span></div></div>
+</article><article class="tile reveal" style="--i:1"><div class="tile__img"><img src="https://cachizer3.2gis.com/market/49fe3cb3-4841-4824-9069-0a7b6ec6cc06.jpg?h=600&amp;w=800" alt="Лицо 30 мин" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Дополнительные услуги (для усиления эффекта)</div><h3 class="tile__n">Лицо 30 мин</h3><div class="tile__d">Добавляет эффект отдохнувшего лица: мягко снимает зажимы, улучшает тонус и кровообращение, усиливает ощущение собранности и свежести.</div><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">2 600 ₽</span></div></div>
+</article></div>
+  </div>
+</section>
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Цены</div><h2>Цены на программы</h2><p class="lead">Первые десять позиций. Полный прайс — на отдельной странице, с поиском.</p></div><a class="btn btn--ghost btn--sm" href="ceny.html">Все 38 позиций</a></div>
+    <div class="reveal"><div class="prow" data-s="3d spa для двоих | 150 минут spa-программы для двоих">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">3D SPA для двоих | 150 минут</div><div class="prow__d">Трёхмерное восстановление. Бывает, что нужен отпуск — но некуда ехать. А усталость уже не в теле, она в голове, в этом постоянном фоновом шуме, который не выключается даже ночью. 3D SPA — это несколько часов, после которых ощущение такое…</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 24 900 ₽</div>
+</div><div class="prow" data-s="ritual day | spa для двоих 240 минут spa-программы для двоих">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Ritual Day | SPA для двоих 240 минут</div><div class="prow__d">Большая парная SPA-программа для тех, кто хочет провести вместе не просто процедуру, а полноценный день отдыха, тишины и заботы. Идеально подойдет для пары, близких людей или особенного подарка на двоих — приватно, спокойно и только для…</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 29 900 ₽</div>
+</div><div class="prow" data-s="duo moment | момент для двоих 90 минут spa-программы для двоих">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Duo Moment | Момент для двоих 90 минут</div><div class="prow__d">Иногда не нужен целый день. Нужен просто момент — вдвоём, без суеты, без планов. Duo Moment — компактный парный ритуал для тех, кто хочет побыть рядом по-настоящему. Красивое свидание, подарок для двоих, отдых после недели — повод…</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 11 000 ₽</div>
+</div><div class="prow" data-s="reload | spa перезагрузка для двоих 150 минут spa-программы для двоих">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Reload | SPA перезагрузка для двоих 150 минут</div><div class="prow__d">Когда нужно не просто размяться, а по-настоящему сменить состояние. Reload — это SPA-программа для двоих, где звук, тепло, уход за кожей и массаж выстроены в единый ритуал. Вы приходите с городским шумом в голове, а уходите с ощущением…</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 17 900 ₽</div>
+</div><div class="prow" data-s="head spa для двоих | 75 минут spa-программы для двоих">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Head SPA для двоих | 75 минут</div><div class="prow__d">Head Spa · spa-программа для тех, кто хочет наконец перестать думать и почувствовать тишину в уме. Массаж головы, ушей, шейно-воротниковой зоны и декольте, деликатные сенсорные техники и специальные ASMR-инструменты помогают снять…</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 14 900 ₽</div>
+</div><div class="prow" data-s="ritual day для одного | 210 минут спа-программы для одного">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Ritual Day для одного | 210 минут</div><div class="prow__d">Есть дни, которые просто проживаешь. А есть — которые остаются. Ritual Day — это полноценный день только для вас. Отдельный кабинет, личный мастер, никого лишнего. Телефон убран. Город остался за дверью. Несколько часов настоящего отдыха —…</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 14 900 ₽</div>
+</div><div class="prow" data-s="head spa для одного спа-программы для одного">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Head SPA для одного</div><div class="prow__d">Это ритуал, когда хочется выключить внутренний шум красиво и точно. Он собирает в одном переживании воду, звук и прикосновения и постепенно переводит из режима дня в состояние покоя. Тёплые струи японской head spa арки проходят по голове и…</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 6 900 ₽</div>
+</div><div class="prow" data-s="3d spa для одного спа-программы для одного">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">3D SPA для одного</div><div class="prow__d">Это программа, где отдых собирается в объём и ощущается как мягкое путешествие через несколько природных состояний. Ритуал начинается с часового массажа тела с премиальными блендами эфирных масел doTERRA, который возвращает телу длину…</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 11 900 ₽</div>
+</div><div class="prow" data-s="reload | перезагрузка для одного спа-программы для одного">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Reload | Перезагрузка для одного</div><div class="prow__d">Когда нужно не просто размяться, а по-настоящему сменить состояние. Reload — это SPA-программа, где звук, тепло, уход за кожей и массаж выстроены в единый ритуал. Приходите с городским шумом в голове — уходите с ощущением, что наконец…</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 7 500 ₽</div>
+</div><div class="prow" data-s="face system для неё — массаж лица 60 мин для нее">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Face System для неё — Массаж лица 60 мин</div><div class="prow__d">Массаж лица для неё с расширенной зоной. Лицо, шея, декольте и кожа головы работают как одна система, а результат складывается из того, как держатся шея, воротниковая зона и скальп. Дренажный режим даёт свежесть и минус отёчность…</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 5 000 ₽</div>
 </div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">24 900 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Ritual Day | SPA для двоих 240 минут</div><div class="price__desc">Большая парная SPA-программа для тех, кто хочет провести вместе не просто процедуру, а полноценный день отдыха, тишины и заботы. Идеально подойдет для пары, близких людей или особе</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">29 900 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Duo Moment | Момент для двоих 90 минут</div><div class="price__desc">Иногда не нужен целый день. Нужен просто момент — вдвоём, без суеты, без планов.
-
-Duo Moment — компактный парный ритуал для тех, кто хочет побыть рядом по-настоящему. Красивое свид</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">11 000 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Reload | SPA перезагрузка для двоих 150 минут</div><div class="price__desc">Когда нужно не просто размяться, а по-настоящему сменить состояние.
-
-Reload — это SPA-программа для двоих, где звук, тепло, уход за кожей и массаж выстроены в единый ритуал. Вы при</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">17 900 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Head SPA для двоих | 75 минут</div><div class="price__desc">Head Spa - spa-программа для тех, кто хочет наконец перестать думать и почувствовать тишину в уме.
-Массаж головы, ушей, шейно-воротниковой зоны и декольте, деликатные сенсорные тех</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">14 900 ₽</span>
-      </div></div><div class="price__group"><div class="price__cat">СПА-программы для одного</div><div class="price__row">
-        <div><div class="price__name">Ritual Day для одного | 210 минут</div><div class="price__desc">Есть дни, которые просто проживаешь. А есть — которые остаются.
-
-Ritual Day — это полноценный день только для вас. Отдельный кабинет, личный мастер, никого лишнего. Телефон убран. </div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">14 900 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Head SPA для одного</div><div class="price__desc">Это ритуал, когда хочется выключить внутренний шум красиво и точно. Он собирает в одном переживании воду, звук и прикосновения и постепенно переводит из режима дня в состояние поко</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">6 900 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">3D SPA для одного</div><div class="price__desc">Это программа, где отдых собирается в объём и ощущается как мягкое путешествие через несколько природных состояний.
-
-Ритуал начинается с часового массажа тела с премиальными бленда</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">11 900 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Reload | Перезагрузка для одного</div><div class="price__desc">Когда нужно не просто размяться, а по-настоящему сменить состояние.
-
-Reload — это SPA-программа, где звук, тепло, уход за кожей и массаж выстроены в единый ритуал. Приходите с горо</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">7 500 ₽</span>
-      </div></div><div class="price__group"><div class="price__cat">Для нее</div><div class="price__row">
-        <div><div class="price__name">Face System для неё — Массаж лица 60 мин</div><div class="price__desc">Массаж лица для неё с расширенной зоной. Лицо, шея, декольте и кожа головы работают как одна система, а результат складывается из того, как держатся шея, воротниковая зона и скальп</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">5 000 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Face System для неё — Массаж лица 45 мин</div><div class="price__desc">Массаж лица для неё с расширенной зоной. Лицо, шея, декольте и кожа головы работают как одна система, а результат складывается из того, как держатся шея, воротниковая зона и скальп</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">3 500 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Sport Core — спортивный массаж для восстановления тела 90 минут</div><div class="price__desc">Sport Core — спортивный массаж для восстановления тела после тренировок, нагрузок и долгой статичной работы.
-
-Подходит, если вы занимаетесь спортом, много тренируетесь, часто сидит</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">5 200 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Sport Core — спортивный массаж для восстановления тела 60 минут</div><div class="price__desc">Sport Core — спортивный массаж для восстановления тела после тренировок, нагрузок и долгой статичной работы.
-
-Подходит, если вы занимаетесь спортом, много тренируетесь, часто сидит</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">3 900 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">System Flow для неё — лимфодренажный массаж всего тела 90 минут</div><div class="price__desc">Лимфодренажный массаж System Flow — формат осознанной заботы о теле, когда оно стало тяжёлым и переполненным.
-
-Его выбирают, если много сидите за компьютером, работаете в креативно</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">4 800 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">System Flow для неё — лимфодренажный массаж всего тела 60 минут</div><div class="price__desc">Лимфодренажный массаж System Flow — формат осознанной заботы о теле, когда оно стало тяжёлым и переполненным.
-
-Его выбирают, если много сидите за компьютером, работаете в креативно</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">3 600 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Satori Touch для неё — релакс, самый нежный сенсорный массаж 90 минут</div><div class="price__desc">Satori Touch — релакс, самый нежный массаж в Ritual Spa для женщин, которым важно расслабиться мягко, без жёстких техник и боли. Подходит, если вы живёте в режиме постоянного напря</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">4 800 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Satori Touch для неё — релакс, самый нежный сенсорный массаж 60 минут</div><div class="price__desc">Satori Touch — релакс, самый нежный массаж в Ritual Spa для женщин, которым важно расслабиться мягко, без жёстких техник и боли. Подходит, если вы живёте в режиме постоянного напря</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">3 600 ₽</span>
-      </div></div><div class="price__group"><div class="price__cat">Для него</div><div class="price__row">
-        <div><div class="price__name">Stress Offline для него — мужской антистресс‑массаж 90 минут</div><div class="price__desc">Для мужчин, перегруженных делами и стрессом. Stress Offline — флагманский ритуал Ritual Spa, разработанный специально для него. Это мужской антистресс‑массаж для тех, кто всегда де</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">5 200 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Stress Offline для него — мужской антистресс‑массаж 60 минут</div><div class="price__desc">Для мужчин, перегруженных делами и стрессом. Stress Offline — флагманский ритуал Ritual Spa, разработанный специально для него. Это мужской антистресс‑массаж для тех, кто всегда де</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">3 900 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Sport Core для него — спортивный массаж для восстановления тела для него 90 минут</div><div class="price__desc">Sport Core — спортивный массаж для восстановления тела после тренировок, нагрузок и долгой статичной работы.
-
-Подходит, если вы занимаетесь спортом, много тренируетесь, часто сидит</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">5 500 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Sport Core для него — спортивный массаж для восстановления тела для него 60 минут</div><div class="price__desc">Sport Core — спортивный массаж для восстановления тела после тренировок, нагрузок и долгой статичной работы.
-
-Подходит, если вы занимаетесь спортом, много тренируетесь, часто сидит</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">4 200 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Classic для него 90 минут</div><div class="price__desc">Классический массаж — это базовая мышечная работа для здоровья и профилактики. Понятный консервативный формат, к которому легко возвращаться регулярно. Тело приходит в тонус, уходи</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">5 200 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Classic для него 60 минут</div><div class="price__desc">Классический массаж — это базовая мышечная работа для здоровья и профилактики. Понятный консервативный формат, к которому легко возвращаться регулярно. Тело приходит в тонус, уходи</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">3 900 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Первый визит для него — классический массаж 60 минут</div><div class="price__desc">Классический массаж всего тела для мужчин на первый визит в Ritual Spa по специальной цене.
-
-Это базовая мышечная работа для здоровья и профилактики. Понятный консервативный формат</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">3 200 ₽</span>
-      </div></div><div class="price__group"><div class="price__cat">Дополнительные услуги (для усиления эффекта)</div><div class="price__row">
-        <div><div class="price__name">Лицо 30 мин</div><div class="price__desc">Добавляет эффект отдохнувшего лица: мягко снимает зажимы, улучшает тонус и кровообращение, усиливает ощущение собранности и свежести.</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">2 600 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Стопы</div><div class="price__desc">Короткая работа с точками на стопах, чтобы снять тяжесть и усталость в ногах и быстро облегчить всё тело.</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">1 500 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Голова</div><div class="price__desc">Мягкая работа с головой и шеей, которая снимает ощущение тяжёлой головы, помогает выдохнуть, улучшает сон и общее самочувствие.</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">1 500 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">AromaTouch массаж (doTERRA)</div><div class="price__desc">Премиальные бленды эфирных масел doTERRA добавляются в базовое масло и в диффузор: усиливают расслабление, выравнивают дыхание и создают более собранную, личную атмосферу ритуала.</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">1 000 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Живот 20 минут</div><div class="price__desc">Работает с зоной живота и диафрагмой: помогает мягко снять внутреннее напряжение, улучшить комфорт в теле и ощущение лёгкости внутри.</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">1 500 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Стоунтерапия</div><div class="price__desc">Работа тёплыми вулканическими камнями вместе с руками мастера. Камни мягко прогревают мышцы, усиливают расслабление и помогают снять глубокое напряжение без лишней боли.</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">1 000 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Подарочный сертификат на массаж и spa</div><div class="price__desc">Подарочные сертификаты Ritual Spa
-
-Иногда самый честный подарок — это время. Время, которое человек проведёт только для себя. В тишине, в тепле, в заботе.
-
-Наши сертификаты созданы</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">3 900 ₽</span>
-      </div></div><div class="price__group"><div class="price__cat">РИТУАЛЫ И МАССАЖИ</div><div class="price__row">
-        <div><div class="price__name">2 Master Tantra | Ритуал массажа в 4 руки | 60 минут</div><div class="price__desc">Массаж в 4 руки — 2Master Tantra
-
-Два мастера. Один ритм. Ваше тело перестаёт отслеживать прикосновения, отпускает контроль, ум перестает думать и переходит в режим тишины.
-
-Сеанс </div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">7 800 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Slim | Антицеллюлитный 90 минут</div><div class="price__desc">Slim - антицеллюлитный массаж в Ritual Spa в Ростове - интенсивная процедура для тех, кто хочет поработать с контуром тела, плотностью кожи и внешними проявлениями “апельсиновой ко</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">5 800 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Slim | Антицеллюлитный 60 минут</div><div class="price__desc">Slim - антицеллюлитный массаж в Ritual Spa в Ростове - интенсивная процедура для тех, кто хочет поработать с контуром тела, плотностью кожи и внешними проявлениями “апельсиновой ко</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">4 400 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Ритуал Omakase [Омакасэ́] | 100 минут</div><div class="price__desc">Omakase — ритуал полного доверия | Ritual Spa, Ростов-на-Дону
-
-Ритуал, в котором вам не нужно ничего решать.
-
-Вы просто приходите — в любом состоянии. С усталостью, с тяжестью в те</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">5 800 ₽</span>
-      </div></div></div>
-    <p class="price__note">Цены из вашего прайса в 2ГИС. Обновлено 14 июня 2026.</p>
+    <div style="margin-top:30px"><a class="btn" href="ceny.html">Открыть полный прайс</a></div>
   </div>
 </section>
-
-
-<section id="foto">
+<section class="sec">
   <div class="wrap">
-    <div class="eyebrow">Фотографии</div>
-    <h2>Как у нас</h2>
-    <div class="gal" style="margin-top:28px"><a href="https://i5.photo.2gis.com/photo-gallery/cd2f7234-04a2-4dd0-ad9b-f3fc44884167_1920x.jpg" target="_blank" rel="noopener"><img src="https://i5.photo.2gis.com/photo-gallery/cd2f7234-04a2-4dd0-ad9b-f3fc44884167_232x232.jpg" srcset="https://i5.photo.2gis.com/photo-gallery/cd2f7234-04a2-4dd0-ad9b-f3fc44884167_232x232.jpg 232w, https://i5.photo.2gis.com/photo-gallery/cd2f7234-04a2-4dd0-ad9b-f3fc44884167_464x464.jpg 464w, https://i5.photo.2gis.com/photo-gallery/cd2f7234-04a2-4dd0-ad9b-f3fc44884167_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i8.photo.2gis.com/photo-gallery/f701bd87-323e-49ff-8d12-4618b51ba667_1920x.jpg" target="_blank" rel="noopener"><img src="https://i8.photo.2gis.com/photo-gallery/f701bd87-323e-49ff-8d12-4618b51ba667_232x232.jpg" srcset="https://i8.photo.2gis.com/photo-gallery/f701bd87-323e-49ff-8d12-4618b51ba667_232x232.jpg 232w, https://i8.photo.2gis.com/photo-gallery/f701bd87-323e-49ff-8d12-4618b51ba667_464x464.jpg 464w, https://i8.photo.2gis.com/photo-gallery/f701bd87-323e-49ff-8d12-4618b51ba667_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i0.photo.2gis.com/photo-gallery/46c167d1-eb00-4e55-9133-8146c01dfcc2_1920x.jpg" target="_blank" rel="noopener"><img src="https://i0.photo.2gis.com/photo-gallery/46c167d1-eb00-4e55-9133-8146c01dfcc2_232x232.jpg" srcset="https://i0.photo.2gis.com/photo-gallery/46c167d1-eb00-4e55-9133-8146c01dfcc2_232x232.jpg 232w, https://i0.photo.2gis.com/photo-gallery/46c167d1-eb00-4e55-9133-8146c01dfcc2_464x464.jpg 464w, https://i0.photo.2gis.com/photo-gallery/46c167d1-eb00-4e55-9133-8146c01dfcc2_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i8.photo.2gis.com/photo-gallery/6211e84c-f022-425d-a724-df7f6566054a_1920x.jpg" target="_blank" rel="noopener"><img src="https://i8.photo.2gis.com/photo-gallery/6211e84c-f022-425d-a724-df7f6566054a_232x232.jpg" srcset="https://i8.photo.2gis.com/photo-gallery/6211e84c-f022-425d-a724-df7f6566054a_232x232.jpg 232w, https://i8.photo.2gis.com/photo-gallery/6211e84c-f022-425d-a724-df7f6566054a_464x464.jpg 464w, https://i8.photo.2gis.com/photo-gallery/6211e84c-f022-425d-a724-df7f6566054a_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i3.photo.2gis.com/photo-gallery/cc500c2a-91d6-4f4e-b15f-723e6105a19b_1920x.jpg" target="_blank" rel="noopener"><img src="https://i3.photo.2gis.com/photo-gallery/cc500c2a-91d6-4f4e-b15f-723e6105a19b_232x232.jpg" srcset="https://i3.photo.2gis.com/photo-gallery/cc500c2a-91d6-4f4e-b15f-723e6105a19b_232x232.jpg 232w, https://i3.photo.2gis.com/photo-gallery/cc500c2a-91d6-4f4e-b15f-723e6105a19b_464x464.jpg 464w, https://i3.photo.2gis.com/photo-gallery/cc500c2a-91d6-4f4e-b15f-723e6105a19b_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i6.photo.2gis.com/photo-gallery/7858893e-e359-4be4-af7c-b24aa0113ee1_1920x.jpg" target="_blank" rel="noopener"><img src="https://i6.photo.2gis.com/photo-gallery/7858893e-e359-4be4-af7c-b24aa0113ee1_232x232.jpg" srcset="https://i6.photo.2gis.com/photo-gallery/7858893e-e359-4be4-af7c-b24aa0113ee1_232x232.jpg 232w, https://i6.photo.2gis.com/photo-gallery/7858893e-e359-4be4-af7c-b24aa0113ee1_464x464.jpg 464w, https://i6.photo.2gis.com/photo-gallery/7858893e-e359-4be4-af7c-b24aa0113ee1_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i5.photo.2gis.com/photo-gallery/d8835c88-fcbf-4086-929a-4264f1e818b0_1920x.jpg" target="_blank" rel="noopener"><img src="https://i5.photo.2gis.com/photo-gallery/d8835c88-fcbf-4086-929a-4264f1e818b0_232x232.jpg" srcset="https://i5.photo.2gis.com/photo-gallery/d8835c88-fcbf-4086-929a-4264f1e818b0_232x232.jpg 232w, https://i5.photo.2gis.com/photo-gallery/d8835c88-fcbf-4086-929a-4264f1e818b0_464x464.jpg 464w, https://i5.photo.2gis.com/photo-gallery/d8835c88-fcbf-4086-929a-4264f1e818b0_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i2.photo.2gis.com/photo-gallery/36687fa7-0e53-45f4-974b-31dd059d37c0_1920x.jpg" target="_blank" rel="noopener"><img src="https://i2.photo.2gis.com/photo-gallery/36687fa7-0e53-45f4-974b-31dd059d37c0_232x232.jpg" srcset="https://i2.photo.2gis.com/photo-gallery/36687fa7-0e53-45f4-974b-31dd059d37c0_232x232.jpg 232w, https://i2.photo.2gis.com/photo-gallery/36687fa7-0e53-45f4-974b-31dd059d37c0_464x464.jpg 464w, https://i2.photo.2gis.com/photo-gallery/36687fa7-0e53-45f4-974b-31dd059d37c0_640x.jpg 640w" sizes="50vw" alt="Мы в работе" loading="lazy" decoding="async"></a></div>
-    <p class="price__note">Фотографии из вашей карточки 2ГИС. <a href="https://2gis.ru/rostov/firm/70000001102862577" target="_blank" rel="noopener">Открыть карточку</a></p>
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Фотографии</div><h2>Салон изнутри</h2><p class="lead">Кабинеты, программы и атмосфера — фотографии из карточки.</p></div><a class="btn btn--ghost btn--sm" href="galereya.html">Вся галерея</a></div>
+    <div class="gal"><figure data-full="https://cachizer3.2gis.com/market/ab72350d-e904-4499-ace1-b73ccf00d153.jpg?h=1200&amp;w=1600"><img src="https://cachizer3.2gis.com/market/ab72350d-e904-4499-ace1-b73ccf00d153.jpg?h=600&amp;w=800" alt="3D SPA для двоих | 150 минут" loading="lazy" decoding="async"><figcaption>3D SPA для двоих | 150 минут</figcaption></figure><figure data-full="https://cachizer2.2gis.com/market/10ffa483-eeb7-46a6-9483-6cb3478891f4.jpg?h=1200&amp;w=1600"><img src="https://cachizer2.2gis.com/market/10ffa483-eeb7-46a6-9483-6cb3478891f4.jpg?h=600&amp;w=800" alt="Ritual Day | SPA для двоих 240 минут" loading="lazy" decoding="async"><figcaption>Ritual Day | SPA для двоих 240 минут</figcaption></figure><figure data-full="https://cachizer2.2gis.com/market/bbb5106d-2685-4a34-8e6d-b1d233d5ea3d.jpg?h=1200&amp;w=1600"><img src="https://cachizer2.2gis.com/market/bbb5106d-2685-4a34-8e6d-b1d233d5ea3d.jpg?h=600&amp;w=800" alt="Duo Moment | Момент для двоих 90 минут" loading="lazy" decoding="async"><figcaption>Duo Moment | Момент для двоих 90 минут</figcaption></figure><figure data-full="https://cachizer1.2gis.com/market/545d6191-8a4a-4e5f-af3c-4d36d5abf5fb.jpg?h=1200&amp;w=1600"><img src="https://cachizer1.2gis.com/market/545d6191-8a4a-4e5f-af3c-4d36d5abf5fb.jpg?h=600&amp;w=800" alt="Reload | SPA перезагрузка для двоих 150 минут" loading="lazy" decoding="async"><figcaption>Reload | SPA перезагрузка для двоих 150 минут</figcaption></figure><figure data-full="https://cachizer2.2gis.com/market/d900349d-c3c0-40c9-a79c-010a7176c6df.png?h=1200&amp;w=1600"><img src="https://cachizer2.2gis.com/market/d900349d-c3c0-40c9-a79c-010a7176c6df.png?h=600&amp;w=800" alt="Head SPA для двоих | 75 минут" loading="lazy" decoding="async"><figcaption>Head SPA для двоих | 75 минут</figcaption></figure><figure data-full="https://cachizer3.2gis.com/market/823acd6b-6971-4839-af42-798bde495675.jpg?h=1200&amp;w=1600"><img src="https://cachizer3.2gis.com/market/823acd6b-6971-4839-af42-798bde495675.jpg?h=600&amp;w=800" alt="Ritual Day для одного | 210 минут" loading="lazy" decoding="async"><figcaption>Ritual Day для одного | 210 минут</figcaption></figure></div>
   </div>
 </section>
-
-<section id="otzyvy">
+<section class="sec sec--alt">
   <div class="wrap">
-    <div class="eyebrow">Отзывы</div>
-    <h2>Что о нас пишут</h2>
-    <p class="lead">Рейтинг 5 в 2ГИС, 34 отзывов. На сайте они работают на вас, а не лежат в чужом приложении.</p>
-    <div class="rev" style="margin-top:28px"><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Прекрасное место, вежливый и включенный персонал, расслабляющая обстановка, на массаже смогла отдохнуть и насладиться временем. Спасибо! 😊</p>
-      <div class="rev__who">Маргарита Комболина · 29.07.2026</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Впервые была в этом потрясающем спа 🥰 Удивительное пространство, которое зарядило меня на весь день! Встретила очень милая администратор, всё рассказала, предложила воды, уточнила пожелания по процедуре! Мастер Энзо так же спросил пожелания. Очень понравилось, что чутко отнесся к телу, потом дал рек</p>
-      <div class="rev__who">Ната Колесникова · 24.07.2026</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Невероятное место, лучше один раз прийти и попробовать, чем сто раз услышать. Отдельное спасибо Ивану за прекрасный массаж и атмосферу гармонии и тишины🙏</p>
-      <div class="rev__who">Ольга Алексеенко · 22.07.2026</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Была на расслабляющем массаже , невероятная атмрсфера с самого входа , очень приятные девушки администраторы . Интерьер и концепция 4 стихии напомнил фильм « 5 элемент» 🤩, сам сеанс массажа прошел максимально комфортно , удалось расслабиться и отключить голову ). Рекомендую к посещению !</p>
-      <div class="rev__who">Анна Белинская · 08.07.2026</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">безумно понравилось, получила невероятное наслаждение, отличная атмосфера, приятные мастера, внимательное отношение после окончания сеанса, небольшой комплимент в виде чая, что как раз таки необходимо.</p>
-      <div class="rev__who">Арина Керимова · 28.06.2026</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Я хочу от всей души поблагодарить пространство Ритуал Спа за потрясающую атмосферу, за заботу, за профессионализм, за подход и трепетное отношение к клиентам. Я хочу отдельно поблагодарить хозяйку этого пространства за потрясающий приём, за такую самоотдачу и подготовку к ритуалам. Я попала на проце</p>
-      <div class="rev__who">Александра Тюменцева · 24.05.2026</div>
-    </article></div>
-    <p class="price__note">Отзывы из 2ГИС. <a href="https://2gis.ru/rostov/firm/70000001102862577" target="_blank" rel="noopener">Читать все</a></p>
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Отзывы</div><h2>5,0 из 5 по 34 отзывам</h2><p class="lead">Оценка 5 в 2ГИС по 34 отзывам. Здесь показаны те, что видны в карточке.</p></div><a class="btn btn--ghost btn--sm" href="otzyvy.html">Все 12 отзывов</a></div>
+    <div class="grid g3"><article class="card card--hover rev reveal" style="--i:0">
+  <div class="rev__top">
+    <div class="rev__av">НК</div>
+    <div><div class="rev__n">Ната Колесникова</div>
+      <div class="rev__d">24 июля 2026</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t is-clamp">Впервые была в этом потрясающем спа 🥰 Удивительное пространство, которое зарядило меня на весь день! Встретила очень милая администратор, всё рассказала, предложила воды, уточнила пожелания по процедуре! Мастер Энзо так же спросил пожелания. Очень понравилось, что чутко отнесся к телу, потом дал рекомендации по работе с забитыми зонами. Потом не могла уйти, потому что было потрясающее мягкое состо</div><button class="rev__more" type="button">Читать целиком</button>
+</article><article class="card card--hover rev reveal" style="--i:1">
+  <div class="rev__top">
+    <div class="rev__av">АТ</div>
+    <div><div class="rev__n">Александра Тюменцева</div>
+      <div class="rev__d">24 мая 2026</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t is-clamp">Я хочу от всей души поблагодарить пространство Ритуал Спа за потрясающую атмосферу, за заботу, за профессионализм, за подход и трепетное отношение к клиентам. Я хочу отдельно поблагодарить хозяйку этого пространства за потрясающий приём, за такую самоотдачу и подготовку к ритуалам. Я попала на процедуру, название которой Head Spa и это было что-то невероятное. Мастер работала с моей головой и лицо</div><button class="rev__more" type="button">Читать целиком</button>
+</article><article class="card card--hover rev reveal" style="--i:2">
+  <div class="rev__top">
+    <div class="rev__av">ЯО</div>
+    <div><div class="rev__n">Яна Олейник</div>
+      <div class="rev__d">8 апреля 2026</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t is-clamp">Очень нетипичное для Ростова место, закрывая за собой дверь-ты попадаешь в какой-то другой мир, в котором время замедляется. Невероятный интерьер, в котором хочется рассматривать каждую деталь. Чувствуется, что создатели этого пространства вложили сюда частичку себя. Это место, в котором тебе рады и очень внимательны. Меня встречала сама создательница данной локации , чудесная девушка Лила, это че</div><button class="rev__more" type="button">Читать целиком</button>
+</article></div>
   </div>
 </section>
-
-<section id="kontakty">
+<section class="sec">
   <div class="wrap">
-    <div class="eyebrow">Контакты</div>
-    <h2>Где нас найти</h2>
-    <div class="contact" style="margin-top:28px">
-      <dl class="dl"><dt>Адрес</dt><dd>Пушкинская улица, 25</dd><dt>Часы работы</dt><dd>Пн–Вс 11:00–22:00 · без выходных</dd><dt>Телефон</dt><dd><a href="tel:+79889963888">+7 988 996-38-88</a></dd><dt>Написать</dt><dd><a href="https://t.me/ritual_spa" target="_blank" rel="noopener">Telegram</a></dd></dl>
-      <iframe class="map" src="https://widgets.2gis.com/widget?type=firmsonmap&amp;options=%7B%22pos%22%3A%7B%22lat%22%3A47.222286%2C%22lon%22%3A39.700412%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22rostov%22%7D%2C%22org%22%3A%2270000001102862577%22%7D" loading="lazy" title="Карта проезда"></iframe>
+    <div class="grid g2" style="--gap:clamp(30px,4vw,64px);align-items:center">
+      <div class="reveal">
+        <div class="eyebrow">О салоне</div>
+        <h2>Программы на двоих и поодиночке</h2>
+        <p class="lead" style="margin-top:20px">Массаж лица и тела, массаж для беременных и детский, обёртывания, стоунтерапия, кедровая бочка и spa для двоих.</p>
+        <ul class="list" style="margin-top:28px"><li>Оценка 5 из 5 в 2ГИС по 34 отзывам</li><li>Часы работы: Пн–Вс 11:00–22:00, без выходных</li><li>Адрес: Пушкинская улица, 25</li><li>38 позиций прайса с ценами, от 1 000 ₽</li><li>Массаж: массаж лица, массаж для беременных, детский массаж, оздоровительный массаж, антицеллюлитный массаж</li><li>SPA-процедуры: spa для двоих, обертывание, стоунтерапия, spa для головы, asmr-салон</li></ul>
+        <div style="margin-top:30px"><a class="btn btn--ghost" href="o-nas.html">Подробнее о нас</a></div>
+      </div>
+      <div class="reveal" style="--i:1"><img src="https://cachizer2.2gis.com/market/10ffa483-eeb7-46a6-9483-6cb3478891f4.jpg?h=600&amp;w=800" alt="Ritual Spa" loading="lazy" style="border-radius:var(--r-lg);aspect-ratio:1/1;object-fit:cover;width:100%"></div>
     </div>
   </div>
 </section>
 
-<section id="zayavka">
+<section class="sec" id="zayavka">
   <div class="wrap">
-    <div class="card" style="padding:clamp(24px,4vw,44px)">
-      <div class="eyebrow">Заявка</div>
-      <h2>Записаться на сеанс</h2>
-      <p class="lead">Оставьте номер, мы перезвоним и подберём время. Заявка приходит в Telegram за секунду, отвечать можно прямо оттуда.</p>
-      <form class="form" id="lead" style="margin-top:26px" novalidate>
-        <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <input name="name" placeholder="Как к вам обращаться" required minlength="2" autocomplete="name">
-        <input name="contact" placeholder="Телефон или ник в Telegram" required minlength="5" autocomplete="tel">
-        <textarea name="task" placeholder="Что нужно (по желанию)"></textarea>
-        <button class="btn" type="submit">Отправить</button>
-        <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку указанных данных.</p>
-      </form>
-      <div class="form__ok" id="ok">Заявка отправлена. Спасибо, скоро свяжемся.</div>
+    <div class="cta reveal">
+      <div class="cta__in">
+        <div>
+          <div class="eyebrow" style="color:inherit;opacity:.7">Заявка</div>
+          <h2>Записаться</h2>
+          <p class="lead">Оставьте номер, администратор перезвонит и подберёт время.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:26px"><a class="btn btn--ghost" href="tel:+79889963888" style="border-color:currentColor;color:inherit">+7 988 996-38-88</a><a class="btn btn--ghost" href="https://t.me/ritual_spa" target="_blank" rel="noopener" style="border-color:currentColor;color:inherit">Telegram</a></div>
+        </div>
+        <div>
+          <form class="form" id="lead" novalidate>
+            <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <input name="name" placeholder="Как к вам обращаться" required minlength="2" autocomplete="name">
+            <input name="contact" placeholder="Телефон или ник в Telegram" required minlength="5" autocomplete="tel">
+            <textarea name="task" placeholder="Что вас интересует (по желанию)"></textarea>
+            <button class="btn btn--dark btn--wide" type="submit">Отправить</button>
+            <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку указанных данных.</p>
+          </form>
+          <div class="form__ok" id="ok">Заявка отправлена. Спасибо, скоро свяжемся.</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-
 <footer class="foot">
-  <div class="wrap foot__row">
-    <div>Ritual Spa · Пушкинская улица, 25</div>
-    <div><a href="tel:+79889963888" style="text-decoration:none">+7 988 996-38-88</a></div>
+  <div class="wrap">
+    <div class="foot__grid"><div>
+      <a class="brand" href="index.html" style="margin-bottom:16px">
+        <span class="brand__mark">R</span>
+        <span class="brand__t"><span class="brand__n">Ritual Spa</span>
+        <span class="brand__s">SPA-салон</span></span></a>
+      <a class="foot__tel" href="tel:+79889963888">+7 988 996-38-88</a>
+      <div style="opacity:.6;font-size:14.5px;max-width:34ch">Рейтинг 5 в 2ГИС. без выходных</div>
+    </div><div><h4>Разделы</h4><ul><li><a href="index.html">Главная</a></li><li><a href="uslugi.html">Программы</a></li><li><a href="ceny.html">Цены</a></li><li><a href="galereya.html">Галерея</a></li></ul></div><div><h4>&nbsp;</h4><ul><li><a href="otzyvy.html">Отзывы</a></li><li><a href="o-nas.html">О нас</a></li><li><a href="kontakty.html">Контакты</a></li></ul></div><div><h4>Контакты</h4><ul><li><a href="tel:+79889963888">+7 988 996-38-88</a></li><li><a href="https://t.me/ritual_spa" target="_blank" rel="noopener">Telegram</a></li></ul><h4 style="margin-top:26px">Адрес</h4><ul><li>Пушкинская улица, 25</li><li>Пн–Вс 11:00–22:00</li><li>Без выходных</li><li><a href="https://2gis.ru/rostov/firm/70000001102862577" target="_blank" rel="noopener">Карточка в 2ГИС</a></li></ul></div></div>
+    <div class="foot__bot">
+      <div>Ritual Spa, SPA-салон</div>
+      <div>Данные и фотографии — из карточки 2ГИС</div>
+    </div>
   </div>
 </footer>
-
-
 <div class="demo">
   <div class="wrap demo__in">
     <div>
       <b>Это демо-макет, а не ваш действующий сайт.</b> Собрал его Владимир, веб-разработчик из
-      Ростов-на-Дону, по открытым данным вашей карточки 2ГИС: фото, прайс, отзывы и часы работы — ваши.<br>Что я заметил на вашем текущем сайте: нет ни формы заявки, ни кнопки в мессенджер.
+      Ростов-на-Дону, по открытым данным вашей карточки 2ГИС: название, фотографии, прайс, отзывы
+      и часы работы — ваши. Что я заметил на вашем текущем сайте: нет ни формы заявки, ни кнопки в мессенджер.
     </div>
-    <a class="btn btn--sm btn--ghost" style="border-color:currentColor;color:inherit"
-       href="https://t.me/vovuchoooo" target="_blank" rel="noopener">Написать @vovuchoooo</a>
+    <a class="btn btn--sm" href="https://t.me/vovuchoooo" target="_blank" rel="noopener">Написать @vovuchoooo</a>
   </div>
 </div>
-
 <div class="bar">
-  <a class="btn" href="#zayavka">Записаться на сеанс</a>
+  <a class="btn" href="kontakty.html#zayavka">Записаться</a>
   <a class="btn btn--ghost" href="tel:+79889963888">Позвонить</a>
 </div>
-
-<script>
-document.getElementById('lead').addEventListener('submit', async function (ev) {
-  ev.preventDefault();
-  var f = ev.target, b = f.querySelector('button');
-  var body = {
-    company: f.company.value, name: f.name.value,
-    contact: f.contact.value, task: f.task.value
-  };
-  if (body.name.trim().length < 2 || body.contact.trim().length < 5) {
-    f.reportValidity(); return;
-  }
-  b.disabled = true; b.textContent = 'Отправляю…';
-  try {
-    var r = await fetch('https://lead-form.tripolev04.workers.dev', {
-      method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body)
-    });
-    if (!r.ok) throw 0;
-    f.style.display = 'none';
-    document.getElementById('ok').style.display = 'block';
-  } catch (err) {
-    b.disabled = false; b.textContent = 'Отправить ещё раз';
-  }
-});
-</script>
+<script src="script.js" defer></script>
 </body>
 </html>
