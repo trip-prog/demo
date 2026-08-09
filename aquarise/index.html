@@ -1,390 +1,253 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+<script>document.documentElement.className+=" js";setTimeout(function(){document.querySelectorAll(".reveal:not(.is-in)").forEach(function(n){n.classList.add("is-in")})},2500)</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Aquarise — Студия лазерной эпиляции · Пролетарский спуск, 5а</title>
-<meta name="description" content="Aquarise — Студия лазерной эпиляции · Пролетарский спуск, 5а. Рейтинг 5 в 2ГИС.">
+<title>Aquarise — студия лазерной эпиляции, Ростов-на-Дону</title>
+<meta name="description" content="Женская и мужская лазерная эпиляция по зонам и комплексам. Ежедневно с 9:00 до 21:00.">
 <meta name="robots" content="noindex,nofollow">
-<meta property="og:title" content="Aquarise">
-<meta property="og:description" content="Aquarise — Студия лазерной эпиляции · Пролетарский спуск, 5а. Рейтинг 5 в 2ГИС.">
+<meta name="theme-color" content="#f2fbfa">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Aquarise — студия лазерной эпиляции, Ростов-на-Дону">
+<meta property="og:description" content="Женская и мужская лазерная эпиляция по зонам и комплексам. Ежедневно с 9:00 до 21:00.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%235f8264'/%3E%3C/svg%3E">
-<style>
-:root{
-  --bg:#f6f8f4;--surf:#ffffff;--line:#dee7d9;--ink:#25302a;
-  --mute:#69786e;--acc:#5f8264;--acc-ink:#ffffff;
-  --shadow:0 1px 2px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.07);
-  --r:14px;--wrap:1120px;
-}
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);
-  font:400 17px/1.6 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  -webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
-a{color:inherit}
-h1,h2,h3{font-family:'Cormorant Garamond','Inter',sans-serif;line-height:1.14;margin:0;
-  letter-spacing:-.02em}
-h1{font-size:clamp(34px,7vw,62px);}
-h2{font-size:clamp(26px,4.4vw,40px)}
-h3{font-size:19px}
-p{margin:0}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
-section{padding:72px 0}
-.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);
-  font-weight:600;margin-bottom:12px}
-.lead{color:var(--mute);font-size:17px;max-width:62ch;margin-top:14px}
-
-.top{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--bg) 88%,transparent);
-  backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.top__in{display:flex;align-items:center;gap:18px;height:64px}
-.brand{font-family:'Cormorant Garamond',sans-serif;font-weight:700;font-size:20px;
-  text-decoration:none;letter-spacing:.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.top nav{margin-left:auto;display:none;gap:26px}
-.top nav a{text-decoration:none;color:var(--mute);font-size:15px;transition:color .2s}
-.top nav a:hover{color:var(--ink)}
-.top .btn{margin-left:auto}
-@media(min-width:900px){.top nav{display:flex}.top .btn{margin-left:0}}
-
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
-  padding:14px 24px;border-radius:999px;border:1px solid transparent;cursor:pointer;
-  font:600 15px/1 'Inter',sans-serif;text-decoration:none;transition:transform .15s,opacity .2s;
-  background:var(--acc);color:var(--acc-ink)}
-.btn:hover{transform:translateY(-1px);opacity:.92}
-.btn--ghost{background:transparent;color:var(--ink);border-color:var(--line)}
-.btn--sm{padding:11px 18px;font-size:14px}
-
-.hero{position:relative;min-height:min(88vh,720px);display:flex;align-items:flex-end;
-  padding:96px 0 56px;overflow:hidden;isolation:isolate}
-.hero__bg{position:absolute;inset:0;z-index:-2;object-fit:cover;width:100%;height:100%}
-.hero::after{content:'';position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(180deg,rgba(16,20,28,.52) 0%,rgba(8,9,12,.55) 45%,rgba(6,7,10,.9) 100%)}
-.hero--plain::after{background:radial-gradient(120% 90% at 15% 0%,
-  color-mix(in srgb,var(--acc) 26%,var(--bg)) 0%,var(--bg) 70%)}
-.hero__in{position:relative;color:#fff}
-.hero--plain .hero__in{color:var(--ink)}
-.hero h1{max-width:16ch}
-.hero__sub{margin-top:16px;font-size:clamp(16px,2.2vw,20px);opacity:.9;max-width:44ch}
-.hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-.hero--plain .hero__cta .btn--ghost{border-color:var(--line)}
-.hero__cta .btn--ghost{color:#fff;border-color:rgba(255,255,255,.42)}
-
-.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
-.fact{display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:999px;
-  background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.2);
-  font-size:14px;backdrop-filter:blur(6px)}
-.hero--plain .fact{background:var(--surf);border-color:var(--line);color:var(--ink)}
-.fact b{font-weight:600}
-.star{color:#ffc247}
-
-.grid{display:grid;gap:16px}
-@media(min-width:700px){.cols-2{grid-template-columns:1fr 1fr}}
-@media(min-width:900px){.cols-3{grid-template-columns:repeat(3,1fr)}}
-
-.card{background:var(--surf);border:1px solid var(--line);border-radius:var(--r);padding:22px;
-  box-shadow:var(--shadow)}
-
-.price__group + .price__group{margin-top:34px}
-.price__cat{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);
-  margin-bottom:14px;font-weight:600}
-.price__row{display:flex;align-items:baseline;gap:14px;padding:15px 0;border-bottom:1px dashed var(--line)}
-.price__row:last-child{border-bottom:0}
-.price__name{font-weight:600}
-.price__desc{color:var(--mute);font-size:14.5px;margin-top:4px;max-width:70ch}
-.price__dots{flex:1;border-bottom:1px dotted var(--line);transform:translateY(-4px);min-width:24px}
-.price__val{white-space:nowrap;font-weight:700;color:var(--acc);font-size:18px}
-.price__note{color:var(--mute);font-size:14px;margin-top:24px}
-
-.tags{display:flex;flex-wrap:wrap;gap:9px}
-.tag{padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surf);
-  font-size:14.5px}
-
-.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-@media(min-width:760px){.gal{grid-template-columns:repeat(4,1fr)}
-  .gal a:first-child{grid-column:span 2;grid-row:span 2}}
-.gal a{display:block;border-radius:12px;overflow:hidden;background:var(--line);aspect-ratio:1/1}
-.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
-.gal a:hover img{transform:scale(1.05)}
-
-.rev{display:grid;gap:16px}
-@media(min-width:820px){.rev{grid-template-columns:repeat(3,1fr)}}
-.rev__stars{color:#ffc247;letter-spacing:2px;font-size:15px}
-.rev__text{margin-top:12px;font-size:15.5px;line-height:1.62}
-.rev__who{margin-top:16px;font-size:14px;color:var(--mute)}
-
-.contact{display:grid;gap:22px}
-@media(min-width:900px){.contact{grid-template-columns:1fr 1.15fr;align-items:start}}
-.dl{display:grid;gap:18px;margin:0}
-.dl dt{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
-.dl dd{margin:5px 0 0;font-size:17px}
-.dl a{text-decoration:none;border-bottom:1px solid var(--line)}
-.map{border:0;width:100%;height:340px;border-radius:var(--r);border:1px solid var(--line)}
-
-.form{display:grid;gap:13px}
-.form input,.form textarea{width:100%;padding:14px 16px;border-radius:11px;background:var(--bg);
-  border:1px solid var(--line);color:var(--ink);font:400 16px/1.5 'Inter',sans-serif}
-.form input:focus,.form textarea:focus{outline:2px solid var(--acc);outline-offset:1px;border-color:transparent}
-.form textarea{min-height:96px;resize:vertical}
-.form .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
-.form__note{font-size:13px;color:var(--mute)}
-.form__ok{display:none;padding:14px 16px;border-radius:11px;background:color-mix(in srgb,var(--acc) 14%,transparent);
-  border:1px solid var(--acc);font-size:15px}
-
-.foot{border-top:1px solid var(--line);padding:34px 0;color:var(--mute);font-size:14.5px}
-.foot__row{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;justify-content:space-between}
-
-.demo{background:var(--acc);color:var(--acc-ink);font-size:14.5px;line-height:1.55}
-.demo__in{padding:20px;display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;justify-content:space-between}
-.demo a{color:inherit;font-weight:700}
-.bar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;gap:10px;padding:10px 14px;
-  background:color-mix(in srgb,var(--bg) 94%,transparent);border-top:1px solid var(--line);
-  backdrop-filter:blur(10px)}
-.bar .btn{flex:1}
-@media(min-width:900px){.bar{display:none}}
-@media(max-width:899px){body{padding-bottom:72px}}
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23008f8a'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='16' font-weight='700' text-anchor='middle' fill='%23fff'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-<header class="top">
+<body data-page="index.html">
+<header class="top" id="top">
   <div class="wrap top__in">
-    <a class="brand" href="#top">Aquarise</a>
-    <nav><a href="#ceny">Цены</a><a href="#foto">Фото</a><a href="#otzyvy">Отзывы</a><a href="#kontakty">Контакты</a></nav>
-    <a class="btn btn--sm" href="#zayavka">Записаться на сеанс</a>
+    <a class="brand" href="index.html">
+      <span class="brand__mark">A</span>
+      <span class="brand__t">
+        <span class="brand__n">Aquarise</span>
+        <span class="brand__s">студия лазерной эпиляции</span>
+      </span>
+    </a>
+    <nav class="nav"><a href="uslugi.html">Услуги</a><a href="ceny.html">Цены</a><a href="galereya.html">Галерея</a><a href="otzyvy.html">Отзывы</a><a href="o-nas.html">О нас</a><a href="kontakty.html">Контакты</a></nav>
+    <div class="top__act">
+      <a class="top__tel" href="tel:+79933089363">+7 993 308-93-63</a>
+      <a class="btn btn--sm" href="kontakty.html#zayavka">Записаться в Aquarise</a>
+      <button class="burger" type="button" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
+<div class="drawer" id="drawer">
+  <div class="wrap">
+    <a href="index.html">Главная</a><a href="uslugi.html">Услуги</a><a href="ceny.html">Цены</a><a href="galereya.html">Галерея</a><a href="otzyvy.html">Отзывы</a><a href="o-nas.html">О нас</a><a href="kontakty.html">Контакты</a>
+    <a class="btn btn--wide" href="kontakty.html#zayavka">Записаться в Aquarise</a>
+  </div>
+</div>
+<section class="hero">
+  <div class="wrap">
+    <div class="hero__in">
+      <div>
+        <div class="eyebrow reveal">Студия лазерной эпиляции · Пролетарский спуск, 5а</div>
+        <h1 class="reveal">Лёгкость.<br><em>Гладкость. Aquarise.</em></h1>
+        <p class="hero__lead reveal">Женская и мужская лазерная эпиляция по зонам и комплексам. Ежедневно с 9:00 до 21:00.</p>
+        <div class="hero__act reveal"><a class="btn btn--lg" href="kontakty.html#zayavka">Записаться в Aquarise</a><a class="btn btn--ghost btn--lg" href="uslugi.html">Смотреть услуги</a></div>
+        <div class="hero__facts reveal"><div><div class="fact__v">5</div><div class="fact__l">рейтинг в 2ГИС по 128 отзывам</div></div><div><div class="fact__v">11</div><div class="fact__l">позиций в прайсе с ценой</div></div><div><div class="fact__v">3</div><div class="fact__l">направления работы</div></div></div>
+      </div>
+      <div class="hero__media reveal" style="--i:1">
+          <img src="https://i0.photo.2gis.com/photo-gallery/287d7e58-ca7c-45e1-9c0f-e1136ce9cf55_960x.jpg" alt="Aquarise" fetchpriority="high" decoding="async">
+          <div class="hero__badge hero__badge--bl">
+              <b>5</b>
+              <span><span class="stars">★★★★★</span><br>128 отзывов в 2ГИС</span>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="hero__strip"><div><b>Адрес</b>Пролетарский спуск, 5а</div><div><b>Часы работы</b>Пн–Вс 09:00–21:00</div><div><b>Телефон</b>+7 993 308-93-63</div><div><b>Оплата</b>наличный расчёт, эл.кошельком, перевод с карты</div></div>
+</section>
 
-
-<section class="hero" id="top">
-  <img class="hero__bg" src="https://i0.photo.2gis.com/photo-gallery/287d7e58-ca7c-45e1-9c0f-e1136ce9cf55_640x.jpg" alt="" fetchpriority="high" decoding="async" srcset="https://i0.photo.2gis.com/photo-gallery/287d7e58-ca7c-45e1-9c0f-e1136ce9cf55_640x.jpg 640w, https://i0.photo.2gis.com/photo-gallery/287d7e58-ca7c-45e1-9c0f-e1136ce9cf55_960x.jpg 960w, https://i0.photo.2gis.com/photo-gallery/287d7e58-ca7c-45e1-9c0f-e1136ce9cf55_1920x.jpg 1920w" sizes="100vw">
-  <div class="wrap hero__in">
-    <h1>Aquarise</h1>
-    <p class="hero__sub">Студия лазерной эпиляции · Пролетарский спуск, 5а</p>
-    <div class="facts"><span class="fact"><span class="star">★</span> <b>5</b> · 128 отзывов в 2ГИС</span><span class="fact">🕒 Пн–Вс 09:00–21:00</span><span class="fact">📍 Пролетарский спуск, 5а</span></div>
-    <div class="hero__cta">
-      <a class="btn" href="#zayavka">Записаться на сеанс</a>
-      <a class="btn btn--ghost" href="tel:+79933089363">Позвонить</a>
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Направления</div><h2>Комплексы и отдельные зоны</h2><p class="lead">Три раздела опубликованного прайса студии.</p></div><a class="btn btn--ghost btn--sm" href="uslugi.html">Все процедуры</a></div>
+    <div class="grid g3"><a class="tile reveal" style="--i:0" href="uslugi.html#lazernaya-epilyaciya-kompleksy">
+              <div class="tile__b">
+                <div class="tile__cat">5 услуг</div>
+                <h3 class="tile__n">Лазерная эпиляция (КОМПЛЕКСЫ)</h3>
+                <div class="tile__d">Комплекс MINI, Комплекс SUPERMINI EPIL, Комплекс MIDI EPIL…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">2 300 ₽</span></div>
+              </div></a><a class="tile reveal" style="--i:1" href="uslugi.html#lazernaya-epilyaciya-zony">
+              <div class="tile__b">
+                <div class="tile__cat">5 услуг</div>
+                <h3 class="tile__n">Лазерная эпиляция (ЗОНЫ)</h3>
+                <div class="tile__d">Лазерная эпиляция тела, Лазерная эпиляция лица, Лазерная эпиляция бикини (интимные зоны)…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">500 ₽</span></div>
+              </div></a><a class="tile reveal" style="--i:2" href="uslugi.html#muzhskaya-lazernaya-epilyaciya">
+              <div class="tile__b">
+                <div class="tile__cat">1 услуга</div>
+                <h3 class="tile__n">Мужская лазерная эпиляция</h3>
+                <div class="tile__d">Мужская лазерная эпиляция…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">700 ₽</span></div>
+              </div></a></div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Прайс</div><h2>Из актуального прайса</h2><p class="lead">Наименования и цены опубликованы компанией в карточке 2ГИС.</p></div><a class="btn btn--ghost btn--sm" href="ceny.html">Весь прайс</a></div>
+    <div class="grid g3"><article class="tile reveal" style="--i:0"><div class="tile__img"><img src="https://cachizer3.2gis.com/market/691c893a-aac2-4b31-8597-8c1387dbe71e.png?h=600&amp;w=800" alt="Комплекс MINI" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Лазерная эпиляция (КОМПЛЕКСЫ)</div><h3 class="tile__n">Комплекс MINI</h3><div class="tile__d">Скидка 50% по промокоду &quot;2ГИС&quot; Комплекс (подмышки+тотальное бикини) · это идеальный вариант для того, чтобы познакомиться с процедурой лазерной эпиляции. Уверенность и комфорт на каждый…</div><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">2 300 ₽</span></div></div>
+</article><article class="tile reveal" style="--i:1"><div class="tile__img"><img src="https://cachizer1.2gis.com/market/798f48ae-4195-456c-b9dd-565fcf9e498d.png?h=600&amp;w=800" alt="Комплекс SUPERMINI EPIL" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Лазерная эпиляция (КОМПЛЕКСЫ)</div><h3 class="tile__n">Комплекс SUPERMINI EPIL</h3><div class="tile__d">Скидка 50% по промокоду &quot;2ГИС&quot; Комплекс (подмышки+тотальное бикини+голени) · самый оптимальный и популярный выбор наших гостей, состоит из самых важных зон для удаления нежелательных…</div><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">3 300 ₽</span></div></div>
+</article><article class="tile reveal" style="--i:2"><div class="tile__img"><img src="https://cachizer1.2gis.com/market/811d2c8b-aeed-4df1-b966-548bdd673f53.png?h=600&amp;w=800" alt="Комплекс MIDI EPIL" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Лазерная эпиляция (КОМПЛЕКСЫ)</div><h3 class="tile__n">Комплекс MIDI EPIL</h3><div class="tile__d">Скидка 50% по промокоду &quot;2ГИС&quot; Комплекс (подмышки+тотальное бикини+ноги полностью) · выбор для особенной заботы о себе. Идеально гладкие ножки позволят забыть о бесконечном бритье и…</div><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">4 300 ₽</span></div></div>
+</article><article class="tile reveal" style="--i:3"><div class="tile__img"><img src="https://cachizer3.2gis.com/market/1f3bb662-81f6-48ee-9dea-ffe9df267e1d.png?h=600&amp;w=800" alt="Комплекс MIDIPLUS EPIL" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Лазерная эпиляция (КОМПЛЕКСЫ)</div><h3 class="tile__n">Комплекс MIDIPLUS EPIL</h3><div class="tile__d">Скидка 50% по промокоду &quot;2ГИС&quot; Комплекс (подмышки+тотальное бикини+ноги полностью+руки полностью) · избавит вас от бесконечной рутины удаления нежелательных волос, болезненного…</div><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">5 300 ₽</span></div></div>
+</article><article class="tile reveal" style="--i:0"><div class="tile__img"><img src="https://cachizer1.2gis.com/market/45232684-1dfc-4640-8f8f-d0a7d1ac32fe.png?h=600&amp;w=800" alt="Комплекс MAXI EPIL" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Лазерная эпиляция (КОМПЛЕКСЫ)</div><h3 class="tile__n">Комплекс MAXI EPIL</h3><div class="tile__d">Скидка 50% по промокоду &quot;2ГИС&quot; Комплекс (все тело, без ограничения по зонам) · самый ценный подарок себе и своему телу. Безграничная гладкость позволит наслаждаться собой на долгие годы!…</div><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">5 900 ₽</span></div></div>
+</article></div>
+  </div>
+</section>
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Цены</div><h2>Цены</h2><p class="lead">Ключевые позиции на главной и полный список с поиском на отдельной странице.</p></div><a class="btn btn--ghost btn--sm" href="ceny.html">Все 11 позиций</a></div>
+    <div class="reveal"><div class="prow" data-s="комплекс mini лазерная эпиляция (комплексы)">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Комплекс MINI</div><div class="prow__d">Скидка 50% по промокоду &quot;2ГИС&quot; Комплекс (подмышки+тотальное бикини) · это идеальный вариант для того, чтобы познакомиться с процедурой лазерной эпиляции. Уверенность и комфорт на каждый день! 1900р · по клубной карте 2900р · без карты</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 2 300 ₽</div>
+</div><div class="prow" data-s="комплекс supermini epil лазерная эпиляция (комплексы)">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Комплекс SUPERMINI EPIL</div><div class="prow__d">Скидка 50% по промокоду &quot;2ГИС&quot; Комплекс (подмышки+тотальное бикини+голени) · самый оптимальный и популярный выбор наших гостей, состоит из самых важных зон для удаления нежелательных волосков. 2900р · по клубной карте 3900р · без карты</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 3 300 ₽</div>
+</div><div class="prow" data-s="комплекс midi epil лазерная эпиляция (комплексы)">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Комплекс MIDI EPIL</div><div class="prow__d">Скидка 50% по промокоду &quot;2ГИС&quot; Комплекс (подмышки+тотальное бикини+ноги полностью) · выбор для особенной заботы о себе. Идеально гладкие ножки позволят забыть о бесконечном бритье и раздражении. 3900р · по клубной карте 4900р · без карты</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 4 300 ₽</div>
+</div><div class="prow" data-s="комплекс midiplus epil лазерная эпиляция (комплексы)">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Комплекс MIDIPLUS EPIL</div><div class="prow__d">Скидка 50% по промокоду &quot;2ГИС&quot; Комплекс (подмышки+тотальное бикини+ноги полностью+руки полностью) · избавит вас от бесконечной рутины удаления нежелательных волос, болезненного шугаринга/воска. 4900р · по клубной карте 5900р · без карты</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 5 300 ₽</div>
+</div><div class="prow" data-s="комплекс maxi epil лазерная эпиляция (комплексы)">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Комплекс MAXI EPIL</div><div class="prow__d">Скидка 50% по промокоду &quot;2ГИС&quot; Комплекс (все тело, без ограничения по зонам) · самый ценный подарок себе и своему телу. Безграничная гладкость позволит наслаждаться собой на долгие годы! 5900р · по клубной карте 6900р · без карты</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 5 900 ₽</div>
+</div><div class="prow" data-s="лазерная эпиляция тела лазерная эпиляция (зоны)">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Лазерная эпиляция тела</div><div class="prow__d">Скидка 50% по промокоду &quot;2ГИС&quot; Лазерная эпиляция тела позволяет на долгий срок избавиться от лишней растительности на зонах: · Подмышки · Белая линия живота · Живот полностью · Ягодицы · Ареолы</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 500 ₽</div>
+</div><div class="prow" data-s="лазерная эпиляция лица лазерная эпиляция (зоны)">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Лазерная эпиляция лица</div><div class="prow__d">Скидка 50% по промокоду &quot;2ГИС&quot; Лазерная эпиляция лица позволяет на долгий срок избавиться от комплексов и лишней растительности на зонах: · Мини (верхняя губа, подбородок, лоб, щеки, бакенбарды) · Шея полностью · Лицо полностью</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 500 ₽</div>
+</div><div class="prow" data-s="лазерная эпиляция бикини (интимные зоны) лазерная эпиляция (зоны)">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Лазерная эпиляция бикини (интимные зоны)</div><div class="prow__d">Скидка 50% по промокоду &quot;2ГИС&quot; Лазерная эпиляция бикини · это самый популярный выбор наших гостей! После первой процедуры уходит до 30% волос и кратно замедляется рост. · Классическое бикини · Тотальное бикини</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 1 100 ₽</div>
+</div><div class="prow" data-s="лазерная эпиляция ног лазерная эпиляция (зоны)">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Лазерная эпиляция ног</div><div class="prow__d">Скидка 50% по промокоду &quot;2ГИС&quot; Лазерная эпиляция ног позволяет на долгий срок (особенно в летний сезон) избавиться от комплексов и лишней растительности на зонах: · Голени · Ножки полностью · Бёдра · Задняя часть бедра</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 900 ₽</div>
+</div><div class="prow" data-s="лазерная эпиляция рук лазерная эпиляция (зоны)">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Лазерная эпиляция рук</div><div class="prow__d">Скидка 50% по промокоду &quot;2ГИС&quot; Лазерная эпиляция рук позволяет забыть о бритвенном станке, болезненном шугаринге и воске на следующих зонах: · Руки до локтя · Руки полностью</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 1 000 ₽</div>
+</div></div>
+    <div style="margin-top:30px"><a class="btn" href="ceny.html">Открыть полный прайс</a></div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Фотографии</div><h2>Студия Aquarise</h2><p class="lead">Интерьер, оборудование, команда и процедуры на реальных фотографиях.</p></div><a class="btn btn--ghost btn--sm" href="galereya.html">Вся галерея</a></div>
+    <div class="gal"><figure data-full="https://i0.photo.2gis.com/photo-gallery/287d7e58-ca7c-45e1-9c0f-e1136ce9cf55_1920x.jpg"><img src="https://i0.photo.2gis.com/photo-gallery/287d7e58-ca7c-45e1-9c0f-e1136ce9cf55_640x.jpg" alt="Интерьер" loading="lazy" decoding="async"><figcaption>Интерьер</figcaption></figure><figure data-full="https://i1.photo.2gis.com/photo-gallery/1841980f-f71a-4e70-977b-79d481cdd6a6_1920x.jpg"><img src="https://i1.photo.2gis.com/photo-gallery/1841980f-f71a-4e70-977b-79d481cdd6a6_640x.jpg" alt="Интерьер" loading="lazy" decoding="async"><figcaption>Интерьер</figcaption></figure><figure data-full="https://i8.photo.2gis.com/photo-gallery/9e8875a4-f0c7-444a-9d7d-65959a7ecd12_1920x.jpg"><img src="https://i8.photo.2gis.com/photo-gallery/9e8875a4-f0c7-444a-9d7d-65959a7ecd12_640x.jpg" alt="Интерьер" loading="lazy" decoding="async"><figcaption>Интерьер</figcaption></figure><figure data-full="https://i9.photo.2gis.com/photo-gallery/843952c5-252a-49da-83e4-f994f84d5a3b_1920x.jpg"><img src="https://i9.photo.2gis.com/photo-gallery/843952c5-252a-49da-83e4-f994f84d5a3b_640x.jpg" alt="Интерьер" loading="lazy" decoding="async"><figcaption>Интерьер</figcaption></figure><figure data-full="https://i7.photo.2gis.com/photo-gallery/739fb79b-5ee8-4ad3-9818-0b8993ea897a_1920x.jpg"><img src="https://i7.photo.2gis.com/photo-gallery/739fb79b-5ee8-4ad3-9818-0b8993ea897a_640x.jpg" alt="Интерьер" loading="lazy" decoding="async"><figcaption>Интерьер</figcaption></figure><figure data-full="https://i2.photo.2gis.com/photo-gallery/3e48e828-2f4d-4ce3-a821-13b6080d8e93_1920x.jpg"><img src="https://i2.photo.2gis.com/photo-gallery/3e48e828-2f4d-4ce3-a821-13b6080d8e93_640x.jpg" alt="Интерьер" loading="lazy" decoding="async"><figcaption>Интерьер</figcaption></figure></div>
+  </div>
+</section>
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Отзывы</div><h2>128 отзывов, оценка 5,0</h2><p class="lead">Оценка 5 в 2ГИС по 128 отзывам. Здесь показаны те, что видны в карточке.</p></div><a class="btn btn--ghost btn--sm" href="otzyvy.html">Все 12 отзывов</a></div>
+    <div class="grid g3"><article class="card card--hover rev reveal" style="--i:0">
+  <div class="rev__top">
+    <div class="rev__av">АБ</div>
+    <div><div class="rev__n">Алина Бабкина</div>
+      <div class="rev__d">17 марта 2026</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t is-clamp">Зашла в студию лазерной эпиляции по рекомендации и приятно удивилась тому, насколько всё оказалось простым и комфортным. Без пафоса и лишних обещаний — просто спокойное, аккуратное место, где тебя встречают нормально, по‑человечески. Администратор общается легко, без давления, помогает разобраться и не создаёт ощущения, что ты куда‑то торопишься. Внутри чисто, уютно, всё выглядит ухоженно. В итоге</div><button class="rev__more" type="button">Читать целиком</button>
+</article><article class="card card--hover rev reveal" style="--i:1">
+  <div class="rev__top">
+    <div class="rev__av">ТН</div>
+    <div><div class="rev__n">Татьяна Нестеренко</div>
+      <div class="rev__d">15 июля 2026</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t">Начала курс лазерной эпиляции в этой студии. Уже после первой процедуры вижу эффект, волоски стали расти реже и медленнее. Мастер Юлия все подробно рассказывала о подготовке и процессе, контролировала, чтобы процедура была комфортной и эффективной, подбирала мощность аппарата именно под меня. Вообще хочу отметить доброжелательную и приветливую атмосферу и чистоту помещения👍</div>
+</article><article class="card card--hover rev reveal" style="--i:2">
+  <div class="rev__top">
+    <div class="rev__av">ВВ</div>
+    <div><div class="rev__n">Виктория Вандаловская</div>
+      <div class="rev__d">28 сентября 2025</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t">Была на процедуре уже 2 раз. Результат виден с первого посещения 😍 Отдельное спасибо профессионалу своего дела - мастеру Алине. Ответила на все волнующие вопросы, подробно рассказала все нюансы. В студии очень чисто и уютно! Очень приветливый не только мастер, но и девушка администратор в чате🩷 На мой взгляд лучшая студия в городе, где работают на современном оборудовании.</div>
+</article></div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="grid g2" style="--gap:clamp(30px,4vw,64px);align-items:center">
+      <div class="reveal">
+        <div class="eyebrow">О нас</div>
+        <h2>Студия с рейтингом 5,0</h2>
+        <p class="lead" style="margin-top:20px">128 отзывов в 2ГИС и 33 фотографии пространства, команды и процедур.</p>
+        <ul class="list" style="margin-top:28px"><li>Оценка 5 из 5 в 2ГИС по 128 отзывам</li><li>Часы работы: Пн–Вс 09:00–21:00, без выходных</li><li>Адрес: Пролетарский спуск, 5а</li><li>11 позиций прайса с ценами, от 500 ₽</li><li>Виды эпиляции: лазерная эпиляция, лазерная александритовая эпиляция, шугаринг, восковая эпиляция, электроэпиляция</li><li>Массаж: аппаратный массаж, массаж лица, антицеллюлитный массаж</li></ul>
+        <div style="margin-top:30px"><a class="btn btn--ghost" href="o-nas.html">Подробнее о нас</a></div>
+      </div>
+      <div class="reveal" style="--i:1"><img src="https://i1.photo.2gis.com/photo-gallery/1841980f-f71a-4e70-977b-79d481cdd6a6_960x.jpg" alt="Aquarise" loading="lazy" style="border-radius:var(--r-lg);aspect-ratio:1/1;object-fit:cover;width:100%"></div>
     </div>
   </div>
 </section>
 
-<section id="ceny">
+<section class="sec" id="zayavka">
   <div class="wrap">
-    <div class="eyebrow">Прайс</div>
-    <h2>Услуги и цены</h2>
-    <p class="lead">Всё видно сразу, без звонка «а сколько стоит». Именно это человек ищет первым, когда выбирает между вами и соседями.</p>
-    <div style="margin-top:34px"><div class="price__group"><div class="price__cat">Лазерная эпиляция (КОМПЛЕКСЫ)</div><div class="price__row">
-        <div><div class="price__name">Комплекс MINI</div><div class="price__desc">Скидка 50% по промокоду &quot;2ГИС&quot;
-
-Комплекс (подмышки+тотальное бикини) - это идеальный вариант для того, чтобы познакомиться с процедурой лазерной эпиляции. Уверенность и комфорт на </div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">2 300 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Комплекс SUPERMINI EPIL</div><div class="price__desc">Скидка 50% по промокоду &quot;2ГИС&quot;
-
-Комплекс (подмышки+тотальное бикини+голени) - самый оптимальный и популярный выбор наших гостей, состоит из самых важных зон для удаления нежелатель</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">3 300 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Комплекс MIDI EPIL</div><div class="price__desc">Скидка 50% по промокоду &quot;2ГИС&quot;
-
-Комплекс (подмышки+тотальное бикини+ноги полностью) - выбор для особенной заботы о себе. Идеально гладкие ножки позволят забыть о бесконечном бритье</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">4 300 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Комплекс MIDIPLUS EPIL</div><div class="price__desc">Скидка 50% по промокоду &quot;2ГИС&quot;
-
-Комплекс (подмышки+тотальное бикини+ноги полностью+руки полностью) - избавит вас от бесконечной рутины удаления нежелательных волос, болезненного шу</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">5 300 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Комплекс MAXI EPIL</div><div class="price__desc">Скидка 50% по промокоду &quot;2ГИС&quot;
-
-Комплекс (все тело, без ограничения по зонам) - самый ценный подарок себе и своему телу. Безграничная гладкость позволит наслаждаться собой на долги</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">5 900 ₽</span>
-      </div></div><div class="price__group"><div class="price__cat">Лазерная эпиляция (ЗОНЫ)</div><div class="price__row">
-        <div><div class="price__name">Лазерная эпиляция тела</div><div class="price__desc">Скидка 50% по промокоду &quot;2ГИС&quot;
-
-Лазерная эпиляция тела позволяет на долгий срок избавиться от лишней растительности на зонах:
-
--Подмышки
--Белая линия живота
--Живот полностью
--Ягоди</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">500 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Лазерная эпиляция лица</div><div class="price__desc">Скидка 50% по промокоду &quot;2ГИС&quot;
-
-Лазерная эпиляция лица позволяет на долгий срок избавиться от комплексов и лишней растительности на зонах:
-
--Мини (верхняя губа, подбородок, лоб, ще</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">500 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Лазерная эпиляция бикини (интимные зоны)</div><div class="price__desc">Скидка 50% по промокоду &quot;2ГИС&quot;
-
-Лазерная эпиляция бикини - это самый популярный выбор наших гостей! После первой процедуры уходит до 30% волос и кратно замедляется рост.
-
--Классиче</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">1 100 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Лазерная эпиляция ног</div><div class="price__desc">Скидка 50% по промокоду &quot;2ГИС&quot;
-
-Лазерная эпиляция ног позволяет на долгий срок (особенно в летний сезон) избавиться от комплексов и лишней растительности на зонах:
-
--Голени
--Ножки </div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">900 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Лазерная эпиляция рук</div><div class="price__desc">Скидка 50% по промокоду &quot;2ГИС&quot;
-
-Лазерная эпиляция рук позволяет забыть о бритвенном станке, болезненном шугаринге и воске на следующих зонах:
-
--Руки до локтя
--Руки полностью</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">1 000 ₽</span>
-      </div></div><div class="price__group"><div class="price__cat">Мужская лазерная эпиляция</div><div class="price__row">
-        <div><div class="price__name">Мужская лазерная эпиляция</div><div class="price__desc">Скидка 50% по промокоду &quot;2ГИС&quot;
-
-Мужская Лазерная эпиляция лица и тела позволяет на долгий срок удалить волоски с самых популярных зон:
-
--Лицо (верхняя губа, щеки, шея полностью, ли</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">700 ₽</span>
-      </div></div></div>
-    <p class="price__note">Цены из вашего прайса в 2ГИС. Обновлено 1 марта 2026.</p>
-  </div>
-</section>
-
-
-<section id="foto">
-  <div class="wrap">
-    <div class="eyebrow">Фотографии</div>
-    <h2>Как у нас</h2>
-    <div class="gal" style="margin-top:28px"><a href="https://i1.photo.2gis.com/photo-gallery/1841980f-f71a-4e70-977b-79d481cdd6a6_1920x.jpg" target="_blank" rel="noopener"><img src="https://i1.photo.2gis.com/photo-gallery/1841980f-f71a-4e70-977b-79d481cdd6a6_232x232.jpg" srcset="https://i1.photo.2gis.com/photo-gallery/1841980f-f71a-4e70-977b-79d481cdd6a6_232x232.jpg 232w, https://i1.photo.2gis.com/photo-gallery/1841980f-f71a-4e70-977b-79d481cdd6a6_464x464.jpg 464w, https://i1.photo.2gis.com/photo-gallery/1841980f-f71a-4e70-977b-79d481cdd6a6_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i8.photo.2gis.com/photo-gallery/9e8875a4-f0c7-444a-9d7d-65959a7ecd12_1920x.jpg" target="_blank" rel="noopener"><img src="https://i8.photo.2gis.com/photo-gallery/9e8875a4-f0c7-444a-9d7d-65959a7ecd12_232x232.jpg" srcset="https://i8.photo.2gis.com/photo-gallery/9e8875a4-f0c7-444a-9d7d-65959a7ecd12_232x232.jpg 232w, https://i8.photo.2gis.com/photo-gallery/9e8875a4-f0c7-444a-9d7d-65959a7ecd12_464x464.jpg 464w, https://i8.photo.2gis.com/photo-gallery/9e8875a4-f0c7-444a-9d7d-65959a7ecd12_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i9.photo.2gis.com/photo-gallery/843952c5-252a-49da-83e4-f994f84d5a3b_1920x.jpg" target="_blank" rel="noopener"><img src="https://i9.photo.2gis.com/photo-gallery/843952c5-252a-49da-83e4-f994f84d5a3b_232x232.jpg" srcset="https://i9.photo.2gis.com/photo-gallery/843952c5-252a-49da-83e4-f994f84d5a3b_232x232.jpg 232w, https://i9.photo.2gis.com/photo-gallery/843952c5-252a-49da-83e4-f994f84d5a3b_464x464.jpg 464w, https://i9.photo.2gis.com/photo-gallery/843952c5-252a-49da-83e4-f994f84d5a3b_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i7.photo.2gis.com/photo-gallery/739fb79b-5ee8-4ad3-9818-0b8993ea897a_1920x.jpg" target="_blank" rel="noopener"><img src="https://i7.photo.2gis.com/photo-gallery/739fb79b-5ee8-4ad3-9818-0b8993ea897a_232x232.jpg" srcset="https://i7.photo.2gis.com/photo-gallery/739fb79b-5ee8-4ad3-9818-0b8993ea897a_232x232.jpg 232w, https://i7.photo.2gis.com/photo-gallery/739fb79b-5ee8-4ad3-9818-0b8993ea897a_464x464.jpg 464w, https://i7.photo.2gis.com/photo-gallery/739fb79b-5ee8-4ad3-9818-0b8993ea897a_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i2.photo.2gis.com/photo-gallery/3e48e828-2f4d-4ce3-a821-13b6080d8e93_1920x.jpg" target="_blank" rel="noopener"><img src="https://i2.photo.2gis.com/photo-gallery/3e48e828-2f4d-4ce3-a821-13b6080d8e93_232x232.jpg" srcset="https://i2.photo.2gis.com/photo-gallery/3e48e828-2f4d-4ce3-a821-13b6080d8e93_232x232.jpg 232w, https://i2.photo.2gis.com/photo-gallery/3e48e828-2f4d-4ce3-a821-13b6080d8e93_464x464.jpg 464w, https://i2.photo.2gis.com/photo-gallery/3e48e828-2f4d-4ce3-a821-13b6080d8e93_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i3.photo.2gis.com/photo-gallery/6b3d2b7d-873d-476c-83e2-e031efbeea7b_1920x.jpg" target="_blank" rel="noopener"><img src="https://i3.photo.2gis.com/photo-gallery/6b3d2b7d-873d-476c-83e2-e031efbeea7b_232x232.jpg" srcset="https://i3.photo.2gis.com/photo-gallery/6b3d2b7d-873d-476c-83e2-e031efbeea7b_232x232.jpg 232w, https://i3.photo.2gis.com/photo-gallery/6b3d2b7d-873d-476c-83e2-e031efbeea7b_464x464.jpg 464w, https://i3.photo.2gis.com/photo-gallery/6b3d2b7d-873d-476c-83e2-e031efbeea7b_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i1.photo.2gis.com/photo-gallery/b0b29169-e688-4b0d-8481-b837e3eab8a0_1920x.jpg" target="_blank" rel="noopener"><img src="https://i1.photo.2gis.com/photo-gallery/b0b29169-e688-4b0d-8481-b837e3eab8a0_232x232.jpg" srcset="https://i1.photo.2gis.com/photo-gallery/b0b29169-e688-4b0d-8481-b837e3eab8a0_232x232.jpg 232w, https://i1.photo.2gis.com/photo-gallery/b0b29169-e688-4b0d-8481-b837e3eab8a0_464x464.jpg 464w, https://i1.photo.2gis.com/photo-gallery/b0b29169-e688-4b0d-8481-b837e3eab8a0_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i6.photo.2gis.com/photo-gallery/f4d6c269-e923-437d-a558-11e9a4f01eb6_1920x.jpg" target="_blank" rel="noopener"><img src="https://i6.photo.2gis.com/photo-gallery/f4d6c269-e923-437d-a558-11e9a4f01eb6_232x232.jpg" srcset="https://i6.photo.2gis.com/photo-gallery/f4d6c269-e923-437d-a558-11e9a4f01eb6_232x232.jpg 232w, https://i6.photo.2gis.com/photo-gallery/f4d6c269-e923-437d-a558-11e9a4f01eb6_464x464.jpg 464w, https://i6.photo.2gis.com/photo-gallery/f4d6c269-e923-437d-a558-11e9a4f01eb6_640x.jpg 640w" sizes="50vw" alt="Мы в работе" loading="lazy" decoding="async"></a></div>
-    <p class="price__note">Фотографии из вашей карточки 2ГИС. <a href="https://2gis.ru/rostov/firm/70000001099963172" target="_blank" rel="noopener">Открыть карточку</a></p>
-  </div>
-</section>
-
-<section id="otzyvy">
-  <div class="wrap">
-    <div class="eyebrow">Отзывы</div>
-    <h2>Что о нас пишут</h2>
-    <p class="lead">Рейтинг 5 в 2ГИС, 128 отзывов. На сайте они работают на вас, а не лежат в чужом приложении.</p>
-    <div class="rev" style="margin-top:28px"><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Второй была в этой студии, начала курс лазерной эпиляции. Буквально после первой процедуры уже увидела результат, как минимум гораздо замедлился рост волос , что не может не радовать , после первой то процедуры) Девочки все очень внимательные, аккуратные, дружелюбные. Ответят на все вопросы и дадут </p>
-      <div class="rev__who">Анна житель · 17.07.2026</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Начала курс лазерной эпиляции в этой студии. Уже после первой процедуры вижу эффект, волоски стали расти реже и медленнее. Мастер Юлия все подробно рассказывала о подготовке и процессе, контролировала, чтобы процедура была комфортной и эффективной, подбирала мощность аппарата именно под меня. Вообще</p>
-      <div class="rev__who">Татьяна Нестеренко · 15.07.2026</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Отличная студия, всегда чисто. Мастер Юлия всегда отвечает на все вопросы, профессионал. Всем рекомендую</p>
-      <div class="rev__who">Мария Сухомлин · 24.06.2026</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Прошла 5 сеансов лазерной эпиляции, результат отличный , количество волос заметно уменьшилось. Сама студия очень стильная и приятная мастер</p>
-      <div class="rev__who">Оксана Полонская · 12.04.2026</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Хорошая студия, чисто, уютно Вежливый мастер Реультат 🔥</p>
-      <div class="rev__who">Анастасия Емельянцева · 22.12.2025</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Зашла в студию лазерной эпиляции по рекомендации и приятно удивилась тому, насколько всё оказалось простым и комфортным. Без пафоса и лишних обещаний — просто спокойное, аккуратное место, где тебя встречают нормально, по‑человечески. Администратор общается легко, без давления, помогает разобраться и</p>
-      <div class="rev__who">Алина Бабкина · 17.03.2026</div>
-    </article></div>
-    <p class="price__note">Отзывы из 2ГИС. <a href="https://2gis.ru/rostov/firm/70000001099963172" target="_blank" rel="noopener">Читать все</a></p>
-  </div>
-</section>
-
-<section id="kontakty">
-  <div class="wrap">
-    <div class="eyebrow">Контакты</div>
-    <h2>Где нас найти</h2>
-    <div class="contact" style="margin-top:28px">
-      <dl class="dl"><dt>Адрес</dt><dd>Пролетарский спуск, 5а</dd><dt>Часы работы</dt><dd>Пн–Вс 09:00–21:00 · без выходных</dd><dt>Телефон</dt><dd><a href="tel:+79933089363">+7 993 308-93-63</a></dd><dt>Написать</dt><dd><a href="https://t.me/+79952284363" target="_blank" rel="noopener">Telegram</a> · <a href="https://wa.me/79933089363?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%0A%0A%D0%9F%D0%B8%D1%88%D1%83%20%D0%B8%D0%B7%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%202%D0%93%D0%98%D0%A1.%0A%0A" target="_blank" rel="noopener">WhatsApp</a></dd></dl>
-      <iframe class="map" src="https://widgets.2gis.com/widget?type=firmsonmap&amp;options=%7B%22pos%22%3A%7B%22lat%22%3A47.118157%2C%22lon%22%3A39.420415%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22rostov%22%7D%2C%22org%22%3A%2270000001099963172%22%7D" loading="lazy" title="Карта проезда"></iframe>
+    <div class="cta reveal">
+      <div class="cta__in">
+        <div>
+          <div class="eyebrow" style="color:inherit;opacity:.7">Заявка</div>
+          <h2>Записаться в Aquarise</h2>
+          <p class="lead">Оставьте номер — студия поможет выбрать зону или комплекс.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:26px"><a class="btn btn--ghost" href="tel:+79933089363" style="border-color:currentColor;color:inherit">+7 993 308-93-63</a><a class="btn btn--ghost" href="https://t.me/+79952284363" target="_blank" rel="noopener" style="border-color:currentColor;color:inherit">Telegram</a><a class="btn btn--ghost" href="https://wa.me/79933089363?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%0A%0A%D0%9F%D0%B8%D1%88%D1%83%20%D0%B8%D0%B7%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%202%D0%93%D0%98%D0%A1.%0A%0A" target="_blank" rel="noopener" style="border-color:currentColor;color:inherit">WhatsApp</a></div>
+        </div>
+        <div>
+          <form class="form" id="lead" novalidate>
+            <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <input name="name" placeholder="Как к вам обращаться" required minlength="2" autocomplete="name">
+            <input name="contact" placeholder="Телефон или ник в Telegram" required minlength="5" autocomplete="tel">
+            <textarea name="task" placeholder="Что вас интересует (по желанию)"></textarea>
+            <button class="btn btn--dark btn--wide" type="submit">Отправить</button>
+            <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку указанных данных.</p>
+          </form>
+          <div class="form__ok" id="ok">Заявка отправлена. Спасибо, скоро свяжемся.</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-
-<section id="zayavka">
-  <div class="wrap">
-    <div class="card" style="padding:clamp(24px,4vw,44px)">
-      <div class="eyebrow">Заявка</div>
-      <h2>Записаться на сеанс</h2>
-      <p class="lead">Оставьте номер, мы перезвоним и подберём время. Заявка приходит в Telegram за секунду, отвечать можно прямо оттуда.</p>
-      <form class="form" id="lead" style="margin-top:26px" novalidate>
-        <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <input name="name" placeholder="Как к вам обращаться" required minlength="2" autocomplete="name">
-        <input name="contact" placeholder="Телефон или ник в Telegram" required minlength="5" autocomplete="tel">
-        <textarea name="task" placeholder="Что нужно (по желанию)"></textarea>
-        <button class="btn" type="submit">Отправить</button>
-        <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку указанных данных.</p>
-      </form>
-      <div class="form__ok" id="ok">Заявка отправлена. Спасибо, скоро свяжемся.</div>
-    </div>
-  </div>
-</section>
-
 <footer class="foot">
-  <div class="wrap foot__row">
-    <div>Aquarise · Пролетарский спуск, 5а</div>
-    <div><a href="tel:+79933089363" style="text-decoration:none">+7 993 308-93-63</a></div>
+  <div class="wrap">
+    <div class="foot__grid"><div>
+      <a class="brand" href="index.html" style="margin-bottom:16px">
+        <span class="brand__mark">A</span>
+        <span class="brand__t"><span class="brand__n">Aquarise</span>
+        <span class="brand__s">студия лазерной эпиляции</span></span></a>
+      <a class="foot__tel" href="tel:+79933089363">+7 993 308-93-63</a>
+      <div style="opacity:.6;font-size:14.5px;max-width:34ch">Рейтинг 5 в 2ГИС. без выходных</div>
+    </div><div><h4>Разделы</h4><ul><li><a href="index.html">Главная</a></li><li><a href="uslugi.html">Услуги</a></li><li><a href="ceny.html">Цены</a></li><li><a href="galereya.html">Галерея</a></li></ul></div><div><h4>&nbsp;</h4><ul><li><a href="otzyvy.html">Отзывы</a></li><li><a href="o-nas.html">О нас</a></li><li><a href="kontakty.html">Контакты</a></li></ul></div><div><h4>Контакты</h4><ul><li><a href="tel:+79933089363">+7 993 308-93-63</a></li><li><a href="https://t.me/+79952284363" target="_blank" rel="noopener">Telegram</a></li><li><a href="https://wa.me/79933089363?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%0A%0A%D0%9F%D0%B8%D1%88%D1%83%20%D0%B8%D0%B7%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%202%D0%93%D0%98%D0%A1.%0A%0A" target="_blank" rel="noopener">WhatsApp</a></li></ul><h4 style="margin-top:26px">Адрес</h4><ul><li>Пролетарский спуск, 5а</li><li>Пн–Вс 09:00–21:00</li><li>Без выходных</li><li><a href="https://2gis.ru/rostov/firm/70000001099963172" target="_blank" rel="noopener">Карточка в 2ГИС</a></li></ul></div></div>
+    <div class="foot__bot">
+      <div>Aquarise, студия лазерной эпиляции</div>
+      <div>Данные и фотографии — из карточки 2ГИС</div>
+    </div>
   </div>
 </footer>
-
-
-<div class="demo">
+<div class="demo demo--premium">
   <div class="wrap demo__in">
     <div>
-      <b>Это демо-макет, а не ваш действующий сайт.</b> Собрал его Владимир, веб-разработчик из
-      Ростов-на-Дону, по открытым данным вашей карточки 2ГИС: фото, прайс, отзывы и часы работы — ваши.<br>Что я заметил на вашем текущем сайте: сайт собран на конструкторе Taplink, его нельзя развивать и он платный помесячно.
+      <b>Персональный многостраничный демо-сайт для Aquarise.</b>
+      Семь адаптивных страниц: главная, услуги, цены, галерея, отзывы, о компании и контакты.
+      Содержание собрано по открытым данным карточки 2ГИС; перед запуском всё согласовывается с владельцем. Что я заметил на вашем текущем сайте: сайт собран на конструкторе Taplink, его нельзя развивать и он платный помесячно; нет ни формы заявки, ни кнопки в мессенджер.
     </div>
-    <a class="btn btn--sm btn--ghost" style="border-color:currentColor;color:inherit"
-       href="https://t.me/vovuchoooo" target="_blank" rel="noopener">Написать @vovuchoooo</a>
+    <a class="btn btn--sm" href="https://t.me/vovuchoooo" target="_blank" rel="noopener">Обсудить этот сайт</a>
   </div>
 </div>
-
 <div class="bar">
-  <a class="btn" href="#zayavka">Записаться на сеанс</a>
+  <a class="btn" href="kontakty.html#zayavka">Записаться в Aquarise</a>
   <a class="btn btn--ghost" href="tel:+79933089363">Позвонить</a>
 </div>
-
-<script>
-document.getElementById('lead').addEventListener('submit', async function (ev) {
-  ev.preventDefault();
-  var f = ev.target, b = f.querySelector('button');
-  var body = {
-    company: f.company.value, name: f.name.value,
-    contact: f.contact.value, task: f.task.value
-  };
-  if (body.name.trim().length < 2 || body.contact.trim().length < 5) {
-    f.reportValidity(); return;
-  }
-  b.disabled = true; b.textContent = 'Отправляю…';
-  try {
-    var r = await fetch('https://lead-form.tripolev04.workers.dev', {
-      method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body)
-    });
-    if (!r.ok) throw 0;
-    f.style.display = 'none';
-    document.getElementById('ok').style.display = 'block';
-  } catch (err) {
-    b.disabled = false; b.textContent = 'Отправить ещё раз';
-  }
-});
-</script>
+<script src="script.js" defer></script>
 </body>
 </html>

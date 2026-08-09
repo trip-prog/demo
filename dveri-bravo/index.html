@@ -1,367 +1,249 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+<script>document.documentElement.className+=" js";setTimeout(function(){document.querySelectorAll(".reveal:not(.is-in)").forEach(function(n){n.classList.add("is-in")})},2500)</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Двери Браво — Магазин-склад · Металлургическая улица, 10а</title>
-<meta name="description" content="Двери Браво — Магазин-склад · Металлургическая улица, 10а. Рейтинг 4.7 в 2ГИС.">
+<title>Двери Браво — магазин-склад, Ростов-на-Дону</title>
+<meta name="description" content="Входные и межкомнатные двери, комплектующие и сопутствующие услуги. Рейтинг 4,7 в 2ГИС по 78 отзывам.">
 <meta name="robots" content="noindex,nofollow">
-<meta property="og:title" content="Двери Браво">
-<meta property="og:description" content="Двери Браво — Магазин-склад · Металлургическая улица, 10а. Рейтинг 4.7 в 2ГИС.">
+<meta name="theme-color" content="#f4f1ec">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Двери Браво — магазин-склад, Ростов-на-Дону">
+<meta property="og:description" content="Входные и межкомнатные двери, комплектующие и сопутствующие услуги. Рейтинг 4,7 в 2ГИС по 78 отзывам.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%239a6b3f'/%3E%3C/svg%3E">
-<style>
-:root{
-  --bg:#faf7f2;--surf:#ffffff;--line:#e7ded0;--ink:#2b241b;
-  --mute:#7a6d5c;--acc:#9a6b3f;--acc-ink:#ffffff;
-  --shadow:0 1px 2px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.07);
-  --r:14px;--wrap:1120px;
-}
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);
-  font:400 17px/1.6 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  -webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
-a{color:inherit}
-h1,h2,h3{font-family:'Manrope','Inter',sans-serif;line-height:1.14;margin:0;
-  letter-spacing:-.02em}
-h1{font-size:clamp(34px,7vw,62px);}
-h2{font-size:clamp(26px,4.4vw,40px)}
-h3{font-size:19px}
-p{margin:0}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
-section{padding:72px 0}
-.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);
-  font-weight:600;margin-bottom:12px}
-.lead{color:var(--mute);font-size:17px;max-width:62ch;margin-top:14px}
-
-.top{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--bg) 88%,transparent);
-  backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.top__in{display:flex;align-items:center;gap:18px;height:64px}
-.brand{font-family:'Manrope',sans-serif;font-weight:700;font-size:20px;
-  text-decoration:none;letter-spacing:.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.top nav{margin-left:auto;display:none;gap:26px}
-.top nav a{text-decoration:none;color:var(--mute);font-size:15px;transition:color .2s}
-.top nav a:hover{color:var(--ink)}
-.top .btn{margin-left:auto}
-@media(min-width:900px){.top nav{display:flex}.top .btn{margin-left:0}}
-
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
-  padding:14px 24px;border-radius:999px;border:1px solid transparent;cursor:pointer;
-  font:600 15px/1 'Inter',sans-serif;text-decoration:none;transition:transform .15s,opacity .2s;
-  background:var(--acc);color:var(--acc-ink)}
-.btn:hover{transform:translateY(-1px);opacity:.92}
-.btn--ghost{background:transparent;color:var(--ink);border-color:var(--line)}
-.btn--sm{padding:11px 18px;font-size:14px}
-
-.hero{position:relative;min-height:min(88vh,720px);display:flex;align-items:flex-end;
-  padding:96px 0 56px;overflow:hidden;isolation:isolate}
-.hero__bg{position:absolute;inset:0;z-index:-2;object-fit:cover;width:100%;height:100%}
-.hero::after{content:'';position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(180deg,rgba(16,20,28,.52) 0%,rgba(8,9,12,.55) 45%,rgba(6,7,10,.9) 100%)}
-.hero--plain::after{background:radial-gradient(120% 90% at 15% 0%,
-  color-mix(in srgb,var(--acc) 26%,var(--bg)) 0%,var(--bg) 70%)}
-.hero__in{position:relative;color:#fff}
-.hero--plain .hero__in{color:var(--ink)}
-.hero h1{max-width:16ch}
-.hero__sub{margin-top:16px;font-size:clamp(16px,2.2vw,20px);opacity:.9;max-width:44ch}
-.hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-.hero--plain .hero__cta .btn--ghost{border-color:var(--line)}
-.hero__cta .btn--ghost{color:#fff;border-color:rgba(255,255,255,.42)}
-
-.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
-.fact{display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:999px;
-  background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.2);
-  font-size:14px;backdrop-filter:blur(6px)}
-.hero--plain .fact{background:var(--surf);border-color:var(--line);color:var(--ink)}
-.fact b{font-weight:600}
-.star{color:#ffc247}
-
-.grid{display:grid;gap:16px}
-@media(min-width:700px){.cols-2{grid-template-columns:1fr 1fr}}
-@media(min-width:900px){.cols-3{grid-template-columns:repeat(3,1fr)}}
-
-.card{background:var(--surf);border:1px solid var(--line);border-radius:var(--r);padding:22px;
-  box-shadow:var(--shadow)}
-
-.price__group + .price__group{margin-top:34px}
-.price__cat{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);
-  margin-bottom:14px;font-weight:600}
-.price__row{display:flex;align-items:baseline;gap:14px;padding:15px 0;border-bottom:1px dashed var(--line)}
-.price__row:last-child{border-bottom:0}
-.price__name{font-weight:600}
-.price__desc{color:var(--mute);font-size:14.5px;margin-top:4px;max-width:70ch}
-.price__dots{flex:1;border-bottom:1px dotted var(--line);transform:translateY(-4px);min-width:24px}
-.price__val{white-space:nowrap;font-weight:700;color:var(--acc);font-size:18px}
-.price__note{color:var(--mute);font-size:14px;margin-top:24px}
-
-.tags{display:flex;flex-wrap:wrap;gap:9px}
-.tag{padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surf);
-  font-size:14.5px}
-
-.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-@media(min-width:760px){.gal{grid-template-columns:repeat(4,1fr)}
-  .gal a:first-child{grid-column:span 2;grid-row:span 2}}
-.gal a{display:block;border-radius:12px;overflow:hidden;background:var(--line);aspect-ratio:1/1}
-.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
-.gal a:hover img{transform:scale(1.05)}
-
-.rev{display:grid;gap:16px}
-@media(min-width:820px){.rev{grid-template-columns:repeat(3,1fr)}}
-.rev__stars{color:#ffc247;letter-spacing:2px;font-size:15px}
-.rev__text{margin-top:12px;font-size:15.5px;line-height:1.62}
-.rev__who{margin-top:16px;font-size:14px;color:var(--mute)}
-
-.contact{display:grid;gap:22px}
-@media(min-width:900px){.contact{grid-template-columns:1fr 1.15fr;align-items:start}}
-.dl{display:grid;gap:18px;margin:0}
-.dl dt{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
-.dl dd{margin:5px 0 0;font-size:17px}
-.dl a{text-decoration:none;border-bottom:1px solid var(--line)}
-.map{border:0;width:100%;height:340px;border-radius:var(--r);border:1px solid var(--line)}
-
-.form{display:grid;gap:13px}
-.form input,.form textarea{width:100%;padding:14px 16px;border-radius:11px;background:var(--bg);
-  border:1px solid var(--line);color:var(--ink);font:400 16px/1.5 'Inter',sans-serif}
-.form input:focus,.form textarea:focus{outline:2px solid var(--acc);outline-offset:1px;border-color:transparent}
-.form textarea{min-height:96px;resize:vertical}
-.form .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
-.form__note{font-size:13px;color:var(--mute)}
-.form__ok{display:none;padding:14px 16px;border-radius:11px;background:color-mix(in srgb,var(--acc) 14%,transparent);
-  border:1px solid var(--acc);font-size:15px}
-
-.foot{border-top:1px solid var(--line);padding:34px 0;color:var(--mute);font-size:14.5px}
-.foot__row{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;justify-content:space-between}
-
-.demo{background:var(--acc);color:var(--acc-ink);font-size:14.5px;line-height:1.55}
-.demo__in{padding:20px;display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;justify-content:space-between}
-.demo a{color:inherit;font-weight:700}
-.bar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;gap:10px;padding:10px 14px;
-  background:color-mix(in srgb,var(--bg) 94%,transparent);border-top:1px solid var(--line);
-  backdrop-filter:blur(10px)}
-.bar .btn{flex:1}
-@media(min-width:900px){.bar{display:none}}
-@media(max-width:899px){body{padding-bottom:72px}}
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@400;500;600&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23c43a27'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='16' font-weight='700' text-anchor='middle' fill='%23fff'%3EД%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-<header class="top">
+<body data-page="index.html">
+<header class="top" id="top">
   <div class="wrap top__in">
-    <a class="brand" href="#top">Двери Браво</a>
-    <nav><a href="#ceny">Цены</a><a href="#foto">Фото</a><a href="#otzyvy">Отзывы</a><a href="#kontakty">Контакты</a></nav>
-    <a class="btn btn--sm" href="#zayavka">Рассчитать кухню</a>
+    <a class="brand" href="index.html">
+      <span class="brand__mark">Д</span>
+      <span class="brand__t">
+        <span class="brand__n">Двери Браво</span>
+        <span class="brand__s">магазин-склад</span>
+      </span>
+    </a>
+    <nav class="nav"><a href="uslugi.html">Каталог</a><a href="ceny.html">Цены</a><a href="galereya.html">Галерея</a><a href="otzyvy.html">Отзывы</a><a href="o-nas.html">О нас</a><a href="kontakty.html">Контакты</a></nav>
+    <div class="top__act">
+      <a class="top__tel" href="tel:+78633201820">+7 863 320-18-20</a>
+      <a class="btn btn--sm" href="kontakty.html#zayavka">Подобрать двери</a>
+      <button class="burger" type="button" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
+<div class="drawer" id="drawer">
+  <div class="wrap">
+    <a href="index.html">Главная</a><a href="uslugi.html">Каталог</a><a href="ceny.html">Цены</a><a href="galereya.html">Галерея</a><a href="otzyvy.html">Отзывы</a><a href="o-nas.html">О нас</a><a href="kontakty.html">Контакты</a>
+    <a class="btn btn--wide" href="kontakty.html#zayavka">Подобрать двери</a>
+  </div>
+</div>
+<section class="hero">
+  <div class="wrap">
+    <div class="hero__in">
+      <div>
+        <div class="eyebrow reveal">Магазин-склад · Металлургическая, 10а</div>
+        <h1 class="reveal">Дверь задаёт<br><em>характер пространства.</em></h1>
+        <p class="hero__lead reveal">Входные и межкомнатные двери, комплектующие и сопутствующие услуги. Рейтинг 4,7 в 2ГИС по 78 отзывам.</p>
+        <div class="hero__act reveal"><a class="btn btn--lg" href="kontakty.html#zayavka">Подобрать двери</a><a class="btn btn--ghost btn--lg" href="uslugi.html">Открыть каталог</a></div>
+        <div class="hero__facts reveal"><div><div class="fact__v">4,7</div><div class="fact__l">рейтинг в 2ГИС по 78 отзывам</div></div><div><div class="fact__v">50</div><div class="fact__l">позиций в прайсе с ценой</div></div><div><div class="fact__v">2</div><div class="fact__l">раздела каталога</div></div></div>
+      </div>
+      <div class="hero__media reveal" style="--i:1">
+          <img src="https://cachizer1.2gis.com/market/a69b521b-4238-4b87-966f-c81f54702595.jpg?h=600&amp;w=800" alt="Двери Браво" fetchpriority="high" decoding="async">
+          <div class="hero__badge hero__badge--bl">
+              <b>4,7</b>
+              <span><span class="stars">★★★★★</span><br>78 отзывов в 2ГИС</span>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="hero__strip"><div><b>Адрес</b>Металлургическая улица, 10а</div><div><b>Часы работы</b>Пн–Пт 09:00–19:00, Сб–Вс 10:00–16:00</div><div><b>Телефон</b>+7 863 320-18-20</div><div><b>Оплата</b>картой, наличный расчёт, через банк</div></div>
+</section>
 
-
-<section class="hero" id="top">
-  <img class="hero__bg" src="https://i9.photo.2gis.com/images/branch/0/30258560156154349_041e_640x.jpg" alt="" fetchpriority="high" decoding="async" srcset="https://i9.photo.2gis.com/images/branch/0/30258560156154349_041e_640x.jpg 640w, https://i9.photo.2gis.com/images/branch/0/30258560156154349_041e_960x.jpg 960w, https://i9.photo.2gis.com/images/branch/0/30258560156154349_041e_1920x.jpg 1920w" sizes="100vw">
-  <div class="wrap hero__in">
-    <h1>Двери Браво</h1>
-    <p class="hero__sub">Магазин-склад · Металлургическая улица, 10а</p>
-    <div class="facts"><span class="fact"><span class="star">★</span> <b>4.7</b> · 78 отзывов в 2ГИС</span><span class="fact">🕒 Пн–Пт 09:00–19:00, Сб–Вс 10:00–16:00</span><span class="fact">📍 Металлургическая улица, 10а</span></div>
-    <div class="hero__cta">
-      <a class="btn" href="#zayavka">Рассчитать кухню</a>
-      <a class="btn btn--ghost" href="tel:+78633201820">Позвонить</a>
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Направления</div><h2>Каталог и услуги</h2><p class="lead">Пятьдесят позиций с ценами из карточки компании.</p></div><a class="btn btn--ghost btn--sm" href="uslugi.html">Все каталог</a></div>
+    <div class="grid g3"><a class="tile reveal" style="--i:0" href="uslugi.html#bez-vrezki-babochki">
+              <div class="tile__b">
+                <div class="tile__cat">7 услуг</div>
+                <h3 class="tile__n">Без врезки (бабочки)</h3>
+                <div class="tile__d">Петля без врезки стальная Bravo F-4-2BB 100*75*2,5 SG МатЗолото (универс.), Петля без врезки стальная HFS-1-2B 100*75*2,…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">138 ₽</span></div>
+              </div></a><a class="tile reveal" style="--i:1" href="uslugi.html#uslugi">
+              <div class="tile__b">
+                <div class="tile__cat">43 услуги</div>
+                <h3 class="tile__n">Услуги</h3>
+                <div class="tile__d">Ручка раздельная System Coral БрашМатХром, Ручка раздельная System Akik CR Хром, Ручка раздельная System Odin МатЧёрный…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">675 ₽</span></div>
+              </div></a></div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Прайс</div><h2>Популярные позиции</h2><p class="lead">Наименования и цены опубликованы компанией в карточке 2ГИС.</p></div><a class="btn btn--ghost btn--sm" href="ceny.html">Весь прайс</a></div>
+    <div class="grid g3"><article class="tile reveal" style="--i:0"><div class="tile__img"><img src="https://cachizer1.2gis.com/market/a69b521b-4238-4b87-966f-c81f54702595.jpg?h=600&amp;w=800" alt="Петля без врезки стальная Bravo F-4-2BB 100*75*2,5 SG МатЗолото (универс.)" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Без врезки (бабочки)</div><h3 class="tile__n">Петля без врезки стальная Bravo F-4-2BB 100*75*2,5 SG МатЗолото (универс.)</h3><div class="tile__d">Цвет: золотистый / Материал: Сталь / Открывание (): Универсальное / Размер: 100752.5 мм / Максимальная нагрузка (на 2 петли): до 20 кг</div><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">138 ₽</span></div></div>
+</article><article class="tile reveal" style="--i:1"><div class="tile__img"><img src="https://cachizer3.2gis.com/market/577d88ca-bf5b-4a9b-a1bd-297a4197dd00.jpg?h=600&amp;w=800" alt="Ручка раздельная System Coral БрашМатХром" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Услуги</div><h3 class="tile__n">Ручка раздельная System Coral БрашМатХром</h3><div class="tile__d">Цвет: серый / Особенности: Входящий в комплект соединительный квадрат отрезается под нужную толщину дверного полотна. Для комплектации ручки на прямоугольной розетке используется квадратная…</div><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">3 803 ₽</span></div></div>
+</article><article class="tile reveal" style="--i:2"><div class="tile__img"><img src="https://cachizer2.2gis.com/market/e305be44-86f3-4527-b959-557d3b87c121.jpg?h=600&amp;w=800" alt="Петля без врезки стальная HFS-1-2B 100*75*2,5 SGraphite (МатГрафит)" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Без врезки (бабочки)</div><h3 class="tile__n">Петля без врезки стальная HFS-1-2B 100*75*2,5 SGraphite (МатГрафит)</h3><div class="tile__d">Цвет: Матовый графит / Материал: Сталь / Открывание (): Универсальное / Размер: 100752.5 мм / Максимальная нагрузка (на 2 петли): до 20 кг</div><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">210 ₽</span></div></div>
+</article><article class="tile reveal" style="--i:3"><div class="tile__img"><img src="https://cachizer3.2gis.com/market/fd96c353-a64c-44f7-8964-c39e00d98342.jpg?h=600&amp;w=800" alt="Петля без врезки стальная HFS-1-2B 100*75*2,5 SBlack (МатЧёрный)" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Без врезки (бабочки)</div><h3 class="tile__n">Петля без врезки стальная HFS-1-2B 100*75*2,5 SBlack (МатЧёрный)</h3><div class="tile__d">Цвет: черный / Материал: Сталь / Открывание (): Универсальное / Размер: 100752.5 мм / Максимальная нагрузка (на 2 петли): до 20 кг</div><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">210 ₽</span></div></div>
+</article><article class="tile reveal" style="--i:0"><div class="tile__img"><img src="https://cachizer2.2gis.com/market/b2c5a4a6-ceaf-4a09-b79a-4fd1e75aa960.jpg?h=600&amp;w=800" alt="Петля без врезки стальная HFS-1-2B 100*75*2,5 SWhite (МатБелый)" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Без врезки (бабочки)</div><h3 class="tile__n">Петля без врезки стальная HFS-1-2B 100*75*2,5 SWhite (МатБелый)</h3><div class="tile__d">Цвет: белый / Материал: Сталь / Открывание (): Универсальное / Размер: 100752.5 мм / Максимальная нагрузка (на 2 петли): до 20 кг</div><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">210 ₽</span></div></div>
+</article><article class="tile reveal" style="--i:1"><div class="tile__img"><img src="https://cachizer1.2gis.com/market/97593d5e-8faf-47cb-948f-f0d20ab6f835.jpg?h=600&amp;w=800" alt="Петля без врезки стальная HFS-1-2B 100*75*2,5 Chrome (Хром)" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Без врезки (бабочки)</div><h3 class="tile__n">Петля без врезки стальная HFS-1-2B 100*75*2,5 Chrome (Хром)</h3><div class="tile__d">Цвет: серебристый / Материал: Сталь / Открывание (): Универсальное / Размер: 100752.5 мм / Максимальная нагрузка (на 2 петли): до 20 кг</div><div class="tile__p"><span class="tile__from">от</span><span class="tile__price">210 ₽</span></div></div>
+</article></div>
+  </div>
+</section>
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Цены</div><h2>Цены</h2><p class="lead">Ключевые позиции на главной и полный список с поиском на отдельной странице.</p></div><a class="btn btn--ghost btn--sm" href="ceny.html">Все 50 позиций</a></div>
+    <div class="reveal"><div class="prow" data-s="петля без врезки стальная bravo f-4-2bb 100*75*2,5 sg матзолото (универс.) без врезки (бабочки)">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Петля без врезки стальная Bravo F-4-2BB 100*75*2,5 SG МатЗолото (универс.)</div><div class="prow__d">Цвет: золотистый / Материал: Сталь / Открывание (): Универсальное / Размер: 100752.5 мм / Максимальная нагрузка (на 2 петли): до 20 кг</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 138 ₽</div>
+</div><div class="prow" data-s="ручка раздельная system coral брашматхром услуги">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Ручка раздельная System Coral БрашМатХром</div><div class="prow__d">Цвет: серый / Особенности: Входящий в комплект соединительный квадрат отрезается под нужную толщину дверного полотна. Для комплектации ручки на прямоугольной розетке используется квадратная накладка / Материал: ЦАМ / Описание комплекта:…</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 3 803 ₽</div>
+</div><div class="prow" data-s="петля без врезки стальная hfs-1-2b 100*75*2,5 sgraphite (матграфит) без врезки (бабочки)">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Петля без врезки стальная HFS-1-2B 100*75*2,5 SGraphite (МатГрафит)</div><div class="prow__d">Цвет: Матовый графит / Материал: Сталь / Открывание (): Универсальное / Размер: 100752.5 мм / Максимальная нагрузка (на 2 петли): до 20 кг</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 210 ₽</div>
+</div><div class="prow" data-s="петля без врезки стальная hfs-1-2b 100*75*2,5 sblack (матчёрный) без врезки (бабочки)">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Петля без врезки стальная HFS-1-2B 100*75*2,5 SBlack (МатЧёрный)</div><div class="prow__d">Цвет: черный / Материал: Сталь / Открывание (): Универсальное / Размер: 100752.5 мм / Максимальная нагрузка (на 2 петли): до 20 кг</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 210 ₽</div>
+</div><div class="prow" data-s="петля без врезки стальная hfs-1-2b 100*75*2,5 swhite (матбелый) без врезки (бабочки)">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Петля без врезки стальная HFS-1-2B 100*75*2,5 SWhite (МатБелый)</div><div class="prow__d">Цвет: белый / Материал: Сталь / Открывание (): Универсальное / Размер: 100752.5 мм / Максимальная нагрузка (на 2 петли): до 20 кг</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 210 ₽</div>
+</div><div class="prow" data-s="петля без врезки стальная hfs-1-2b 100*75*2,5 chrome (хром) без врезки (бабочки)">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Петля без врезки стальная HFS-1-2B 100*75*2,5 Chrome (Хром)</div><div class="prow__d">Цвет: серебристый / Материал: Сталь / Открывание (): Универсальное / Размер: 100752.5 мм / Максимальная нагрузка (на 2 петли): до 20 кг</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 210 ₽</div>
+</div><div class="prow" data-s="петля без врезки стальная hfs-1-2b 100*75*2,5 schrome (матхром) без врезки (бабочки)">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Петля без врезки стальная HFS-1-2B 100*75*2,5 SChrome (МатХром)</div><div class="prow__d">Цвет: серебристый / Материал: Сталь / Открывание (): Универсальное / Размер: 100752.5 мм / Максимальная нагрузка (на 2 петли): до 20 кг</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 210 ₽</div>
+</div><div class="prow" data-s="петля без врезки стальная hfs-1-2b 100*75*2,5 sgold (матзолото) без врезки (бабочки)">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Петля без врезки стальная HFS-1-2B 100*75*2,5 SGold (МатЗолото)</div><div class="prow__d">Цвет: золотистый / Материал: Сталь / Открывание (): Универсальное / Размер: 100752.5 мм / Максимальная нагрузка (на 2 петли): до 20 кг</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 210 ₽</div>
+</div><div class="prow" data-s="ручка раздельная system akik cr хром услуги">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Ручка раздельная System Akik CR Хром</div><div class="prow__d">Цвет: серебристый / Особенности: Входящий в комплект соединительный квадрат отрезается под нужную толщину дверного полотна. Для комплектации ручки на овальной розетке используется круглая накладка / Материал: ЦАМ / Описание комплекта:…</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 3 218 ₽</div>
+</div><div class="prow" data-s="ручка раздельная system odin матчёрный услуги">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Ручка раздельная System Odin МатЧёрный</div><div class="prow__d">Цвет: черный / Особенности: Входящий в комплект соединительный квадрат отрезается под нужную толщину дверного полотна / Материал: Алюминий / Описание комплекта: Ручки - 1 пара, накладки декоративные - 1 пара, квадрат соединительный - 1…</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 2 730 ₽</div>
+</div></div>
+    <div style="margin-top:30px"><a class="btn" href="ceny.html">Открыть полный прайс</a></div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Фотографии</div><h2>Модели дверей</h2><p class="lead">Фотографии товаров из прайса и карточки 2ГИС.</p></div><a class="btn btn--ghost btn--sm" href="galereya.html">Вся галерея</a></div>
+    <div class="gal"><figure data-full="https://cachizer1.2gis.com/market/a69b521b-4238-4b87-966f-c81f54702595.jpg?h=1200&amp;w=1600"><img src="https://cachizer1.2gis.com/market/a69b521b-4238-4b87-966f-c81f54702595.jpg?h=600&amp;w=800" alt="Петля без врезки стальная Bravo F-4-2BB 100*75*2,5 SG МатЗолото (универс.)" loading="lazy" decoding="async"><figcaption>Петля без врезки стальная Bravo F-4-2BB 100*75*2,5 SG МатЗолото (универс.)</figcaption></figure><figure data-full="https://cachizer3.2gis.com/market/577d88ca-bf5b-4a9b-a1bd-297a4197dd00.jpg?h=1200&amp;w=1600"><img src="https://cachizer3.2gis.com/market/577d88ca-bf5b-4a9b-a1bd-297a4197dd00.jpg?h=600&amp;w=800" alt="Ручка раздельная System Coral БрашМатХром" loading="lazy" decoding="async"><figcaption>Ручка раздельная System Coral БрашМатХром</figcaption></figure><figure data-full="https://cachizer2.2gis.com/market/e305be44-86f3-4527-b959-557d3b87c121.jpg?h=1200&amp;w=1600"><img src="https://cachizer2.2gis.com/market/e305be44-86f3-4527-b959-557d3b87c121.jpg?h=600&amp;w=800" alt="Петля без врезки стальная HFS-1-2B 100*75*2,5 SGraphite (МатГрафит)" loading="lazy" decoding="async"><figcaption>Петля без врезки стальная HFS-1-2B 100*75*2,5 SGraphite (МатГрафит)</figcaption></figure><figure data-full="https://cachizer3.2gis.com/market/fd96c353-a64c-44f7-8964-c39e00d98342.jpg?h=1200&amp;w=1600"><img src="https://cachizer3.2gis.com/market/fd96c353-a64c-44f7-8964-c39e00d98342.jpg?h=600&amp;w=800" alt="Петля без врезки стальная HFS-1-2B 100*75*2,5 SBlack (МатЧёрный)" loading="lazy" decoding="async"><figcaption>Петля без врезки стальная HFS-1-2B 100*75*2,5 SBlack (МатЧёрный)</figcaption></figure><figure data-full="https://cachizer2.2gis.com/market/b2c5a4a6-ceaf-4a09-b79a-4fd1e75aa960.jpg?h=1200&amp;w=1600"><img src="https://cachizer2.2gis.com/market/b2c5a4a6-ceaf-4a09-b79a-4fd1e75aa960.jpg?h=600&amp;w=800" alt="Петля без врезки стальная HFS-1-2B 100*75*2,5 SWhite (МатБелый)" loading="lazy" decoding="async"><figcaption>Петля без врезки стальная HFS-1-2B 100*75*2,5 SWhite (МатБелый)</figcaption></figure><figure data-full="https://cachizer1.2gis.com/market/97593d5e-8faf-47cb-948f-f0d20ab6f835.jpg?h=1200&amp;w=1600"><img src="https://cachizer1.2gis.com/market/97593d5e-8faf-47cb-948f-f0d20ab6f835.jpg?h=600&amp;w=800" alt="Петля без врезки стальная HFS-1-2B 100*75*2,5 Chrome (Хром)" loading="lazy" decoding="async"><figcaption>Петля без врезки стальная HFS-1-2B 100*75*2,5 Chrome (Хром)</figcaption></figure></div>
+  </div>
+</section>
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Отзывы</div><h2>78 отзывов в 2ГИС</h2><p class="lead">Оценка 4,7 в 2ГИС по 78 отзывам. Здесь показаны те, что видны в карточке.</p></div><a class="btn btn--ghost btn--sm" href="otzyvy.html">Все 6 отзывов</a></div>
+    <div class="grid g3"><article class="card card--hover rev reveal" style="--i:0">
+  <div class="rev__top">
+    <div class="rev__av">МА</div>
+    <div><div class="rev__n">Максим Алехин</div>
+      <div class="rev__d">4 ноября 2025</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t">Двери выбирали для офиса, хотелось современный вид и нейтральные оттенки. Нашли у Браво отличную серию с гладкими полотнами и аккуратными линиями. Удобно, что у серии Браво-0.П можно выбрать высоту, мы взяли 210 см, выглядит солидно.</div>
+</article><article class="card card--hover rev reveal" style="--i:1">
+  <div class="rev__top">
+    <div class="rev__av">КБ</div>
+    <div><div class="rev__n">Кирилл Басов</div>
+      <div class="rev__d">7 сентября 2025</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t">О компании впервые услышал у знакомого, который делал ремонт у себя дома. Он хвалил именно Bravo за то, что двери не выглядят устаревшими. Подтверждаю - реально современные и востребованные модели)))</div>
+</article><article class="card card--hover rev reveal" style="--i:2">
+  <div class="rev__top">
+    <div class="rev__av">ЯД</div>
+    <div><div class="rev__n">Ярослав Данилов</div>
+      <div class="rev__d">9 октября 2025</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t">Сотрудничаем с Браво уже третий год. Радует, что на складе всегда есть наличие, отгрузки быстрые. Проблем с браком практически не бывает.</div>
+</article></div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="grid g2" style="--gap:clamp(30px,4vw,64px);align-items:center">
+      <div class="reveal">
+        <div class="eyebrow">О нас</div>
+        <h2>Магазин-склад дверей</h2>
+        <p class="lead" style="margin-top:20px">В карточке указаны входные и межкомнатные двери, комплектующие и напольные покрытия.</p>
+        <ul class="list" style="margin-top:28px"><li>Оценка 4,7 из 5 в 2ГИС по 78 отзывам</li><li>Часы работы: Пн–Пт 09:00–19:00, Сб–Вс 10:00–16:00, без выходных</li><li>Адрес: Металлургическая улица, 10а</li><li>50 позиций прайса с ценами, от 138 ₽</li><li>Услуги: доставка</li><li>Способы оплаты: Оплата картой, Наличный расчёт, Оплата через банк</li></ul>
+        <div style="margin-top:30px"><a class="btn btn--ghost" href="o-nas.html">Подробнее о нас</a></div>
+      </div>
+      <div class="reveal" style="--i:1"><img src="https://cachizer3.2gis.com/market/577d88ca-bf5b-4a9b-a1bd-297a4197dd00.jpg?h=600&amp;w=800" alt="Двери Браво" loading="lazy" style="border-radius:var(--r-lg);aspect-ratio:1/1;object-fit:cover;width:100%"></div>
     </div>
   </div>
 </section>
 
-<section id="ceny">
+<section class="sec" id="zayavka">
   <div class="wrap">
-    <div class="eyebrow">Прайс</div>
-    <h2>Услуги и цены</h2>
-    <p class="lead">Всё видно сразу, без звонка «а сколько стоит». Именно это человек ищет первым, когда выбирает между вами и соседями.</p>
-    <div style="margin-top:34px"><div class="price__group"><div class="price__cat">Без врезки (бабочки)</div><div class="price__row">
-        <div><div class="price__name">Петля без врезки стальная Bravo F-4-2BB 100*75*2,5 SG МатЗолото (универс.)</div><div class="price__desc">Цвет: золотистый / Материал: Сталь / Открывание (): Универсальное / Размер: 100*75*2.5 мм / Максимальная нагрузка (на 2 петли): до 20 кг</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">138 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Петля без врезки стальная HFS-1-2B 100*75*2,5 SGraphite (МатГрафит)</div><div class="price__desc">Цвет: Матовый графит / Материал: Сталь / Открывание (): Универсальное / Размер: 100*75*2.5 мм / Максимальная нагрузка (на 2 петли): до 20 кг</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">210 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Петля без врезки стальная HFS-1-2B 100*75*2,5 SBlack (МатЧёрный)</div><div class="price__desc">Цвет: черный / Материал: Сталь / Открывание (): Универсальное / Размер: 100*75*2.5 мм / Максимальная нагрузка (на 2 петли): до 20 кг</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">210 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Петля без врезки стальная HFS-1-2B 100*75*2,5 SWhite (МатБелый)</div><div class="price__desc">Цвет: белый / Материал: Сталь / Открывание (): Универсальное / Размер: 100*75*2.5 мм / Максимальная нагрузка (на 2 петли): до 20 кг</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">210 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Петля без врезки стальная HFS-1-2B 100*75*2,5 Chrome (Хром)</div><div class="price__desc">Цвет: серебристый / Материал: Сталь / Открывание (): Универсальное / Размер: 100*75*2.5 мм / Максимальная нагрузка (на 2 петли): до 20 кг</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">210 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Петля без врезки стальная HFS-1-2B 100*75*2,5 SChrome (МатХром)</div><div class="price__desc">Цвет: серебристый / Материал: Сталь / Открывание (): Универсальное / Размер: 100*75*2.5 мм / Максимальная нагрузка (на 2 петли): до 20 кг</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">210 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Петля без врезки стальная HFS-1-2B 100*75*2,5 SGold (МатЗолото)</div><div class="price__desc">Цвет: золотистый / Материал: Сталь / Открывание (): Универсальное / Размер: 100*75*2.5 мм / Максимальная нагрузка (на 2 петли): до 20 кг</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">210 ₽</span>
-      </div></div><div class="price__group"><div class="price__cat">Услуги</div><div class="price__row">
-        <div><div class="price__name">Ручка раздельная System Coral БрашМатХром</div><div class="price__desc">Цвет: серый / Особенности: Входящий в комплект соединительный квадрат отрезается под нужную толщину дверного полотна. Для комплектации ручки на прямоугольной розетке используется к</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">3 803 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Ручка раздельная System Akik CR Хром</div><div class="price__desc">Цвет: серебристый / Особенности: Входящий в комплект соединительный квадрат отрезается под нужную толщину дверного полотна. Для комплектации ручки на овальной розетке используется </div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">3 218 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Ручка раздельная System Odin МатЧёрный</div><div class="price__desc">Цвет: черный / Особенности: Входящий в комплект соединительный квадрат отрезается под нужную толщину дверного полотна / Материал: Алюминий / Описание комплекта: Ручки - 1 пара, нак</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">2 730 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Ручка раздельная System Proton-T МатЧёрный</div><div class="price__desc">Цвет: черный / Особенности: Входящий в комплект соединительный квадрат отрезается под нужную толщину дверного полотна / Материал: Алюминий / Описание комплекта: Ручки - 1 пара, нак</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">3 169 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Ручка раздельная System Proton-T Хром</div><div class="price__desc">Цвет: серебристый / Особенности: Входящий в комплект соединительный квадрат отрезается под нужную толщину дверного полотна / Материал: Алюминий / Описание комплекта: Ручки - 1 пара</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">2 877 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Ручка раздельная System Proton-L Хром</div><div class="price__desc">Цвет: серебристый / Особенности: Входящий в комплект соединительный квадрат отрезается под нужную толщину дверного полотна / Материал: Алюминий / Описание комплекта: Ручки - 1 пара</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">2 779 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Ручка раздельная System Proton-L МатЧёрный</div><div class="price__desc">Цвет: черный / Особенности: Входящий в комплект соединительный квадрат отрезается под нужную толщину дверного полотна / Материал: Алюминий / Описание комплекта: Ручки - 1 пара, нак</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">3 072 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Ручка раздельная System Coral МатБелый</div><div class="price__desc">Цвет: белый / Особенности: Входящий в комплект соединительный квадрат отрезается под нужную толщину дверного полотна. Для комплектации ручки на прямоугольной розетке используется к</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">3 657 ₽</span>
-      </div></div></div>
-    <p class="price__note">Цены из вашего прайса в 2ГИС. Обновлено 7 мая 2026.</p>
-  </div>
-</section>
-
-
-<section id="foto">
-  <div class="wrap">
-    <div class="eyebrow">Фотографии</div>
-    <h2>Как у нас</h2>
-    <div class="gal" style="margin-top:28px"><a href="https://i7.photo.2gis.com/images/branch/0/30258560158074192_bd6e_1920x.jpg" target="_blank" rel="noopener"><img src="https://i7.photo.2gis.com/images/branch/0/30258560158074192_bd6e_232x232.jpg" srcset="https://i7.photo.2gis.com/images/branch/0/30258560158074192_bd6e_232x232.jpg 232w, https://i7.photo.2gis.com/images/branch/0/30258560158074192_bd6e_464x464.jpg 464w, https://i7.photo.2gis.com/images/branch/0/30258560158074192_bd6e_640x.jpg 640w" sizes="50vw" alt="Мы в работе" loading="lazy" decoding="async"></a><a href="https://i3.photo.2gis.com/images/branch/0/30258560142360477_2a14_1920x.jpg" target="_blank" rel="noopener"><img src="https://i3.photo.2gis.com/images/branch/0/30258560142360477_2a14_232x232.jpg" srcset="https://i3.photo.2gis.com/images/branch/0/30258560142360477_2a14_232x232.jpg 232w, https://i3.photo.2gis.com/images/branch/0/30258560142360477_2a14_464x464.jpg 464w, https://i3.photo.2gis.com/images/branch/0/30258560142360477_2a14_640x.jpg 640w" sizes="50vw" alt="Мы в работе" loading="lazy" decoding="async"></a><a href="https://i6.photo.2gis.com/images/branch/0/30258560141667636_ebe1_1920x.jpg" target="_blank" rel="noopener"><img src="https://i6.photo.2gis.com/images/branch/0/30258560141667636_ebe1_232x232.jpg" srcset="https://i6.photo.2gis.com/images/branch/0/30258560141667636_ebe1_232x232.jpg 232w, https://i6.photo.2gis.com/images/branch/0/30258560141667636_ebe1_464x464.jpg 464w, https://i6.photo.2gis.com/images/branch/0/30258560141667636_ebe1_640x.jpg 640w" sizes="50vw" alt="Мы в работе" loading="lazy" decoding="async"></a><a href="https://i0.photo.2gis.com/images/branch/0/30258560145367739_e153_1920x.jpg" target="_blank" rel="noopener"><img src="https://i0.photo.2gis.com/images/branch/0/30258560145367739_e153_232x232.jpg" srcset="https://i0.photo.2gis.com/images/branch/0/30258560145367739_e153_232x232.jpg 232w, https://i0.photo.2gis.com/images/branch/0/30258560145367739_e153_464x464.jpg 464w, https://i0.photo.2gis.com/images/branch/0/30258560145367739_e153_640x.jpg 640w" sizes="50vw" alt="Мы в работе" loading="lazy" decoding="async"></a><a href="https://i8.photo.2gis.com/images/branch/0/30258560151645688_6e57_1920x.jpg" target="_blank" rel="noopener"><img src="https://i8.photo.2gis.com/images/branch/0/30258560151645688_6e57_232x232.jpg" srcset="https://i8.photo.2gis.com/images/branch/0/30258560151645688_6e57_232x232.jpg 232w, https://i8.photo.2gis.com/images/branch/0/30258560151645688_6e57_464x464.jpg 464w, https://i8.photo.2gis.com/images/branch/0/30258560151645688_6e57_640x.jpg 640w" sizes="50vw" alt="Мы в работе" loading="lazy" decoding="async"></a><a href="https://i3.photo.2gis.com/images/branch/0/30258560148073795_bea6_1920x.jpg" target="_blank" rel="noopener"><img src="https://i3.photo.2gis.com/images/branch/0/30258560148073795_bea6_232x232.jpg" srcset="https://i3.photo.2gis.com/images/branch/0/30258560148073795_bea6_232x232.jpg 232w, https://i3.photo.2gis.com/images/branch/0/30258560148073795_bea6_464x464.jpg 464w, https://i3.photo.2gis.com/images/branch/0/30258560148073795_bea6_640x.jpg 640w" sizes="50vw" alt="Мы в работе" loading="lazy" decoding="async"></a><a href="https://i0.photo.2gis.com/images/branch/0/30258560145919136_3159_1920x.jpg" target="_blank" rel="noopener"><img src="https://i0.photo.2gis.com/images/branch/0/30258560145919136_3159_232x232.jpg" srcset="https://i0.photo.2gis.com/images/branch/0/30258560145919136_3159_232x232.jpg 232w, https://i0.photo.2gis.com/images/branch/0/30258560145919136_3159_464x464.jpg 464w, https://i0.photo.2gis.com/images/branch/0/30258560145919136_3159_640x.jpg 640w" sizes="50vw" alt="Мы в работе" loading="lazy" decoding="async"></a></div>
-    <p class="price__note">Фотографии из вашей карточки 2ГИС. <a href="https://2gis.ru/rostov/firm/70000001046469510" target="_blank" rel="noopener">Открыть карточку</a></p>
-  </div>
-</section>
-
-<section id="otzyvy">
-  <div class="wrap">
-    <div class="eyebrow">Отзывы</div>
-    <h2>Что о нас пишут</h2>
-    <p class="lead">Рейтинг 4.7 в 2ГИС, 78 отзывов. На сайте они работают на вас, а не лежат в чужом приложении.</p>
-    <div class="rev" style="margin-top:28px"><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Отличное обслуживание, отличные цены, сотрудники помогли с выбором.</p>
-      <div class="rev__who">Валерия Плигина · 09.03.2026</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Двери выбирали для офиса, хотелось современный вид и нейтральные оттенки. Нашли у Браво отличную серию с гладкими полотнами и аккуратными линиями. Удобно, что у серии Браво-0.П можно выбрать высоту, мы взяли 210 см, выглядит солидно.</p>
-      <div class="rev__who">Максим Алехин · 04.11.2025</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Сотрудничаем с Браво уже третий год. Радует, что на складе всегда есть наличие, отгрузки быстрые. Проблем с браком практически не бывает.</p>
-      <div class="rev__who">Ярослав Данилов · 09.10.2025</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">О компании впервые услышал у знакомого, который делал ремонт у себя дома. Он хвалил именно Bravo за то, что двери не выглядят устаревшими. Подтверждаю - реально современные и востребованные модели)))</p>
-      <div class="rev__who">Кирилл Басов · 07.09.2025</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Работаю полгода с Браво. В жизни такие же классные двери, как и на видосах у них. Качеством и видом доволен.</p>
-      <div class="rev__who">Даниил Дубровин · 07.08.2025</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Коробка собирается легко. Пазы четкие, все стыкуется без зазоров.</p>
-      <div class="rev__who">Илья Гусев · 02.12.2025</div>
-    </article></div>
-    <p class="price__note">Отзывы из 2ГИС. <a href="https://2gis.ru/rostov/firm/70000001046469510" target="_blank" rel="noopener">Читать все</a></p>
-  </div>
-</section>
-
-<section id="kontakty">
-  <div class="wrap">
-    <div class="eyebrow">Контакты</div>
-    <h2>Где нас найти</h2>
-    <div class="contact" style="margin-top:28px">
-      <dl class="dl"><dt>Адрес</dt><dd>Металлургическая улица, 10а</dd><dt>Часы работы</dt><dd>Пн–Пт 09:00–19:00, Сб–Вс 10:00–16:00 · без выходных</dd><dt>Телефон</dt><dd><a href="tel:+78633201820">+7 863 320-18-20</a></dd><dt>Почта</dt><dd><a href="mailto:rnd@dveribravo.ru">rnd@dveribravo.ru</a></dd></dl>
-      <iframe class="map" src="https://widgets.2gis.com/widget?type=firmsonmap&amp;options=%7B%22pos%22%3A%7B%22lat%22%3A47.296168%2C%22lon%22%3A39.805791%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22rostov%22%7D%2C%22org%22%3A%2270000001046469510%22%7D" loading="lazy" title="Карта проезда"></iframe>
+    <div class="cta reveal">
+      <div class="cta__in">
+        <div>
+          <div class="eyebrow" style="color:inherit;opacity:.7">Заявка</div>
+          <h2>Подобрать двери</h2>
+          <p class="lead">Оставьте номер — магазин уточнит размеры и нужную комплектацию.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:26px"><a class="btn btn--ghost" href="tel:+78633201820" style="border-color:currentColor;color:inherit">+7 863 320-18-20</a></div>
+        </div>
+        <div>
+          <form class="form" id="lead" novalidate>
+            <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <input name="name" placeholder="Как к вам обращаться" required minlength="2" autocomplete="name">
+            <input name="contact" placeholder="Телефон или ник в Telegram" required minlength="5" autocomplete="tel">
+            <textarea name="task" placeholder="Что вас интересует (по желанию)"></textarea>
+            <button class="btn btn--dark btn--wide" type="submit">Отправить</button>
+            <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку указанных данных.</p>
+          </form>
+          <div class="form__ok" id="ok">Заявка отправлена. Спасибо, скоро свяжемся.</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-
-<section id="zayavka">
-  <div class="wrap">
-    <div class="card" style="padding:clamp(24px,4vw,44px)">
-      <div class="eyebrow">Заявка</div>
-      <h2>Рассчитать кухню</h2>
-      <p class="lead">Оставьте номер, замерщик свяжется и назовёт стоимость. Заявка приходит в Telegram за секунду, отвечать можно прямо оттуда.</p>
-      <form class="form" id="lead" style="margin-top:26px" novalidate>
-        <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <input name="name" placeholder="Как к вам обращаться" required minlength="2" autocomplete="name">
-        <input name="contact" placeholder="Телефон или ник в Telegram" required minlength="5" autocomplete="tel">
-        <textarea name="task" placeholder="Что нужно (по желанию)"></textarea>
-        <button class="btn" type="submit">Отправить</button>
-        <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку указанных данных.</p>
-      </form>
-      <div class="form__ok" id="ok">Заявка отправлена. Спасибо, скоро свяжемся.</div>
-    </div>
-  </div>
-</section>
-
 <footer class="foot">
-  <div class="wrap foot__row">
-    <div>Двери Браво · Металлургическая улица, 10а</div>
-    <div><a href="tel:+78633201820" style="text-decoration:none">+7 863 320-18-20</a></div>
+  <div class="wrap">
+    <div class="foot__grid"><div>
+      <a class="brand" href="index.html" style="margin-bottom:16px">
+        <span class="brand__mark">Д</span>
+        <span class="brand__t"><span class="brand__n">Двери Браво</span>
+        <span class="brand__s">магазин-склад</span></span></a>
+      <a class="foot__tel" href="tel:+78633201820">+7 863 320-18-20</a>
+      <div style="opacity:.6;font-size:14.5px;max-width:34ch">Рейтинг 4,7 в 2ГИС. без выходных</div>
+    </div><div><h4>Разделы</h4><ul><li><a href="index.html">Главная</a></li><li><a href="uslugi.html">Каталог</a></li><li><a href="ceny.html">Цены</a></li><li><a href="galereya.html">Галерея</a></li></ul></div><div><h4>&nbsp;</h4><ul><li><a href="otzyvy.html">Отзывы</a></li><li><a href="o-nas.html">О нас</a></li><li><a href="kontakty.html">Контакты</a></li></ul></div><div><h4>Контакты</h4><ul><li><a href="tel:+78633201820">+7 863 320-18-20</a></li><li><a href="mailto:rnd@dveribravo.ru">rnd@dveribravo.ru</a></li></ul><h4 style="margin-top:26px">Адрес</h4><ul><li>Металлургическая улица, 10а</li><li>Пн–Пт 09:00–19:00, Сб–Вс 10:00–16:00</li><li>Без выходных</li><li><a href="https://2gis.ru/rostov/firm/70000001046469510" target="_blank" rel="noopener">Карточка в 2ГИС</a></li></ul></div></div>
+    <div class="foot__bot">
+      <div>Двери Браво, магазин-склад</div>
+      <div>Данные и фотографии — из карточки 2ГИС</div>
+    </div>
   </div>
 </footer>
-
-
-<div class="demo">
+<div class="demo demo--premium">
   <div class="wrap demo__in">
     <div>
-      <b>Это демо-макет, а не ваш действующий сайт.</b> Собрал его Владимир, веб-разработчик из
-      Ростов-на-Дону, по открытым данным вашей карточки 2ГИС: фото, прайс, отзывы и часы работы — ваши.<br>Что я заметил на вашем текущем сайте: сайт из карточки 2ГИС HTTP 403.
+      <b>Персональный многостраничный демо-сайт для Двери Браво.</b>
+      Семь адаптивных страниц: главная, услуги, цены, галерея, отзывы, о компании и контакты.
+      Содержание собрано по открытым данным карточки 2ГИС; перед запуском всё согласовывается с владельцем. Что я заметил на вашем текущем сайте: сайт из карточки 2ГИС HTTP 403.
     </div>
-    <a class="btn btn--sm btn--ghost" style="border-color:currentColor;color:inherit"
-       href="https://t.me/vovuchoooo" target="_blank" rel="noopener">Написать @vovuchoooo</a>
+    <a class="btn btn--sm" href="https://t.me/vovuchoooo" target="_blank" rel="noopener">Обсудить этот сайт</a>
   </div>
 </div>
-
 <div class="bar">
-  <a class="btn" href="#zayavka">Рассчитать кухню</a>
+  <a class="btn" href="kontakty.html#zayavka">Подобрать двери</a>
   <a class="btn btn--ghost" href="tel:+78633201820">Позвонить</a>
 </div>
-
-<script>
-document.getElementById('lead').addEventListener('submit', async function (ev) {
-  ev.preventDefault();
-  var f = ev.target, b = f.querySelector('button');
-  var body = {
-    company: f.company.value, name: f.name.value,
-    contact: f.contact.value, task: f.task.value
-  };
-  if (body.name.trim().length < 2 || body.contact.trim().length < 5) {
-    f.reportValidity(); return;
-  }
-  b.disabled = true; b.textContent = 'Отправляю…';
-  try {
-    var r = await fetch('https://lead-form.tripolev04.workers.dev', {
-      method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body)
-    });
-    if (!r.ok) throw 0;
-    f.style.display = 'none';
-    document.getElementById('ok').style.display = 'block';
-  } catch (err) {
-    b.disabled = false; b.textContent = 'Отправить ещё раз';
-  }
-});
-</script>
+<script src="script.js" defer></script>
 </body>
 </html>
