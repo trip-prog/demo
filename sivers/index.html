@@ -1,350 +1,218 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+<script>document.documentElement.className+=" js";setTimeout(function(){document.querySelectorAll(".reveal:not(.is-in)").forEach(function(n){n.classList.add("is-in")})},2500)</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Сиверс — Торговый центр · Сиверса проспект, 23</title>
-<meta name="description" content="Сиверс — Торговый центр · Сиверса проспект, 23. Рейтинг 4.6 в 2ГИС.">
+<title>Сиверс — торговый центр, Ростов-на-Дону</title>
+<meta name="description" content="Материалы, мебель, двери, свет, сантехника, декор и техника. Ежедневно с 9:00 до 20:00.">
 <meta name="robots" content="noindex,nofollow">
-<meta property="og:title" content="Сиверс">
-<meta property="og:description" content="Сиверс — Торговый центр · Сиверса проспект, 23. Рейтинг 4.6 в 2ГИС.">
+<meta name="theme-color" content="#f5f1e9">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Сиверс — торговый центр, Ростов-на-Дону">
+<meta property="og:description" content="Материалы, мебель, двери, свет, сантехника, декор и техника. Ежедневно с 9:00 до 20:00.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%239a6b3f'/%3E%3C/svg%3E">
-<style>
-:root{
-  --bg:#faf7f2;--surf:#ffffff;--line:#e7ded0;--ink:#2b241b;
-  --mute:#7a6d5c;--acc:#9a6b3f;--acc-ink:#ffffff;
-  --shadow:0 1px 2px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.07);
-  --r:14px;--wrap:1120px;
-}
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);
-  font:400 17px/1.6 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  -webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
-a{color:inherit}
-h1,h2,h3{font-family:'Manrope','Inter',sans-serif;line-height:1.14;margin:0;
-  letter-spacing:-.02em}
-h1{font-size:clamp(34px,7vw,62px);}
-h2{font-size:clamp(26px,4.4vw,40px)}
-h3{font-size:19px}
-p{margin:0}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
-section{padding:72px 0}
-.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);
-  font-weight:600;margin-bottom:12px}
-.lead{color:var(--mute);font-size:17px;max-width:62ch;margin-top:14px}
-
-.top{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--bg) 88%,transparent);
-  backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.top__in{display:flex;align-items:center;gap:18px;height:64px}
-.brand{font-family:'Manrope',sans-serif;font-weight:700;font-size:20px;
-  text-decoration:none;letter-spacing:.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.top nav{margin-left:auto;display:none;gap:26px}
-.top nav a{text-decoration:none;color:var(--mute);font-size:15px;transition:color .2s}
-.top nav a:hover{color:var(--ink)}
-.top .btn{margin-left:auto}
-@media(min-width:900px){.top nav{display:flex}.top .btn{margin-left:0}}
-
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
-  padding:14px 24px;border-radius:999px;border:1px solid transparent;cursor:pointer;
-  font:600 15px/1 'Inter',sans-serif;text-decoration:none;transition:transform .15s,opacity .2s;
-  background:var(--acc);color:var(--acc-ink)}
-.btn:hover{transform:translateY(-1px);opacity:.92}
-.btn--ghost{background:transparent;color:var(--ink);border-color:var(--line)}
-.btn--sm{padding:11px 18px;font-size:14px}
-
-.hero{position:relative;min-height:min(88vh,720px);display:flex;align-items:flex-end;
-  padding:96px 0 56px;overflow:hidden;isolation:isolate}
-.hero__bg{position:absolute;inset:0;z-index:-2;object-fit:cover;width:100%;height:100%}
-.hero::after{content:'';position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(180deg,rgba(16,20,28,.52) 0%,rgba(8,9,12,.55) 45%,rgba(6,7,10,.9) 100%)}
-.hero--plain::after{background:radial-gradient(120% 90% at 15% 0%,
-  color-mix(in srgb,var(--acc) 26%,var(--bg)) 0%,var(--bg) 70%)}
-.hero__in{position:relative;color:#fff}
-.hero--plain .hero__in{color:var(--ink)}
-.hero h1{max-width:16ch}
-.hero__sub{margin-top:16px;font-size:clamp(16px,2.2vw,20px);opacity:.9;max-width:44ch}
-.hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-.hero--plain .hero__cta .btn--ghost{border-color:var(--line)}
-.hero__cta .btn--ghost{color:#fff;border-color:rgba(255,255,255,.42)}
-
-.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
-.fact{display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:999px;
-  background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.2);
-  font-size:14px;backdrop-filter:blur(6px)}
-.hero--plain .fact{background:var(--surf);border-color:var(--line);color:var(--ink)}
-.fact b{font-weight:600}
-.star{color:#ffc247}
-
-.grid{display:grid;gap:16px}
-@media(min-width:700px){.cols-2{grid-template-columns:1fr 1fr}}
-@media(min-width:900px){.cols-3{grid-template-columns:repeat(3,1fr)}}
-
-.card{background:var(--surf);border:1px solid var(--line);border-radius:var(--r);padding:22px;
-  box-shadow:var(--shadow)}
-
-.price__group + .price__group{margin-top:34px}
-.price__cat{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);
-  margin-bottom:14px;font-weight:600}
-.price__row{display:flex;align-items:baseline;gap:14px;padding:15px 0;border-bottom:1px dashed var(--line)}
-.price__row:last-child{border-bottom:0}
-.price__name{font-weight:600}
-.price__desc{color:var(--mute);font-size:14.5px;margin-top:4px;max-width:70ch}
-.price__dots{flex:1;border-bottom:1px dotted var(--line);transform:translateY(-4px);min-width:24px}
-.price__val{white-space:nowrap;font-weight:700;color:var(--acc);font-size:18px}
-.price__note{color:var(--mute);font-size:14px;margin-top:24px}
-
-.tags{display:flex;flex-wrap:wrap;gap:9px}
-.tag{padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surf);
-  font-size:14.5px}
-
-.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-@media(min-width:760px){.gal{grid-template-columns:repeat(4,1fr)}
-  .gal a:first-child{grid-column:span 2;grid-row:span 2}}
-.gal a{display:block;border-radius:12px;overflow:hidden;background:var(--line);aspect-ratio:1/1}
-.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
-.gal a:hover img{transform:scale(1.05)}
-
-.rev{display:grid;gap:16px}
-@media(min-width:820px){.rev{grid-template-columns:repeat(3,1fr)}}
-.rev__stars{color:#ffc247;letter-spacing:2px;font-size:15px}
-.rev__text{margin-top:12px;font-size:15.5px;line-height:1.62}
-.rev__who{margin-top:16px;font-size:14px;color:var(--mute)}
-
-.contact{display:grid;gap:22px}
-@media(min-width:900px){.contact{grid-template-columns:1fr 1.15fr;align-items:start}}
-.dl{display:grid;gap:18px;margin:0}
-.dl dt{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
-.dl dd{margin:5px 0 0;font-size:17px}
-.dl a{text-decoration:none;border-bottom:1px solid var(--line)}
-.map{border:0;width:100%;height:340px;border-radius:var(--r);border:1px solid var(--line)}
-
-.form{display:grid;gap:13px}
-.form input,.form textarea{width:100%;padding:14px 16px;border-radius:11px;background:var(--bg);
-  border:1px solid var(--line);color:var(--ink);font:400 16px/1.5 'Inter',sans-serif}
-.form input:focus,.form textarea:focus{outline:2px solid var(--acc);outline-offset:1px;border-color:transparent}
-.form textarea{min-height:96px;resize:vertical}
-.form .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
-.form__note{font-size:13px;color:var(--mute)}
-.form__ok{display:none;padding:14px 16px;border-radius:11px;background:color-mix(in srgb,var(--acc) 14%,transparent);
-  border:1px solid var(--acc);font-size:15px}
-
-.foot{border-top:1px solid var(--line);padding:34px 0;color:var(--mute);font-size:14.5px}
-.foot__row{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;justify-content:space-between}
-
-.demo{background:var(--acc);color:var(--acc-ink);font-size:14.5px;line-height:1.55}
-.demo__in{padding:20px;display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;justify-content:space-between}
-.demo a{color:inherit;font-weight:700}
-.bar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;gap:10px;padding:10px 14px;
-  background:color-mix(in srgb,var(--bg) 94%,transparent);border-top:1px solid var(--line);
-  backdrop-filter:blur(10px)}
-.bar .btn{flex:1}
-@media(min-width:900px){.bar{display:none}}
-@media(max-width:899px){body{padding-bottom:72px}}
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23c66849'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='16' font-weight='700' text-anchor='middle' fill='%23fff'%3EС%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-<header class="top">
+<body data-page="index.html">
+<header class="top" id="top">
   <div class="wrap top__in">
-    <a class="brand" href="#top">Сиверс</a>
-    <nav><a href="#ceny">Цены</a><a href="#foto">Фото</a><a href="#otzyvy">Отзывы</a><a href="#kontakty">Контакты</a></nav>
-    <a class="btn btn--sm" href="#zayavka">Рассчитать кухню</a>
+    <a class="brand" href="index.html">
+      <span class="brand__mark">С</span>
+      <span class="brand__t">
+        <span class="brand__n">Сиверс</span>
+        <span class="brand__s">торговый центр</span>
+      </span>
+    </a>
+    <nav class="nav"><a href="uslugi.html">Каталог</a><a href="galereya.html">Галерея</a><a href="otzyvy.html">Отзывы</a><a href="o-nas.html">О нас</a><a href="kontakty.html">Контакты</a></nav>
+    <div class="top__act">
+      <a class="top__tel" href="tel:+79515323463">+7 951 532-34-63</a>
+      <a class="btn btn--sm" href="kontakty.html#zayavka">Подобрать решение</a>
+      <button class="burger" type="button" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
+<div class="drawer" id="drawer">
+  <div class="wrap">
+    <a href="index.html">Главная</a><a href="uslugi.html">Каталог</a><a href="galereya.html">Галерея</a><a href="otzyvy.html">Отзывы</a><a href="o-nas.html">О нас</a><a href="kontakty.html">Контакты</a>
+    <a class="btn btn--wide" href="kontakty.html#zayavka">Подобрать решение</a>
+  </div>
+</div>
+<section class="hero">
+  <div class="wrap">
+    <div class="hero__in">
+      <div>
+        <div class="eyebrow reveal">Торговый центр · проспект Сиверса, 23</div>
+        <h1 class="reveal">Сиверс.<br><em>Весь интерьер в одном маршруте.</em></h1>
+        <p class="hero__lead reveal">Материалы, мебель, двери, свет, сантехника, декор и техника. Ежедневно с 9:00 до 20:00.</p>
+        <div class="hero__act reveal"><a class="btn btn--lg" href="kontakty.html#zayavka">Подобрать решение</a><a class="btn btn--ghost btn--lg" href="uslugi.html">Смотреть направления</a></div>
+        <div class="hero__facts reveal"><div><div class="fact__v">4,6</div><div class="fact__l">рейтинг в 2ГИС по 31 отзыву</div></div><div><div class="fact__v">3</div><div class="fact__l">направления работы</div></div><div><div class="fact__v">20</div><div class="fact__l">фотографий в галерее</div></div></div>
+      </div>
+      <div class="hero__media reveal" style="--i:1">
+          <img src="https://i8.photo.2gis.com/images/branch/0/30258560099749345_393f_960x.jpg" alt="Сиверс" fetchpriority="high" decoding="async">
+          <div class="hero__badge hero__badge--bl">
+              <b>4,6</b>
+              <span><span class="stars">★★★★★</span><br>31 отзывов в 2ГИС</span>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="hero__strip"><div><b>Адрес</b>Сиверса проспект, 23</div><div><b>Часы работы</b>Пн–Вс 09:00–20:00</div><div><b>Телефон</b>+7 951 532-34-63</div><div><b>Оплата</b>картой, наличный расчёт, через банк</div></div>
+</section>
 
-
-<section class="hero" id="top">
-  <img class="hero__bg" src="https://i8.photo.2gis.com/images/branch/0/30258560099749345_393f_640x.jpg" alt="" fetchpriority="high" decoding="async" srcset="https://i8.photo.2gis.com/images/branch/0/30258560099749345_393f_640x.jpg 640w, https://i8.photo.2gis.com/images/branch/0/30258560099749345_393f_960x.jpg 960w, https://i8.photo.2gis.com/images/branch/0/30258560099749345_393f_1920x.jpg 1920w" sizes="100vw">
-  <div class="wrap hero__in">
-    <h1>Сиверс</h1>
-    <p class="hero__sub">Торговый центр · Сиверса проспект, 23</p>
-    <div class="facts"><span class="fact"><span class="star">★</span> <b>4.6</b> · 31 отзывов в 2ГИС</span><span class="fact">🕒 Пн–Вс 09:00–20:00</span><span class="fact">📍 Сиверса проспект, 23</span></div>
-    <div class="hero__cta">
-      <a class="btn" href="#zayavka">Рассчитать кухню</a>
-      <a class="btn btn--ghost" href="tel:+79515323463">Позвонить</a>
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Направления</div><h2>Каталог центра Сиверс</h2><p class="lead">Тринадцать направлений без выдуманных цен.</p></div><a class="btn btn--ghost btn--sm" href="uslugi.html">Все каталог</a></div>
+    <div class="grid g3"><a class="tile reveal" style="--i:0" href="uslugi.html#magaziny">
+              <div class="tile__b">
+                <div class="tile__cat">11 услуг</div>
+                <h3 class="tile__n">Магазины</h3>
+                <div class="tile__d">Мягкая и корпусная мебель, Сантехника и аксессуары, Электроустановочная продукция…</div>
+                
+              </div></a><a class="tile reveal" style="--i:1" href="uslugi.html#dekor-interera">
+              <div class="tile__b">
+                <div class="tile__cat">1 услуга</div>
+                <h3 class="tile__n">Декор интерьера</h3>
+                <div class="tile__d">Декор для вашего дома…</div>
+                
+              </div></a><a class="tile reveal" style="--i:2" href="uslugi.html#kafe">
+              <div class="tile__b">
+                <div class="tile__cat">1 услуга</div>
+                <h3 class="tile__n">Кафе</h3>
+                <div class="tile__d">Кофе in…</div>
+                
+              </div></a></div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Прайс</div><h2>Из актуального прайса</h2><p class="lead">Наименования и цены опубликованы компанией в карточке 2ГИС.</p></div><a class="btn btn--ghost btn--sm" href="uslugi.html">Весь прайс</a></div>
+    <div class="grid g3"><article class="tile reveal" style="--i:0"><div class="tile__img"><img src="https://cachizer3.2gis.com/market/26fbeb8d-17fb-4ea1-80bc-818bfee9b058.png?h=600&amp;w=800" alt="Мягкая и корпусная мебель" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Магазины</div><h3 class="tile__n">Мягкая и корпусная мебель</h3></div>
+</article><article class="tile reveal" style="--i:1"><div class="tile__img"><img src="https://cachizer1.2gis.com/market/dec299e9-fca7-4500-b27c-e26617ad57b6.jpg?h=600&amp;w=800" alt="Декор для вашего дома" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Декор интерьера</div><h3 class="tile__n">Декор для вашего дома</h3></div>
+</article><article class="tile reveal" style="--i:2"><div class="tile__img"><img src="https://cachizer1.2gis.com/market/65d2d15d-38f4-4167-94ab-5e301b8947cc.jpg?h=600&amp;w=800" alt="Кофе in" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Кафе</div><h3 class="tile__n">Кофе in</h3><div class="tile__d">Горячие обеды · Свежая выпечка · Чай, Кофе · Прохладительные напитки</div></div>
+</article><article class="tile reveal" style="--i:3"><div class="tile__img"><img src="https://cachizer3.2gis.com/market/46be8056-e888-4369-bfeb-b4b886b31861.png?h=600&amp;w=800" alt="Сантехника и аксессуары" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Магазины</div><h3 class="tile__n">Сантехника и аксессуары</h3><div class="tile__d">Магазин АКВАМИР</div></div>
+</article><article class="tile reveal" style="--i:0"><div class="tile__img"><img src="https://cachizer3.2gis.com/market/658b9989-2857-48df-972a-2b63a324a142.jpg?h=600&amp;w=800" alt="Электроустановочная продукция" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Магазины</div><h3 class="tile__n">Электроустановочная продукция</h3></div>
+</article><article class="tile reveal" style="--i:1"><div class="tile__img"><img src="https://cachizer2.2gis.com/market/a6a2443c-a550-44c8-b1a1-fbf4562029e1.png?h=600&amp;w=800" alt="Обои и лепной декор" loading="lazy" decoding="async"></div>
+  <div class="tile__b"><div class="tile__cat">Магазины</div><h3 class="tile__n">Обои и лепной декор</h3><div class="tile__d">ОБОЙКИН · цент модных обоев</div></div>
+</article></div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Фотографии</div><h2>Центр и шоурумы</h2><p class="lead">Интерьер, магазины и вход на двадцати фотографиях.</p></div><a class="btn btn--ghost btn--sm" href="galereya.html">Вся галерея</a></div>
+    <div class="gal"><figure data-full="https://i8.photo.2gis.com/images/branch/0/30258560099749345_393f_1920x.jpg"><img src="https://i8.photo.2gis.com/images/branch/0/30258560099749345_393f_640x.jpg" alt="Интерьер" loading="lazy" decoding="async"><figcaption>Интерьер</figcaption></figure><figure data-full="https://i8.photo.2gis.com/images/branch/0/30258560148605617_e8c3_1920x.jpg"><img src="https://i8.photo.2gis.com/images/branch/0/30258560148605617_e8c3_640x.jpg" alt="Интерьер" loading="lazy" decoding="async"><figcaption>Интерьер</figcaption></figure><figure data-full="https://i2.photo.2gis.com/photo-gallery/5836b1c3-59bf-4e2d-bca0-2da93bf360c8_1920x.jpg"><img src="https://i2.photo.2gis.com/photo-gallery/5836b1c3-59bf-4e2d-bca0-2da93bf360c8_640x.jpg" alt="Интерьер" loading="lazy" decoding="async"><figcaption>Интерьер</figcaption></figure><figure data-full="https://i7.photo.2gis.com/images/branch/0/30258560148605626_5ebf_1920x.jpg"><img src="https://i7.photo.2gis.com/images/branch/0/30258560148605626_5ebf_640x.jpg" alt="Интерьер" loading="lazy" decoding="async"><figcaption>Интерьер</figcaption></figure><figure data-full="https://i7.photo.2gis.com/images/branch/0/30258560148605631_0f11_1920x.jpg"><img src="https://i7.photo.2gis.com/images/branch/0/30258560148605631_0f11_640x.jpg" alt="Интерьер" loading="lazy" decoding="async"><figcaption>Интерьер</figcaption></figure><figure data-full="https://i6.photo.2gis.com/images/branch/0/30258560148605621_efb1_1920x.jpg"><img src="https://i6.photo.2gis.com/images/branch/0/30258560148605621_efb1_640x.jpg" alt="Интерьер" loading="lazy" decoding="async"><figcaption>Интерьер</figcaption></figure></div>
+  </div>
+</section>
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Отзывы</div><h2>Отзывы о Сиверсе</h2><p class="lead">Оценка 4,6 в 2ГИС по 31 отзыву. Здесь показаны те, что видны в карточке.</p></div><a class="btn btn--ghost btn--sm" href="otzyvy.html">Все 11 отзывов</a></div>
+    <div class="grid g3"><article class="card card--hover rev reveal" style="--i:0">
+  <div class="rev__top">
+    <div class="rev__av">РФ</div>
+    <div><div class="rev__n">Роман Федоров</div>
+      <div class="rev__d">30 сентября 2025</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t">Покупал в салоне подержанный автомобиль. Остался доволен. Машину подобрали по моим критериям, ценник адекватный. Менеджер Вячеслав все понятно объяснил, показал автомобиль, ответил на все. Нареканий нет, машиной доволен. Спасибо!</div>
+</article><article class="card card--hover rev reveal" style="--i:1">
+  <div class="rev__top">
+    <div class="rev__av">АГ</div>
+    <div><div class="rev__n">Александр Гагкаев</div>
+      <div class="rev__d">26 июня 2025</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t">Покупали ламинат Joss Beaumont Густо Рошеффор , очень понравился ламинат, очень красиво выгладил. Спасибо продавцам очень качественно консультируют!!!👍🏼</div>
+</article><article class="card card--hover rev reveal" style="--i:2">
+  <div class="rev__top">
+    <div class="rev__av">ИЧ</div>
+    <div><div class="rev__n">Инна Чекулаева</div>
+      <div class="rev__d">29 сентября 2025</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t">Отличный салон с открытой душой все показали и рассказали максимально честно без подводных камней , Спасибо Вячеславу за автомобиль ,буду рекомендовать</div>
+</article></div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="grid g2" style="--gap:clamp(30px,4vw,64px);align-items:center">
+      <div class="reveal">
+        <div class="eyebrow">О нас</div>
+        <h2>Интерьерный центр на Сиверса</h2>
+        <p class="lead" style="margin-top:20px">Карточка перечисляет мебель, двери, плитку, свет, сантехнику, декор и другие интерьерные категории.</p>
+        <ul class="list" style="margin-top:28px"><li>Оценка 4,6 из 5 в 2ГИС по 31 отзыву</li><li>Часы работы: Пн–Вс 09:00–20:00, без выходных</li><li>Адрес: Сиверса проспект, 23</li><li>Услуги: доставка</li><li>Способы оплаты: Оплата картой, Наличный расчёт, Оплата через банк, Перевод с карты, Оплата по QR-коду, Плати частями</li><li>Доступная среда: пандус, широкий лифт, туалет для маломобильных людей, автоматическая дверь</li></ul>
+        <div style="margin-top:30px"><a class="btn btn--ghost" href="o-nas.html">Подробнее о нас</a></div>
+      </div>
+      <div class="reveal" style="--i:1"><img src="https://i8.photo.2gis.com/images/branch/0/30258560148605617_e8c3_960x.jpg" alt="Сиверс" loading="lazy" style="border-radius:var(--r-lg);aspect-ratio:1/1;object-fit:cover;width:100%"></div>
     </div>
   </div>
 </section>
 
-<section id="ceny">
+<section class="sec" id="zayavka">
   <div class="wrap">
-    <div class="eyebrow">Прайс</div>
-    <h2>Услуги и цены</h2>
-    <p class="lead">Всё видно сразу, без звонка «а сколько стоит». Именно это человек ищет первым, когда выбирает между вами и соседями.</p>
-    <div style="margin-top:34px"><div class="price__group"><div class="price__cat">Магазины</div><div class="price__row">
-        <div><div class="price__name">Мягкая и корпусная мебель</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">по запросу</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Сантехника и аксессуары</div><div class="price__desc">Магазин АКВАМИР</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">по запросу</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Электроустановочная продукция</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">по запросу</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Обои и лепной декор</div><div class="price__desc">ОБОЙКИН - цент модных обоев</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">по запросу</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Напольные покрытия</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">по запросу</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Двери и фурнитура</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">по запросу</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Кухни и встраиваемая техника</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">по запросу</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Плитка и керамогранит</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">по запросу</span>
-      </div></div><div class="price__group"><div class="price__cat">Декор интерьера</div><div class="price__row">
-        <div><div class="price__name">Декор для вашего дома</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">по запросу</span>
-      </div></div><div class="price__group"><div class="price__cat">Кафе</div><div class="price__row">
-        <div><div class="price__name">Кофе in</div><div class="price__desc">-Горячие обеды
--Свежая выпечка
--Чай, Кофе
--Прохладительные напитки</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">по запросу</span>
-      </div></div></div>
-    <p class="price__note">Цены из вашего прайса в 2ГИС. Обновлено 29 октября 2025.</p>
-  </div>
-</section>
-
-
-<section id="foto">
-  <div class="wrap">
-    <div class="eyebrow">Фотографии</div>
-    <h2>Как у нас</h2>
-    <div class="gal" style="margin-top:28px"><a href="https://i8.photo.2gis.com/images/branch/0/30258560148605617_e8c3_1920x.jpg" target="_blank" rel="noopener"><img src="https://i8.photo.2gis.com/images/branch/0/30258560148605617_e8c3_232x232.jpg" srcset="https://i8.photo.2gis.com/images/branch/0/30258560148605617_e8c3_232x232.jpg 232w, https://i8.photo.2gis.com/images/branch/0/30258560148605617_e8c3_464x464.jpg 464w, https://i8.photo.2gis.com/images/branch/0/30258560148605617_e8c3_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i2.photo.2gis.com/photo-gallery/5836b1c3-59bf-4e2d-bca0-2da93bf360c8_1920x.jpg" target="_blank" rel="noopener"><img src="https://i2.photo.2gis.com/photo-gallery/5836b1c3-59bf-4e2d-bca0-2da93bf360c8_232x232.jpg" srcset="https://i2.photo.2gis.com/photo-gallery/5836b1c3-59bf-4e2d-bca0-2da93bf360c8_232x232.jpg 232w, https://i2.photo.2gis.com/photo-gallery/5836b1c3-59bf-4e2d-bca0-2da93bf360c8_464x464.jpg 464w, https://i2.photo.2gis.com/photo-gallery/5836b1c3-59bf-4e2d-bca0-2da93bf360c8_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i7.photo.2gis.com/images/branch/0/30258560148605626_5ebf_1920x.jpg" target="_blank" rel="noopener"><img src="https://i7.photo.2gis.com/images/branch/0/30258560148605626_5ebf_232x232.jpg" srcset="https://i7.photo.2gis.com/images/branch/0/30258560148605626_5ebf_232x232.jpg 232w, https://i7.photo.2gis.com/images/branch/0/30258560148605626_5ebf_464x464.jpg 464w, https://i7.photo.2gis.com/images/branch/0/30258560148605626_5ebf_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i7.photo.2gis.com/images/branch/0/30258560148605631_0f11_1920x.jpg" target="_blank" rel="noopener"><img src="https://i7.photo.2gis.com/images/branch/0/30258560148605631_0f11_232x232.jpg" srcset="https://i7.photo.2gis.com/images/branch/0/30258560148605631_0f11_232x232.jpg 232w, https://i7.photo.2gis.com/images/branch/0/30258560148605631_0f11_464x464.jpg 464w, https://i7.photo.2gis.com/images/branch/0/30258560148605631_0f11_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i6.photo.2gis.com/images/branch/0/30258560148605621_efb1_1920x.jpg" target="_blank" rel="noopener"><img src="https://i6.photo.2gis.com/images/branch/0/30258560148605621_efb1_232x232.jpg" srcset="https://i6.photo.2gis.com/images/branch/0/30258560148605621_efb1_232x232.jpg 232w, https://i6.photo.2gis.com/images/branch/0/30258560148605621_efb1_464x464.jpg 464w, https://i6.photo.2gis.com/images/branch/0/30258560148605621_efb1_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i9.photo.2gis.com/images/branch/0/30258560148605624_5092_1920x.jpg" target="_blank" rel="noopener"><img src="https://i9.photo.2gis.com/images/branch/0/30258560148605624_5092_232x232.jpg" srcset="https://i9.photo.2gis.com/images/branch/0/30258560148605624_5092_232x232.jpg 232w, https://i9.photo.2gis.com/images/branch/0/30258560148605624_5092_464x464.jpg 464w, https://i9.photo.2gis.com/images/branch/0/30258560148605624_5092_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i1.photo.2gis.com/images/branch/0/30258560148605623_4038_1920x.jpg" target="_blank" rel="noopener"><img src="https://i1.photo.2gis.com/images/branch/0/30258560148605623_4038_232x232.jpg" srcset="https://i1.photo.2gis.com/images/branch/0/30258560148605623_4038_232x232.jpg 232w, https://i1.photo.2gis.com/images/branch/0/30258560148605623_4038_464x464.jpg 464w, https://i1.photo.2gis.com/images/branch/0/30258560148605623_4038_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i7.photo.2gis.com/images/branch/0/30258560099749338_afa6_1920x.jpg" target="_blank" rel="noopener"><img src="https://i7.photo.2gis.com/images/branch/0/30258560099749338_afa6_232x232.jpg" srcset="https://i7.photo.2gis.com/images/branch/0/30258560099749338_afa6_232x232.jpg 232w, https://i7.photo.2gis.com/images/branch/0/30258560099749338_afa6_464x464.jpg 464w, https://i7.photo.2gis.com/images/branch/0/30258560099749338_afa6_640x.jpg 640w" sizes="50vw" alt="Мы в работе" loading="lazy" decoding="async"></a></div>
-    <p class="price__note">Фотографии из вашей карточки 2ГИС. <a href="https://2gis.ru/rostov/firm/70000001067026812" target="_blank" rel="noopener">Открыть карточку</a></p>
-  </div>
-</section>
-
-<section id="otzyvy">
-  <div class="wrap">
-    <div class="eyebrow">Отзывы</div>
-    <h2>Что о нас пишут</h2>
-    <p class="lead">Рейтинг 4.6 в 2ГИС, 31 отзывов. На сайте они работают на вас, а не лежат в чужом приложении.</p>
-    <div class="rev" style="margin-top:28px"><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Всё очень вкусно,хороший ассортимент, девчонки очень вежливые. Само помещение всегда чистое, обстановка приятная и уютная.</p>
-      <div class="rev__who">Екатерина 🥰 · 03.10.2025</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Отличный ТЦ все есть по приемлемым ценам</p>
-      <div class="rev__who">Сергей Дмитрия · 13.09.2025</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Хороший торговый центр , с множеством товаров для дома !</p>
-      <div class="rev__who">Evgenii Shackii · 27.07.2025</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★</div>
-      <p class="rev__text">Очень плохой подъезд на парковку, если едешь по противоположной полосе</p>
-      <div class="rev__who">Михаил Кравцов · 04.07.2026</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Покупали ламинат Joss Beaumont Густо Рошеффор , очень понравился ламинат, очень красиво выгладил. Спасибо продавцам очень качественно консультируют!!!👍🏼</p>
-      <div class="rev__who">Александр Гагкаев · 26.06.2025</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Удобная парковка, свободно, доступно, вежливый персонал. Рекомендую!</p>
-      <div class="rev__who">Валерий Косенко · 13.02.2026</div>
-    </article></div>
-    <p class="price__note">Отзывы из 2ГИС. <a href="https://2gis.ru/rostov/firm/70000001067026812" target="_blank" rel="noopener">Читать все</a></p>
-  </div>
-</section>
-
-<section id="kontakty">
-  <div class="wrap">
-    <div class="eyebrow">Контакты</div>
-    <h2>Где нас найти</h2>
-    <div class="contact" style="margin-top:28px">
-      <dl class="dl"><dt>Адрес</dt><dd>Сиверса проспект, 23</dd><dt>Часы работы</dt><dd>Пн–Вс 09:00–20:00 · без выходных</dd><dt>Телефон</dt><dd><a href="tel:+79515323463">+7 951 532-34-63</a></dd><dt>Написать</dt><dd><a href="https://wa.me/79515323463?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%0A%0A%D0%9F%D0%B8%D1%88%D1%83%20%D0%B8%D0%B7%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%202%D0%93%D0%98%D0%A1.%0A%0A" target="_blank" rel="noopener">WhatsApp</a></dd><dt>Почта</dt><dd><a href="mailto:sivers.rnd@mail.ru">sivers.rnd@mail.ru</a></dd></dl>
-      <iframe class="map" src="https://widgets.2gis.com/widget?type=firmsonmap&amp;options=%7B%22pos%22%3A%7B%22lat%22%3A47.222911%2C%22lon%22%3A39.688427%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22rostov%22%7D%2C%22org%22%3A%2270000001067026812%22%7D" loading="lazy" title="Карта проезда"></iframe>
+    <div class="cta reveal">
+      <div class="cta__in">
+        <div>
+          <div class="eyebrow" style="color:inherit;opacity:.7">Заявка</div>
+          <h2>Подобрать решение</h2>
+          <p class="lead">Оставьте номер — команда уточнит задачу и поможет с выбором.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:26px"><a class="btn btn--ghost" href="tel:+79515323463" style="border-color:currentColor;color:inherit">+7 951 532-34-63</a><a class="btn btn--ghost" href="https://wa.me/79515323463?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%0A%0A%D0%9F%D0%B8%D1%88%D1%83%20%D0%B8%D0%B7%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%202%D0%93%D0%98%D0%A1.%0A%0A" target="_blank" rel="noopener" style="border-color:currentColor;color:inherit">WhatsApp</a></div>
+        </div>
+        <div>
+          <form class="form" id="lead" novalidate>
+            <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <input name="name" placeholder="Как к вам обращаться" required minlength="2" autocomplete="name">
+            <input name="contact" placeholder="Телефон или ник в Telegram" required minlength="5" autocomplete="tel">
+            <textarea name="task" placeholder="Что вас интересует (по желанию)"></textarea>
+            <button class="btn btn--dark btn--wide" type="submit">Отправить</button>
+            <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку указанных данных.</p>
+          </form>
+          <div class="form__ok" id="ok">Заявка отправлена. Спасибо, скоро свяжемся.</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-
-<section id="zayavka">
-  <div class="wrap">
-    <div class="card" style="padding:clamp(24px,4vw,44px)">
-      <div class="eyebrow">Заявка</div>
-      <h2>Рассчитать кухню</h2>
-      <p class="lead">Оставьте номер, замерщик свяжется и назовёт стоимость. Заявка приходит в Telegram за секунду, отвечать можно прямо оттуда.</p>
-      <form class="form" id="lead" style="margin-top:26px" novalidate>
-        <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <input name="name" placeholder="Как к вам обращаться" required minlength="2" autocomplete="name">
-        <input name="contact" placeholder="Телефон или ник в Telegram" required minlength="5" autocomplete="tel">
-        <textarea name="task" placeholder="Что нужно (по желанию)"></textarea>
-        <button class="btn" type="submit">Отправить</button>
-        <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку указанных данных.</p>
-      </form>
-      <div class="form__ok" id="ok">Заявка отправлена. Спасибо, скоро свяжемся.</div>
-    </div>
-  </div>
-</section>
-
 <footer class="foot">
-  <div class="wrap foot__row">
-    <div>Сиверс · Сиверса проспект, 23</div>
-    <div><a href="tel:+79515323463" style="text-decoration:none">+7 951 532-34-63</a></div>
+  <div class="wrap">
+    <div class="foot__grid"><div>
+      <a class="brand" href="index.html" style="margin-bottom:16px">
+        <span class="brand__mark">С</span>
+        <span class="brand__t"><span class="brand__n">Сиверс</span>
+        <span class="brand__s">торговый центр</span></span></a>
+      <a class="foot__tel" href="tel:+79515323463">+7 951 532-34-63</a>
+      <div style="opacity:.6;font-size:14.5px;max-width:34ch">Рейтинг 4,6 в 2ГИС. без выходных</div>
+    </div><div><h4>Разделы</h4><ul><li><a href="index.html">Главная</a></li><li><a href="uslugi.html">Каталог</a></li><li><a href="galereya.html">Галерея</a></li></ul></div><div><h4>&nbsp;</h4><ul><li><a href="otzyvy.html">Отзывы</a></li><li><a href="o-nas.html">О нас</a></li><li><a href="kontakty.html">Контакты</a></li></ul></div><div><h4>Контакты</h4><ul><li><a href="tel:+79515323463">+7 951 532-34-63</a></li><li><a href="mailto:sivers.rnd@mail.ru">sivers.rnd@mail.ru</a></li><li><a href="https://wa.me/79515323463?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%0A%0A%D0%9F%D0%B8%D1%88%D1%83%20%D0%B8%D0%B7%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%202%D0%93%D0%98%D0%A1.%0A%0A" target="_blank" rel="noopener">WhatsApp</a></li></ul><h4 style="margin-top:26px">Адрес</h4><ul><li>Сиверса проспект, 23</li><li>Пн–Вс 09:00–20:00</li><li>Без выходных</li><li><a href="https://2gis.ru/rostov/firm/70000001067026812" target="_blank" rel="noopener">Карточка в 2ГИС</a></li></ul></div></div>
+    <div class="foot__bot">
+      <div>Сиверс, торговый центр</div>
+      <div>Данные и фотографии — из карточки 2ГИС</div>
+    </div>
   </div>
 </footer>
-
-
-<div class="demo">
+<div class="demo demo--premium">
   <div class="wrap demo__in">
     <div>
-      <b>Это демо-макет, а не ваш действующий сайт.</b> Собрал его Владимир, веб-разработчик из
-      Ростов-на-Дону, по открытым данным вашей карточки 2ГИС: фото, прайс, отзывы и часы работы — ваши.<br>Что я заметил на вашем текущем сайте: нет ни формы заявки, ни кнопки в мессенджер.
+      <b>Персональный многостраничный демо-сайт для Сиверс.</b>
+      Семь адаптивных страниц: главная, услуги, цены, галерея, отзывы, о компании и контакты.
+      Содержание собрано по открытым данным карточки 2ГИС; перед запуском всё согласовывается с владельцем. Что я заметил на вашем текущем сайте: нет ни формы заявки, ни кнопки в мессенджер.
     </div>
-    <a class="btn btn--sm btn--ghost" style="border-color:currentColor;color:inherit"
-       href="https://t.me/vovuchoooo" target="_blank" rel="noopener">Написать @vovuchoooo</a>
+    <a class="btn btn--sm" href="https://t.me/vovuchoooo" target="_blank" rel="noopener">Обсудить этот сайт</a>
   </div>
 </div>
-
 <div class="bar">
-  <a class="btn" href="#zayavka">Рассчитать кухню</a>
+  <a class="btn" href="kontakty.html#zayavka">Подобрать решение</a>
   <a class="btn btn--ghost" href="tel:+79515323463">Позвонить</a>
 </div>
-
-<script>
-document.getElementById('lead').addEventListener('submit', async function (ev) {
-  ev.preventDefault();
-  var f = ev.target, b = f.querySelector('button');
-  var body = {
-    company: f.company.value, name: f.name.value,
-    contact: f.contact.value, task: f.task.value
-  };
-  if (body.name.trim().length < 2 || body.contact.trim().length < 5) {
-    f.reportValidity(); return;
-  }
-  b.disabled = true; b.textContent = 'Отправляю…';
-  try {
-    var r = await fetch('https://lead-form.tripolev04.workers.dev', {
-      method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body)
-    });
-    if (!r.ok) throw 0;
-    f.style.display = 'none';
-    document.getElementById('ok').style.display = 'block';
-  } catch (err) {
-    b.disabled = false; b.textContent = 'Отправить ещё раз';
-  }
-});
-</script>
+<script src="script.js" defer></script>
 </body>
 </html>
