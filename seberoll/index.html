@@ -1,298 +1,182 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+<script>document.documentElement.className+=" js";setTimeout(function(){document.querySelectorAll(".reveal:not(.is-in)").forEach(function(n){n.classList.add("is-in")})},2500)</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Себеролл — Доставка еды · бульвар Комарова, 9/4</title>
-<meta name="description" content="Себеролл — Доставка еды · бульвар Комарова, 9/4. Рейтинг 4.4 в 2ГИС.">
+<title>Себеролл — Доставка еды, Ростов-на-Дону</title>
+<meta name="description" content="Меню, фотографии, режим работы и быстрый путь к заказу. Пн–Вс 10:00–22:00.">
 <meta name="robots" content="noindex,nofollow">
-<meta property="og:title" content="Себеролл">
-<meta property="og:description" content="Себеролл — Доставка еды · бульвар Комарова, 9/4. Рейтинг 4.4 в 2ГИС.">
+<meta name="theme-color" content="#160d1c">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Себеролл — Доставка еды, Ростов-на-Дону">
+<meta property="og:description" content="Меню, фотографии, режим работы и быстрый путь к заказу. Пн–Вс 10:00–22:00.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%234f8f3a'/%3E%3C/svg%3E">
-<style>
-:root{
-  --bg:#fbf9f3;--surf:#ffffff;--line:#e8e3d4;--ink:#242a1c;
-  --mute:#6e7461;--acc:#4f8f3a;--acc-ink:#ffffff;
-  --shadow:0 1px 2px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.07);
-  --r:14px;--wrap:1120px;
-}
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);
-  font:400 17px/1.6 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  -webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
-a{color:inherit}
-h1,h2,h3{font-family:'Manrope','Inter',sans-serif;line-height:1.14;margin:0;
-  letter-spacing:-.02em}
-h1{font-size:clamp(34px,7vw,62px);}
-h2{font-size:clamp(26px,4.4vw,40px)}
-h3{font-size:19px}
-p{margin:0}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
-section{padding:72px 0}
-.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);
-  font-weight:600;margin-bottom:12px}
-.lead{color:var(--mute);font-size:17px;max-width:62ch;margin-top:14px}
-
-.top{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--bg) 88%,transparent);
-  backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.top__in{display:flex;align-items:center;gap:18px;height:64px}
-.brand{font-family:'Manrope',sans-serif;font-weight:700;font-size:20px;
-  text-decoration:none;letter-spacing:.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.top nav{margin-left:auto;display:none;gap:26px}
-.top nav a{text-decoration:none;color:var(--mute);font-size:15px;transition:color .2s}
-.top nav a:hover{color:var(--ink)}
-.top .btn{margin-left:auto}
-@media(min-width:900px){.top nav{display:flex}.top .btn{margin-left:0}}
-
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
-  padding:14px 24px;border-radius:999px;border:1px solid transparent;cursor:pointer;
-  font:600 15px/1 'Inter',sans-serif;text-decoration:none;transition:transform .15s,opacity .2s;
-  background:var(--acc);color:var(--acc-ink)}
-.btn:hover{transform:translateY(-1px);opacity:.92}
-.btn--ghost{background:transparent;color:var(--ink);border-color:var(--line)}
-.btn--sm{padding:11px 18px;font-size:14px}
-
-.hero{position:relative;min-height:min(88vh,720px);display:flex;align-items:flex-end;
-  padding:96px 0 56px;overflow:hidden;isolation:isolate}
-.hero__bg{position:absolute;inset:0;z-index:-2;object-fit:cover;width:100%;height:100%}
-.hero::after{content:'';position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(180deg,rgba(16,20,28,.52) 0%,rgba(8,9,12,.55) 45%,rgba(6,7,10,.9) 100%)}
-.hero--plain::after{background:radial-gradient(120% 90% at 15% 0%,
-  color-mix(in srgb,var(--acc) 26%,var(--bg)) 0%,var(--bg) 70%)}
-.hero__in{position:relative;color:#fff}
-.hero--plain .hero__in{color:var(--ink)}
-.hero h1{max-width:16ch}
-.hero__sub{margin-top:16px;font-size:clamp(16px,2.2vw,20px);opacity:.9;max-width:44ch}
-.hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-.hero--plain .hero__cta .btn--ghost{border-color:var(--line)}
-.hero__cta .btn--ghost{color:#fff;border-color:rgba(255,255,255,.42)}
-
-.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
-.fact{display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:999px;
-  background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.2);
-  font-size:14px;backdrop-filter:blur(6px)}
-.hero--plain .fact{background:var(--surf);border-color:var(--line);color:var(--ink)}
-.fact b{font-weight:600}
-.star{color:#ffc247}
-
-.grid{display:grid;gap:16px}
-@media(min-width:700px){.cols-2{grid-template-columns:1fr 1fr}}
-@media(min-width:900px){.cols-3{grid-template-columns:repeat(3,1fr)}}
-
-.card{background:var(--surf);border:1px solid var(--line);border-radius:var(--r);padding:22px;
-  box-shadow:var(--shadow)}
-
-.price__group + .price__group{margin-top:34px}
-.price__cat{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);
-  margin-bottom:14px;font-weight:600}
-.price__row{display:flex;align-items:baseline;gap:14px;padding:15px 0;border-bottom:1px dashed var(--line)}
-.price__row:last-child{border-bottom:0}
-.price__name{font-weight:600}
-.price__desc{color:var(--mute);font-size:14.5px;margin-top:4px;max-width:70ch}
-.price__dots{flex:1;border-bottom:1px dotted var(--line);transform:translateY(-4px);min-width:24px}
-.price__val{white-space:nowrap;font-weight:700;color:var(--acc);font-size:18px}
-.price__note{color:var(--mute);font-size:14px;margin-top:24px}
-
-.tags{display:flex;flex-wrap:wrap;gap:9px}
-.tag{padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surf);
-  font-size:14.5px}
-
-.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-@media(min-width:760px){.gal{grid-template-columns:repeat(4,1fr)}
-  .gal a:first-child{grid-column:span 2;grid-row:span 2}}
-.gal a{display:block;border-radius:12px;overflow:hidden;background:var(--line);aspect-ratio:1/1}
-.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
-.gal a:hover img{transform:scale(1.05)}
-
-.rev{display:grid;gap:16px}
-@media(min-width:820px){.rev{grid-template-columns:repeat(3,1fr)}}
-.rev__stars{color:#ffc247;letter-spacing:2px;font-size:15px}
-.rev__text{margin-top:12px;font-size:15.5px;line-height:1.62}
-.rev__who{margin-top:16px;font-size:14px;color:var(--mute)}
-
-.contact{display:grid;gap:22px}
-@media(min-width:900px){.contact{grid-template-columns:1fr 1.15fr;align-items:start}}
-.dl{display:grid;gap:18px;margin:0}
-.dl dt{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
-.dl dd{margin:5px 0 0;font-size:17px}
-.dl a{text-decoration:none;border-bottom:1px solid var(--line)}
-.map{border:0;width:100%;height:340px;border-radius:var(--r);border:1px solid var(--line)}
-
-.form{display:grid;gap:13px}
-.form input,.form textarea{width:100%;padding:14px 16px;border-radius:11px;background:var(--bg);
-  border:1px solid var(--line);color:var(--ink);font:400 16px/1.5 'Inter',sans-serif}
-.form input:focus,.form textarea:focus{outline:2px solid var(--acc);outline-offset:1px;border-color:transparent}
-.form textarea{min-height:96px;resize:vertical}
-.form .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
-.form__note{font-size:13px;color:var(--mute)}
-.form__ok{display:none;padding:14px 16px;border-radius:11px;background:color-mix(in srgb,var(--acc) 14%,transparent);
-  border:1px solid var(--acc);font-size:15px}
-
-.foot{border-top:1px solid var(--line);padding:34px 0;color:var(--mute);font-size:14.5px}
-.foot__row{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;justify-content:space-between}
-
-.demo{background:var(--acc);color:var(--acc-ink);font-size:14.5px;line-height:1.55}
-.demo__in{padding:20px;display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;justify-content:space-between}
-.demo a{color:inherit;font-weight:700}
-.bar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;gap:10px;padding:10px 14px;
-  background:color-mix(in srgb,var(--bg) 94%,transparent);border-top:1px solid var(--line);
-  backdrop-filter:blur(10px)}
-.bar .btn{flex:1}
-@media(min-width:900px){.bar{display:none}}
-@media(max-width:899px){body{padding-bottom:72px}}
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Manrope:wght@400;500;600&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff4aa2'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='16' font-weight='700' text-anchor='middle' fill='%23fff'%3EС%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-<header class="top">
+<body data-page="index.html">
+<header class="top" id="top">
   <div class="wrap top__in">
-    <a class="brand" href="#top">Себеролл</a>
-    <nav><a href="#uslugi">Услуги</a><a href="#otzyvy">Отзывы</a><a href="#kontakty">Контакты</a></nav>
-    <a class="btn btn--sm" href="#zayavka">Оформить заказ</a>
+    <a class="brand" href="index.html">
+      <span class="brand__mark">С</span>
+      <span class="brand__t">
+        <span class="brand__n">Себеролл</span>
+        <span class="brand__s">Доставка еды</span>
+      </span>
+    </a>
+    <nav class="nav"><a href="uslugi.html">Меню</a><a href="galereya.html">Галерея</a><a href="otzyvy.html">Отзывы</a><a href="o-nas.html">О нас</a><a href="kontakty.html">Контакты</a></nav>
+    <div class="top__act">
+      <a class="top__tel" href="tel:+79185337060">+7 918 533-70-60</a>
+      <a class="btn btn--sm" href="kontakty.html#zayavka">Сделать заказ</a>
+      <button class="burger" type="button" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
+<div class="drawer" id="drawer">
+  <div class="wrap">
+    <a href="index.html">Главная</a><a href="uslugi.html">Меню</a><a href="galereya.html">Галерея</a><a href="otzyvy.html">Отзывы</a><a href="o-nas.html">О нас</a><a href="kontakty.html">Контакты</a>
+    <a class="btn btn--wide" href="kontakty.html#zayavka">Сделать заказ</a>
+  </div>
+</div>
+<section class="hero">
+  <div class="wrap">
+    <div class="hero__in">
+      <div>
+        <div class="eyebrow reveal">Доставка питания · бульвар Комарова, 9/4</div>
+        <h1 class="reveal">Себеролл.<br><em>Меню с характером.</em></h1>
+        <p class="hero__lead reveal">Меню, фотографии, режим работы и быстрый путь к заказу. Пн–Вс 10:00–22:00.</p>
+        <div class="hero__act reveal"><a class="btn btn--lg" href="kontakty.html#zayavka">Сделать заказ</a><a class="btn btn--ghost btn--lg" href="uslugi.html">Открыть меню</a></div>
+        <div class="hero__facts reveal"><div><div class="fact__v">18</div><div class="fact__l">отзывов в 2ГИС</div></div><div><div class="fact__v">1</div><div class="fact__l">фотография в галерее</div></div></div>
+      </div>
+      <div class="hero__media reveal" style="--i:1">
+          <img src="https://i2.photo.2gis.com/images/geo/0/30258560048453220_5626_960x.jpg" alt="Себеролл" fetchpriority="high" decoding="async">
+          <div class="hero__badge hero__badge--bl">
+              <b>18</b>
+              <span>отзывов<br>в 2ГИС</span>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="hero__strip"><div><b>Адрес</b>бульвар Комарова, 9/4</div><div><b>Часы работы</b>Пн–Вс 10:00–22:00</div><div><b>Телефон</b>+7 918 533-70-60</div><div><b>Оплата</b>картой, наличный расчёт, по QR-коду</div></div>
+</section>
 
-
-<section class="hero" id="top">
-  <img class="hero__bg" src="https://i2.photo.2gis.com/images/geo/0/30258560048453220_5626_640x.jpg" alt="" fetchpriority="high" decoding="async" srcset="https://i2.photo.2gis.com/images/geo/0/30258560048453220_5626_640x.jpg 640w, https://i2.photo.2gis.com/images/geo/0/30258560048453220_5626_960x.jpg 960w, https://i2.photo.2gis.com/images/geo/0/30258560048453220_5626_1920x.jpg 1920w" sizes="100vw">
-  <div class="wrap hero__in">
-    <h1>Себеролл</h1>
-    <p class="hero__sub">Доставка еды · бульвар Комарова, 9/4</p>
-    <div class="facts"><span class="fact"><span class="star">★</span> <b>4.4</b> · 18 отзывов в 2ГИС</span><span class="fact">🕒 Пн–Вс 10:00–22:00</span><span class="fact">📍 бульвар Комарова, 9/4</span></div>
-    <div class="hero__cta">
-      <a class="btn" href="#zayavka">Оформить заказ</a>
-      <a class="btn btn--ghost" href="tel:+79185337060">Позвонить</a>
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Направления</div><h2>Меню и направления</h2><p class="lead">Основные направления: Доставка еды.</p></div><a class="btn btn--ghost btn--sm" href="uslugi.html">Все меню</a></div>
+    <div class="grid g3"><a class="tile reveal" style="--i:0" href="uslugi.html#napravleniya">
+              <div class="tile__b">
+                <div class="tile__cat">1 услуга</div>
+                <h3 class="tile__n">Направления</h3>
+                <div class="tile__d">Доставка еды…</div>
+                
+              </div></a></div>
+  </div>
+</section>
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Отзывы</div><h2>Отзывы о Себеролл</h2><p class="lead">18 отзывов в 2ГИС. Здесь показаны те, что видны в карточке.</p></div><a class="btn btn--ghost btn--sm" href="otzyvy.html">Все 11 отзывов</a></div>
+    <div class="grid g3"><article class="card card--hover rev reveal" style="--i:0">
+  <div class="rev__top">
+    <div class="rev__av">АК</div>
+    <div><div class="rev__n">Анастасия Карташова</div>
+      <div class="rev__d">2 августа 2026</div></div>
+    <div class="stars" style="margin-left:auto">★★★★☆</div>
+  </div>
+  <div class="rev__t is-clamp">Вкусные роллы, одни из самых вкусных что я пробовала. Заказывала самовывозом по факту прихода в заведение, оказалось что нет возможности оплатить наличными (что странно в наше время учитывая перебои с интернетом), пришлось бежать в банкомат класть деньги. Так же девушка кассир, когда я зашла увидела меня, но даже не подошла и не поздоровалась, окинула взглядом и продолжила заниматься своими делами</div><button class="rev__more" type="button">Читать целиком</button>
+</article><article class="card card--hover rev reveal" style="--i:1">
+  <div class="rev__top">
+    <div class="rev__av">ЮП</div>
+    <div><div class="rev__n">Юлия Пономаренко</div>
+      <div class="rev__d">31 июля 2026</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t is-clamp">Очень нравится концепция доступных роллов! Заказал роллы Красная шапочка и Запеченный манго креветка, а также пиццу Курочка терияки. В целом я бы поставила 4 их 5, мне понравился ролл Манго креветка, но в пицце мне ярко чувствовался вкус томатной пасты, ну как бы это основа, я понимаю, попробую ещё другие виды. Ролл Красная шапочка тоже на 4, но я не хочу останавливаться, попробую еще другие вкусы</div><button class="rev__more" type="button">Читать целиком</button>
+</article><article class="card card--hover rev reveal" style="--i:2">
+  <div class="rev__top">
+    <div class="rev__av">VM</div>
+    <div><div class="rev__n">Vi M</div>
+      <div class="rev__d">19 июля 2026</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t is-clamp">Очень вкусные роллы, при том что они совсем не дорогие)) Встретились с подругами у меня дома и искали более бюджетные роллы, т.к. времена сейчас сложные 😅 одна из подруг посоветовала seberoll, сделали заказ и все остались довольны вкусом и размером (достаточно большие роллы, много рыбы и угря). Единственное - жалко что нет доставки на Мечникова (хотя кажется там в принципе нет доставки, есть самов</div><button class="rev__more" type="button">Читать целиком</button>
+</article></div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="grid g2" style="--gap:clamp(30px,4vw,64px);align-items:center">
+      <div class="reveal">
+        <div class="eyebrow">О нас</div>
+        <h2>Себеролл: коротко о компании</h2>
+        <p class="lead" style="margin-top:20px">В карточке указаны направления: Доставка еды. Опубликовано 1 фотография. В 2ГИС — 18 отзывов.</p>
+        <ul class="list" style="margin-top:28px"><li>18 отзывов в 2ГИС</li><li>Часы работы: Пн–Вс 10:00–22:00, без выходных</li><li>Адрес: бульвар Комарова, 9/4</li><li>Способы оплаты: Оплата картой, Наличный расчёт, Оплата по QR-коду</li></ul>
+        <div style="margin-top:30px"><a class="btn btn--ghost" href="o-nas.html">Подробнее о нас</a></div>
+      </div>
+      
     </div>
   </div>
 </section>
 
-
-<section id="uslugi">
+<section class="sec" id="zayavka">
   <div class="wrap">
-    <div class="eyebrow">Услуги</div>
-    <h2>Что мы делаем</h2>
-    <p class="lead">Это то, что указано в вашей карточке 2ГИС. На готовом сайте здесь встанет полный прайс с ценами: человек видит стоимость до звонка и звонит уже готовым.</p>
-    <div class="tags" style="margin-top:28px"><span class="tag">Оплата картой</span><span class="tag">Наличный расчёт</span><span class="tag">Оплата по QR-коду</span></div>
-  </div>
-</section>
-
-
-<section id="otzyvy">
-  <div class="wrap">
-    <div class="eyebrow">Отзывы</div>
-    <h2>Что о нас пишут</h2>
-    <p class="lead">Рейтинг 4.4 в 2ГИС, 18 отзывов. На сайте они работают на вас, а не лежат в чужом приложении.</p>
-    <div class="rev" style="margin-top:28px"><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Наипрелестнейшие и шикарнейшие роллы 🍱 😍😍😍 Я представить себе не мог, что когда-нибудь полюблю роллы, но данное заведение справилось с этой задачей на раз-два 🤩 А самое главное вкусно и качественно, при этом недорого, практически даром 🫣😱 Самые крутые роллы 👍сытно, а самое главное никакой тяжести по</p>
-      <div class="rev__who">Сиявуш Исматуллоев · 18.07.2026</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Отдали заказ на 15 минут раньше заявленного. Начинки очень много, рыба свежая в меру соленая, никаких костей или нечищенных креветок! Креветка идет в роллы крупная, сыр невероятно сливочный, не крахмалистый, рис правильно сваренный. Не понравился ролл Красная Шапочка, сочетание не понравилось, гости</p>
-      <div class="rev__who">Алла Лебедева · 17.07.2026</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Лучшие роллы в ростове на дону,буду советовать всем друзьям, все свежее ,начинки много,рекомендую всем</p>
-      <div class="rev__who">Артур Дубинин · 02.08.2026</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★</div>
-      <p class="rev__text">Вкусные роллы, одни из самых вкусных что я пробовала. Заказывала самовывозом по факту прихода в заведение, оказалось что нет возможности оплатить наличными (что странно в наше время учитывая перебои с интернетом), пришлось бежать в банкомат класть деньги. Так же девушка кассир, когда я зашла увидела</p>
-      <div class="rev__who">Анастасия Карташова · 02.08.2026</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Ролл Вип обязательно должен попробовать каждый. Очень вкусные роллы! Сделали быстро, свежая рыба, много начинки. Пицца хрустящая, свежие продукты. Заказываем не первый раз и останемся в восторге каждый</p>
-      <div class="rev__who">Анастасия Котелевец · 01.08.2026</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Очень нравится концепция доступных роллов! Заказал роллы Красная шапочка и Запеченный манго креветка, а также пиццу Курочка терияки. В целом я бы поставила 4 их 5, мне понравился ролл Манго креветка, но в пицце мне ярко чувствовался вкус томатной пасты, ну как бы это основа, я понимаю, попробую ещё </p>
-      <div class="rev__who">Юлия Пономаренко · 31.07.2026</div>
-    </article></div>
-    <p class="price__note">Отзывы из 2ГИС. <a href="https://2gis.ru/rostov/firm/70000001115753815" target="_blank" rel="noopener">Читать все</a></p>
-  </div>
-</section>
-
-<section id="kontakty">
-  <div class="wrap">
-    <div class="eyebrow">Контакты</div>
-    <h2>Где нас найти</h2>
-    <div class="contact" style="margin-top:28px">
-      <dl class="dl"><dt>Адрес</dt><dd>бульвар Комарова, 9/4</dd><dt>Часы работы</dt><dd>Пн–Вс 10:00–22:00 · без выходных</dd><dt>Телефон</dt><dd><a href="tel:+79185337060">+7 918 533-70-60</a></dd></dl>
-      <iframe class="map" src="https://widgets.2gis.com/widget?type=firmsonmap&amp;options=%7B%22pos%22%3A%7B%22lat%22%3A47.287562%2C%22lon%22%3A39.710527%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22rostov%22%7D%2C%22org%22%3A%2270000001115753815%22%7D" loading="lazy" title="Карта проезда"></iframe>
+    <div class="cta reveal">
+      <div class="cta__in">
+        <div>
+          <div class="eyebrow" style="color:inherit;opacity:.7">Заявка</div>
+          <h2>Сделать заказ</h2>
+          <p class="lead">Оставьте номер — команда уточнит заказ.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:26px"><a class="btn btn--ghost" href="tel:+79185337060" style="border-color:currentColor;color:inherit">+7 918 533-70-60</a></div>
+        </div>
+        <div>
+          <form class="form" id="lead" novalidate>
+            <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <input name="name" placeholder="Как к вам обращаться" required minlength="2" autocomplete="name">
+            <input name="contact" placeholder="Телефон или ник в Telegram" required minlength="5" autocomplete="tel">
+            <textarea name="task" placeholder="Что вас интересует (по желанию)"></textarea>
+            <button class="btn btn--dark btn--wide" type="submit">Отправить</button>
+            <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку указанных данных.</p>
+          </form>
+          <div class="form__ok" id="ok">Заявка отправлена. Спасибо, скоро свяжемся.</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-
-<section id="zayavka">
-  <div class="wrap">
-    <div class="card" style="padding:clamp(24px,4vw,44px)">
-      <div class="eyebrow">Заявка</div>
-      <h2>Оформить заказ</h2>
-      <p class="lead">Оставьте номер, перезвоним и примем заказ. Заявка приходит в Telegram за секунду, отвечать можно прямо оттуда.</p>
-      <form class="form" id="lead" style="margin-top:26px" novalidate>
-        <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <input name="name" placeholder="Как к вам обращаться" required minlength="2" autocomplete="name">
-        <input name="contact" placeholder="Телефон или ник в Telegram" required minlength="5" autocomplete="tel">
-        <textarea name="task" placeholder="Что нужно (по желанию)"></textarea>
-        <button class="btn" type="submit">Отправить</button>
-        <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку указанных данных.</p>
-      </form>
-      <div class="form__ok" id="ok">Заявка отправлена. Спасибо, скоро свяжемся.</div>
-    </div>
-  </div>
-</section>
-
 <footer class="foot">
-  <div class="wrap foot__row">
-    <div>Себеролл · бульвар Комарова, 9/4</div>
-    <div><a href="tel:+79185337060" style="text-decoration:none">+7 918 533-70-60</a></div>
+  <div class="wrap">
+    <div class="foot__grid"><div>
+      <a class="brand" href="index.html" style="margin-bottom:16px">
+        <span class="brand__mark">С</span>
+        <span class="brand__t"><span class="brand__n">Себеролл</span>
+        <span class="brand__s">Доставка еды</span></span></a>
+      <a class="foot__tel" href="tel:+79185337060">+7 918 533-70-60</a>
+      <div style="opacity:.6;font-size:14.5px;max-width:34ch">без выходных</div>
+    </div><div><h4>Разделы</h4><ul><li><a href="index.html">Главная</a></li><li><a href="uslugi.html">Меню</a></li><li><a href="galereya.html">Галерея</a></li></ul></div><div><h4>&nbsp;</h4><ul><li><a href="otzyvy.html">Отзывы</a></li><li><a href="o-nas.html">О нас</a></li><li><a href="kontakty.html">Контакты</a></li></ul></div><div><h4>Контакты</h4><ul><li><a href="tel:+79185337060">+7 918 533-70-60</a></li></ul><h4 style="margin-top:26px">Адрес</h4><ul><li>бульвар Комарова, 9/4</li><li>Пн–Вс 10:00–22:00</li><li>Без выходных</li><li><a href="https://2gis.ru/rostov/firm/70000001115753815" target="_blank" rel="noopener">Карточка в 2ГИС</a></li></ul></div></div>
+    <div class="foot__bot">
+      <div>Себеролл</div>
+      <div>Данные и фотографии — из карточки 2ГИС</div>
+    </div>
   </div>
 </footer>
-
-
-<div class="demo">
+<div class="demo demo--premium">
   <div class="wrap demo__in">
     <div>
-      <b>Это демо-макет, а не ваш действующий сайт.</b> Собрал его Владимир, веб-разработчик из
-      Ростов-на-Дону, по открытым данным вашей карточки 2ГИС: фото, прайс, отзывы и часы работы — ваши.<br>Что я заметил на вашем текущем сайте: нет ни формы заявки, ни кнопки в мессенджер.
+      <b>Персональный многостраничный демо-сайт для Себеролл.</b>
+      Семь адаптивных страниц: главная, услуги, цены, галерея, отзывы, о компании и контакты.
+      Содержание собрано по открытым данным карточки 2ГИС; перед запуском всё согласовывается с владельцем. Что я заметил на вашем текущем сайте: нет ни формы заявки, ни кнопки в мессенджер.
     </div>
-    <a class="btn btn--sm btn--ghost" style="border-color:currentColor;color:inherit"
-       href="https://t.me/vovuchoooo" target="_blank" rel="noopener">Написать @vovuchoooo</a>
+    <a class="btn btn--sm" href="https://t.me/vovuchoooo" target="_blank" rel="noopener">Обсудить этот сайт</a>
   </div>
 </div>
-
 <div class="bar">
-  <a class="btn" href="#zayavka">Оформить заказ</a>
+  <a class="btn" href="kontakty.html#zayavka">Сделать заказ</a>
   <a class="btn btn--ghost" href="tel:+79185337060">Позвонить</a>
 </div>
-
-<script>
-document.getElementById('lead').addEventListener('submit', async function (ev) {
-  ev.preventDefault();
-  var f = ev.target, b = f.querySelector('button');
-  var body = {
-    company: f.company.value, name: f.name.value,
-    contact: f.contact.value, task: f.task.value
-  };
-  if (body.name.trim().length < 2 || body.contact.trim().length < 5) {
-    f.reportValidity(); return;
-  }
-  b.disabled = true; b.textContent = 'Отправляю…';
-  try {
-    var r = await fetch('https://lead-form.tripolev04.workers.dev', {
-      method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body)
-    });
-    if (!r.ok) throw 0;
-    f.style.display = 'none';
-    document.getElementById('ok').style.display = 'block';
-  } catch (err) {
-    b.disabled = false; b.textContent = 'Отправить ещё раз';
-  }
-});
-</script>
+<script src="script.js" defer></script>
 </body>
 </html>

@@ -1,298 +1,182 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+<script>document.documentElement.className+=" js";setTimeout(function(){document.querySelectorAll(".reveal:not(.is-in)").forEach(function(n){n.classList.add("is-in")})},2500)</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Профидент — Стоматологическая клиника · Московская улица, 91/2</title>
-<meta name="description" content="Профидент — Стоматологическая клиника · Московская улица, 91/2. Рейтинг 5 в 2ГИС.">
+<title>Профидент — стоматологическая клиника, Ростов-на-Дону</title>
+<meta name="description" content="Направления лечения, режим работы и понятный путь к записи. Пн–Пт 09:00–19:00, Сб 09:00–16:00.">
 <meta name="robots" content="noindex,nofollow">
-<meta property="og:title" content="Профидент">
-<meta property="og:description" content="Профидент — Стоматологическая клиника · Московская улица, 91/2. Рейтинг 5 в 2ГИС.">
+<meta name="theme-color" content="#f5f8ff">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Профидент — стоматологическая клиника, Ростов-на-Дону">
+<meta property="og:description" content="Направления лечения, режим работы и понятный путь к записи. Пн–Пт 09:00–19:00, Сб 09:00–16:00.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f7ac0'/%3E%3C/svg%3E">
-<style>
-:root{
-  --bg:#f4f8fb;--surf:#ffffff;--line:#dbe7f0;--ink:#12283a;
-  --mute:#5d7688;--acc:#1f7ac0;--acc-ink:#ffffff;
-  --shadow:0 1px 2px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.07);
-  --r:14px;--wrap:1120px;
-}
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);
-  font:400 17px/1.6 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  -webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
-a{color:inherit}
-h1,h2,h3{font-family:'Manrope','Inter',sans-serif;line-height:1.14;margin:0;
-  letter-spacing:-.02em}
-h1{font-size:clamp(34px,7vw,62px);}
-h2{font-size:clamp(26px,4.4vw,40px)}
-h3{font-size:19px}
-p{margin:0}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
-section{padding:72px 0}
-.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);
-  font-weight:600;margin-bottom:12px}
-.lead{color:var(--mute);font-size:17px;max-width:62ch;margin-top:14px}
-
-.top{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--bg) 88%,transparent);
-  backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.top__in{display:flex;align-items:center;gap:18px;height:64px}
-.brand{font-family:'Manrope',sans-serif;font-weight:700;font-size:20px;
-  text-decoration:none;letter-spacing:.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.top nav{margin-left:auto;display:none;gap:26px}
-.top nav a{text-decoration:none;color:var(--mute);font-size:15px;transition:color .2s}
-.top nav a:hover{color:var(--ink)}
-.top .btn{margin-left:auto}
-@media(min-width:900px){.top nav{display:flex}.top .btn{margin-left:0}}
-
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
-  padding:14px 24px;border-radius:999px;border:1px solid transparent;cursor:pointer;
-  font:600 15px/1 'Inter',sans-serif;text-decoration:none;transition:transform .15s,opacity .2s;
-  background:var(--acc);color:var(--acc-ink)}
-.btn:hover{transform:translateY(-1px);opacity:.92}
-.btn--ghost{background:transparent;color:var(--ink);border-color:var(--line)}
-.btn--sm{padding:11px 18px;font-size:14px}
-
-.hero{position:relative;min-height:min(88vh,720px);display:flex;align-items:flex-end;
-  padding:96px 0 56px;overflow:hidden;isolation:isolate}
-.hero__bg{position:absolute;inset:0;z-index:-2;object-fit:cover;width:100%;height:100%}
-.hero::after{content:'';position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(180deg,rgba(16,20,28,.52) 0%,rgba(8,9,12,.55) 45%,rgba(6,7,10,.9) 100%)}
-.hero--plain::after{background:radial-gradient(120% 90% at 15% 0%,
-  color-mix(in srgb,var(--acc) 26%,var(--bg)) 0%,var(--bg) 70%)}
-.hero__in{position:relative;color:#fff}
-.hero--plain .hero__in{color:var(--ink)}
-.hero h1{max-width:16ch}
-.hero__sub{margin-top:16px;font-size:clamp(16px,2.2vw,20px);opacity:.9;max-width:44ch}
-.hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-.hero--plain .hero__cta .btn--ghost{border-color:var(--line)}
-.hero__cta .btn--ghost{color:#fff;border-color:rgba(255,255,255,.42)}
-
-.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
-.fact{display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:999px;
-  background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.2);
-  font-size:14px;backdrop-filter:blur(6px)}
-.hero--plain .fact{background:var(--surf);border-color:var(--line);color:var(--ink)}
-.fact b{font-weight:600}
-.star{color:#ffc247}
-
-.grid{display:grid;gap:16px}
-@media(min-width:700px){.cols-2{grid-template-columns:1fr 1fr}}
-@media(min-width:900px){.cols-3{grid-template-columns:repeat(3,1fr)}}
-
-.card{background:var(--surf);border:1px solid var(--line);border-radius:var(--r);padding:22px;
-  box-shadow:var(--shadow)}
-
-.price__group + .price__group{margin-top:34px}
-.price__cat{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);
-  margin-bottom:14px;font-weight:600}
-.price__row{display:flex;align-items:baseline;gap:14px;padding:15px 0;border-bottom:1px dashed var(--line)}
-.price__row:last-child{border-bottom:0}
-.price__name{font-weight:600}
-.price__desc{color:var(--mute);font-size:14.5px;margin-top:4px;max-width:70ch}
-.price__dots{flex:1;border-bottom:1px dotted var(--line);transform:translateY(-4px);min-width:24px}
-.price__val{white-space:nowrap;font-weight:700;color:var(--acc);font-size:18px}
-.price__note{color:var(--mute);font-size:14px;margin-top:24px}
-
-.tags{display:flex;flex-wrap:wrap;gap:9px}
-.tag{padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surf);
-  font-size:14.5px}
-
-.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-@media(min-width:760px){.gal{grid-template-columns:repeat(4,1fr)}
-  .gal a:first-child{grid-column:span 2;grid-row:span 2}}
-.gal a{display:block;border-radius:12px;overflow:hidden;background:var(--line);aspect-ratio:1/1}
-.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
-.gal a:hover img{transform:scale(1.05)}
-
-.rev{display:grid;gap:16px}
-@media(min-width:820px){.rev{grid-template-columns:repeat(3,1fr)}}
-.rev__stars{color:#ffc247;letter-spacing:2px;font-size:15px}
-.rev__text{margin-top:12px;font-size:15.5px;line-height:1.62}
-.rev__who{margin-top:16px;font-size:14px;color:var(--mute)}
-
-.contact{display:grid;gap:22px}
-@media(min-width:900px){.contact{grid-template-columns:1fr 1.15fr;align-items:start}}
-.dl{display:grid;gap:18px;margin:0}
-.dl dt{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
-.dl dd{margin:5px 0 0;font-size:17px}
-.dl a{text-decoration:none;border-bottom:1px solid var(--line)}
-.map{border:0;width:100%;height:340px;border-radius:var(--r);border:1px solid var(--line)}
-
-.form{display:grid;gap:13px}
-.form input,.form textarea{width:100%;padding:14px 16px;border-radius:11px;background:var(--bg);
-  border:1px solid var(--line);color:var(--ink);font:400 16px/1.5 'Inter',sans-serif}
-.form input:focus,.form textarea:focus{outline:2px solid var(--acc);outline-offset:1px;border-color:transparent}
-.form textarea{min-height:96px;resize:vertical}
-.form .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
-.form__note{font-size:13px;color:var(--mute)}
-.form__ok{display:none;padding:14px 16px;border-radius:11px;background:color-mix(in srgb,var(--acc) 14%,transparent);
-  border:1px solid var(--acc);font-size:15px}
-
-.foot{border-top:1px solid var(--line);padding:34px 0;color:var(--mute);font-size:14.5px}
-.foot__row{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;justify-content:space-between}
-
-.demo{background:var(--acc);color:var(--acc-ink);font-size:14.5px;line-height:1.55}
-.demo__in{padding:20px;display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;justify-content:space-between}
-.demo a{color:inherit;font-weight:700}
-.bar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;gap:10px;padding:10px 14px;
-  background:color-mix(in srgb,var(--bg) 94%,transparent);border-top:1px solid var(--line);
-  backdrop-filter:blur(10px)}
-.bar .btn{flex:1}
-@media(min-width:900px){.bar{display:none}}
-@media(max-width:899px){body{padding-bottom:72px}}
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ef5a3f'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='16' font-weight='700' text-anchor='middle' fill='%23fff'%3EП%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-<header class="top">
+<body data-page="index.html">
+<header class="top" id="top">
   <div class="wrap top__in">
-    <a class="brand" href="#top">Профидент</a>
-    <nav><a href="#uslugi">Услуги</a><a href="#otzyvy">Отзывы</a><a href="#kontakty">Контакты</a></nav>
-    <a class="btn btn--sm" href="#zayavka">Записаться на приём</a>
+    <a class="brand" href="index.html">
+      <span class="brand__mark">П</span>
+      <span class="brand__t">
+        <span class="brand__n">Профидент</span>
+        <span class="brand__s">стоматологическая клиника</span>
+      </span>
+    </a>
+    <nav class="nav"><a href="uslugi.html">Услуги</a><a href="galereya.html">Галерея</a><a href="otzyvy.html">Отзывы</a><a href="o-nas.html">О нас</a><a href="kontakty.html">Контакты</a></nav>
+    <div class="top__act">
+      <a class="top__tel" href="tel:+78634252020">+7 863 425-20-20</a>
+      <a class="btn btn--sm" href="kontakty.html#zayavka">Записаться на приём</a>
+      <button class="burger" type="button" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
+<div class="drawer" id="drawer">
+  <div class="wrap">
+    <a href="index.html">Главная</a><a href="uslugi.html">Услуги</a><a href="galereya.html">Галерея</a><a href="otzyvy.html">Отзывы</a><a href="o-nas.html">О нас</a><a href="kontakty.html">Контакты</a>
+    <a class="btn btn--wide" href="kontakty.html#zayavka">Записаться на приём</a>
+  </div>
+</div>
+<section class="hero">
+  <div class="wrap">
+    <div class="hero__in">
+      <div>
+        <div class="eyebrow reveal">стоматологическая клиника · Московская улица, 91/2</div>
+        <h1 class="reveal">Профидент.<br><em>Спокойный маршрут к здоровой улыбке.</em></h1>
+        <p class="hero__lead reveal">Направления лечения, режим работы и понятный путь к записи. Пн–Пт 09:00–19:00, Сб 09:00–16:00.</p>
+        <div class="hero__act reveal"><a class="btn btn--lg" href="kontakty.html#zayavka">Записаться на приём</a><a class="btn btn--ghost btn--lg" href="uslugi.html">Смотреть направления</a></div>
+        <div class="hero__facts reveal"><div><div class="fact__v">5</div><div class="fact__l">рейтинг в 2ГИС по 24 отзывам</div></div><div><div class="fact__v">2</div><div class="fact__l">фотографии в галерее</div></div></div>
+      </div>
+      <div class="hero__media reveal" style="--i:1">
+          <img src="https://i3.photo.2gis.com/images/branch/0/30258560103905564_d173_960x.jpg" alt="Профидент" fetchpriority="high" decoding="async">
+          <div class="hero__badge hero__badge--bl">
+              <b>5</b>
+              <span><span class="stars">★★★★★</span><br>24 отзывов в 2ГИС</span>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="hero__strip"><div><b>Адрес</b>Московская улица, 91/2</div><div><b>Часы работы</b>Пн–Пт 09:00–19:00, Сб 09:00–16:00</div><div><b>Телефон</b>+7 863 425-20-20</div><div><b>Оплата</b>картой, наличный расчёт, по QR-коду</div></div>
+</section>
 
-
-<section class="hero" id="top">
-  <img class="hero__bg" src="https://i3.photo.2gis.com/images/branch/0/30258560103905564_d173_640x.jpg" alt="" fetchpriority="high" decoding="async" srcset="https://i3.photo.2gis.com/images/branch/0/30258560103905564_d173_640x.jpg 640w, https://i3.photo.2gis.com/images/branch/0/30258560103905564_d173_960x.jpg 960w, https://i3.photo.2gis.com/images/branch/0/30258560103905564_d173_1920x.jpg 1920w" sizes="100vw">
-  <div class="wrap hero__in">
-    <h1>Профидент</h1>
-    <p class="hero__sub">Стоматологическая клиника · Московская улица, 91/2</p>
-    <div class="facts"><span class="fact"><span class="star">★</span> <b>5</b> · 24 отзывов в 2ГИС</span><span class="fact">🕒 Пн–Пт 09:00–19:00, Сб 09:00–16:00</span><span class="fact">📍 Московская улица, 91/2</span></div>
-    <div class="hero__cta">
-      <a class="btn" href="#zayavka">Записаться на приём</a>
-      <a class="btn btn--ghost" href="tel:+78634252020">Позвонить</a>
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Направления</div><h2>Направления лечения</h2><p class="lead">Направления из карточки: Взрослый ортодонт, Взрослый стоматолог-ортопед, Взрослый стоматолог-хирург, Имплантация, Взрослый пародонтолог, Детский стоматолог-терапевт, Детский ортодонт.</p></div><a class="btn btn--ghost btn--sm" href="uslugi.html">Все лечение</a></div>
+    <div class="grid g3"><a class="tile reveal" style="--i:0" href="uslugi.html#stomatologicheskie-uslugi">
+              <div class="tile__b">
+                <div class="tile__cat">11 услуг</div>
+                <h3 class="tile__n">Стоматологические услуги</h3>
+                <div class="tile__d">Взрослый ортодонт, Взрослый стоматолог-ортопед, Взрослый стоматолог-хирург…</div>
+                
+              </div></a></div>
+  </div>
+</section>
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Отзывы</div><h2>Отзывы о Профидент</h2><p class="lead">Оценка 5 в 2ГИС по 24 отзывам. Здесь показаны те, что видны в карточке.</p></div><a class="btn btn--ghost btn--sm" href="otzyvy.html">Все 12 отзывов</a></div>
+    <div class="grid g3"><article class="card card--hover rev reveal" style="--i:0">
+  <div class="rev__top">
+    <div class="rev__av">З</div>
+    <div><div class="rev__n">Зураб</div>
+      <div class="rev__d">26 января 2023</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t">Персонал приятный оказал мне квалифицированную помощь в лечении зубов. У меня сломалась стенка зуба. Ее быстро и квалифицированно осмотрели и вылечили. Теперь будем устанавливать коронку. Мне главное, чтобы сделали зуб хорошего качества. Доктор рекомендовал временно не кушать, пока поставил временную пломбу, предложил виды коронок, сказал, какие лучше поставить.</div>
+</article><article class="card card--hover rev reveal" style="--i:1">
+  <div class="rev__top">
+    <div class="rev__av">В</div>
+    <div><div class="rev__n">Вероника</div>
+      <div class="rev__d">29 января 2023</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t">Мой муж является постоянным клиентом клиники, потому что ему все нравится, а я посещала, чтобы сделать мост, поставить пару пломб и почистить камень. Стоит отметить, что сотрудники хорошо выполняют свою работу, поэтому я не часто прихожу, но планирую в скором времени обратиться снова.</div>
+</article><article class="card card--hover rev reveal" style="--i:2">
+  <div class="rev__top">
+    <div class="rev__av">Д</div>
+    <div><div class="rev__n">Давид</div>
+      <div class="rev__d">4 февраля 2023</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t">Хожу в клинику уже три года и люблю ее, потому что мне нравится врач и обслуживание работников, в том числе тех, которые встречают клиентов. Все замечательно, поэтому в нее ходит вся моя семья. В последний раз приходил на лечение зуба, и мне нужно вылечить еще семь.</div>
+</article></div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="grid g2" style="--gap:clamp(30px,4vw,64px);align-items:center">
+      <div class="reveal">
+        <div class="eyebrow">О нас</div>
+        <h2>Профидент: коротко о компании</h2>
+        <p class="lead" style="margin-top:20px">В карточке указаны направления: Частные стоматологии. Опубликовано 2 фотографии. В 2ГИС — 24 отзыва.</p>
+        <ul class="list" style="margin-top:28px"><li>Оценка 5 из 5 в 2ГИС по 24 отзывам</li><li>Часы работы: Пн–Пт 09:00–19:00, Сб 09:00–16:00, выходной Вс</li><li>Адрес: Московская улица, 91/2</li><li>Стоматологические услуги: взрослый ортодонт, взрослый стоматолог-ортопед, взрослый стоматолог-хирург, имплантация, взрослый пародонтолог</li><li>Способы оплаты: Оплата картой, Наличный расчёт, Оплата по QR-коду</li></ul>
+        <div style="margin-top:30px"><a class="btn btn--ghost" href="o-nas.html">Подробнее о нас</a></div>
+      </div>
+      <div class="reveal" style="--i:1"><img src="https://i8.photo.2gis.com/images/geo/0/30258560103682353_92c8_960x.jpg" alt="Профидент" loading="lazy" style="border-radius:var(--r-lg);aspect-ratio:1/1;object-fit:cover;width:100%"></div>
     </div>
   </div>
 </section>
 
-
-<section id="uslugi">
+<section class="sec" id="zayavka">
   <div class="wrap">
-    <div class="eyebrow">Услуги</div>
-    <h2>Что мы делаем</h2>
-    <p class="lead">Это то, что указано в вашей карточке 2ГИС. На готовом сайте здесь встанет полный прайс с ценами: человек видит стоимость до звонка и звонит уже готовым.</p>
-    <div class="tags" style="margin-top:28px"><span class="tag">Взрослый ортодонт</span><span class="tag">Взрослый стоматолог-ортопед</span><span class="tag">Взрослый стоматолог-хирург</span><span class="tag">Имплантация</span><span class="tag">Взрослый пародонтолог</span><span class="tag">Детский стоматолог-терапевт</span><span class="tag">Детский ортодонт</span><span class="tag">Детский стоматолог-хирург</span><span class="tag">Прицельный снимок зуба</span><span class="tag">Бесплатная консультация</span><span class="tag">Неотложка для взрослых</span><span class="tag">Оплата картой</span><span class="tag">Наличный расчёт</span><span class="tag">Оплата по QR-коду</span></div>
-  </div>
-</section>
-
-
-<section id="otzyvy">
-  <div class="wrap">
-    <div class="eyebrow">Отзывы</div>
-    <h2>Что о нас пишут</h2>
-    <p class="lead">Рейтинг 5 в 2ГИС, 24 отзывов. На сайте они работают на вас, а не лежат в чужом приложении.</p>
-    <div class="rev" style="margin-top:28px"><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Нравится профессионализм Давида Жоржиковича, девочки на ресепшне. Мы давно лечимся у доктора, доверяем ему, он очень хорошо лечит зубы, диагностирует. Последний раз было лечение у сына или дочки, я планирую тоже записаться к доктору.</p>
-      <div class="rev__who">Дарина · 10.02.2023</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Очень хорошая стоматология с профессиональными и грамотными врачами. По ценам вполне сносно. Все устраивает.</p>
-      <div class="rev__who">Санек В. · 16.05.2023</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Доктор Татьяна очень хорошая и внимательная, просто золото! У меня обломился зубик, а она его нарастила. Процедура прошла просто прекрасно, на одном дыхании. Обязательно приду еще.</p>
-      <div class="rev__who">Адель · 09.02.2023</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Качество работы нравится. С ребенком ходила на чистку, фторирование, пломбы, они хорошо держатся. Стоматолог Дмитрий Анатольевич позитивный.</p>
-      <div class="rev__who">Галина · 08.02.2023</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Хожу в клинику уже три года и люблю ее, потому что мне нравится врач и обслуживание работников, в том числе тех, которые встречают клиентов. Все замечательно, поэтому в нее ходит вся моя семья. В последний раз приходил на лечение зуба, и мне нужно вылечить еще семь.</p>
-      <div class="rev__who">Давид · 04.02.2023</div>
-    </article><article class="card">
-      <div class="rev__stars">★★★★★</div>
-      <p class="rev__text">Я прихожу делать гигиену полости рта раз в год, меня все устраивает. Сотрудники клиники доброжелательны, все подсказывают и рассказывают. Давид Жоржикович аккуратно работает и все объясняет во время приема.</p>
-      <div class="rev__who">Милена · 01.02.2023</div>
-    </article></div>
-    <p class="price__note">Отзывы из 2ГИС. <a href="https://2gis.ru/rostov/firm/3378229002085063" target="_blank" rel="noopener">Читать все</a></p>
-  </div>
-</section>
-
-<section id="kontakty">
-  <div class="wrap">
-    <div class="eyebrow">Контакты</div>
-    <h2>Где нас найти</h2>
-    <div class="contact" style="margin-top:28px">
-      <dl class="dl"><dt>Адрес</dt><dd>Московская улица, 91/2</dd><dt>Часы работы</dt><dd>Пн–Пт 09:00–19:00, Сб 09:00–16:00 · выходной Вс</dd><dt>Телефон</dt><dd><a href="tel:+78634252020">+7 863 425-20-20</a></dd><dt>Телефон</dt><dd><a href="tel:+79011396837">+7 901 139-68-37</a></dd><dt>Написать</dt><dd><a href="https://wa.me/79882552020?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%0A%0A%D0%9F%D0%B8%D1%88%D1%83%20%D0%B8%D0%B7%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%202%D0%93%D0%98%D0%A1.%0A%0A" target="_blank" rel="noopener">WhatsApp</a></dd><dt>Почта</dt><dd><a href="mailto:profile-dent@mail.ru">profile-dent@mail.ru</a></dd></dl>
-      <iframe class="map" src="https://widgets.2gis.com/widget?type=firmsonmap&amp;options=%7B%22pos%22%3A%7B%22lat%22%3A47.106974%2C%22lon%22%3A39.432195%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22rostov%22%7D%2C%22org%22%3A%223378229002085063%22%7D" loading="lazy" title="Карта проезда"></iframe>
+    <div class="cta reveal">
+      <div class="cta__in">
+        <div>
+          <div class="eyebrow" style="color:inherit;opacity:.7">Заявка</div>
+          <h2>Записаться на приём</h2>
+          <p class="lead">Оставьте номер — клиника уточнит запрос и предложит время.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:26px"><a class="btn btn--ghost" href="tel:+78634252020" style="border-color:currentColor;color:inherit">+7 863 425-20-20</a><a class="btn btn--ghost" href="https://wa.me/79882552020?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%0A%0A%D0%9F%D0%B8%D1%88%D1%83%20%D0%B8%D0%B7%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%202%D0%93%D0%98%D0%A1.%0A%0A" target="_blank" rel="noopener" style="border-color:currentColor;color:inherit">WhatsApp</a></div>
+        </div>
+        <div>
+          <form class="form" id="lead" novalidate>
+            <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <input name="name" placeholder="Как к вам обращаться" required minlength="2" autocomplete="name">
+            <input name="contact" placeholder="Телефон или ник в Telegram" required minlength="5" autocomplete="tel">
+            <textarea name="task" placeholder="Что вас интересует (по желанию)"></textarea>
+            <button class="btn btn--dark btn--wide" type="submit">Отправить</button>
+            <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку указанных данных.</p>
+          </form>
+          <div class="form__ok" id="ok">Заявка отправлена. Спасибо, скоро свяжемся.</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-
-<section id="zayavka">
-  <div class="wrap">
-    <div class="card" style="padding:clamp(24px,4vw,44px)">
-      <div class="eyebrow">Заявка</div>
-      <h2>Записаться на приём</h2>
-      <p class="lead">Оставьте номер, администратор перезвонит и подберёт время. Заявка приходит в Telegram за секунду, отвечать можно прямо оттуда.</p>
-      <form class="form" id="lead" style="margin-top:26px" novalidate>
-        <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <input name="name" placeholder="Как к вам обращаться" required minlength="2" autocomplete="name">
-        <input name="contact" placeholder="Телефон или ник в Telegram" required minlength="5" autocomplete="tel">
-        <textarea name="task" placeholder="Что нужно (по желанию)"></textarea>
-        <button class="btn" type="submit">Отправить</button>
-        <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку указанных данных.</p>
-      </form>
-      <div class="form__ok" id="ok">Заявка отправлена. Спасибо, скоро свяжемся.</div>
-    </div>
-  </div>
-</section>
-
 <footer class="foot">
-  <div class="wrap foot__row">
-    <div>Профидент · Московская улица, 91/2</div>
-    <div><a href="tel:+78634252020" style="text-decoration:none">+7 863 425-20-20</a></div>
+  <div class="wrap">
+    <div class="foot__grid"><div>
+      <a class="brand" href="index.html" style="margin-bottom:16px">
+        <span class="brand__mark">П</span>
+        <span class="brand__t"><span class="brand__n">Профидент</span>
+        <span class="brand__s">стоматологическая клиника</span></span></a>
+      <a class="foot__tel" href="tel:+78634252020">+7 863 425-20-20</a>
+      <div style="opacity:.6;font-size:14.5px;max-width:34ch">Рейтинг 5 в 2ГИС. выходной Вс</div>
+    </div><div><h4>Разделы</h4><ul><li><a href="index.html">Главная</a></li><li><a href="uslugi.html">Услуги</a></li><li><a href="galereya.html">Галерея</a></li></ul></div><div><h4>&nbsp;</h4><ul><li><a href="otzyvy.html">Отзывы</a></li><li><a href="o-nas.html">О нас</a></li><li><a href="kontakty.html">Контакты</a></li></ul></div><div><h4>Контакты</h4><ul><li><a href="tel:+78634252020">+7 863 425-20-20</a></li><li><a href="tel:+79011396837">+7 901 139-68-37</a></li><li><a href="tel:+79882552020">+7 988 255-20-20</a></li><li><a href="mailto:profile-dent@mail.ru">profile-dent@mail.ru</a></li><li><a href="https://wa.me/79882552020?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%0A%0A%D0%9F%D0%B8%D1%88%D1%83%20%D0%B8%D0%B7%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%202%D0%93%D0%98%D0%A1.%0A%0A" target="_blank" rel="noopener">WhatsApp</a></li></ul><h4 style="margin-top:26px">Адрес</h4><ul><li>Московская улица, 91/2</li><li>Пн–Пт 09:00–19:00, Сб 09:00–16:00</li><li>Выходной вс</li><li><a href="https://2gis.ru/rostov/firm/3378229002085063" target="_blank" rel="noopener">Карточка в 2ГИС</a></li></ul></div></div>
+    <div class="foot__bot">
+      <div>Профидент, стоматологическая клиника</div>
+      <div>Данные и фотографии — из карточки 2ГИС</div>
+    </div>
   </div>
 </footer>
-
-
-<div class="demo">
+<div class="demo demo--premium">
   <div class="wrap demo__in">
     <div>
-      <b>Это демо-макет, а не ваш действующий сайт.</b> Собрал его Владимир, веб-разработчик из
-      Ростов-на-Дону, по открытым данным вашей карточки 2ГИС: фото, прайс, отзывы и часы работы — ваши.<br>Что я заметил на вашем текущем сайте: сайт из карточки 2ГИС не открывается.
+      <b>Персональный многостраничный демо-сайт для Профидент.</b>
+      Семь адаптивных страниц: главная, услуги, цены, галерея, отзывы, о компании и контакты.
+      Содержание собрано по открытым данным карточки 2ГИС; перед запуском всё согласовывается с владельцем. Что я заметил на вашем текущем сайте: сайт из карточки 2ГИС не открывается.
     </div>
-    <a class="btn btn--sm btn--ghost" style="border-color:currentColor;color:inherit"
-       href="https://t.me/vovuchoooo" target="_blank" rel="noopener">Написать @vovuchoooo</a>
+    <a class="btn btn--sm" href="https://t.me/vovuchoooo" target="_blank" rel="noopener">Обсудить этот сайт</a>
   </div>
 </div>
-
 <div class="bar">
-  <a class="btn" href="#zayavka">Записаться на приём</a>
+  <a class="btn" href="kontakty.html#zayavka">Записаться на приём</a>
   <a class="btn btn--ghost" href="tel:+78634252020">Позвонить</a>
 </div>
-
-<script>
-document.getElementById('lead').addEventListener('submit', async function (ev) {
-  ev.preventDefault();
-  var f = ev.target, b = f.querySelector('button');
-  var body = {
-    company: f.company.value, name: f.name.value,
-    contact: f.contact.value, task: f.task.value
-  };
-  if (body.name.trim().length < 2 || body.contact.trim().length < 5) {
-    f.reportValidity(); return;
-  }
-  b.disabled = true; b.textContent = 'Отправляю…';
-  try {
-    var r = await fetch('https://lead-form.tripolev04.workers.dev', {
-      method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body)
-    });
-    if (!r.ok) throw 0;
-    f.style.display = 'none';
-    document.getElementById('ok').style.display = 'block';
-  } catch (err) {
-    b.disabled = false; b.textContent = 'Отправить ещё раз';
-  }
-});
-</script>
+<script src="script.js" defer></script>
 </body>
 </html>

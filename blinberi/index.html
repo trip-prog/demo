@@ -1,370 +1,233 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+<script>document.documentElement.className+=" js";setTimeout(function(){document.querySelectorAll(".reveal:not(.is-in)").forEach(function(n){n.classList.add("is-in")})},2500)</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>БлинБери — Блинная быстрого обслуживания · Торговый проспект, 1</title>
-<meta name="description" content="БлинБери — Блинная быстрого обслуживания · Торговый проспект, 1. Рейтинг 4.5 в 2ГИС.">
+<title>БлинБери — блинная быстрого обслуживания, Ростов-на-Дону</title>
+<meta name="description" content="Меню, фотографии, режим работы и быстрый путь к заказу. Пн–Вс 06:00–22:00.">
 <meta name="robots" content="noindex,nofollow">
-<meta property="og:title" content="БлинБери">
-<meta property="og:description" content="БлинБери — Блинная быстрого обслуживания · Торговый проспект, 1. Рейтинг 4.5 в 2ГИС.">
+<meta name="theme-color" content="#f1f8ed">
+<meta property="og:type" content="website">
+<meta property="og:title" content="БлинБери — блинная быстрого обслуживания, Ростов-на-Дону">
+<meta property="og:description" content="Меню, фотографии, режим работы и быстрый путь к заказу. Пн–Вс 06:00–22:00.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%234f8f3a'/%3E%3C/svg%3E">
-<style>
-:root{
-  --bg:#fbf9f3;--surf:#ffffff;--line:#e8e3d4;--ink:#242a1c;
-  --mute:#6e7461;--acc:#4f8f3a;--acc-ink:#ffffff;
-  --shadow:0 1px 2px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.07);
-  --r:14px;--wrap:1120px;
-}
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);
-  font:400 17px/1.6 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  -webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
-a{color:inherit}
-h1,h2,h3{font-family:'Manrope','Inter',sans-serif;line-height:1.14;margin:0;
-  letter-spacing:-.02em}
-h1{font-size:clamp(34px,7vw,62px);}
-h2{font-size:clamp(26px,4.4vw,40px)}
-h3{font-size:19px}
-p{margin:0}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
-section{padding:72px 0}
-.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);
-  font-weight:600;margin-bottom:12px}
-.lead{color:var(--mute);font-size:17px;max-width:62ch;margin-top:14px}
-
-.top{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--bg) 88%,transparent);
-  backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.top__in{display:flex;align-items:center;gap:18px;height:64px}
-.brand{font-family:'Manrope',sans-serif;font-weight:700;font-size:20px;
-  text-decoration:none;letter-spacing:.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.top nav{margin-left:auto;display:none;gap:26px}
-.top nav a{text-decoration:none;color:var(--mute);font-size:15px;transition:color .2s}
-.top nav a:hover{color:var(--ink)}
-.top .btn{margin-left:auto}
-@media(min-width:900px){.top nav{display:flex}.top .btn{margin-left:0}}
-
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
-  padding:14px 24px;border-radius:999px;border:1px solid transparent;cursor:pointer;
-  font:600 15px/1 'Inter',sans-serif;text-decoration:none;transition:transform .15s,opacity .2s;
-  background:var(--acc);color:var(--acc-ink)}
-.btn:hover{transform:translateY(-1px);opacity:.92}
-.btn--ghost{background:transparent;color:var(--ink);border-color:var(--line)}
-.btn--sm{padding:11px 18px;font-size:14px}
-
-.hero{position:relative;min-height:min(88vh,720px);display:flex;align-items:flex-end;
-  padding:96px 0 56px;overflow:hidden;isolation:isolate}
-.hero__bg{position:absolute;inset:0;z-index:-2;object-fit:cover;width:100%;height:100%}
-.hero::after{content:'';position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(180deg,rgba(16,20,28,.52) 0%,rgba(8,9,12,.55) 45%,rgba(6,7,10,.9) 100%)}
-.hero--plain::after{background:radial-gradient(120% 90% at 15% 0%,
-  color-mix(in srgb,var(--acc) 26%,var(--bg)) 0%,var(--bg) 70%)}
-.hero__in{position:relative;color:#fff}
-.hero--plain .hero__in{color:var(--ink)}
-.hero h1{max-width:16ch}
-.hero__sub{margin-top:16px;font-size:clamp(16px,2.2vw,20px);opacity:.9;max-width:44ch}
-.hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-.hero--plain .hero__cta .btn--ghost{border-color:var(--line)}
-.hero__cta .btn--ghost{color:#fff;border-color:rgba(255,255,255,.42)}
-
-.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
-.fact{display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:999px;
-  background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.2);
-  font-size:14px;backdrop-filter:blur(6px)}
-.hero--plain .fact{background:var(--surf);border-color:var(--line);color:var(--ink)}
-.fact b{font-weight:600}
-.star{color:#ffc247}
-
-.grid{display:grid;gap:16px}
-@media(min-width:700px){.cols-2{grid-template-columns:1fr 1fr}}
-@media(min-width:900px){.cols-3{grid-template-columns:repeat(3,1fr)}}
-
-.card{background:var(--surf);border:1px solid var(--line);border-radius:var(--r);padding:22px;
-  box-shadow:var(--shadow)}
-
-.price__group + .price__group{margin-top:34px}
-.price__cat{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);
-  margin-bottom:14px;font-weight:600}
-.price__row{display:flex;align-items:baseline;gap:14px;padding:15px 0;border-bottom:1px dashed var(--line)}
-.price__row:last-child{border-bottom:0}
-.price__name{font-weight:600}
-.price__desc{color:var(--mute);font-size:14.5px;margin-top:4px;max-width:70ch}
-.price__dots{flex:1;border-bottom:1px dotted var(--line);transform:translateY(-4px);min-width:24px}
-.price__val{white-space:nowrap;font-weight:700;color:var(--acc);font-size:18px}
-.price__note{color:var(--mute);font-size:14px;margin-top:24px}
-
-.tags{display:flex;flex-wrap:wrap;gap:9px}
-.tag{padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surf);
-  font-size:14.5px}
-
-.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-@media(min-width:760px){.gal{grid-template-columns:repeat(4,1fr)}
-  .gal a:first-child{grid-column:span 2;grid-row:span 2}}
-.gal a{display:block;border-radius:12px;overflow:hidden;background:var(--line);aspect-ratio:1/1}
-.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
-.gal a:hover img{transform:scale(1.05)}
-
-.rev{display:grid;gap:16px}
-@media(min-width:820px){.rev{grid-template-columns:repeat(3,1fr)}}
-.rev__stars{color:#ffc247;letter-spacing:2px;font-size:15px}
-.rev__text{margin-top:12px;font-size:15.5px;line-height:1.62}
-.rev__who{margin-top:16px;font-size:14px;color:var(--mute)}
-
-.contact{display:grid;gap:22px}
-@media(min-width:900px){.contact{grid-template-columns:1fr 1.15fr;align-items:start}}
-.dl{display:grid;gap:18px;margin:0}
-.dl dt{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
-.dl dd{margin:5px 0 0;font-size:17px}
-.dl a{text-decoration:none;border-bottom:1px solid var(--line)}
-.map{border:0;width:100%;height:340px;border-radius:var(--r);border:1px solid var(--line)}
-
-.form{display:grid;gap:13px}
-.form input,.form textarea{width:100%;padding:14px 16px;border-radius:11px;background:var(--bg);
-  border:1px solid var(--line);color:var(--ink);font:400 16px/1.5 'Inter',sans-serif}
-.form input:focus,.form textarea:focus{outline:2px solid var(--acc);outline-offset:1px;border-color:transparent}
-.form textarea{min-height:96px;resize:vertical}
-.form .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
-.form__note{font-size:13px;color:var(--mute)}
-.form__ok{display:none;padding:14px 16px;border-radius:11px;background:color-mix(in srgb,var(--acc) 14%,transparent);
-  border:1px solid var(--acc);font-size:15px}
-
-.foot{border-top:1px solid var(--line);padding:34px 0;color:var(--mute);font-size:14.5px}
-.foot__row{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;justify-content:space-between}
-
-.demo{background:var(--acc);color:var(--acc-ink);font-size:14.5px;line-height:1.55}
-.demo__in{padding:20px;display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;justify-content:space-between}
-.demo a{color:inherit;font-weight:700}
-.bar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;gap:10px;padding:10px 14px;
-  background:color-mix(in srgb,var(--bg) 94%,transparent);border-top:1px solid var(--line);
-  backdrop-filter:blur(10px)}
-.bar .btn{flex:1}
-@media(min-width:900px){.bar{display:none}}
-@media(max-width:899px){body{padding-bottom:72px}}
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500;700;800&family=Inter:wght@400;500;600&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ee6f5b'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='16' font-weight='700' text-anchor='middle' fill='%23fff'%3EБ%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-<header class="top">
+<body data-page="index.html">
+<header class="top" id="top">
   <div class="wrap top__in">
-    <a class="brand" href="#top">БлинБери</a>
-    <nav><a href="#ceny">Цены</a><a href="#foto">Фото</a><a href="#kontakty">Контакты</a></nav>
-    <a class="btn btn--sm" href="#zayavka">Оформить заказ</a>
+    <a class="brand" href="index.html">
+      <span class="brand__mark">Б</span>
+      <span class="brand__t">
+        <span class="brand__n">БлинБери</span>
+        <span class="brand__s">блинная быстрого обслуживания</span>
+      </span>
+    </a>
+    <nav class="nav"><a href="uslugi.html">Меню</a><a href="ceny.html">Все позиции</a><a href="galereya.html">Галерея</a><a href="otzyvy.html">Отзывы</a><a href="o-nas.html">О нас</a><a href="kontakty.html">Контакты</a></nav>
+    <div class="top__act">
+      <a class="top__tel" href="tel:+78005502220">+7 800 550-22-20</a>
+      <a class="btn btn--sm" href="kontakty.html#zayavka">Сделать заказ</a>
+      <button class="burger" type="button" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
+<div class="drawer" id="drawer">
+  <div class="wrap">
+    <a href="index.html">Главная</a><a href="uslugi.html">Меню</a><a href="ceny.html">Все позиции</a><a href="galereya.html">Галерея</a><a href="otzyvy.html">Отзывы</a><a href="o-nas.html">О нас</a><a href="kontakty.html">Контакты</a>
+    <a class="btn btn--wide" href="kontakty.html#zayavka">Сделать заказ</a>
+  </div>
+</div>
+<section class="hero">
+  <div class="wrap">
+    <div class="hero__in">
+      <div>
+        <div class="eyebrow reveal">блинная быстрого обслуживания · Торговый проспект, 1</div>
+        <h1 class="reveal">БлинБери.<br><em>Меню с характером.</em></h1>
+        <p class="hero__lead reveal">Меню, фотографии, режим работы и быстрый путь к заказу. Пн–Вс 06:00–22:00.</p>
+        <div class="hero__act reveal"><a class="btn btn--lg" href="kontakty.html#zayavka">Сделать заказ</a><a class="btn btn--ghost btn--lg" href="uslugi.html">Открыть меню</a></div>
+        <div class="hero__facts reveal"><div><div class="fact__v">4,5</div><div class="fact__l">рейтинг в 2ГИС по 12 отзывам</div></div><div><div class="fact__v">25</div><div class="fact__l">позиций в меню с ценой</div></div><div><div class="fact__v">5</div><div class="fact__l">разделов меню</div></div></div>
+      </div>
+      <div class="hero__media reveal" style="--i:1">
+          <img src="https://i9.photo.2gis.com/photo-gallery/d5ea5d67-bf97-4997-9647-ddfaf28cf6df_960x.jpg" alt="БлинБери" fetchpriority="high" decoding="async">
+          <div class="hero__badge hero__badge--bl">
+              <b>4,5</b>
+              <span><span class="stars">★★★★☆</span><br>12 отзывов в 2ГИС</span>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="hero__strip"><div><b>Адрес</b>Торговый проспект, 1</div><div><b>Часы работы</b>Пн–Вс 06:00–22:00</div><div><b>Телефон</b>+7 800 550-22-20</div><div><b>Оплата</b>картой, наличный расчёт, по QR-коду</div></div>
+</section>
 
-
-<section class="hero" id="top">
-  <img class="hero__bg" src="https://i4.photo.2gis.com/photo-gallery/19fddad8-1fcd-4800-a7be-5652ec0a9b98_640x.jpg" alt="" fetchpriority="high" decoding="async" srcset="https://i4.photo.2gis.com/photo-gallery/19fddad8-1fcd-4800-a7be-5652ec0a9b98_640x.jpg 640w, https://i4.photo.2gis.com/photo-gallery/19fddad8-1fcd-4800-a7be-5652ec0a9b98_960x.jpg 960w, https://i4.photo.2gis.com/photo-gallery/19fddad8-1fcd-4800-a7be-5652ec0a9b98_1920x.jpg 1920w" sizes="100vw">
-  <div class="wrap hero__in">
-    <h1>БлинБери</h1>
-    <p class="hero__sub">Блинная быстрого обслуживания · Торговый проспект, 1</p>
-    <div class="facts"><span class="fact"><span class="star">★</span> <b>4.5</b> · 12 отзывов в 2ГИС</span><span class="fact">🕒 Пн–Вс 06:00–22:00</span><span class="fact">📍 Торговый проспект, 1</span></div>
-    <div class="hero__cta">
-      <a class="btn" href="#zayavka">Оформить заказ</a>
-      <a class="btn btn--ghost" href="tel:88005502220">Позвонить</a>
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Направления</div><h2>Меню и направления</h2><p class="lead">В карточке опубликовано 25 позиций по направлениям компании.</p></div><a class="btn btn--ghost btn--sm" href="uslugi.html">Все меню</a></div>
+    <div class="grid g3"><a class="tile reveal" style="--i:0" href="uslugi.html#zavtraki">
+              <div class="tile__b">
+                <div class="tile__cat">5 услуг</div>
+                <h3 class="tile__n">Завтраки</h3>
+                <div class="tile__d">Омлет ветчина и грибы, Сырники, Омлет по-домашнему…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">165 ₽</span></div>
+              </div></a><a class="tile reveal" style="--i:1" href="uslugi.html#myasnye-bliny">
+              <div class="tile__b">
+                <div class="tile__cat">9 услуг</div>
+                <h3 class="tile__n">Мясные блины</h3>
+                <div class="tile__d">Чикен трюфель, Биф босс, Жюльен…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">169 ₽</span></div>
+              </div></a><a class="tile reveal" style="--i:2" href="uslugi.html#sladkie-bliny">
+              <div class="tile__b">
+                <div class="tile__cat">8 услуг</div>
+                <h3 class="tile__n">Сладкие блины</h3>
+                <div class="tile__d">Чизкейк манго и абрикос, Нутелла и банан, Манго и абрикос…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">149 ₽</span></div>
+              </div></a><a class="tile reveal" style="--i:0" href="uslugi.html#rybnye-bliny">
+              <div class="tile__b">
+                <div class="tile__cat">2 услуги</div>
+                <h3 class="tile__n">Рыбные блины</h3>
+                <div class="tile__d">Чизи лосось, Красная рыба под соусом…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">395 ₽</span></div>
+              </div></a><a class="tile reveal" style="--i:1" href="uslugi.html#ovoschnye-bliny">
+              <div class="tile__b">
+                <div class="tile__cat">1 услуга</div>
+                <h3 class="tile__n">Овощные блины</h3>
+                <div class="tile__d">4 сыра…</div>
+                <div class="tile__p"><span class="tile__from">от</span><span class="tile__price">259 ₽</span></div>
+              </div></a></div>
+  </div>
+</section>
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Цены</div><h2>Меню и цены</h2><p class="lead">Полный список с поиском по названию.</p></div><a class="btn btn--ghost btn--sm" href="ceny.html">Все 25 позиций</a></div>
+    <div class="reveal"><div class="prow" data-s="омлет ветчина и грибы завтраки">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Омлет ветчина и грибы</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 205 ₽</div>
+</div><div class="prow" data-s="сырники завтраки">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Сырники</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 189 ₽</div>
+</div><div class="prow" data-s="омлет по-домашнему завтраки">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Омлет по-домашнему</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 165 ₽</div>
+</div><div class="prow" data-s="омлет моцарелла и томаты завтраки">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Омлет моцарелла и томаты</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 205 ₽</div>
+</div><div class="prow" data-s="брекфаст комбо завтраки">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Брекфаст комбо</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 489 ₽</div>
+</div><div class="prow" data-s="чикен трюфель мясные блины">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Чикен трюфель</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 315 ₽</div>
+</div><div class="prow" data-s="биф босс мясные блины">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Биф босс</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 315 ₽</div>
+</div><div class="prow" data-s="жюльен мясные блины">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Жюльен</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 219 ₽</div>
+</div><div class="prow" data-s="чикен хит мясные блины">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Чикен хит</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 169 ₽</div>
+</div><div class="prow" data-s="ветчина и сыр мясные блины">
+  <div style="flex:0 1 auto;max-width:70%"><div class="prow__n">Ветчина и сыр</div></div>
+  <div class="prow__dots"></div><div class="prow__p"><small>от</small> 225 ₽</div>
+</div></div>
+    <div style="margin-top:30px"><a class="btn" href="ceny.html">Открыть полный прайс</a></div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Фотографии</div><h2>Блюда и атмосфера</h2><p class="lead">14 фотографий из карточки компании.</p></div><a class="btn btn--ghost btn--sm" href="galereya.html">Вся галерея</a></div>
+    <div class="gal"><figure data-full="https://i9.photo.2gis.com/photo-gallery/d5ea5d67-bf97-4997-9647-ddfaf28cf6df_1920x.jpg"><img src="https://i9.photo.2gis.com/photo-gallery/d5ea5d67-bf97-4997-9647-ddfaf28cf6df_640x.jpg" alt="Мы в работе" loading="lazy" decoding="async"><figcaption>Мы в работе</figcaption></figure><figure data-full="https://i9.photo.2gis.com/photo-gallery/03ccee8d-0f32-4227-b70f-396e2283c0ef_1920x.jpg"><img src="https://i9.photo.2gis.com/photo-gallery/03ccee8d-0f32-4227-b70f-396e2283c0ef_640x.jpg" alt="Мы в работе" loading="lazy" decoding="async"><figcaption>Мы в работе</figcaption></figure><figure data-full="https://i2.photo.2gis.com/photo-gallery/5c337008-0fe9-4dfb-8435-8c29441cc1a7_1920x.jpg"><img src="https://i2.photo.2gis.com/photo-gallery/5c337008-0fe9-4dfb-8435-8c29441cc1a7_640x.jpg" alt="Мы в работе" loading="lazy" decoding="async"><figcaption>Мы в работе</figcaption></figure><figure data-full="https://i0.photo.2gis.com/photo-gallery/0a55d927-a989-4dc0-8c64-730fe9884c57_1920x.jpg"><img src="https://i0.photo.2gis.com/photo-gallery/0a55d927-a989-4dc0-8c64-730fe9884c57_640x.jpg" alt="Мы в работе" loading="lazy" decoding="async"><figcaption>Мы в работе</figcaption></figure><figure data-full="https://i6.photo.2gis.com/photo-gallery/dab29175-977e-4b72-94a5-ba38ff835ca6_1920x.jpg"><img src="https://i6.photo.2gis.com/photo-gallery/dab29175-977e-4b72-94a5-ba38ff835ca6_640x.jpg" alt="Мы в работе" loading="lazy" decoding="async"><figcaption>Мы в работе</figcaption></figure><figure data-full="https://i7.photo.2gis.com/photo-gallery/106ce416-3f96-4f9a-b850-5f8d8839a12d_1920x.jpg"><img src="https://i7.photo.2gis.com/photo-gallery/106ce416-3f96-4f9a-b850-5f8d8839a12d_640x.jpg" alt="Мы в работе" loading="lazy" decoding="async"><figcaption>Мы в работе</figcaption></figure></div>
+  </div>
+</section>
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head sec__head--row reveal"><div><div class="eyebrow">Отзывы</div><h2>Отзывы о БлинБери</h2><p class="lead">Оценка 4,5 в 2ГИС по 12 отзывам. Здесь показаны те, что видны в карточке.</p></div><a class="btn btn--ghost btn--sm" href="otzyvy.html">Все 1 отзывов</a></div>
+    <div class="grid g3"><article class="card card--hover rev reveal" style="--i:0">
+  <div class="rev__top">
+    <div class="rev__av">АГ</div>
+    <div><div class="rev__n">Амина Гамзатова</div>
+      <div class="rev__d">13 февраля 2026</div></div>
+    <div class="stars" style="margin-left:auto">★★★★★</div>
+  </div>
+  <div class="rev__t">Очень красивый зал, приятная атмосфера🥰 Блины удивили, по сравнению с Вкуснолюбов небо и земля. Посоветовали блинчик с бужениной, оказался очень вкусным и нежным. Особенно приятно приезжать ближе к вечеру и любоваться закатом. И особенно радует, что всё меню халяль🤍</div>
+</article></div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="grid g2" style="--gap:clamp(30px,4vw,64px);align-items:center">
+      <div class="reveal">
+        <div class="eyebrow">О нас</div>
+        <h2>БлинБери: коротко о компании</h2>
+        <p class="lead" style="margin-top:20px">В карточке указаны направления: Быстрое питание, Кафе, Доставка еды. Опубликовано 14 фотографий. В 2ГИС — 12 отзывов.</p>
+        <ul class="list" style="margin-top:28px"><li>Оценка 4,5 из 5 в 2ГИС по 12 отзывам</li><li>Часы работы: Пн–Вс 06:00–22:00, без выходных</li><li>Адрес: Торговый проспект, 1</li><li>25 позиций прайса с ценами, от 149 ₽</li><li>Услуги: доставка</li><li>Способы оплаты: Оплата картой, Наличный расчёт, Оплата по QR-коду</li></ul>
+        <div style="margin-top:30px"><a class="btn btn--ghost" href="o-nas.html">Подробнее о нас</a></div>
+      </div>
+      <div class="reveal" style="--i:1"><img src="https://i9.photo.2gis.com/photo-gallery/03ccee8d-0f32-4227-b70f-396e2283c0ef_960x.jpg" alt="БлинБери" loading="lazy" style="border-radius:var(--r-lg);aspect-ratio:1/1;object-fit:cover;width:100%"></div>
     </div>
   </div>
 </section>
 
-<section id="ceny">
+<section class="sec" id="zayavka">
   <div class="wrap">
-    <div class="eyebrow">Прайс</div>
-    <h2>Услуги и цены</h2>
-    <p class="lead">Всё видно сразу, без звонка «а сколько стоит». Именно это человек ищет первым, когда выбирает между вами и соседями.</p>
-    <div style="margin-top:34px"><div class="price__group"><div class="price__cat">Завтраки</div><div class="price__row">
-        <div><div class="price__name">Омлет ветчина и грибы</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">205 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Сырники</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">189 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Омлет по-домашнему</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">165 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Омлет моцарелла и томаты</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">205 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Брекфаст комбо</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">489 ₽</span>
-      </div></div><div class="price__group"><div class="price__cat">Мясные блины</div><div class="price__row">
-        <div><div class="price__name">Чикен трюфель</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">315 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Биф босс</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">315 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Жюльен</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">219 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Чикен хит</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">169 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Ветчина и сыр</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">225 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Шашлык</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">249 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Космос</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">219 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Илья Муромец</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">249 ₽</span>
-      </div></div><div class="price__group"><div class="price__cat">Сладкие блины</div><div class="price__row">
-        <div><div class="price__name">Чизкейк манго и абрикос</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">205 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Нутелла и банан</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">315 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Манго и абрикос</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">189 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Сочная клубника</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">149 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Клубничный тирамису</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">205 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Вишневый штрудель</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">215 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Со сгущенкой</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">149 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Нутелла</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">245 ₽</span>
-      </div></div><div class="price__group"><div class="price__cat">Рыбные блины</div><div class="price__row">
-        <div><div class="price__name">Чизи лосось</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">395 ₽</span>
-      </div><div class="price__row">
-        <div><div class="price__name">Красная рыба под соусом</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">395 ₽</span>
-      </div></div><div class="price__group"><div class="price__cat">Овощные блины</div><div class="price__row">
-        <div><div class="price__name">4 сыра</div></div>
-        <span class="price__dots"></span>
-        <span class="price__val">259 ₽</span>
-      </div></div></div>
-    <p class="price__note">Цены из вашего прайса в 2ГИС. Обновлено 15 января 2026.</p>
-  </div>
-</section>
-
-
-<section id="foto">
-  <div class="wrap">
-    <div class="eyebrow">Фотографии</div>
-    <h2>Как у нас</h2>
-    <div class="gal" style="margin-top:28px"><a href="https://i0.photo.2gis.com/photo-gallery/a7a6c27b-e0f7-4815-b98f-bd618aa63abd_1920x.jpg" target="_blank" rel="noopener"><img src="https://i0.photo.2gis.com/photo-gallery/a7a6c27b-e0f7-4815-b98f-bd618aa63abd_232x232.jpg" srcset="https://i0.photo.2gis.com/photo-gallery/a7a6c27b-e0f7-4815-b98f-bd618aa63abd_232x232.jpg 232w, https://i0.photo.2gis.com/photo-gallery/a7a6c27b-e0f7-4815-b98f-bd618aa63abd_464x464.jpg 464w, https://i0.photo.2gis.com/photo-gallery/a7a6c27b-e0f7-4815-b98f-bd618aa63abd_640x.jpg 640w" sizes="50vw" alt="Интерьер" loading="lazy" decoding="async"></a><a href="https://i9.photo.2gis.com/photo-gallery/d5ea5d67-bf97-4997-9647-ddfaf28cf6df_1920x.jpg" target="_blank" rel="noopener"><img src="https://i9.photo.2gis.com/photo-gallery/d5ea5d67-bf97-4997-9647-ddfaf28cf6df_232x232.jpg" srcset="https://i9.photo.2gis.com/photo-gallery/d5ea5d67-bf97-4997-9647-ddfaf28cf6df_232x232.jpg 232w, https://i9.photo.2gis.com/photo-gallery/d5ea5d67-bf97-4997-9647-ddfaf28cf6df_464x464.jpg 464w, https://i9.photo.2gis.com/photo-gallery/d5ea5d67-bf97-4997-9647-ddfaf28cf6df_640x.jpg 640w" sizes="50vw" alt="Мы в работе" loading="lazy" decoding="async"></a><a href="https://i9.photo.2gis.com/photo-gallery/03ccee8d-0f32-4227-b70f-396e2283c0ef_1920x.jpg" target="_blank" rel="noopener"><img src="https://i9.photo.2gis.com/photo-gallery/03ccee8d-0f32-4227-b70f-396e2283c0ef_232x232.jpg" srcset="https://i9.photo.2gis.com/photo-gallery/03ccee8d-0f32-4227-b70f-396e2283c0ef_232x232.jpg 232w, https://i9.photo.2gis.com/photo-gallery/03ccee8d-0f32-4227-b70f-396e2283c0ef_464x464.jpg 464w, https://i9.photo.2gis.com/photo-gallery/03ccee8d-0f32-4227-b70f-396e2283c0ef_640x.jpg 640w" sizes="50vw" alt="Мы в работе" loading="lazy" decoding="async"></a><a href="https://i2.photo.2gis.com/photo-gallery/5c337008-0fe9-4dfb-8435-8c29441cc1a7_1920x.jpg" target="_blank" rel="noopener"><img src="https://i2.photo.2gis.com/photo-gallery/5c337008-0fe9-4dfb-8435-8c29441cc1a7_232x232.jpg" srcset="https://i2.photo.2gis.com/photo-gallery/5c337008-0fe9-4dfb-8435-8c29441cc1a7_232x232.jpg 232w, https://i2.photo.2gis.com/photo-gallery/5c337008-0fe9-4dfb-8435-8c29441cc1a7_464x464.jpg 464w, https://i2.photo.2gis.com/photo-gallery/5c337008-0fe9-4dfb-8435-8c29441cc1a7_640x.jpg 640w" sizes="50vw" alt="Мы в работе" loading="lazy" decoding="async"></a><a href="https://i0.photo.2gis.com/photo-gallery/0a55d927-a989-4dc0-8c64-730fe9884c57_1920x.jpg" target="_blank" rel="noopener"><img src="https://i0.photo.2gis.com/photo-gallery/0a55d927-a989-4dc0-8c64-730fe9884c57_232x232.jpg" srcset="https://i0.photo.2gis.com/photo-gallery/0a55d927-a989-4dc0-8c64-730fe9884c57_232x232.jpg 232w, https://i0.photo.2gis.com/photo-gallery/0a55d927-a989-4dc0-8c64-730fe9884c57_464x464.jpg 464w, https://i0.photo.2gis.com/photo-gallery/0a55d927-a989-4dc0-8c64-730fe9884c57_640x.jpg 640w" sizes="50vw" alt="Мы в работе" loading="lazy" decoding="async"></a><a href="https://i6.photo.2gis.com/photo-gallery/dab29175-977e-4b72-94a5-ba38ff835ca6_1920x.jpg" target="_blank" rel="noopener"><img src="https://i6.photo.2gis.com/photo-gallery/dab29175-977e-4b72-94a5-ba38ff835ca6_232x232.jpg" srcset="https://i6.photo.2gis.com/photo-gallery/dab29175-977e-4b72-94a5-ba38ff835ca6_232x232.jpg 232w, https://i6.photo.2gis.com/photo-gallery/dab29175-977e-4b72-94a5-ba38ff835ca6_464x464.jpg 464w, https://i6.photo.2gis.com/photo-gallery/dab29175-977e-4b72-94a5-ba38ff835ca6_640x.jpg 640w" sizes="50vw" alt="Мы в работе" loading="lazy" decoding="async"></a><a href="https://i7.photo.2gis.com/photo-gallery/106ce416-3f96-4f9a-b850-5f8d8839a12d_1920x.jpg" target="_blank" rel="noopener"><img src="https://i7.photo.2gis.com/photo-gallery/106ce416-3f96-4f9a-b850-5f8d8839a12d_232x232.jpg" srcset="https://i7.photo.2gis.com/photo-gallery/106ce416-3f96-4f9a-b850-5f8d8839a12d_232x232.jpg 232w, https://i7.photo.2gis.com/photo-gallery/106ce416-3f96-4f9a-b850-5f8d8839a12d_464x464.jpg 464w, https://i7.photo.2gis.com/photo-gallery/106ce416-3f96-4f9a-b850-5f8d8839a12d_640x.jpg 640w" sizes="50vw" alt="Мы в работе" loading="lazy" decoding="async"></a><a href="https://i4.photo.2gis.com/photo-gallery/d1419ae4-a314-48df-aea7-d2f2a791e89c_1920x.jpg" target="_blank" rel="noopener"><img src="https://i4.photo.2gis.com/photo-gallery/d1419ae4-a314-48df-aea7-d2f2a791e89c_232x232.jpg" srcset="https://i4.photo.2gis.com/photo-gallery/d1419ae4-a314-48df-aea7-d2f2a791e89c_232x232.jpg 232w, https://i4.photo.2gis.com/photo-gallery/d1419ae4-a314-48df-aea7-d2f2a791e89c_464x464.jpg 464w, https://i4.photo.2gis.com/photo-gallery/d1419ae4-a314-48df-aea7-d2f2a791e89c_640x.jpg 640w" sizes="50vw" alt="Как нас найти" loading="lazy" decoding="async"></a></div>
-    <p class="price__note">Фотографии из вашей карточки 2ГИС. <a href="https://2gis.ru/rostov/firm/70000001111085699" target="_blank" rel="noopener">Открыть карточку</a></p>
-  </div>
-</section>
-
-
-<section id="kontakty">
-  <div class="wrap">
-    <div class="eyebrow">Контакты</div>
-    <h2>Где нас найти</h2>
-    <div class="contact" style="margin-top:28px">
-      <dl class="dl"><dt>Адрес</dt><dd>Торговый проспект, 1</dd><dt>Часы работы</dt><dd>Пн–Вс 06:00–22:00 · без выходных</dd><dt>Телефон</dt><dd><a href="tel:88005502220">+7 800 550-22-20</a></dd><dt>Почта</dt><dd><a href="mailto:ask@blinberry.su">ask@blinberry.su</a></dd></dl>
-      <iframe class="map" src="https://widgets.2gis.com/widget?type=firmsonmap&amp;options=%7B%22pos%22%3A%7B%22lat%22%3A47.315099%2C%22lon%22%3A39.646971%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22rostov%22%7D%2C%22org%22%3A%2270000001111085699%22%7D" loading="lazy" title="Карта проезда"></iframe>
+    <div class="cta reveal">
+      <div class="cta__in">
+        <div>
+          <div class="eyebrow" style="color:inherit;opacity:.7">Заявка</div>
+          <h2>Сделать заказ</h2>
+          <p class="lead">Оставьте номер — команда уточнит заказ.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:26px"><a class="btn btn--ghost" href="tel:+78005502220" style="border-color:currentColor;color:inherit">+7 800 550-22-20</a></div>
+        </div>
+        <div>
+          <form class="form" id="lead" novalidate>
+            <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <input name="name" placeholder="Как к вам обращаться" required minlength="2" autocomplete="name">
+            <input name="contact" placeholder="Телефон или ник в Telegram" required minlength="5" autocomplete="tel">
+            <textarea name="task" placeholder="Что вас интересует (по желанию)"></textarea>
+            <button class="btn btn--dark btn--wide" type="submit">Отправить</button>
+            <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку указанных данных.</p>
+          </form>
+          <div class="form__ok" id="ok">Заявка отправлена. Спасибо, скоро свяжемся.</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-
-<section id="zayavka">
-  <div class="wrap">
-    <div class="card" style="padding:clamp(24px,4vw,44px)">
-      <div class="eyebrow">Заявка</div>
-      <h2>Оформить заказ</h2>
-      <p class="lead">Оставьте номер, перезвоним и примем заказ. Заявка приходит в Telegram за секунду, отвечать можно прямо оттуда.</p>
-      <form class="form" id="lead" style="margin-top:26px" novalidate>
-        <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <input name="name" placeholder="Как к вам обращаться" required minlength="2" autocomplete="name">
-        <input name="contact" placeholder="Телефон или ник в Telegram" required minlength="5" autocomplete="tel">
-        <textarea name="task" placeholder="Что нужно (по желанию)"></textarea>
-        <button class="btn" type="submit">Отправить</button>
-        <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку указанных данных.</p>
-      </form>
-      <div class="form__ok" id="ok">Заявка отправлена. Спасибо, скоро свяжемся.</div>
-    </div>
-  </div>
-</section>
-
 <footer class="foot">
-  <div class="wrap foot__row">
-    <div>БлинБери · Торговый проспект, 1</div>
-    <div><a href="tel:88005502220" style="text-decoration:none">+7 800 550-22-20</a></div>
+  <div class="wrap">
+    <div class="foot__grid"><div>
+      <a class="brand" href="index.html" style="margin-bottom:16px">
+        <span class="brand__mark">Б</span>
+        <span class="brand__t"><span class="brand__n">БлинБери</span>
+        <span class="brand__s">блинная быстрого обслуживания</span></span></a>
+      <a class="foot__tel" href="tel:+78005502220">+7 800 550-22-20</a>
+      <div style="opacity:.6;font-size:14.5px;max-width:34ch">Рейтинг 4,5 в 2ГИС. без выходных</div>
+    </div><div><h4>Разделы</h4><ul><li><a href="index.html">Главная</a></li><li><a href="uslugi.html">Меню</a></li><li><a href="ceny.html">Все позиции</a></li><li><a href="galereya.html">Галерея</a></li></ul></div><div><h4>&nbsp;</h4><ul><li><a href="otzyvy.html">Отзывы</a></li><li><a href="o-nas.html">О нас</a></li><li><a href="kontakty.html">Контакты</a></li></ul></div><div><h4>Контакты</h4><ul><li><a href="tel:+78005502220">+7 800 550-22-20</a></li><li><a href="mailto:ask@blinberry.su">ask@blinberry.su</a></li></ul><h4 style="margin-top:26px">Адрес</h4><ul><li>Торговый проспект, 1</li><li>Пн–Вс 06:00–22:00</li><li>Без выходных</li><li><a href="https://2gis.ru/rostov/firm/70000001111085699" target="_blank" rel="noopener">Карточка в 2ГИС</a></li></ul></div></div>
+    <div class="foot__bot">
+      <div>БлинБери, блинная быстрого обслуживания</div>
+      <div>Данные и фотографии — из карточки 2ГИС</div>
+    </div>
   </div>
 </footer>
-
-
-<div class="demo">
+<div class="demo demo--premium">
   <div class="wrap demo__in">
     <div>
-      <b>Это демо-макет, а не ваш действующий сайт.</b> Собрал его Владимир, веб-разработчик из
-      Ростов-на-Дону, по открытым данным вашей карточки 2ГИС: фото, прайс, отзывы и часы работы — ваши.<br>Что я заметил на вашем текущем сайте: телефон на первом экране не находится.
+      <b>Персональный многостраничный демо-сайт для БлинБери.</b>
+      Семь адаптивных страниц: главная, услуги, цены, галерея, отзывы, о компании и контакты.
+      Содержание собрано по открытым данным карточки 2ГИС; перед запуском всё согласовывается с владельцем. Что я заметил на вашем текущем сайте: телефон на первом экране не находится; нет ни формы заявки, ни кнопки в мессенджер.
     </div>
-    <a class="btn btn--sm btn--ghost" style="border-color:currentColor;color:inherit"
-       href="https://t.me/vovuchoooo" target="_blank" rel="noopener">Написать @vovuchoooo</a>
+    <a class="btn btn--sm" href="https://t.me/vovuchoooo" target="_blank" rel="noopener">Обсудить этот сайт</a>
   </div>
 </div>
-
 <div class="bar">
-  <a class="btn" href="#zayavka">Оформить заказ</a>
-  <a class="btn btn--ghost" href="tel:88005502220">Позвонить</a>
+  <a class="btn" href="kontakty.html#zayavka">Сделать заказ</a>
+  <a class="btn btn--ghost" href="tel:+78005502220">Позвонить</a>
 </div>
-
-<script>
-document.getElementById('lead').addEventListener('submit', async function (ev) {
-  ev.preventDefault();
-  var f = ev.target, b = f.querySelector('button');
-  var body = {
-    company: f.company.value, name: f.name.value,
-    contact: f.contact.value, task: f.task.value
-  };
-  if (body.name.trim().length < 2 || body.contact.trim().length < 5) {
-    f.reportValidity(); return;
-  }
-  b.disabled = true; b.textContent = 'Отправляю…';
-  try {
-    var r = await fetch('https://lead-form.tripolev04.workers.dev', {
-      method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body)
-    });
-    if (!r.ok) throw 0;
-    f.style.display = 'none';
-    document.getElementById('ok').style.display = 'block';
-  } catch (err) {
-    b.disabled = false; b.textContent = 'Отправить ещё раз';
-  }
-});
-</script>
+<script src="script.js" defer></script>
 </body>
 </html>
